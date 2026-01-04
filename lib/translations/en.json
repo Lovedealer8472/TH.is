@@ -1,0 +1,49 @@
+{
+  "nav": {
+    "services": "Services",
+    "pricing": "Pricing",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "common": {
+    "language": "Language",
+    "icelandic": "Icelandic",
+    "english": "English"
+  },
+  "footer": {
+    "copyright": "© {year} Tölvuhvíslarinn. All rights reserved.",
+    "tagline": "Computer repairs, custom builds, and IT consulting"
+  },
+  "home": {
+    "hero": {
+      "title": "Welcome to Tölvuhvíslarinn",
+      "subtitle": "Computer repairs, custom builds, and IT consulting"
+    },
+    "cta": {
+      "primary": "Contact us",
+      "secondary": "View services"
+    }
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "We offer..."
+  },
+  "pricing": {
+    "title": "Pricing",
+    "subtitle": "Contact us for accurate pricing"
+  },
+  "about": {
+    "title": "About",
+    "subtitle": "Learn about Tölvuhvíslarinn"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "We respond to all inquiries",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Send"
+    }
+  }
+}

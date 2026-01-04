@@ -1,0 +1,49 @@
+{
+  "nav": {
+    "services": "Þjónusta",
+    "pricing": "Verðskrá",
+    "about": "Um okkur",
+    "contact": "Hafðu samband"
+  },
+  "common": {
+    "language": "Tungumál",
+    "icelandic": "Íslenska",
+    "english": "Enska"
+  },
+  "footer": {
+    "copyright": "© {year} Tölvuhvíslarinn. Allur réttur áskilinn.",
+    "tagline": "Tölvuviðgerðir, sérsmíði og tækniráðgjöf"
+  },
+  "home": {
+    "hero": {
+      "title": "Velkomin á Tölvuhvíslarinn",
+      "subtitle": "Tölvuviðgerðir, sérsmíði og tækniráðgjöf"
+    },
+    "cta": {
+      "primary": "Hafðu samband",
+      "secondary": "Sjá þjónustu"
+    }
+  },
+  "services": {
+    "title": "Þjónusta",
+    "subtitle": "Ég bíð uppá..."
+  },
+  "pricing": {
+    "title": "Verðskrá",
+    "subtitle": "Sambandstaktu við okkur fyrir nákvæmari verð"
+  },
+  "about": {
+    "title": "Um okkur",
+    "subtitle": "Kynntu þér Tölvuhvíslarinn"
+  },
+  "contact": {
+    "title": "Hafðu samband",
+    "subtitle": "Við svörum öllum fyrirspurnum",
+    "form": {
+      "name": "Nafn",
+      "email": "Netfang",
+      "message": "Skilaboð",
+      "submit": "Senda"
+    }
+  }
+}
