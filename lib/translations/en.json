@@ -12,35 +12,74 @@
   },
   "footer": {
     "copyright": "© {year} Tölvuhvíslarinn. All rights reserved.",
-    "tagline": "Computer repairs, custom builds, and IT consulting"
+    "tagline": "Tölvuhvíslarinn – personal technical support"
   },
   "home": {
     "hero": {
       "titleMain": "Tölvuhvíslarinn",
       "titleSecondary": "Computer repairs and custom builds",
-      "subtitle": "Computer repairs, custom desktop builds, and IT consulting in Neskaupstaður",
-      "trustLine": "Personal and honest technical support"
+      "subtitle": "Computer repairs, custom desktop builds, and IT consulting in Neskaupstaður.",
+      "trustLine": "Personal and honest technical support for individuals and small businesses."
+    },
+    "services": {
+      "repairs": {
+        "title": "Computer Repairs",
+        "description": "Repairs and diagnostics for laptops and desktop computers.",
+        "bullet1": "Slow or frozen computer",
+        "bullet2": "SSD / HDD replacement",
+        "bullet3": "RAM upgrades",
+        "bullet4": "Software issues"
+      },
+      "custom": {
+        "title": "Custom Builds",
+        "description": "Custom desktop builds tailored to your needs – gaming PCs, workstations, or home computers.",
+        "bullet1": "Component and cost consultation",
+        "bullet2": "Assembly and testing",
+        "bullet3": "Upgrading older computers",
+        "bullet4": "Fully upgraded and tested computers"
+      },
+      "consulting": {
+        "title": "IT Consulting",
+        "description": "Personal consultation and solutions tailored to your needs, without technical jargon.",
+        "bullet1": "Hardware purchase advice",
+        "bullet2": "Computer system planning",
+        "bullet3": "Explanations without technical jargon",
+        "bullet4": "Custom solutions"
+      }
     },
     "cta": {
+      "heading": "Contact us",
+      "description": "Contact me today and get a custom solution for your computer needs.",
       "primary": "Contact us",
       "secondary": "View services"
     }
   },
   "services": {
     "title": "Services",
-    "subtitle": "We offer..."
+    "intro": "Tölvuhvíslarinn serves individuals and small businesses with computer repairs, custom builds, data protection, and IT consulting. Below is an overview of the services I offer."
   },
   "pricing": {
     "title": "Pricing",
-    "subtitle": "Contact us for accurate pricing"
+    "intro": "Prices are clear and transparent. No work is performed without approval and I always honestly assess whether a repair is worth it. Unnecessary upgrades are not sold."
   },
   "about": {
-    "title": "About",
-    "subtitle": "Learn about Tölvuhvíslarinn"
+    "title": "About Tölvuhvíslarinn",
+    "intro1": "My name is Daði and I have been working with computers for 20 years. Tölvuhvíslarinn serves individuals and small businesses with computer repairs, upgrades, custom builds, data protection, and IT consulting.",
+    "intro2": "I emphasize speaking in plain language, not technical jargon, and always explaining what is being done and why. Good technical support is not just about fixing things, but about helping people make better decisions and building trust for the long term.",
+    "howIWork": {
+      "title": "How I work",
+      "bullet1": "Honest advice – not just what sells best",
+      "bullet2": "Clear explanations of what is being done",
+      "bullet3": "No unnecessary work – sometimes the best solution is to do nothing",
+      "bullet4": "Solutions that meet real needs"
+    }
   },
   "contact": {
     "title": "Contact",
-    "subtitle": "We respond to all inquiries",
+    "intro": "Contact me by phone, email, or the contact form below.",
+    "phone": "Phone",
+    "email": "Email",
+    "location": "Location",
     "form": {
       "name": "Name",
       "email": "Email",
