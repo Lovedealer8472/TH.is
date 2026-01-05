@@ -5,6 +5,7 @@ import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import GoogleAnalytics from '@/components/analytics/GoogleAnalytics';
 import StructuredData from '@/components/StructuredData';
+import FloatingWhatsApp from '@/components/ui/FloatingWhatsApp';
 import './globals.css';
 
 const inter = Inter({ 
@@ -78,6 +79,7 @@ export default function RootLayout({
           <Header />
           <main className="flex-1">{children}</main>
           <Footer />
+          <FloatingWhatsApp />
         </I18nProvider>
       </body>
     </html>

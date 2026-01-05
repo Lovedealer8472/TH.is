@@ -45,5 +45,8 @@
       "message": "Message",
       "submit": "Send"
     }
+  },
+  "social": {
+    "followUs": "Follow us"
   }
 }

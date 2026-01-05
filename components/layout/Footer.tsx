@@ -1,6 +1,7 @@
 'use client';
 
 import { useI18n, translate } from '@/lib/i18n';
+import SocialMediaLinks from '@/components/ui/SocialMediaLinks';
 
 export default function Footer() {
   const { t } = useI18n();
@@ -13,7 +14,8 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <h3 className="text-lg font-bold text-gray-100 mb-2">Tölvuhvíslarinn</h3>
-            <p className="text-sm text-gray-400 font-mono">{t.footer.tagline}</p>
+            <p className="text-sm text-gray-400 font-mono mb-4">{t.footer.tagline}</p>
+            <SocialMediaLinks variant="footer" />
           </div>
 
           {/* Contact Info */}
