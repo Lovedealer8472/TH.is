@@ -16,8 +16,10 @@
   },
   "home": {
     "hero": {
-      "title": "Tölvuhvíslarinn - Tölvuviðgerðir og sérsmíði",
-      "subtitle": "Tölvuviðgerðir, sérsmíði borðtölva og tækniráðgjöf í Neskaupstað"
+      "titleMain": "Tölvuhvíslarinn",
+      "titleSecondary": "Tölvuviðgerðir og sérsmíði",
+      "subtitle": "Tölvuviðgerðir, sérsmíði borðtölva og tækniráðgjöf á Neskaupstað",
+      "trustLine": "Persónuleg og heiðarleg tækniaðstoð"
     },
     "cta": {
       "primary": "Hafðu samband",

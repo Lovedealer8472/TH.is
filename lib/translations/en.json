@@ -16,8 +16,10 @@
   },
   "home": {
     "hero": {
-      "title": "Welcome to Tölvuhvíslarinn",
-      "subtitle": "Computer repairs, custom builds, and IT consulting"
+      "titleMain": "Tölvuhvíslarinn",
+      "titleSecondary": "Computer repairs and custom builds",
+      "subtitle": "Computer repairs, custom desktop builds, and IT consulting in Neskaupstaður",
+      "trustLine": "Personal and honest technical support"
     },
     "cta": {
       "primary": "Contact us",

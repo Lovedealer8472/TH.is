@@ -18,8 +18,8 @@ const inter = Inter({
 const googleSiteVerification = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION;
 
 export const metadata: Metadata = {
-  title: 'Tölvuhvíslarinn - Tölvuviðgerðir og tækniráðgjöf í Neskaupstað',
-  description: 'Tölvuviðgerðir, sérsmíði borðtölva, gagnavernd og tækniráðgjöf í Neskaupstað. Viðgerðir, uppfærslur og ráðgjöf fyrir einstaklinga og smáfyrirtæki.',
+  title: 'Tölvuhvíslarinn – Tölvuviðgerðir og sérsmíði í Neskaupstað',
+  description: 'Tölvuhvíslarinn býður upp á tölvuviðgerðir, sérsmíði borðtölva og tækniráðgjöf á Neskaupstað. Heiðarleg og persónuleg þjónusta.',
   icons: {
     icon: [
       { url: '/icon.png', sizes: '32x32', type: 'image/png' },
@@ -51,8 +51,8 @@ export const metadata: Metadata = {
     canonical: 'https://www.tolvuhvislarinn.is',
   },
   openGraph: {
-    title: 'Tölvuhvíslarinn - Tölvuviðgerðir og tækniráðgjöf í Neskaupstað',
-    description: 'Tölvuviðgerðir, sérsmíði borðtölva, gagnavernd og tækniráðgjöf í Neskaupstað. Viðgerðir, uppfærslur og ráðgjöf fyrir einstaklinga og smáfyrirtæki.',
+    title: 'Tölvuhvíslarinn – Tölvuviðgerðir og sérsmíði í Neskaupstað',
+    description: 'Tölvuhvíslarinn býður upp á tölvuviðgerðir, sérsmíði borðtölva og tækniráðgjöf á Neskaupstað. Heiðarleg og persónuleg þjónusta.',
     url: 'https://www.tolvuhvislarinn.is',
     siteName: 'Tölvuhvíslarinn',
     locale: 'is_IS',
