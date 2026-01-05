@@ -1,7 +1,8 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://tolvuhvislarinn.is';
+  // Use www as canonical URL
+  const baseUrl = 'https://www.tolvuhvislarinn.is';
   
   return [
     {

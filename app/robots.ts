@@ -1,7 +1,8 @@
 import { MetadataRoute } from 'next';
 
 export default function robots(): MetadataRoute.Robots {
-  const baseUrl = 'https://tolvuhvislarinn.is';
+  // Use www as canonical URL
+  const baseUrl = 'https://www.tolvuhvislarinn.is';
   
   return {
     rules: [
