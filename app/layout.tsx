@@ -19,6 +19,10 @@ const googleSiteVerification = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION;
 export const metadata: Metadata = {
   title: 'Tölvuhvíslarinn - Tölvuviðgerðir og tækniráðgjöf í Neskaupstað',
   description: 'Tölvuviðgerðir, sérsmíði borðtölva, gagnavernd og tækniráðgjöf í Neskaupstað. Viðgerðir, uppfærslur og ráðgjöf fyrir einstaklinga og smáfyrirtæki.',
+  icons: {
+    icon: '/icon.svg',
+    apple: '/apple-icon.svg',
+  },
   keywords: [
     'tölvuviðgerðir',
     'tölvureparation',
