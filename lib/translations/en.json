@@ -60,7 +60,8 @@
   },
   "pricing": {
     "title": "Pricing",
-    "intro": "Prices are clear and transparent. No work is performed without approval and I always honestly assess whether a repair is worth it. Unnecessary upgrades are not sold."
+    "subtitle": "Clear prices – no unexpected additional fees",
+    "footer": "All prices include VAT. Replacement parts and specialized repairs are calculated separately. Contact us for an accurate quote."
   },
   "about": {
     "title": "About Tölvuhvíslarinn",

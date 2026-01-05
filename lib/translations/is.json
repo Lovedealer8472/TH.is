@@ -60,7 +60,8 @@
   },
   "pricing": {
     "title": "Verðskrá",
-    "intro": "Verð eru skýr og gagnsæ. Engin vinna er framkvæmd án samþykkis og ég met alltaf heiðarlega hvort viðgerð borgi sig. Ekki eru seldar óþarfa uppfærslur."
+    "subtitle": "Skýr verð – engin óvænt aukagjöld",
+    "footer": "Öll verð eru með VSK. Varahlutir og sértækar viðgerðir eru reiknaðar sérstaklega. Hafðu samband fyrir nákvæmt tilboð."
   },
   "about": {
     "title": "Um Tölvuhvíslarinn",
