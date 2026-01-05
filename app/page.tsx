@@ -9,16 +9,16 @@ export default function HomePage() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative py-20 sm:py-32 bg-gradient-to-b from-gray-900 to-gray-950">
+      <section className="relative py-12 sm:py-20 bg-gradient-to-b from-gray-900 to-gray-950">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-100 mb-3">
+            <h1 className="text-4xl sm:text-5xl font-bold text-gray-100 mb-3">
               {t.home.hero.titleMain}
             </h1>
-            <p className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-gray-200 mb-4">
+            <p className="text-2xl sm:text-3xl font-semibold text-gray-200 mb-4">
               {t.home.hero.titleSecondary}
             </p>
-            <p className="text-lg sm:text-xl text-gray-400 mb-4 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-400 mb-4 max-w-3xl mx-auto leading-relaxed">
               {t.home.hero.subtitle}
             </p>
             <p className="text-base text-gray-500 mb-8">
@@ -46,54 +46,90 @@ export default function HomePage() {
       </section>
 
       {/* Service Highlights */}
-      <section className="py-20 bg-gray-900">
+      <section className="py-12 sm:py-20 bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="space-y-12">
+          <div className="space-y-16">
             {/* Tölvuviðgerðir */}
             <div>
-              <h2 className="text-2xl sm:text-3xl font-bold text-gray-100 mb-3">
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-100 mb-4">
                 {t.home.services.repairs.title}
               </h2>
-              <p className="text-gray-300 mb-4 max-w-3xl">
+              <p className="text-base text-gray-300 mb-4 max-w-3xl leading-relaxed">
                 {t.home.services.repairs.description}
               </p>
               <ul className="space-y-2 text-gray-400">
-                <li>• {t.home.services.repairs.bullet1}</li>
-                <li>• {t.home.services.repairs.bullet2}</li>
-                <li>• {t.home.services.repairs.bullet3}</li>
-                <li>• {t.home.services.repairs.bullet4}</li>
+                <li className="flex items-start">
+                  <span className="text-primary-400 mr-3">•</span>
+                  <span>{t.home.services.repairs.bullet1}</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-primary-400 mr-3">•</span>
+                  <span>{t.home.services.repairs.bullet2}</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-primary-400 mr-3">•</span>
+                  <span>{t.home.services.repairs.bullet3}</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-primary-400 mr-3">•</span>
+                  <span>{t.home.services.repairs.bullet4}</span>
+                </li>
               </ul>
             </div>
 
             {/* Sérsmíði */}
             <div>
-              <h2 className="text-2xl sm:text-3xl font-bold text-gray-100 mb-3">
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-100 mb-4">
                 {t.home.services.custom.title}
               </h2>
-              <p className="text-gray-300 mb-4 max-w-3xl">
+              <p className="text-base text-gray-300 mb-4 max-w-3xl leading-relaxed">
                 {t.home.services.custom.description}
               </p>
               <ul className="space-y-2 text-gray-400">
-                <li>• {t.home.services.custom.bullet1}</li>
-                <li>• {t.home.services.custom.bullet2}</li>
-                <li>• {t.home.services.custom.bullet3}</li>
-                <li>• {t.home.services.custom.bullet4}</li>
+                <li className="flex items-start">
+                  <span className="text-primary-400 mr-3">•</span>
+                  <span>{t.home.services.custom.bullet1}</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-primary-400 mr-3">•</span>
+                  <span>{t.home.services.custom.bullet2}</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-primary-400 mr-3">•</span>
+                  <span>{t.home.services.custom.bullet3}</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-primary-400 mr-3">•</span>
+                  <span>{t.home.services.custom.bullet4}</span>
+                </li>
               </ul>
             </div>
 
             {/* Tækniráðgjöf */}
             <div>
-              <h2 className="text-2xl sm:text-3xl font-bold text-gray-100 mb-3">
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-100 mb-4">
                 {t.home.services.consulting.title}
               </h2>
-              <p className="text-gray-300 mb-4 max-w-3xl">
+              <p className="text-base text-gray-300 mb-4 max-w-3xl leading-relaxed">
                 {t.home.services.consulting.description}
               </p>
               <ul className="space-y-2 text-gray-400">
-                <li>• {t.home.services.consulting.bullet1}</li>
-                <li>• {t.home.services.consulting.bullet2}</li>
-                <li>• {t.home.services.consulting.bullet3}</li>
-                <li>• {t.home.services.consulting.bullet4}</li>
+                <li className="flex items-start">
+                  <span className="text-primary-400 mr-3">•</span>
+                  <span>{t.home.services.consulting.bullet1}</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-primary-400 mr-3">•</span>
+                  <span>{t.home.services.consulting.bullet2}</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-primary-400 mr-3">•</span>
+                  <span>{t.home.services.consulting.bullet3}</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-primary-400 mr-3">•</span>
+                  <span>{t.home.services.consulting.bullet4}</span>
+                </li>
               </ul>
             </div>
           </div>
@@ -101,12 +137,12 @@ export default function HomePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gray-950">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="py-12 sm:py-20 bg-gray-950">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-100 mb-4">
             {t.home.cta.heading}
           </h2>
-          <p className="text-lg text-gray-400 mb-8">
+          <p className="text-base text-gray-400 mb-8 max-w-2xl mx-auto leading-relaxed">
             {t.home.cta.description}
           </p>
           <Link
