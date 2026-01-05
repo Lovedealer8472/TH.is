@@ -1,0 +1,68 @@
+DEPLOYMENT COMMANDS - Copy & Paste Each Section
+=================================================
+
+1. SSH INTO YOUR SERVER:
+   ssh notandi@192.168.1.81
+   (Enter your password when prompted)
+
+2. RUN AUTOMATED SETUP (Fastest Way):
+   curl -fsSL https://raw.githubusercontent.com/Lovedealer8472/TH.is/main/server-setup.sh | sudo bash
+
+3. CLONE REPOSITORY:
+   cd /var/www/tolvuhvislarinn
+   git clone https://github.com/Lovedealer8472/TH.is.git .
+
+4. CREATE ENVIRONMENT FILE:
+   nano .env.local
+   
+   (Paste this content, then save with Ctrl+X, Y, Enter):
+   
+   SMTP_HOST=smtp.gmail.com
+   SMTP_PORT=587
+   SMTP_SECURE=false
+   SMTP_USER=dadi@tolvuhvislarinn.com
+   SMTP_PASS=jthiwuhokwfmrokd
+   SMTP_FROM=dadi@tolvuhvislarinn.com
+   CONTACT_EMAIL=tolvuhvislarinn@gmail.com
+
+5. DEPLOY APPLICATION:
+   chmod +x deploy.sh
+   ./deploy.sh
+
+6. CONFIGURE NGINX:
+   sudo nano /etc/nginx/sites-available/tolvuhvislarinn
+   
+   (Paste this, then save with Ctrl+X, Y, Enter):
+   
+   server {
+       listen 80;
+       server_name tolvuhvislarinn.is www.tolvuhvislarinn.is;
+       location / {
+           proxy_pass http://localhost:3000;
+           proxy_http_version 1.1;
+           proxy_set_header Upgrade $http_upgrade;
+           proxy_set_header Connection 'upgrade';
+           proxy_set_header Host $host;
+           proxy_cache_bypass $http_upgrade;
+           proxy_set_header X-Real-IP $remote_addr;
+           proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+           proxy_set_header X-Forwarded-Proto $scheme;
+       }
+   }
+
+7. ENABLE NGINX SITE:
+   sudo ln -s /etc/nginx/sites-available/tolvuhvislarinn /etc/nginx/sites-enabled/
+   sudo rm /etc/nginx/sites-enabled/default
+   sudo nginx -t
+   sudo systemctl restart nginx
+
+8. SET UP SSL (if you have domain):
+   sudo certbot --nginx -d tolvuhvislarinn.is -d www.tolvuhvislarinn.is
+
+9. SET UP PM2 AUTO-START:
+   pm2 startup
+   (Follow the instructions it provides)
+   pm2 save
+
+DONE! Your site should be running on http://192.168.1.81:3000
+Or via Nginx on port 80 if configured.
