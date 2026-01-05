@@ -106,19 +106,21 @@ sudo certbot --nginx -d tolvuhvislarinn.is -d www.tolvuhvislarinn.is
 
 ## Your .env.local Content
 
-Copy this to `.env.local` on your server:
+Copy this to `.env.local` on your server (replace with your actual credentials):
 
 ```env
 SMTP_HOST=smtp.gmail.com
 SMTP_PORT=587
 SMTP_SECURE=false
-SMTP_USER=dadi@tolvuhvislarinn.com
-SMTP_PASS=jthiwuhokwfmrokd
-SMTP_FROM=dadi@tolvuhvislarinn.com
+SMTP_USER=your-email@gmail.com
+SMTP_PASS=your-app-password-here
+SMTP_FROM=your-email@gmail.com
 CONTACT_EMAIL=tolvuhvislarinn@gmail.com
 ```
 
-**Important:** Keep this file secure and never commit it to Git!
+**Important:** 
+- Keep this file secure and never commit it to Git!
+- See `README_EMAIL_SETUP.md` for instructions on generating a Gmail App Password.
 
 ## Updating the Site
 

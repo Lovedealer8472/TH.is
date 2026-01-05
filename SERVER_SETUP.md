@@ -126,17 +126,19 @@ chmod +x deploy.sh update.sh
 nano .env.local
 ```
 
-Paste this content (with your actual credentials):
+Paste this content (replace with your actual credentials):
 
 ```env
 SMTP_HOST=smtp.gmail.com
 SMTP_PORT=587
 SMTP_SECURE=false
-SMTP_USER=dadi@tolvuhvislarinn.com
-SMTP_PASS=jthiwuhokwfmrokd
-SMTP_FROM=dadi@tolvuhvislarinn.com
+SMTP_USER=your-email@gmail.com
+SMTP_PASS=your-app-password-here
+SMTP_FROM=your-email@gmail.com
 CONTACT_EMAIL=tolvuhvislarinn@gmail.com
 ```
+
+**Important:** See `README_EMAIL_SETUP.md` for detailed instructions on generating a Gmail App Password.
 
 Save: Ctrl+X, Y, Enter
 

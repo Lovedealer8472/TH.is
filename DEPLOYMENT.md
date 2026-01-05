@@ -47,13 +47,16 @@ Add these to `.env.local` on your server:
 SMTP_HOST=smtp.gmail.com
 SMTP_PORT=587
 SMTP_SECURE=false
-SMTP_USER=dadi@tolvuhvislarinn.com
-SMTP_PASS=jthiwuhokwfmrokd
-SMTP_FROM=dadi@tolvuhvislarinn.com
+SMTP_USER=your-email@gmail.com
+SMTP_PASS=your-app-password-here
+SMTP_FROM=your-email@gmail.com
 CONTACT_EMAIL=tolvuhvislarinn@gmail.com
 ```
 
-**Important:** Use the actual Gmail App Password, not the example above.
+**Important:** 
+- Replace `your-email@gmail.com` with your actual Gmail address
+- Replace `your-app-password-here` with your Gmail App Password (not your regular password)
+- See `README_EMAIL_SETUP.md` for detailed instructions on generating an App Password
 
 ### 4. Build and Run
 
