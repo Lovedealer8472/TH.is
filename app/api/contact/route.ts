@@ -48,7 +48,6 @@ export async function POST(request: NextRequest) {
       tls: {
         // Do not fail on invalid certificates
         rejectUnauthorized: false,
-        ciphers: 'SSLv3',
       },
       // Explicitly require TLS for port 587
       requireTLS: parseInt(process.env.SMTP_PORT || '587') === 587,
