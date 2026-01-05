@@ -14,9 +14,9 @@ if [ "$node_version" -lt 18 ]; then
 fi
 echo "✅ Node.js version: $(node -v)"
 
-# Install dependencies
+# Install dependencies (need devDependencies for build)
 echo "📥 Installing dependencies..."
-npm install --production
+npm install
 
 # Check if .env.local exists
 if [ ! -f .env.local ]; then

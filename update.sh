@@ -4,9 +4,9 @@
 
 echo "🔄 Updating application..."
 
-# Install/update dependencies
+# Install/update dependencies (need devDependencies for build)
 echo "📥 Installing dependencies..."
-npm install --production
+npm install
 
 # Build the application
 echo "🔨 Building application..."
