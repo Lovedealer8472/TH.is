@@ -41,19 +41,22 @@ export default function ServicesPage() {
   return (
     <div className="py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl sm:text-5xl font-bold text-gray-100 mb-4">
+        <div className="mb-12">
+          <h1 className="text-4xl sm:text-5xl font-bold text-gray-100 mb-6">
             {t.services.title}
           </h1>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            {t.services.subtitle}
+          <p className="text-lg text-gray-300 max-w-3xl leading-relaxed">
+            {t.services.intro}
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {/* Tölvuviðgerðir & bilanagreining */}
           <AccordionSection title="Tölvuviðgerðir & bilanagreining">
-            <ul className="space-y-2 text-sm">
+            <p className="text-gray-300 mb-4">
+              Viðgerðir og bilanagreining á fartölvum og borðtölvum.
+            </p>
+            <ul className="space-y-2 text-sm text-gray-400">
               <li>• Greining og viðgerðir á borðtölvum og fartölvum</li>
               <li>• Skipti á hörðum diskum / SSD</li>
               <li>• Uppfærslur á vinnsluminni (RAM)</li>
@@ -64,7 +67,10 @@ export default function ServicesPage() {
 
           {/* Sérsmíði & uppfærslur á vélum */}
           <AccordionSection title="Sérsmíði & uppfærslur á vélum">
-            <ul className="space-y-2 text-sm">
+            <p className="text-gray-300 mb-4">
+              Sérsniðin borðtölvusmíði eftir þörfum – leikjatölvur, vinnuvélar eða heimilistölvur.
+            </p>
+            <ul className="space-y-2 text-sm text-gray-400">
               <li>• Sérsmíði borðtölva eftir þörfum (leikjatölvur, vinnuvélar, heimilistölvur)</li>
               <li>• Ráðgjöf um íhluti og kostnað</li>
               <li>• Uppfærsla eldri tölva til að lengja líftíma</li>
@@ -74,18 +80,24 @@ export default function ServicesPage() {
 
           {/* Gögn, afrit og gangabjörgun */}
           <AccordionSection title="Gögn, afrit og gangabjörgun">
-            <ul className="space-y-2 text-sm">
+            <p className="text-gray-300 mb-4">
+              Afritun, flutningur og endurheimt gagna. Er með samstarf við <Link href="https://logurinn.is/" target="_blank" rel="noopener noreferrer" className="text-primary-400 hover:text-primary-300 underline">Lögurinn</Link> sem er með geggað setup fyrir gagnageymslu.
+            </p>
+            <ul className="space-y-2 text-sm text-gray-400">
               <li>• Afritun gagna (backup)</li>
               <li>• Flutningur gagna milli tölva</li>
               <li>• Endurheimt tapaðra gagna (þar sem mögulegt er)</li>
-              <li>• Uppsetning á sjálfvirkum afritunarlausnum. Er með samstarf við <Link href="https://logurinn.is/" target="_blank" rel="noopener noreferrer" className="text-primary-400 hover:text-primary-300 underline">Lögurinn</Link> sem er með geggað setup fyrir gagnageymslu.</li>
+              <li>• Uppsetning á sjálfvirkum afritunarlausnum</li>
               <li>• Ráðgjöf um gagnavernd</li>
             </ul>
           </AccordionSection>
 
           {/* Öryggi & hugbúnaður */}
           <AccordionSection title="Öryggi & hugbúnaður">
-            <ul className="space-y-2 text-sm">
+            <p className="text-gray-300 mb-4">
+              Veiru- og spilliforritahreinsun, uppsetning öryggislausna og kerfishreinsun.
+            </p>
+            <ul className="space-y-2 text-sm text-gray-400">
               <li>• Veiru- og spilliforritahreinsun</li>
               <li>• Uppsetning vírusvarna og öryggislausna</li>
               <li>• Kerfishreinsun og stillingar</li>
@@ -96,7 +108,10 @@ export default function ServicesPage() {
 
           {/* Netkerfi & heimila-/fyrirtækjalausnir */}
           <AccordionSection title="Netkerfi & heimila-/fyrirtækjalausnir">
-            <ul className="space-y-2 text-sm">
+            <p className="text-gray-300 mb-4">
+              Uppsetning og bilanagreining á heimilisnetum og smá netkerfum fyrir fyrirtæki.
+            </p>
+            <ul className="space-y-2 text-sm text-gray-400">
               <li>• Uppsetning og bilanagreining á heimilisnetum</li>
               <li>• Beinar, Wi-Fi, prentarar og nettengd tæki</li>
               <li>• Smá netkerfi fyrir fyrirtæki</li>
@@ -106,7 +121,10 @@ export default function ServicesPage() {
 
           {/* Tækniráðgjöf & aðstoð */}
           <AccordionSection title="Tækniráðgjöf & aðstoð">
-            <ul className="space-y-2 text-sm">
+            <p className="text-gray-300 mb-4">
+              Persónuleg ráðgjöf og lausnir sérsniðnar að þínum þörfum, án tæknimáls.
+            </p>
+            <ul className="space-y-2 text-sm text-gray-400">
               <li>• Persónuleg tækniráðgjöf</li>
               <li>• Aðstoð við kaup á búnaði</li>
               <li>• Útskýringar og leiðbeiningar (án tæknimáls)</li>
@@ -117,7 +135,10 @@ export default function ServicesPage() {
 
           {/* Heimsóknarþjónusta */}
           <AccordionSection title="Heimsóknarþjónusta">
-            <ul className="space-y-2 text-sm">
+            <p className="text-gray-300 mb-4">
+              Aðstoð heima eða á vinnustað. Sérstaklega hentugt fyrir þá sem treysta sér ekki með tækin.
+            </p>
+            <ul className="space-y-2 text-sm text-gray-400">
               <li>• Aðstoð heima eða á vinnustað</li>
               <li>• Uppsetningar, bilanagreining og leiðbeiningar</li>
               <li>• Sérstaklega hentugt fyrir þá sem treysta sér ekki með tækin</li>
@@ -126,7 +147,10 @@ export default function ServicesPage() {
 
           {/* Fyrirtækjaþjónusta (smáfyrirtæki) */}
           <AccordionSection title="Fyrirtækjaþjónusta (smáfyrirtæki)">
-            <ul className="space-y-2 text-sm">
+            <p className="text-gray-300 mb-4">
+              Reglubundin þjónusta og tæknilegur bakhjarl fyrir smáfyrirtæki.
+            </p>
+            <ul className="space-y-2 text-sm text-gray-400">
               <li>• Reglulegt tæknilegt viðhald</li>
               <li>• Aðstoð við tölvuumhverfi starfsmanna</li>
               <li>• Uppsetning og viðhald á einföldum kerfum</li>

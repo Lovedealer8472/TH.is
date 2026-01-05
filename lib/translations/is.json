@@ -12,35 +12,74 @@
   },
   "footer": {
     "copyright": "© {year} Tölvuhvíslarinn. Allur réttur áskilinn.",
-    "tagline": "Tölvuviðgerðir, sérsmíði og tækniráðgjöf"
+    "tagline": "Tölvuhvíslarinn – persónuleg tækniaðstoð"
   },
   "home": {
     "hero": {
       "titleMain": "Tölvuhvíslarinn",
       "titleSecondary": "Tölvuviðgerðir og sérsmíði",
-      "subtitle": "Tölvuviðgerðir, sérsmíði borðtölva og tækniráðgjöf á Neskaupstað",
-      "trustLine": "Persónuleg og heiðarleg tækniaðstoð"
+      "subtitle": "Tölvuviðgerðir, sérsmíði borðtölva og tækniráðgjöf á Neskaupstað.",
+      "trustLine": "Persónuleg og heiðarleg tækniaðstoð fyrir einstaklinga og smáfyrirtæki."
+    },
+    "services": {
+      "repairs": {
+        "title": "Tölvuviðgerðir",
+        "description": "Viðgerðir og bilanagreining á fartölvum og borðtölvum.",
+        "bullet1": "Hæg eða fryst tölva",
+        "bullet2": "SSD / HDD skipti",
+        "bullet3": "RAM uppfærslur",
+        "bullet4": "Hugbúnaðarvandamál"
+      },
+      "custom": {
+        "title": "Sérsmíði",
+        "description": "Sérsniðin borðtölvusmíði eftir þörfum – leikjatölvur, vinnuvélar eða heimilistölvur.",
+        "bullet1": "Ráðgjöf um íhluti og kostnað",
+        "bullet2": "Samsetning og prófanir",
+        "bullet3": "Uppfærsla eldri tölva",
+        "bullet4": "Full uppfærðar og prófaðar tölvur"
+      },
+      "consulting": {
+        "title": "Tækniráðgjöf",
+        "description": "Persónuleg ráðgjöf og lausnir fyrir einstaklinga og smáfyrirtæki.",
+        "bullet1": "Kaupráðgjöf á búnaði",
+        "bullet2": "Skipulag á tölvumálum",
+        "bullet3": "Skýringar án tæknimáls",
+        "bullet4": "Sérsniðnar lausnir"
+      }
     },
     "cta": {
+      "heading": "Hafðu samband",
+      "description": "Hafðu samband við mig í dag og fáðu sérsniðna lausn fyrir tölvuþarfir þínar.",
       "primary": "Hafðu samband",
       "secondary": "Sjá þjónustu"
     }
   },
   "services": {
-    "title": "Tölvuviðgerðir og sérsmíði",
-    "subtitle": "Ég býð uppá..."
+    "title": "Þjónusta",
+    "intro": "Tölvuhvíslarinn þjónustar einstaklinga og smáfyrirtæki með tölvuviðgerðir, sérsmíði, gagnavernd og tækniráðgjöf. Hér fyrir neðan er yfirlit yfir þjónustu sem ég býð upp á."
   },
   "pricing": {
     "title": "Verðskrá",
-    "subtitle": "Hafðu samband fyrir nákvæmari verð"
+    "intro": "Verð eru skýr og gagnsæ. Engin vinna er framkvæmd án samþykkis og ég met alltaf heiðarlega hvort viðgerð borgi sig. Ekki eru seldar óþarfa uppfærslur."
   },
   "about": {
-    "title": "Um okkur",
-    "subtitle": "Kynntu þér Tölvuhvíslarinn"
+    "title": "Um Tölvuhvíslarinn",
+    "intro1": "Ég heiti Daði og hef unnið með tölvur í 20 ár. Tölvuhvíslarinn þjónustar einstaklinga og smáfyrirtæki með tölvuviðgerðir, uppfærslur, sérsmíði, gagnavernd og tækniráðgjöf.",
+    "intro2": "Ég legg áherslu á að tala mannamál, ekki tæknimál, og útskýra alltaf hvað er verið að gera og hvers vegna. Góð tækniaðstoð snúist ekki bara um að laga hlutinn, heldur um að hjálpa fólki að taka betri ákvarðanir og byggja upp traust til lengri tíma.",
+    "howIWork": {
+      "title": "Hvernig ég vinn",
+      "bullet1": "Heiðarleg ráðgjöf – ekki bara það sem selst best",
+      "bullet2": "Skýrar útskýringar á því sem er gert",
+      "bullet3": "Engin óþarfa vinna – stundum er besta lausnin að gera ekki neitt",
+      "bullet4": "Lausnir sem henta raunverulegum þörfum"
+    }
   },
   "contact": {
     "title": "Hafðu samband",
-    "subtitle": "Við svörum öllum fyrirspurnum",
+    "intro": "Hafðu samband við mig í gegnum síma, netfang eða skilaboðsformið hér fyrir neðan.",
+    "phone": "Sími",
+    "email": "Netfang",
+    "location": "Staðsetning",
     "form": {
       "name": "Nafn",
       "email": "Netfang",

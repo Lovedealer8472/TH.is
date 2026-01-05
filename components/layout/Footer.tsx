@@ -14,7 +14,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <h3 className="text-lg font-bold text-gray-100 mb-2">Tölvuhvíslarinn</h3>
-            <p className="text-sm text-gray-400 font-mono mb-4">{t.footer.tagline}</p>
+            <p className="text-sm text-gray-400 mb-4">{t.footer.tagline}</p>
             <SocialMediaLinks variant="footer" />
           </div>
 

@@ -8,12 +8,12 @@ export default function PricingPage() {
   return (
     <div className="py-20">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h1 className="text-4xl sm:text-5xl font-bold text-gray-100 mb-4">
+        <div className="mb-12">
+          <h1 className="text-4xl sm:text-5xl font-bold text-gray-100 mb-6">
             {t.pricing.title}
           </h1>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            {t.pricing.subtitle}
+          <p className="text-lg text-gray-300 max-w-3xl leading-relaxed">
+            {t.pricing.intro}
           </p>
         </div>
 
