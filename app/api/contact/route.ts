@@ -32,6 +32,12 @@ export async function POST(request: NextRequest) {
         user: process.env.SMTP_USER,
         pass: process.env.SMTP_PASS,
       },
+      tls: {
+        // Do not fail on invalid certificates
+        rejectUnauthorized: false,
+      },
+      // Explicitly require TLS for port 587
+      requireTLS: parseInt(process.env.SMTP_PORT || '587') === 587,
     });
 
     // Email content
