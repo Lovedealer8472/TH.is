@@ -56,7 +56,8 @@
   },
   "services": {
     "title": "Þjónusta",
-    "intro": "Tölvuhvíslarinn þjónustar einstaklinga og smáfyrirtæki með tölvuviðgerðir, sérsmíði, gagnavernd og tækniráðgjöf. Hér fyrir neðan er yfirlit yfir þjónustu sem ég býð upp á."
+    "subtitle": "Traust og persónuleg tölvuþjónusta",
+    "footer": "Persónuleg þjónusta, skýr samskipti og lausnir sem endast."
   },
   "pricing": {
     "title": "Verðskrá",

@@ -56,7 +56,8 @@
   },
   "services": {
     "title": "Services",
-    "intro": "Tölvuhvíslarinn serves individuals and small businesses with computer repairs, custom builds, data protection, and IT consulting. Below is an overview of the services I offer."
+    "subtitle": "Trustworthy and personal computer services",
+    "footer": "Personal service, clear communication, and solutions that last."
   },
   "pricing": {
     "title": "Pricing",
