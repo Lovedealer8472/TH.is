@@ -13,7 +13,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: 'Tölvuhvíslarinn - Tölvuviðgerðir og tækniráðgjöf',
-  description: 'Tölvuviðgerðir, sérsmíði og tækniráðgjöf á Íslandi',
+  description: 'Tölvuviðgerðir, sérsmíði borðtölva, gagnavernd og tækniráðgjöf í Neskaupstað. Viðgerðir, uppfærslur og ráðgjöf fyrir einstaklinga og smáfyrirtæki.',
 };
 
 export default function RootLayout({
