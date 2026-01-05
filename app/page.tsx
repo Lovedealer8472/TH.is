@@ -89,7 +89,7 @@ export default function HomePage() {
       <section className="py-20 bg-gray-950">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-100 mb-6">
-            Tilbúin til að byrja?
+            Hafðu samband við Tölvuhvíslarann
           </h2>
           <p className="text-lg text-gray-400 mb-8">
             Hafðu samband við mig í dag og fáðu sérsniðna lausn fyrir tölvuþarfir þínar.

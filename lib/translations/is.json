@@ -16,8 +16,8 @@
   },
   "home": {
     "hero": {
-          "title": "Velkominn til Tölvuhvíslarans",
-      "subtitle": "Tölvuviðgerðir, sérsmíði og tækniráðgjöf"
+      "title": "Tölvuhvíslarinn - Tölvuviðgerðir og sérsmíði",
+      "subtitle": "Tölvuviðgerðir, sérsmíði borðtölva og tækniráðgjöf í Neskaupstað"
     },
     "cta": {
       "primary": "Hafðu samband",
@@ -25,7 +25,7 @@
     }
   },
   "services": {
-    "title": "Þjónusta",
+    "title": "Tölvuviðgerðir og sérsmíði",
     "subtitle": "Ég bíð uppá..."
   },
   "pricing": {
