@@ -33,9 +33,18 @@ export default function Footer() {
         </div>
 
         <div className="mt-8 pt-8 border-t border-gray-800">
-          <p className="text-center text-sm text-gray-400">
+          <p className="text-center text-sm text-gray-400 mb-3">
             {translate(t.footer.copyright, { year: String(currentYear) })}
           </p>
+          <div className="flex flex-wrap justify-center gap-4 text-xs text-gray-500">
+            <a href="/privacy" className="hover:text-primary-400 transition-colors">
+              Persónuverndarstefna
+            </a>
+            <span className="text-gray-600">|</span>
+            <a href="/cookies" className="hover:text-primary-400 transition-colors">
+              Vefkökur
+            </a>
+          </div>
         </div>
       </div>
     </footer>
