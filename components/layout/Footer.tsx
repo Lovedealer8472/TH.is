@@ -34,6 +34,11 @@ export default function Footer() {
           <p className="text-center text-sm text-gray-400">
             {translate(t.footer.copyright, { year: String(currentYear) })}
           </p>
+          <div className="mt-2 text-center text-xs text-gray-500 font-mono">
+            <span>KT: 460525-2250</span>
+            <span className="mx-2">|</span>
+            <span>RKNR: 1106-26-001322</span>
+          </div>
         </div>
       </div>
     </footer>
