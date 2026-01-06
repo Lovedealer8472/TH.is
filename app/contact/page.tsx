@@ -3,6 +3,7 @@
 import { useI18n } from '@/lib/i18n';
 import ContactForm from '@/components/ContactForm';
 import SocialMediaLinks from '@/components/ui/SocialMediaLinks';
+import EmailLink from '@/components/ui/EmailLink';
 
 export default function ContactPage() {
   const { t } = useI18n();
@@ -29,7 +30,7 @@ export default function ContactPage() {
               <div>
                 <h3 className="text-sm font-semibold text-gray-400 mb-1">{t.contact.email}</h3>
                 <p className="text-lg text-gray-100">
-                  <a href="mailto:dadi@tolvuhvislarinn.is" className="text-primary-400 hover:text-primary-300 transition-colors">dadi@tolvuhvislarinn.is</a>
+                  <EmailLink email="dadi@tolvuhvislarinn.is" className="text-primary-400 hover:text-primary-300 transition-colors" />
                 </p>
               </div>
               <div>
