@@ -102,7 +102,7 @@ export default function CookiesPage() {
             </p>
             <div className="bg-gray-800 p-4 rounded-lg">
               <p className="mb-2"><strong>Tölvuhvíslarinn</strong></p>
-              <p className="mb-2">Netfang: <a href="mailto:tolvuhvislarinn@gmail.com" className="text-primary-400 hover:text-primary-300">tolvuhvislarinn@gmail.com</a></p>
+              <p className="mb-2">Netfang: <a href="mailto:dadi@tolvuhvislarinn.is" className="text-primary-400 hover:text-primary-300">dadi@tolvuhvislarinn.is</a></p>
               <p className="mb-2">Sími: <a href="tel:848-6755" className="text-primary-400 hover:text-primary-300">848-6755</a></p>
             </div>
           </section>

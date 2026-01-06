@@ -29,7 +29,7 @@ export default function ContactPage() {
               <div>
                 <h3 className="text-sm font-semibold text-gray-400 mb-1">{t.contact.email}</h3>
                 <p className="text-lg text-gray-100">
-                  <a href="mailto:tolvuhvislarinn@gmail.com" className="text-primary-400 hover:text-primary-300 transition-colors">tolvuhvislarinn@gmail.com</a>
+                  <a href="mailto:dadi@tolvuhvislarinn.is" className="text-primary-400 hover:text-primary-300 transition-colors">dadi@tolvuhvislarinn.is</a>
                 </p>
               </div>
               <div>

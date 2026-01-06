@@ -7,7 +7,7 @@ export default function StructuredData() {
     '@id': 'https://www.tolvuhvislarinn.is',
     url: 'https://www.tolvuhvislarinn.is',
     telephone: '848-6755',
-    email: 'tolvuhvislarinn@gmail.com',
+    email: 'dadi@tolvuhvislarinn.is',
     address: {
       '@type': 'PostalAddress',
       addressLocality: 'Neskaupstaður',

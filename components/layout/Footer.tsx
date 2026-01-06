@@ -21,7 +21,7 @@ export default function Footer() {
           {/* Contact Info */}
           <div>
             <h4 className="text-sm font-semibold text-gray-100 mb-3">Hafðu samband</h4>
-            <p className="text-sm text-gray-400">Netfang: <a href="mailto:tolvuhvislarinn@gmail.com" className="text-primary-400 hover:text-primary-300">tolvuhvislarinn@gmail.com</a></p>
+            <p className="text-sm text-gray-400">Netfang: <a href="mailto:dadi@tolvuhvislarinn.is" className="text-primary-400 hover:text-primary-300">dadi@tolvuhvislarinn.is</a></p>
             <p className="text-sm text-gray-400">Sími: <a href="tel:848-6755" className="text-primary-400 hover:text-primary-300">848-6755</a></p>
           </div>
 
