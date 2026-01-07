@@ -57,12 +57,72 @@
   "services": {
     "title": "Services",
     "subtitle": "Trustworthy and personal computer services",
-    "footer": "Personal service, clear communication, and solutions that last."
+    "footer": "Personal service, clear communication, and solutions that last.",
+    "cards": {
+      "repairs": {
+        "title": "Computer Repairs",
+        "bullet1": "Diagnostics and repairs for desktops and laptops",
+        "bullet2": "Hardware and software issues",
+        "bullet3": "Cleaning, upgrades, and maintenance"
+      },
+      "custom": {
+        "title": "Custom Desktop Builds",
+        "bullet1": "Custom-built computers tailored to your needs",
+        "bullet2": "Gaming PCs, workstations, and home computers",
+        "bullet3": "Component selection, assembly, and testing"
+      },
+      "consulting": {
+        "title": "IT Consulting",
+        "bullet1": "Consulting for individuals and businesses",
+        "bullet2": "Assistance with computer and equipment purchases",
+        "bullet3": "Solutions that meet real needs"
+      },
+      "installations": {
+        "title": "Installations & Migrations",
+        "bullet1": "Operating system and software installation",
+        "bullet2": "Data migration and backups",
+        "bullet3": "New computer setup from scratch"
+      },
+      "battery": {
+        "title": "Smart Device Battery Replacement",
+        "bullet1": "Repair and cost assessment",
+        "bullet2": "Spare parts inquiries",
+        "bullet3": "Fair pricing"
+      }
+    }
   },
   "pricing": {
     "title": "Pricing",
     "subtitle": "Clear prices – no unexpected additional fees",
-    "footer": "All prices include VAT. Replacement parts and specialized repairs are calculated separately. Contact us for an accurate quote."
+    "footer": "All prices include VAT. Replacement parts and specialized repairs are calculated separately. Contact us for an accurate quote.",
+    "cards": {
+      "repairs": {
+        "title": "Computer Repairs & Diagnostics",
+        "price": "9,900 ISK",
+        "includes": "Includes:",
+        "bullet1": "Diagnostics",
+        "bullet2": "General troubleshooting",
+        "bullet3": "Repair cost assessment",
+        "note": "Repairs not started without customer approval."
+      },
+      "consulting": {
+        "title": "IT Consulting",
+        "price": "12,000 ISK/hr",
+        "includes": "Includes:",
+        "bullet1": "Equipment purchase advice",
+        "bullet2": "Installations & solutions",
+        "bullet3": "General technical support"
+      },
+      "custom": {
+        "title": "Custom Desktop Builds",
+        "price": "By quote",
+        "includes": "Includes:",
+        "bullet1": "Needs assessment",
+        "bullet2": "Component selection",
+        "bullet3": "Assembly and testing",
+        "note": "Suitable for gaming, work, and specialized projects."
+      }
+    }
   },
   "about": {
     "title": "About Tölvuhvíslarinn",

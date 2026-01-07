@@ -57,12 +57,72 @@
   "services": {
     "title": "Þjónusta",
     "subtitle": "Traust og persónuleg tölvuþjónusta",
-    "footer": "Persónuleg þjónusta, skýr samskipti og lausnir sem endast."
+    "footer": "Persónuleg þjónusta, skýr samskipti og lausnir sem endast.",
+    "cards": {
+      "repairs": {
+        "title": "Tölvuviðgerðir",
+        "bullet1": "Greining og viðgerðir á borð- og fartölvum",
+        "bullet2": "Vélbúnaðar- og hugbúnaðarvandamál",
+        "bullet3": "Hreinsun, uppfærslur og viðhald"
+      },
+      "custom": {
+        "title": "Sérsmíði borðtölva",
+        "bullet1": "Sérsmíðaðar tölvur eftir þörfum",
+        "bullet2": "Leikjatölvur, vinnustöðvar og heimilistölvur",
+        "bullet3": "Íhlutaval, samsetning og prófanir"
+      },
+      "consulting": {
+        "title": "Tækniráðgjöf",
+        "bullet1": "Ráðgjöf fyrir einstaklinga og fyrirtæki",
+        "bullet2": "Aðstoð við kaup á tölvum og búnaði",
+        "bullet3": "Lausnir sem henta raunverulegum þörfum"
+      },
+      "installations": {
+        "title": "Uppsetningar & flutningar",
+        "bullet1": "Uppsetning stýrikerfa og hugbúnaðar",
+        "bullet2": "Gagnaflutningar og öryggisafrit",
+        "bullet3": "Ný tölva sett upp frá grunni"
+      },
+      "battery": {
+        "title": "Rafhlöðuskipti á snjalltækjum",
+        "bullet1": "Mat á viðgerð og kostnaði",
+        "bullet2": "Fyrirspurnir fyrir varahlutum",
+        "bullet3": "Sanngjarnt verð"
+      }
+    }
   },
   "pricing": {
     "title": "Verðskrá",
     "subtitle": "Skýr verð – engin óvænt aukagjöld",
-    "footer": "Öll verð eru með VSK. Varahlutir og sértækar viðgerðir eru reiknaðar sérstaklega. Hafðu samband fyrir nákvæmt tilboð."
+    "footer": "Öll verð eru með VSK. Varahlutir og sértækar viðgerðir eru reiknaðar sérstaklega. Hafðu samband fyrir nákvæmt tilboð.",
+    "cards": {
+      "repairs": {
+        "title": "Tölvuviðgerðir & bilanagreining",
+        "price": "9.900 kr.",
+        "includes": "Innifelur:",
+        "bullet1": "Bilanagreining",
+        "bullet2": "Almenn bilanaleit",
+        "bullet3": "Mat á viðgerðarkostnaði",
+        "note": "Viðgerð ekki hafin nema með samþykki viðskiptavinar."
+      },
+      "consulting": {
+        "title": "Tækniráðgjöf",
+        "price": "12.000 kr./klst",
+        "includes": "Innifelur:",
+        "bullet1": "Ráðgjöf við tækjakaup",
+        "bullet2": "Uppsetningar & lausnir",
+        "bullet3": "Almenn tækniaðstoð"
+      },
+      "custom": {
+        "title": "Sérsmíði borðtölva",
+        "price": "Samkvæmt tilboði",
+        "includes": "Innifelur:",
+        "bullet1": "Þarfagreining",
+        "bullet2": "Íhlutaval",
+        "bullet3": "Samsetning og prófanir",
+        "note": "Hentar jafnt leikjum, vinnu og sérhæfðum verkefnum."
+      }
+    }
   },
   "about": {
     "title": "Um Tölvuhvíslarinn",

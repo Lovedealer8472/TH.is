@@ -21,20 +21,20 @@ export default function ServicesPage() {
           {/* Card 1: Tölvuviðgerðir */}
           <div className="bg-gray-800 rounded-lg border border-gray-700 p-6 sm:p-8 shadow-lg hover:shadow-xl transition-shadow">
             <h2 className="text-xl sm:text-2xl font-bold text-gray-100 mb-6">
-              Tölvuviðgerðir
+              {t.services.cards.repairs.title}
             </h2>
             <ul className="space-y-3 text-gray-400">
               <li className="flex items-start">
                 <span className="text-primary-400 mr-3">•</span>
-                <span>Greining og viðgerðir á borð- og fartölvum</span>
+                <span>{t.services.cards.repairs.bullet1}</span>
               </li>
               <li className="flex items-start">
                 <span className="text-primary-400 mr-3">•</span>
-                <span>Vélbúnaðar- og hugbúnaðarvandamál</span>
+                <span>{t.services.cards.repairs.bullet2}</span>
               </li>
               <li className="flex items-start">
                 <span className="text-primary-400 mr-3">•</span>
-                <span>Hreinsun, uppfærslur og viðhald</span>
+                <span>{t.services.cards.repairs.bullet3}</span>
               </li>
             </ul>
           </div>
@@ -42,20 +42,20 @@ export default function ServicesPage() {
           {/* Card 2: Sérsmíði borðtölva */}
           <div className="bg-gray-800 rounded-lg border border-gray-700 p-6 sm:p-8 shadow-lg hover:shadow-xl transition-shadow">
             <h2 className="text-xl sm:text-2xl font-bold text-gray-100 mb-6">
-              Sérsmíði borðtölva
+              {t.services.cards.custom.title}
             </h2>
             <ul className="space-y-3 text-gray-400">
               <li className="flex items-start">
                 <span className="text-primary-400 mr-3">•</span>
-                <span>Sérsmíðaðar tölvur eftir þörfum</span>
+                <span>{t.services.cards.custom.bullet1}</span>
               </li>
               <li className="flex items-start">
                 <span className="text-primary-400 mr-3">•</span>
-                <span>Leikjatölvur, vinnustöðvar og heimilistölvur</span>
+                <span>{t.services.cards.custom.bullet2}</span>
               </li>
               <li className="flex items-start">
                 <span className="text-primary-400 mr-3">•</span>
-                <span>Íhlutaval, samsetning og prófanir</span>
+                <span>{t.services.cards.custom.bullet3}</span>
               </li>
             </ul>
           </div>
@@ -63,20 +63,20 @@ export default function ServicesPage() {
           {/* Card 3: Tækniráðgjöf */}
           <div className="bg-gray-800 rounded-lg border border-gray-700 p-6 sm:p-8 shadow-lg hover:shadow-xl transition-shadow">
             <h2 className="text-xl sm:text-2xl font-bold text-gray-100 mb-6">
-              Tækniráðgjöf
+              {t.services.cards.consulting.title}
             </h2>
             <ul className="space-y-3 text-gray-400">
               <li className="flex items-start">
                 <span className="text-primary-400 mr-3">•</span>
-                <span>Ráðgjöf fyrir einstaklinga og fyrirtæki</span>
+                <span>{t.services.cards.consulting.bullet1}</span>
               </li>
               <li className="flex items-start">
                 <span className="text-primary-400 mr-3">•</span>
-                <span>Aðstoð við kaup á tölvum og búnaði</span>
+                <span>{t.services.cards.consulting.bullet2}</span>
               </li>
               <li className="flex items-start">
                 <span className="text-primary-400 mr-3">•</span>
-                <span>Lausnir sem henta raunverulegum þörfum</span>
+                <span>{t.services.cards.consulting.bullet3}</span>
               </li>
             </ul>
           </div>
@@ -84,20 +84,20 @@ export default function ServicesPage() {
           {/* Card 4: Uppsetningar & flutningar */}
           <div className="bg-gray-800 rounded-lg border border-gray-700 p-6 sm:p-8 shadow-lg hover:shadow-xl transition-shadow">
             <h2 className="text-xl sm:text-2xl font-bold text-gray-100 mb-6">
-              Uppsetningar & flutningar
+              {t.services.cards.installations.title}
             </h2>
             <ul className="space-y-3 text-gray-400">
               <li className="flex items-start">
                 <span className="text-primary-400 mr-3">•</span>
-                <span>Uppsetning stýrikerfa og hugbúnaðar</span>
+                <span>{t.services.cards.installations.bullet1}</span>
               </li>
               <li className="flex items-start">
                 <span className="text-primary-400 mr-3">•</span>
-                <span>Gagnaflutningar og öryggisafrit</span>
+                <span>{t.services.cards.installations.bullet2}</span>
               </li>
               <li className="flex items-start">
                 <span className="text-primary-400 mr-3">•</span>
-                <span>Ný tölva sett upp frá grunni</span>
+                <span>{t.services.cards.installations.bullet3}</span>
               </li>
             </ul>
           </div>
@@ -105,20 +105,20 @@ export default function ServicesPage() {
           {/* Card 5: Rafhlöðuskipti á snjalltækjum */}
           <div className="bg-gray-800 rounded-lg border border-gray-700 p-6 sm:p-8 shadow-lg hover:shadow-xl transition-shadow">
             <h2 className="text-xl sm:text-2xl font-bold text-gray-100 mb-6">
-              Rafhlöðuskipti á snjalltækjum
+              {t.services.cards.battery.title}
             </h2>
             <ul className="space-y-3 text-gray-400">
               <li className="flex items-start">
                 <span className="text-primary-400 mr-3">+</span>
-                <span>Mat á viðgerð og kostnaði</span>
+                <span>{t.services.cards.battery.bullet1}</span>
               </li>
               <li className="flex items-start">
                 <span className="text-primary-400 mr-3">+</span>
-                <span>Fyrirspurnir fyrir varahlutum</span>
+                <span>{t.services.cards.battery.bullet2}</span>
               </li>
               <li className="flex items-start">
                 <span className="text-primary-400 mr-3">+</span>
-                <span>Sanngjarnt verð</span>
+                <span>{t.services.cards.battery.bullet3}</span>
               </li>
             </ul>
           </div>
