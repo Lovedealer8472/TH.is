@@ -10,7 +10,7 @@ export default function HomePage() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative pt-2 sm:pt-3 pb-4 sm:pb-6 bg-gradient-to-b from-gray-900 to-gray-950">
+      <section className="relative pt-0 sm:pt-1 pb-4 sm:pb-6 bg-gradient-to-b from-gray-900 to-gray-950">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <div className="mb-0 flex justify-center">
@@ -24,7 +24,7 @@ export default function HomePage() {
                 priority
               />
             </div>
-            <p className="text-lg text-gray-400 mt-1 mb-1 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg text-gray-400 mt-0.5 mb-1 max-w-3xl mx-auto leading-relaxed">
               {t.home.hero.subtitle}
             </p>
             <p className="text-base text-gray-500 mb-8">
