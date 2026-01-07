@@ -14,13 +14,11 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <div className="mb-4 flex justify-center">
-              <Image
+              <img
                 src="/logo.png"
                 alt="Tölvuhvíslarinn"
-                width={1200}
-                height={400}
                 className="max-w-full h-auto"
-                priority
+                style={{ maxWidth: '800px', height: 'auto' }}
               />
             </div>
             <p className="text-lg text-gray-400 mb-4 max-w-3xl mx-auto leading-relaxed">
