@@ -13,6 +13,7 @@ export default function HomePage() {
       <section className="relative pt-0 sm:pt-1 pb-4 sm:pb-6 bg-gradient-to-b from-gray-900 to-gray-950">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
+            <h1 className="sr-only">{t.home.hero.titleMain}</h1>
             <div className="mb-0 flex justify-center">
               <Image
                 src="/logo.png?v=2"
