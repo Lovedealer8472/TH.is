@@ -15,7 +15,7 @@ export default function HomePage() {
           <div className="text-center">
             <div className="mb-0 flex justify-center">
               <Image
-                src="/logo.png"
+                src="/logo.png?v=2"
                 alt="Tölvuhvíslarinn"
                 width={1200}
                 height={400}
