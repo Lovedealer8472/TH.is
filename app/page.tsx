@@ -17,11 +17,10 @@ export default function HomePage() {
               <Image
                 src="/logo.png"
                 alt="Tölvuhvíslarinn"
-                width={800}
-                height={300}
+                width={1200}
+                height={400}
                 className="max-w-full h-auto"
                 priority
-                unoptimized
               />
             </div>
             <p className="text-lg text-gray-400 mb-4 max-w-3xl mx-auto leading-relaxed">
