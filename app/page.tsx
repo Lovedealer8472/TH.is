@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useI18n } from '@/lib/i18n';
 
 export default function HomePage() {
@@ -12,12 +13,17 @@ export default function HomePage() {
       <section className="relative py-12 sm:py-20 bg-gradient-to-b from-gray-900 to-gray-950">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl sm:text-5xl font-bold text-gray-100 mb-3">
-              {t.home.hero.titleMain}
-            </h1>
-            <p className="text-2xl sm:text-3xl font-semibold text-gray-200 mb-4">
-              {t.home.hero.titleSecondary}
-            </p>
+            <div className="mb-4 flex justify-center">
+              <Image
+                src="/logo.png"
+                alt="Tölvuhvíslarinn"
+                width={800}
+                height={300}
+                className="max-w-full h-auto"
+                priority
+                unoptimized
+              />
+            </div>
             <p className="text-lg text-gray-400 mb-4 max-w-3xl mx-auto leading-relaxed">
               {t.home.hero.subtitle}
             </p>

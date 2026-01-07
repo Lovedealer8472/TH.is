@@ -101,6 +101,27 @@ export default function ServicesPage() {
               </li>
             </ul>
           </div>
+
+          {/* Card 5: Rafhlöðuskipti á snjalltækjum */}
+          <div className="bg-gray-800 rounded-lg border border-gray-700 p-6 sm:p-8 shadow-lg hover:shadow-xl transition-shadow">
+            <h2 className="text-xl sm:text-2xl font-bold text-gray-100 mb-6">
+              Rafhlöðuskipti á snjalltækjum
+            </h2>
+            <ul className="space-y-3 text-gray-400">
+              <li className="flex items-start">
+                <span className="text-primary-400 mr-3">+</span>
+                <span>Mat á viðgerð og kostnaði</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-primary-400 mr-3">+</span>
+                <span>Fyrirspurnir fyrir varahlutum</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-primary-400 mr-3">+</span>
+                <span>Sanngjarnt verð</span>
+              </li>
+            </ul>
+          </div>
         </div>
 
         {/* Footer text */}

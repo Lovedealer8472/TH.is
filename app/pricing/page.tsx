@@ -65,7 +65,7 @@ export default function PricingPage() {
               <ul className="space-y-2 text-gray-400 text-sm">
                 <li className="flex items-start">
                   <span className="text-primary-400 mr-2">•</span>
-                  <span>Ráðgjöf vegna kaupákvarðana</span>
+                  <span>Ráðgjöf við tækjakaup</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary-400 mr-2">•</span>
