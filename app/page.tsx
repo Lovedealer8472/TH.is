@@ -16,10 +16,10 @@ export default function HomePage() {
             <h1 className="sr-only">{t.home.hero.titleMain}</h1>
             <div className="mb-0 flex justify-center">
               <Image
-                src="/logo.png?v=2"
+                src="/logo.png?v=3"
                 alt="Tölvuhvíslarinn"
-                width={1200}
-                height={400}
+                width={832}
+                height={187}
                 className="max-w-full h-auto"
                 style={{ maxWidth: '800px', height: 'auto' }}
                 priority
