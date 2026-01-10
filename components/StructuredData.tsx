@@ -39,7 +39,7 @@ export default function StructuredData() {
       'Data Recovery',
       'Network Setup',
     ],
-    description: 'Tölvuviðgerðir, sérsmíði borðtölva, gagnavernd og tækniráðgjöf í Neskaupstað. Viðgerðir, uppfærslur og ráðgjöf fyrir einstaklinga og smáfyrirtæki.',
+    description: 'Tölvuviðgerðir, sérsmíði borðtölva, gagnavernd og tækniráðgjöf Í Neskaupstað. Viðgerðir, uppfærslur og ráðgjöf fyrir einstaklinga og smáfyrirtæki.',
   };
 
   return (
