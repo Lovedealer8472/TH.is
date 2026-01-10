@@ -91,7 +91,7 @@ export default function CookiesPage() {
             <h2 className="text-2xl font-semibold text-gray-100 mb-4">6. Breytingar á stefnu</h2>
             <p className="mb-4">
               Ef við byrjum að nota fleiri vefkaka eða breyta notkun vefkaka, verður þessi síða uppfærð 
-              og þú verður tilkynnt um breytingarnar.
+              og þér verður tilkynnt um breytingarnar.
             </p>
           </section>
 
