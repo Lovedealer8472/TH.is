@@ -30,8 +30,11 @@ export default function Footer() {
           <div>
             <h4 className="text-sm font-semibold text-gray-100 mb-3">Viðbótarupplýsingar</h4>
             <p className="text-sm text-gray-400">Staðsetning: Neskaupstaður</p>
-            <p className="text-sm text-gray-400 font-mono mt-2">KT: 460525-2250</p>
-            <p className="text-sm text-gray-400 font-mono">RKNR: 1106-26-001322</p>
+            <div className="space-y-1 mt-2">
+              <p className="text-sm text-gray-400">KT: <span className="text-gray-300">460525-2250</span></p>
+              <p className="text-sm text-gray-400">VSK nr.: <span className="text-gray-300">156997</span></p>
+              <p className="text-sm text-gray-400">RKNR: <span className="text-gray-300">1106-26-001322</span></p>
+            </div>
           </div>
         </div>
 
