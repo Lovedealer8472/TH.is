@@ -32,7 +32,7 @@
       },
       "custom": {
         "title": "Sérsmíði",
-        "description": "Sérsniðin borðtölvusmíði eftir þörfum – leikjatölvur, vinnuvélar eða heimilistölvur.",
+        "description": "Sérsniðin borðtölvusmíði eftir þörfum – leikjatölvur, vinnutölvur eða heimilistölvur.",
         "bullet1": "Ráðgjöf um íhluti og kostnað",
         "bullet2": "Samsetning og prófanir",
         "bullet3": "Uppfærsla eldri tölva",
@@ -68,8 +68,8 @@
       "custom": {
         "title": "Sérsmíði borðtölva",
         "bullet1": "Sérsmíðaðar tölvur eftir þörfum",
-        "bullet2": "Leikjatölvur, vinnustöðvar og heimilistölvur",
-        "bullet3": "Íhlutaval, samsetning og prófanir"
+        "bullet2": "Leikjatölvur, vinnutölvur og heimilistölvur",
+        "bullet3": "Val á íhlutum, samsetning og prófanir"
       },
       "consulting": {
         "title": "Tækniráðgjöf",
@@ -93,8 +93,8 @@
   },
   "pricing": {
     "title": "Verðskrá",
-    "subtitle": "Skýr verð – engin óvænt aukagjöld",
-    "footer": "Öll verð eru með VSK. Varahlutir og sértækar viðgerðir eru reiknaðar sérstaklega. Hafðu samband fyrir nákvæmt tilboð.",
+    "subtitle": "Einföld verðskrá – engin óvænt aukagjöld",
+    "footer": "Allt verð er með VSK. Varahlutir og sértækar viðgerðir eru reiknaðar sérstaklega. Hafðu samband fyrir nákvæmt tilboð.",
     "cards": {
       "repairs": {
         "title": "Tölvuviðgerðir & bilanagreining",
@@ -110,7 +110,7 @@
         "price": "12.000 kr./klst",
         "includes": "Innifelur:",
         "bullet1": "Ráðgjöf við tækjakaup",
-        "bullet2": "Uppsetningar & lausnir",
+        "bullet2": "Uppsetningar og lausnir",
         "bullet3": "Almenn tækniaðstoð"
       },
       "custom": {
@@ -127,7 +127,7 @@
   "about": {
     "title": "Um Tölvuhvíslarinn",
     "intro1": "Ég heiti Daði og hef unnið með tölvur í 20 ár. Tölvuhvíslarinn þjónustar einstaklinga og smáfyrirtæki með tölvuviðgerðir, uppfærslur, sérsmíði, gagnavernd og tækniráðgjöf.",
-    "intro2": "Ég legg áherslu á að tala mannamál, ekki tæknimál, og útskýra alltaf hvað er verið að gera og hvers vegna. Góð tækniaðstoð snúist ekki bara um að laga hlutinn, heldur um að hjálpa fólki að taka betri ákvarðanir og byggja upp traust til lengri tíma.",
+    "intro2": "Ég legg áherslu á að tala mannamál, ekki tæknimál, og útskýra alltaf hvað er verið að gera og hvers vegna. Góð tækniaðstoð snýst ekki bara um að laga hlutinn, heldur um að hjálpa fólki að taka betri ákvarðanir og byggja upp traust til lengri tíma.",
     "howIWork": {
       "title": "Hvernig ég vinn",
       "bullet1": "Heiðarleg ráðgjöf – ekki bara það sem selst best",

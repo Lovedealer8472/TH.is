@@ -13,7 +13,7 @@ export default function CookiesPage() {
           <section>
             <h2 className="text-2xl font-semibold text-gray-100 mb-4">1. Hvað eru vefkökur?</h2>
             <p className="mb-4">
-              Vefkökur (e. cookies) eru litlar textaskrár sem vefsíður geyma í tölvu þinni eða tæki þegar þú 
+              Vefkökur (e. cookies) eru litlar textaskrár sem vefsíður geyma í tölvunni þinni eða tæki þegar þú 
               heimsækir vefsíður. Þær gera vefsíðum kleift að muna upplýsingar um notendur og bæta 
               notendaupplifun.
             </p>
@@ -50,7 +50,7 @@ export default function CookiesPage() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-gray-100 mb-4">3. Tilgangur vefkökna</h2>
+            <h2 className="text-2xl font-semibold text-gray-100 mb-4">3. Tilgangur vefkaka</h2>
             <p className="mb-4">
               Vefkökurnar sem við notum eru nauðsynlegar til að:
             </p>
@@ -62,16 +62,16 @@ export default function CookiesPage() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-gray-100 mb-4">4. Stjórnun vefkökna</h2>
+            <h2 className="text-2xl font-semibold text-gray-100 mb-4">4. Stjórnun vefkaka</h2>
             <p className="mb-4">
               Þú getur stjórnað eða eytt vefkökum í vafrastillingum þínum. Hér eru leiðbeiningar fyrir 
               algengustu vafrana:
             </p>
             <ul className="list-disc list-inside mb-4 space-y-2 ml-4">
-              <li><strong>Google Chrome:</strong> Stillingsvalmynd → Einkaaðgangur og öryggi → Vefkökur</li>
-              <li><strong>Mozilla Firefox:</strong> Valmynd → Stillingar → Einkaaðgangur og öryggi → Vefkökur</li>
-              <li><strong>Safari:</strong> Stillingar → Einkaaðgangur → Blokkun vefkökna</li>
-              <li><strong>Microsoft Edge:</strong> Stillingsvalmynd → Einkaaðgangur → Vefkökur</li>
+              <li><strong>Google Chrome:</strong> Stillingsvalmynd → Einkaaðgangur og öryggi → Vefkaka</li>
+              <li><strong>Mozilla Firefox:</strong> Valmynd → Stillingar → Einkaaðgangur og öryggi → Vefkaka</li>
+              <li><strong>Safari:</strong> Stillingar → Einkaaðgangur → Blokkun vefkaka</li>
+              <li><strong>Microsoft Edge:</strong> Stillingsvalmynd → Einkaaðgangur → Vefkaka</li>
             </ul>
             <p className="mb-4">
               <strong>Ábending:</strong> Ef þú eyðir eða blokkar vefkökum getur sum virkni á vefsíðunni ekki 
@@ -90,15 +90,15 @@ export default function CookiesPage() {
           <section>
             <h2 className="text-2xl font-semibold text-gray-100 mb-4">6. Breytingar á stefnu</h2>
             <p className="mb-4">
-              Ef við byrjum að nota fleiri vefkökur eða breyta notkun vefkökna, verður þessi síða uppfærð 
-              og þú verður tilkynntur um breytingarnar.
+              Ef við byrjum að nota fleiri vefkaka eða breyta notkun vefkaka, verður þessi síða uppfærð 
+              og þú verður tilkynnt um breytingarnar.
             </p>
           </section>
 
           <section>
             <h2 className="text-2xl font-semibold text-gray-100 mb-4">7. Hafðu samband</h2>
             <p className="mb-4">
-              Ef þú hefur spurningar um notkun vefkökna á vefsíðunni, hafðu samband:
+              Ef þú hefur spurningar um notkun vefkaka á vefsíðunni, hafðu samband:
             </p>
             <div className="bg-gray-800 p-4 rounded-lg">
               <p className="mb-2"><strong>Tölvuhvíslarinn</strong></p>
