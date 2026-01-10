@@ -62,16 +62,16 @@ export default function CookiesPage() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-gray-100 mb-4">4. Stjórnun vefkaka</h2>
+            <h2 className="text-2xl font-semibold text-gray-100 mb-4">4. Stjórnun vefkökur</h2>
             <p className="mb-4">
               Þú getur stjórnað eða eytt vefkökum í vafrastillingum þínum. Hér eru leiðbeiningar fyrir 
               algengustu vafrana:
             </p>
             <ul className="list-disc list-inside mb-4 space-y-2 ml-4">
-              <li><strong>Google Chrome:</strong> Stillingsvalmynd → Einkaaðgangur og öryggi → Vefkaka</li>
-              <li><strong>Mozilla Firefox:</strong> Valmynd → Stillingar → Einkaaðgangur og öryggi → Vefkaka</li>
-              <li><strong>Safari:</strong> Stillingar → Einkaaðgangur → Blokkun vefkaka</li>
-              <li><strong>Microsoft Edge:</strong> Stillingsvalmynd → Einkaaðgangur → Vefkaka</li>
+              <li><strong>Google Chrome:</strong> Stillingsvalmynd → Einkaaðgangur og öryggi → Vefkökur</li>
+              <li><strong>Mozilla Firefox:</strong> Valmynd → Stillingar → Einkaaðgangur og öryggi → Vefkökur</li>
+              <li><strong>Safari:</strong> Stillingar → Einkaaðgangur → Blokkun vefkökur</li>
+              <li><strong>Microsoft Edge:</strong> Stillingsvalmynd → Einkaaðgangur → Vefkökur</li>
             </ul>
             <p className="mb-4">
               <strong>Ábending:</strong> Ef þú eyðir eða blokkar vefkökum getur sum virkni á vefsíðunni ekki 

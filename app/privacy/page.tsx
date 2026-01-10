@@ -22,7 +22,7 @@ export default function PrivacyPage() {
           <section>
             <h2 className="text-2xl font-semibold text-gray-100 mb-4">2. Hvaða upplýsingar söfnuð?</h2>
             <p className="mb-4">
-              Við söfnuð eftirfarandi upplýsingum þegar þú notar síðuna:
+              við söfnum eftirfarandi upplýsingum þegar þú notar síðuna:
             </p>
             <ul className="list-disc list-inside mb-4 space-y-2 ml-4">
               <li><strong>Nafn og netfang:</strong> Þegar þú sendir skilaboð í gegnum hafðu samband formið</li>
@@ -69,7 +69,7 @@ export default function PrivacyPage() {
             </p>
             <ul className="list-disc list-inside mb-4 space-y-2 ml-4">
               <li>Þegar lög krefjast þess</li>
-              <li>Með þínum skýrum samþykki</li>
+              <li>Með þínum skýru samþykki</li>
               <li>Til að tryggja öryggi eða vernda lögmæta hagsmuni</li>
             </ul>
           </section>
