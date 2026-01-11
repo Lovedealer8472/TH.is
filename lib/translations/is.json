@@ -122,6 +122,216 @@
         "bullet3": "Samsetning og prófanir",
         "note": "Hentar jafnt leikjum, vinnu og sérhæfðum verkefnum."
       }
+    },
+    "detailedPricing": {
+      "general": {
+        "title": "Greining & Almenn þjónusta",
+        "services": [
+          {
+            "name": "Bilanagreining / þjónustugjald (PC / prentarar / heyrnartól)",
+            "price": "4.500 kr."
+          },
+          {
+            "name": "Bilanagreining (Snjalltæki – Android)",
+            "price": "3.500 kr."
+          },
+          {
+            "name": "Bilanagreining (samkvæmt tímagjaldi)",
+            "price": "9.000 kr. / klst"
+          },
+          {
+            "name": "Fjarþjónusta (sími / fjartenging)",
+            "price": "5.500 kr."
+          },
+          {
+            "name": "Tjónaskoðun",
+            "price": "9.900 kr."
+          }
+        ],
+        "note": "Hér ertu ~40–55% undir Reykjavík → mjög samkeppnishæft."
+      },
+      "priority": {
+        "title": "⚡ Forgangsþjónusta",
+        "services": [
+          {
+            "name": "Forgangsþjónusta A (innan sama dags)",
+            "price": "9.900 kr."
+          },
+          {
+            "name": "Forgangsþjónusta B (næsti virki dagur)",
+            "price": "4.900 kr."
+          }
+        ],
+        "note": "Heldur \"premium\" merkingu en án \"borgarálags\"."
+      },
+      "hourly": {
+        "title": "⏱ Tímagjöld & útköll",
+        "services": [
+          {
+            "name": "Tímagjald – verkstæði",
+            "price": "9.000 kr. / klst"
+          },
+          {
+            "name": "Tímagjald – hjá viðskiptavini",
+            "price": "12.500 kr. / klst"
+          },
+          {
+            "name": "Útkall – dagvinna (lágmark)",
+            "price": "19.900 kr."
+          },
+          {
+            "name": "Útkall – utan vinnutíma",
+            "price": "39.900 kr."
+          },
+          {
+            "name": "Þjónustuviðvik (minni verk)",
+            "price": "3.500 kr."
+          }
+        ],
+        "note": "Þetta setur þig sem hagkvæman sérfræðing, ekki \"ódýran\"."
+      },
+      "desktop": {
+        "title": "🖥 Turntölvur – ísetningar & uppfærslur",
+        "services": [
+          {
+            "name": "Ísetning SSD + full uppsetning OS",
+            "price": "14.900 kr."
+          },
+          {
+            "name": "Ísetning einfalds hlutar (RAM / SSD / HDD / PSU)",
+            "price": "3.500 kr."
+          },
+          {
+            "name": "Uppfærsla í turnkassa (án OS)",
+            "price": "9.900 kr."
+          },
+          {
+            "name": "Uppfærsla í turnkassa (með OS)",
+            "price": "15.900 kr."
+          },
+          {
+            "name": "Ísetning móðurborðs (turn)",
+            "price": "5.500 kr."
+          },
+          {
+            "name": "Ísetning aflgjafa",
+            "price": "5.500 kr."
+          },
+          {
+            "name": "Ísetning stýrispjalds",
+            "price": "3.900 kr."
+          },
+          {
+            "name": "Ísetning örgjörvaviftu / AIO",
+            "price": "4.900 kr."
+          },
+          {
+            "name": "Kaplaskipulag / loftflæði",
+            "price": "5.900 kr."
+          }
+        ],
+        "note": "Mjög sterkur munur vs Reykjavík — fólk mun taka eftir þessu."
+      },
+      "laptop": {
+        "title": "💻 Fartölvur – viðgerðir",
+        "services": [
+          {
+            "name": "Ísetning viftu",
+            "price": "7.500 kr."
+          },
+          {
+            "name": "Ísetning skjás",
+            "price": "12.900 kr."
+          },
+          {
+            "name": "Ísetning lyklaborðs",
+            "price": "7.500 kr."
+          },
+          {
+            "name": "Topphlíf m/lyklaborði",
+            "price": "14.900 kr."
+          },
+          {
+            "name": "Ísetning móðurborðs (fartölva)",
+            "price": "14.900 kr."
+          },
+          {
+            "name": "Viðgerð á brotnum tengjum",
+            "price": "14.500 kr."
+          }
+        ]
+      },
+      "cooling": {
+        "title": "❄️ Kæling & hreinsun",
+        "services": [
+          {
+            "name": "Endurnýjun kælikrems / kælipúða",
+            "price": "3.500 kr."
+          },
+          {
+            "name": "Rykhreinsun – turntölva",
+            "price": "4.900 kr."
+          },
+          {
+            "name": "Rykhreinsun – fartölva",
+            "price": "4.900 kr."
+          },
+          {
+            "name": "Alþrif + kælikrem",
+            "price": "11.900 kr."
+          }
+        ]
+      },
+      "security": {
+        "title": "🛡 Öryggi & hugbúnaður",
+        "services": [
+          {
+            "name": "Aðskota- og vírushreinsun",
+            "price": "6.500 kr."
+          },
+          {
+            "name": "Uppsetning einfalds hugbúnaðar",
+            "price": "3.500 kr."
+          },
+          {
+            "name": "Uppsetning OS (án uppfærslna)",
+            "price": "9.900 kr."
+          },
+          {
+            "name": "Uppsetning OS + uppfærslur",
+            "price": "12.900 kr."
+          },
+          {
+            "name": "Uppsetning Microsoft Office",
+            "price": "5.500 kr."
+          }
+        ]
+      },
+      "data": {
+        "title": "💾 Gögn & gagnabjörgun",
+        "services": [
+          {
+            "name": "Gagnaafritun 0–30 GB",
+            "price": "4.900 kr."
+          },
+          {
+            "name": "Gagnaafritun 30 GB+",
+            "price": "6.900 kr."
+          },
+          {
+            "name": "Gagnabjörgun – startgjald / No Data",
+            "price": "16.900 kr."
+          },
+          {
+            "name": "Gagnabjörgun < 100 GB",
+            "price": "34.900 kr."
+          },
+          {
+            "name": "Gagnabjörgun > 100 GB",
+            "price": "49.900 kr."
+          }
+        ]
+      }
     }
   },
   "about": {

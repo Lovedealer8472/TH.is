@@ -122,6 +122,216 @@
         "bullet3": "Assembly and testing",
         "note": "Suitable for gaming, work, and specialized projects."
       }
+    },
+    "detailedPricing": {
+      "general": {
+        "title": "Diagnostics & General Services",
+        "services": [
+          {
+            "name": "Diagnostics / Service fee (PC / printers / headphones)",
+            "price": "4,500 ISK"
+          },
+          {
+            "name": "Diagnostics (Smart devices – Android)",
+            "price": "3,500 ISK"
+          },
+          {
+            "name": "Diagnostics (hourly rate)",
+            "price": "9,000 ISK / hr"
+          },
+          {
+            "name": "Remote service (phone / remote support)",
+            "price": "5,500 ISK"
+          },
+          {
+            "name": "Damage assessment",
+            "price": "9,900 ISK"
+          }
+        ],
+        "note": "You're ~40–55% below Reykjavik pricing → very competitive."
+      },
+      "priority": {
+        "title": "⚡ Priority Service",
+        "services": [
+          {
+            "name": "Priority Service A (same day)",
+            "price": "9,900 ISK"
+          },
+          {
+            "name": "Priority Service B (next business day)",
+            "price": "4,900 ISK"
+          }
+        ],
+        "note": "Maintains \"premium\" positioning without \"city surcharge\"."
+      },
+      "hourly": {
+        "title": "⏱ Hourly Rates & Callouts",
+        "services": [
+          {
+            "name": "Hourly rate – workshop",
+            "price": "9,000 ISK / hr"
+          },
+          {
+            "name": "Hourly rate – on-site",
+            "price": "12,500 ISK / hr"
+          },
+          {
+            "name": "Callout – daytime (minimum)",
+            "price": "19,900 ISK"
+          },
+          {
+            "name": "Callout – after hours",
+            "price": "39,900 ISK"
+          },
+          {
+            "name": "Service call (minor work)",
+            "price": "3,500 ISK"
+          }
+        ],
+        "note": "Positions you as a competent professional, not \"cheap\"."
+      },
+      "desktop": {
+        "title": "🖥 Desktop Computers – Installation & Upgrades",
+        "services": [
+          {
+            "name": "SSD installation + full OS setup",
+            "price": "14,900 ISK"
+          },
+          {
+            "name": "Single component installation (RAM / SSD / HDD / PSU)",
+            "price": "3,500 ISK"
+          },
+          {
+            "name": "Tower upgrade (without OS)",
+            "price": "9,900 ISK"
+          },
+          {
+            "name": "Tower upgrade (with OS)",
+            "price": "15,900 ISK"
+          },
+          {
+            "name": "Motherboard installation (desktop)",
+            "price": "5,500 ISK"
+          },
+          {
+            "name": "Power supply installation",
+            "price": "5,500 ISK"
+          },
+          {
+            "name": "Controller card installation",
+            "price": "3,900 ISK"
+          },
+          {
+            "name": "CPU cooler / AIO installation",
+            "price": "4,900 ISK"
+          },
+          {
+            "name": "Cable management / airflow",
+            "price": "5,900 ISK"
+          }
+        ],
+        "note": "Very strong advantage vs Reykjavik — customers will notice."
+      },
+      "laptop": {
+        "title": "💻 Laptops – Repairs",
+        "services": [
+          {
+            "name": "Fan installation",
+            "price": "7,500 ISK"
+          },
+          {
+            "name": "Display installation",
+            "price": "12,900 ISK"
+          },
+          {
+            "name": "Keyboard installation",
+            "price": "7,500 ISK"
+          },
+          {
+            "name": "Top case with keyboard",
+            "price": "14,900 ISK"
+          },
+          {
+            "name": "Motherboard installation (laptop)",
+            "price": "14,900 ISK"
+          },
+          {
+            "name": "Broken connector repair",
+            "price": "14,500 ISK"
+          }
+        ]
+      },
+      "cooling": {
+        "title": "❄️ Cooling & Cleaning",
+        "services": [
+          {
+            "name": "Thermal paste / pad replacement",
+            "price": "3,500 ISK"
+          },
+          {
+            "name": "Dust cleaning – desktop",
+            "price": "4,900 ISK"
+          },
+          {
+            "name": "Dust cleaning – laptop",
+            "price": "4,900 ISK"
+          },
+          {
+            "name": "Full cleaning + thermal paste",
+            "price": "11,900 ISK"
+          }
+        ]
+      },
+      "security": {
+        "title": "🛡 Security & Software",
+        "services": [
+          {
+            "name": "Malware and virus removal",
+            "price": "6,500 ISK"
+          },
+          {
+            "name": "Simple software installation",
+            "price": "3,500 ISK"
+          },
+          {
+            "name": "OS installation (without updates)",
+            "price": "9,900 ISK"
+          },
+          {
+            "name": "OS installation + updates",
+            "price": "12,900 ISK"
+          },
+          {
+            "name": "Microsoft Office installation",
+            "price": "5,500 ISK"
+          }
+        ]
+      },
+      "data": {
+        "title": "💾 Data & Recovery",
+        "services": [
+          {
+            "name": "Data backup 0–30 GB",
+            "price": "4,900 ISK"
+          },
+          {
+            "name": "Data backup 30 GB+",
+            "price": "6,900 ISK"
+          },
+          {
+            "name": "Data recovery – startup fee / No Data",
+            "price": "16,900 ISK"
+          },
+          {
+            "name": "Data recovery < 100 GB",
+            "price": "34,900 ISK"
+          },
+          {
+            "name": "Data recovery > 100 GB",
+            "price": "49,900 ISK"
+          }
+        ]
+      }
     }
   },
   "about": {
