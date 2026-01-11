@@ -135,11 +135,6 @@ export default function PricingPage() {
                 </tbody>
               </table>
             </div>
-            {t.pricing.detailedPricing.general.note && (
-              <p className="text-xs text-gray-500 italic mt-4 pt-4 border-t border-gray-700/50">
-                👉 {t.pricing.detailedPricing.general.note}
-              </p>
-            )}
           </div>
 
           {/* Priority Services */}
@@ -163,11 +158,6 @@ export default function PricingPage() {
                 </tbody>
               </table>
             </div>
-            {t.pricing.detailedPricing.priority.note && (
-              <p className="text-xs text-gray-500 italic mt-4 pt-4 border-t border-gray-700/50">
-                👉 {t.pricing.detailedPricing.priority.note}
-              </p>
-            )}
           </div>
 
           {/* Hourly Rates & Callouts */}
@@ -191,11 +181,6 @@ export default function PricingPage() {
                 </tbody>
               </table>
             </div>
-            {t.pricing.detailedPricing.hourly.note && (
-              <p className="text-xs text-gray-500 italic mt-4 pt-4 border-t border-gray-700/50">
-                👉 {t.pricing.detailedPricing.hourly.note}
-              </p>
-            )}
           </div>
 
           {/* Desktop Computers */}
@@ -219,11 +204,6 @@ export default function PricingPage() {
                 </tbody>
               </table>
             </div>
-            {t.pricing.detailedPricing.desktop.note && (
-              <p className="text-xs text-gray-500 italic mt-4 pt-4 border-t border-gray-700/50">
-                👉 {t.pricing.detailedPricing.desktop.note}
-              </p>
-            )}
           </div>
 
           {/* Laptops */}

@@ -147,11 +147,10 @@
             "name": "Damage assessment",
             "price": "9,900 ISK"
           }
-        ],
-        "note": "You're ~40–55% below Reykjavik pricing → very competitive."
+        ]
       },
       "priority": {
-        "title": "⚡ Priority Service",
+        "title": "Priority Service",
         "services": [
           {
             "name": "Priority Service A (same day)",
@@ -161,11 +160,10 @@
             "name": "Priority Service B (next business day)",
             "price": "4,900 ISK"
           }
-        ],
-        "note": "Maintains \"premium\" positioning without \"city surcharge\"."
+        ]
       },
       "hourly": {
-        "title": "⏱ Hourly Rates & Callouts",
+        "title": "Hourly Rates & Callouts",
         "services": [
           {
             "name": "Hourly rate – workshop",
@@ -187,11 +185,10 @@
             "name": "Service call (minor work)",
             "price": "3,500 ISK"
           }
-        ],
-        "note": "Positions you as a competent professional, not \"cheap\"."
+        ]
       },
       "desktop": {
-        "title": "🖥 Desktop Computers – Installation & Upgrades",
+        "title": "Desktop Computers – Installation & Upgrades",
         "services": [
           {
             "name": "SSD installation + full OS setup",
@@ -229,11 +226,10 @@
             "name": "Cable management / airflow",
             "price": "5,900 ISK"
           }
-        ],
-        "note": "Very strong advantage vs Reykjavik — customers will notice."
+        ]
       },
       "laptop": {
-        "title": "💻 Laptops – Repairs",
+        "title": "Laptops – Repairs",
         "services": [
           {
             "name": "Fan installation",
@@ -262,7 +258,7 @@
         ]
       },
       "cooling": {
-        "title": "❄️ Cooling & Cleaning",
+        "title": "Cooling & Cleaning",
         "services": [
           {
             "name": "Thermal paste / pad replacement",
@@ -283,7 +279,7 @@
         ]
       },
       "security": {
-        "title": "🛡 Security & Software",
+        "title": "Security & Software",
         "services": [
           {
             "name": "Malware and virus removal",
@@ -308,7 +304,7 @@
         ]
       },
       "data": {
-        "title": "💾 Data & Recovery",
+        "title": "Data & Recovery",
         "services": [
           {
             "name": "Data backup 0–30 GB",

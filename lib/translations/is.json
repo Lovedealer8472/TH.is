@@ -147,11 +147,10 @@
             "name": "Tjónaskoðun",
             "price": "9.900 kr."
           }
-        ],
-        "note": "Hér ertu ~40–55% undir Reykjavík → mjög samkeppnishæft."
+        ]
       },
       "priority": {
-        "title": "⚡ Forgangsþjónusta",
+        "title": "Forgangsþjónusta",
         "services": [
           {
             "name": "Forgangsþjónusta A (innan sama dags)",
@@ -161,11 +160,10 @@
             "name": "Forgangsþjónusta B (næsti virki dagur)",
             "price": "4.900 kr."
           }
-        ],
-        "note": "Heldur \"premium\" merkingu en án \"borgarálags\"."
+        ]
       },
       "hourly": {
-        "title": "⏱ Tímagjöld & útköll",
+        "title": "Tímagjöld & útköll",
         "services": [
           {
             "name": "Tímagjald – verkstæði",
@@ -187,11 +185,10 @@
             "name": "Þjónustuviðvik (minni verk)",
             "price": "3.500 kr."
           }
-        ],
-        "note": "Þetta setur þig sem hagkvæman sérfræðing, ekki \"ódýran\"."
+        ]
       },
       "desktop": {
-        "title": "🖥 Turntölvur – ísetningar & uppfærslur",
+        "title": "Turntölvur – ísetningar & uppfærslur",
         "services": [
           {
             "name": "Ísetning SSD + full uppsetning OS",
@@ -229,11 +226,10 @@
             "name": "Kaplaskipulag / loftflæði",
             "price": "5.900 kr."
           }
-        ],
-        "note": "Mjög sterkur munur vs Reykjavík — fólk mun taka eftir þessu."
+        ]
       },
       "laptop": {
-        "title": "💻 Fartölvur – viðgerðir",
+        "title": "Fartölvur – viðgerðir",
         "services": [
           {
             "name": "Ísetning viftu",
@@ -262,7 +258,7 @@
         ]
       },
       "cooling": {
-        "title": "❄️ Kæling & hreinsun",
+        "title": "Kæling & hreinsun",
         "services": [
           {
             "name": "Endurnýjun kælikrems / kælipúða",
@@ -283,7 +279,7 @@
         ]
       },
       "security": {
-        "title": "🛡 Öryggi & hugbúnaður",
+        "title": "Öryggi & hugbúnaður",
         "services": [
           {
             "name": "Aðskota- og vírushreinsun",
@@ -308,7 +304,7 @@
         ]
       },
       "data": {
-        "title": "💾 Gögn & gagnabjörgun",
+        "title": "Gögn & gagnabjörgun",
         "services": [
           {
             "name": "Gagnaafritun 0–30 GB",
