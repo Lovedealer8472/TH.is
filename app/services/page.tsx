@@ -147,6 +147,32 @@ export default function ServicesPage() {
               </li>
             </ul>
           </div>
+
+          {/* Card 6: Myndbönd yfir á stafrænt form */}
+          <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl border border-gray-700/50 p-8 hover:border-primary-500/50 transition-all duration-300 hover:shadow-xl hover:shadow-primary-500/10 group">
+            <div className="w-12 h-12 bg-primary-500/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary-500/20 transition-colors">
+              <svg className="w-6 h-6 text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 4v16a1 1 0 001 1h8a1 1 0 001-1V4m0 0L7 4m8 0l4 4m0 0v12a1 1 0 01-1 1H8a1 1 0 01-1-1V8m0 0l4-4" />
+              </svg>
+            </div>
+            <h2 className="text-xl sm:text-2xl font-bold text-gray-100 mb-6">
+              {t.services.cards.video.title}
+            </h2>
+            <ul className="space-y-3 text-gray-400">
+              <li className="flex items-start">
+                <span className="text-primary-400 mr-3">•</span>
+                <span>{t.services.cards.video.bullet1}</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-primary-400 mr-3">•</span>
+                <span>{t.services.cards.video.bullet2}</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-primary-400 mr-3">•</span>
+                <span>{t.services.cards.video.bullet3}</span>
+              </li>
+            </ul>
+          </div>
         </div>
 
         {/* Footer text */}
