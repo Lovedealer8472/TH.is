@@ -40,6 +40,12 @@ export default function Header() {
               {t.nav.about}
             </Link>
             <Link
+              href="/news"
+              className="text-gray-300 hover:text-primary-400 transition-colors font-medium"
+            >
+              {t.nav.news}
+            </Link>
+            <Link
               href="/contact"
               className="text-gray-300 hover:text-primary-400 transition-colors font-medium"
             >
@@ -94,6 +100,13 @@ export default function Header() {
                 className="text-gray-300 hover:text-primary-400 transition-colors font-medium py-2 px-4 rounded-lg hover:bg-gray-800"
               >
                 {t.nav.about}
+              </Link>
+              <Link
+                href="/news"
+                onClick={() => setMobileMenuOpen(false)}
+                className="text-gray-300 hover:text-primary-400 transition-colors font-medium py-2 px-4 rounded-lg hover:bg-gray-800"
+              >
+                {t.nav.news}
               </Link>
               <Link
                 href="/contact"
