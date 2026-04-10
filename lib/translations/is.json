@@ -367,8 +367,8 @@
     "title": "Verkefni",
     "subtitle": "Verkefni frá Tölvuhvíslarnum",
     "tts": {
-      "title": "Tölvuhvísl — Íslensk talgervill",
-      "description": "Náttúruleg íslensk talgervill powered by gervigreind. Breyttu íslensku texta í talað mál með 30+ raddir, einföldu REST API og snjallri textavinnslu sem meðhöndlar tölur, skammstafanir og fleira.",
+      "title": "Tölvuhvísl — Íslenskur talgervill",
+      "description": "Talgervill þjálfaður af íslenskum raddleikurum í samstarfi við RÚV og HR. Breyttu íslensku texta í talað mál með 30+ raddir, einföldu REST API og snjallri textavinnslu sem meðhöndlar tölur, skammstafanir og fleira.\n\nVerkið er enn í vinnslu en lofar góðu.",
       "features": {
         "voices": "30+ íslenskar raddir",
         "quality": "24kHz hljóðgæði",
