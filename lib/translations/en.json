@@ -4,7 +4,8 @@
     "pricing": "Pricing",
     "about": "About",
     "contact": "Contact",
-    "news": "News"
+    "news": "News",
+    "projects": "Projects"
   },
   "common": {
     "language": "Language",
@@ -360,6 +361,21 @@
       "email": "Email",
       "message": "Message",
       "submit": "Send"
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Projects from Tölvuhvíslarinn",
+    "tts": {
+      "title": "Tölvuhvísl — Icelandic Text-to-Speech",
+      "description": "Natural Icelandic text-to-speech powered by deep learning. Turn Icelandic text into spoken audio with 30+ voices, a simple REST API, and smart text normalization that handles numbers, abbreviations, and more.",
+      "features": {
+        "voices": "30+ Icelandic voices",
+        "quality": "24 kHz audio quality",
+        "api": "Simple REST API",
+        "privacy": "GDPR compliant"
+      },
+      "cta": "Try the demo"
     }
   },
   "social": {

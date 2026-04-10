@@ -4,7 +4,8 @@
     "pricing": "Verðskrá",
     "about": "Um okkur",
     "contact": "Hafðu samband",
-    "news": "Fréttir"
+    "news": "Fréttir",
+    "projects": "Verkefni"
   },
   "common": {
     "language": "Tungumál",
@@ -360,6 +361,21 @@
       "email": "Netfang",
       "message": "Skilaboð",
       "submit": "Senda"
+    }
+  },
+  "projects": {
+    "title": "Verkefni",
+    "subtitle": "Verkefni frá Tölvuhvíslarnum",
+    "tts": {
+      "title": "Tölvuhvísl — Íslensk talgervill",
+      "description": "Náttúruleg íslensk talgervill powered by gervigreind. Breyttu íslensku texta í talað mál með 30+ raddir, einföldu REST API og snjallri textavinnslu sem meðhöndlar tölur, skammstafanir og fleira.",
+      "features": {
+        "voices": "30+ íslenskar raddir",
+        "quality": "24kHz hljóðgæði",
+        "api": "Einfalt REST API",
+        "privacy": "GDPR samhæft"
+      },
+      "cta": "Prófa kynninguna"
     }
   },
   "social": {
