@@ -1,5 +1,8 @@
 import type { Metadata } from 'next';
 
+const siteUrl = 'https://www.tolvuhvislarinn.is';
+const ogImage = `${siteUrl}/og/projects.png`;
+
 export const metadata: Metadata = {
   title: 'Verkefni og hugbúnaðarlausnir – Tölvuhvíslarinn',
   description:
@@ -17,7 +20,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: '/og/projects.png',
+        url: ogImage,
         width: 1200,
         height: 630,
         alt: 'Tölvuhvíslarinn – Verkefni og hugbúnaðarlausnir',
@@ -29,7 +32,7 @@ export const metadata: Metadata = {
     title: 'Tölvuhvíslarinn – Verkefni og hugbúnaðarlausnir',
     description:
       'Hugbúnaðarverkefni, sérlausnir og tæknilegar tilraunir frá Tölvuhvíslaranum.',
-    images: ['/og/projects.png'],
+    images: [ogImage],
   },
 };
 
