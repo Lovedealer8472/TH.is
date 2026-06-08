@@ -8,16 +8,13 @@ const root = join(__dirname, '..');
 const width = 1200;
 const height = 630;
 const outputDir = join(root, 'public', 'og');
-const outputPath = join(outputDir, 'projects.png');
+const logoPath = join(root, 'public', 'logo.png');
 
-const pills = ['Talgervill', 'REST API', 'Sérlausnir', 'Tilraunir'];
-
-function pillGroup(items) {
+function pillGroup(items, y = 548) {
   const pillWidth = 180;
   const gap = 14;
   const totalWidth = items.length * pillWidth + (items.length - 1) * gap;
   const startX = (width - totalWidth) / 2;
-  const y = 548;
 
   return items
     .map((label, index) => {
@@ -34,7 +31,8 @@ function pillGroup(items) {
     .join('');
 }
 
-const backgroundSvg = Buffer.from(`<?xml version="1.0" encoding="UTF-8"?>
+function backgroundSvg({ headline, subheadline, pills = [] }) {
+  return Buffer.from(`<?xml version="1.0" encoding="UTF-8"?>
 <svg width="${width}" height="${height}" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -52,33 +50,50 @@ const backgroundSvg = Buffer.from(`<?xml version="1.0" encoding="UTF-8"?>
   <rect x="56" y="44" width="1088" height="4" rx="2" fill="url(#accent)"/>
   <text x="600" y="340" text-anchor="middle"
     font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="50" font-weight="700" fill="#f9fafb">
-    Verkefni og hugbúnaðarlausnir
+    ${headline}
   </text>
   <text x="600" y="385" text-anchor="middle"
     font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="24" fill="#9ca3af">
-    Smíðað af Tölvuhvíslaranum
+    ${subheadline}
   </text>
-  ${pillGroup(pills)}
+  ${pills.length ? pillGroup(pills) : ''}
 </svg>`);
+}
+
+async function composeImage(outputPath, svg) {
+  const logoWidth = 720;
+  const logoBuffer = await sharp(logoPath).resize(logoWidth).png().toBuffer();
+
+  await sharp(svg)
+    .composite([
+      {
+        input: logoBuffer,
+        top: 88,
+        left: Math.round((width - logoWidth) / 2),
+      },
+    ])
+    .png()
+    .toFile(outputPath);
+
+  console.log(`Generated ${outputPath}`);
+}
 
 mkdirSync(outputDir, { recursive: true });
 
-const logoPath = join(root, 'public', 'logo.png');
-const logoMeta = await sharp(logoPath).metadata();
-const logoWidth = 720;
-const logoHeight = Math.round((logoMeta.height ?? 162) * (logoWidth / (logoMeta.width ?? 720)));
+await composeImage(
+  join(outputDir, 'site.png'),
+  backgroundSvg({
+    headline: 'Tölvuviðgerðir og sérsmíði',
+    subheadline: 'Persónuleg tækniaðstoð á Austurlandi',
+    pills: ['Viðgerðir', 'Sérsmíði', 'Ráðgjöf', 'Gagnavernd'],
+  }),
+);
 
-const logoBuffer = await sharp(logoPath).resize(logoWidth).png().toBuffer();
-
-await sharp(backgroundSvg)
-  .composite([
-    {
-      input: logoBuffer,
-      top: 88,
-      left: Math.round((width - logoWidth) / 2),
-    },
-  ])
-  .png()
-  .toFile(outputPath);
-
-console.log(`Generated ${outputPath} (${width}x${height})`);
+await composeImage(
+  join(outputDir, 'projects.png'),
+  backgroundSvg({
+    headline: 'Verkefni og hugbúnaðarlausnir',
+    subheadline: 'Smíðað af Tölvuhvíslaranum',
+    pills: ['Talgervill', 'REST API', 'Sérlausnir', 'Tilraunir'],
+  }),
+);

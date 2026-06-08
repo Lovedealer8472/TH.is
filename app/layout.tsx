@@ -17,6 +17,9 @@ const inter = Inter({
 // Google Search Console verification
 const googleSiteVerification = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION;
 
+const siteUrl = 'https://www.tolvuhvislarinn.is';
+const defaultOgImage = `${siteUrl}/og/site.png`;
+
 export const metadata: Metadata = {
   title: 'Tölvuhvíslarinn – Tölvuviðgerðir og sérsmíði í Neskaupstað',
   description: 'Tölvuhvíslarinn býður upp á tölvuviðgerðir, sérsmíði borðtölva og tækniráðgjöf Í Neskaupstað. Heiðarleg og persónuleg þjónusta.',
@@ -53,10 +56,25 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Tölvuhvíslarinn – Tölvuviðgerðir og sérsmíði í Neskaupstað',
     description: 'Tölvuhvíslarinn býður upp á tölvuviðgerðir, sérsmíði borðtölva og tækniráðgjöf Í Neskaupstað. Heiðarleg og persónuleg þjónusta.',
-    url: 'https://www.tolvuhvislarinn.is',
+    url: siteUrl,
     siteName: 'Tölvuhvíslarinn',
     locale: 'is_IS',
     type: 'website',
+    images: [
+      {
+        url: defaultOgImage,
+        width: 1200,
+        height: 630,
+        alt: 'Tölvuhvíslarinn – Tölvuviðgerðir og sérsmíði',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Tölvuhvíslarinn – Tölvuviðgerðir og sérsmíði í Neskaupstað',
+    description:
+      'Tölvuhvíslarinn býður upp á tölvuviðgerðir, sérsmíði borðtölva og tækniráðgjöf Í Neskaupstað. Heiðarleg og persónuleg þjónusta.',
+    images: [defaultOgImage],
   },
   verification: googleSiteVerification
     ? {
