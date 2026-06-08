@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "node server.js",
+    "generate:og": "node scripts/generate-projects-og.mjs",
     "lint": "next lint"
   },
   "dependencies": {
