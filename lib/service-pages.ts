@@ -47,7 +47,7 @@ export const SERVICE_PAGES: ServicePage[] = [
         heading: 'Hvað er gert?',
         paragraphs: [
           'Ég greini og lagfæri algeng vandamál á borðtölvum og fartölvum: hæg vinnsla, frystir skjáir, rafmagnshljóð, ofhitnun, bilun á disk eða minni, og hugbúnaðarvandamál eins og Windows-villur eða vírus.',
-          'Fyrsta skrefið er alltaf bilanagreining. Ég skoða töluna, útskýri hvað er að og gef þér mat á kostnaði og tíma áður en nokkuð er gert. Engin viðgerð hefst nema með þínu samþykki.',
+          'Fyrsta skrefið er alltaf bilanagreining. Ég skoða tölvuna, útskýri hvað er að og gef þér mat á kostnaði og tíma áður en nokkuð er gert. Engin viðgerð hefst nema með þínu samþykki.',
         ],
       },
       {
@@ -84,7 +84,7 @@ export const SERVICE_PAGES: ServicePage[] = [
       {
         question: 'Vinnur þú með öll merki?',
         answer:
-          'Já, ég vinna með borðtölvum og fartölvum frá öllum helstu framleiðendum – HP, Lenovo, Dell, Asus, Apple og fleiri.',
+          'Já, ég vinn með borðtölvum og fartölvum frá öllum helstu framleiðendum – HP, Lenovo, Dell, Asus, Apple og fleiri.',
       },
     ],
   },
@@ -110,7 +110,7 @@ export const SERVICE_PAGES: ServicePage[] = [
         heading: 'Algeng einkenni',
         paragraphs: [
           'Fartölvan er ótrúlega hæg eða tekur langan tíma að ræsa. Hún verður heit við venjulega notkun og viftan gengur stöðugt. Rafhlaðan endist ekki lengur en nokkrar mínútur. Lyklar virka ekki eða skjárinn er með línur eða dökkum blettum.',
-          'Stundum er vandamálið einföld lausn – eins og hreinsun eftir ryk og ryks – en stundum þarf varahluta. Ég segi þér hvað á við í þínu tilfelli.',
+          'Stundum er vandamálið einföld lausn – eins og hreinsun vegna ryks í kælikerfi – en stundum þarf varahluta. Ég segi þér hvað á við í þínu tilfelli.',
         ],
       },
       {
@@ -123,7 +123,7 @@ export const SERVICE_PAGES: ServicePage[] = [
     pricing:
       'Bilanagreining kostar 9.900 kr. með VSK. Viðgerðir og varahlutir koma í ljós eftir greiningu. SSD-skipti og minnisuppfærslur eru oft hagkvæm leið til að bæta gamla fartölvu.',
     timeline:
-      'Greining 1–2 dagar. Einfaldar lagfæringar oft sama viku. Varahlutir geta tekið 3–10 daga eftir birgða.',
+      'Greining 1–2 dagar. Einfaldar lagfæringar oft sama viku. Varahlutir geta tekið 3–10 daga eftir birgðastöðu.',
     audience: 'Einstaklingar og smáfyrirtæki með fartölvur sem þurfa áreiðanlega viðgerð eða uppfærslu.',
     faq: [
       {
@@ -165,7 +165,7 @@ export const SERVICE_PAGES: ServicePage[] = [
         heading: 'Algeng einkenni sem SSD leysir',
         paragraphs: [
           'Tölvan tekur 2–5 mínútur að ræsa. Windows segir diskinn sé fullur. Tölvan frystir þegar margt er opið. Hljóð kemur frá gömlum hörðum diski (HDD). Forrit taka langan tíma að opna.',
-          'SSD er oft 5–10 sinnum hraðvirkari en gamall HDD og getur geft tölvu sem er 5–8 ára nýtt líf.',
+          'SSD er oft 5–10 sinnum hraðvirkari en gamall HDD og getur gefið tölvu sem er 5–8 ára nýtt líf.',
         ],
       },
       {
@@ -184,7 +184,7 @@ export const SERVICE_PAGES: ServicePage[] = [
       {
         question: 'Hvenær borgar sig að setja SSD í gamla tölvu?',
         answer:
-          'Ef tölvan er yngri en 8–10 ára og örgjörvinn er enn nógugur fyrir þín verkefni, er SSD oft besta uppfærslan. Ég met þetta fyrir hverja tölvu.',
+          'Ef tölvan er yngri en 8–10 ára og örgjörvinn er enn nógu öflugur fyrir þín verkefni, er SSD oft besta uppfærslan. Ég met þetta fyrir hverja tölvu.',
       },
       {
         question: 'Mistekst gögnin mín?',
@@ -205,7 +205,7 @@ export const SERVICE_PAGES: ServicePage[] = [
       'Sérsmíðaðar borðtölvur og leikjatölvur smíðaðar eftir þörfum á Austurlandi. Ráðgjöf, íhlutaval, samsetning og prófanir. Hafðu samband.',
     h1: 'Sérsmíði borðtölva og leikjatölva',
     intro:
-      'Þarf ný borðtölva – til leiks, vinnu eða heimilisnotkunar? Ég smíða sérsniðnar borðtölvur eftir raunverulegum þörfum og fjárhagsáætlun, vel íhluti sem passa saman og set allt saman með prófunum áður afhending.',
+      'Vantar þig nýja borðtölvu – til leiks, vinnu eða heimilisnotkunar? Ég smíða sérsniðnar borðtölvur eftir raunverulegum þörfum og fjárhagsáætlun, vel íhluti sem passa saman og set allt saman með prófunum fyrir afhendingu.',
     serviceAreas: ['Neskaupstaður', 'Fjarðabyggð', 'Austurland', 'Egilsstaðir'],
     overviewCardTitle: 'Sérsmíði borðtölva',
     sections: [
@@ -233,7 +233,7 @@ export const SERVICE_PAGES: ServicePage[] = [
     pricing:
       'Verð fer eftir íhlutum og notkun. Einfaldar heimilistölvur geta byrjað um 120.000–180.000 kr., leikjatölvur 200.000–400.000 kr. og upp. Ég gef alltaf skriflegt tilboð áður en pöntun fer fram.',
     timeline:
-      '2–4 vikur eftir samþykki, eftir birgða á íhlutum. Flýtitíma er hægt að ræða ef íhlutir eru til.',
+      '2–4 vikur eftir samþykki, eftir birgðastöðu á íhlutum. Flýtitíma er hægt að ræða ef íhlutir eru til.',
     audience: 'Einstaklingar og fyrirtæki sem vilja sérsniðna borðtölvu með persónulegri ráðgjöf á Austurlandi.',
     faq: [
       {
@@ -315,7 +315,7 @@ export const SERVICE_PAGES: ServicePage[] = [
       'Láttu gamlar VHS og MiniDV upptökur yfirfæra á stafrænt form á Austurlandi. Filmur eyðileggjast með tímanum – bjargaðu minningunum. Hafðu samband.',
     h1: 'VHS og MiniDV yfir á stafrænt form',
     intro:
-      'Gömul VHS spól og MiniDV upptökur geyma minningar sem ekki er hægt að endurtaka – en filmurnar eyðileggjast smám saman. Ég yfirfæri upptökur á stafrænt form svo þú getir varðveitt þær á harða diski, USB eða skýi.',
+      'Gömul VHS spólur og MiniDV upptökur geyma minningar sem ekki er hægt að endurtaka – en filmurnar eyðileggjast smám saman. Ég yfirfæri upptökur á stafrænt form svo þú getir varðveitt þær á harða diski, USB eða skýi.',
     serviceAreas: ['Neskaupstaður', 'Fjarðabyggð', 'Austurland'],
     overviewCardTitle: 'VHS og MiniDV',
     sections: [
@@ -329,7 +329,7 @@ export const SERVICE_PAGES: ServicePage[] = [
       {
         heading: 'Af hverju brýnt?',
         paragraphs: [
-          'Magnetísk film á VHS eyðileggst með tímanum – myndin verður gærð, litirnir dofnar og hljóðið tapast. MiniDV er stöðugri en kasettur geta líka skemmst.',
+          'Segulband í VHS-spólum eyðileggst með tímanum – myndin verður skemmd eða kornótt, litirnir dofna og hljóðið tapast. MiniDV er stöðugri en kasettur geta líka skemmst.',
           'Ef þú átt upptökur frá barnæsku, brúðkaupum eða fjölskyldusamkomum er betra að bjarga þeim núna en að bíða.',
         ],
       },
@@ -359,7 +359,7 @@ export const SERVICE_PAGES: ServicePage[] = [
       {
         question: 'Hvað ef spólan er skemmd?',
         answer:
-          'Ég met ástand áður en vinna hefst. Stundum er hægt að bjarga hluta af efni – ég segi þér honesklega frá möguleikum.',
+          'Ég met ástand áður en vinna hefst. Stundum er hægt að bjarga hluta af efni – ég segi þér heiðarlega frá möguleikum.',
       },
     ],
   },

@@ -23,7 +23,7 @@ export default function ServiceContactBar({ serviceName }: ServiceContactBarProp
           className="inline-flex items-center gap-2 px-5 py-3 bg-primary-600 text-white rounded-lg font-medium hover:bg-primary-700 transition-colors"
         >
           <PhoneIcon />
-          Hringja {PHONE_DISPLAY}
+          Hringja í {PHONE_DISPLAY}
         </a>
         <a
           href={getWhatsAppUrl(whatsappMessage)}
