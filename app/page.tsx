@@ -87,9 +87,13 @@ export default function HomePage() {
                   <span>{t.home.services.repairs.bullet4}</span>
                 </li>
               </ul>
+              <Link
+                href="/services/tolvuvidgerdir"
+                className="inline-block mt-6 text-sm font-medium text-primary-400 hover:text-primary-300 transition-colors"
+              >
+                {t.home.readMore} →
+              </Link>
             </div>
-
-            {/* Sérsmíði */}
             <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl border border-gray-700/50 p-8 hover:border-primary-500/50 transition-all duration-300 hover:shadow-xl hover:shadow-primary-500/10">
               <div className="w-12 h-12 bg-primary-500/10 rounded-lg flex items-center justify-center mb-6">
                 <svg className="w-6 h-6 text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -120,6 +124,12 @@ export default function HomePage() {
                   <span>{t.home.services.custom.bullet4}</span>
                 </li>
               </ul>
+              <Link
+                href="/services/sersmidid-bordtolva"
+                className="inline-block mt-6 text-sm font-medium text-primary-400 hover:text-primary-300 transition-colors"
+              >
+                {t.home.readMore} →
+              </Link>
             </div>
 
             {/* Tækniráðgjöf */}
@@ -153,8 +163,47 @@ export default function HomePage() {
                   <span>{t.home.services.consulting.bullet4}</span>
                 </li>
               </ul>
+              <Link
+                href="/services/taekniaadstod-fyrirtaeki"
+                className="inline-block mt-6 text-sm font-medium text-primary-400 hover:text-primary-300 transition-colors"
+              >
+                {t.home.readMore} →
+              </Link>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Service area */}
+      <section className="py-12 sm:py-16 bg-gray-950 border-y border-gray-800/50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-100 mb-4">
+            {t.home.serviceArea.heading}
+          </h2>
+          <p className="text-gray-400 leading-relaxed mb-4">
+            {t.home.serviceArea.description}
+          </p>
+          <p className="text-sm text-primary-400/90 font-medium">
+            {t.home.serviceArea.areas}
+          </p>
+        </div>
+      </section>
+
+      {/* Software / projects lab */}
+      <section className="py-12 sm:py-16 bg-gray-900">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-100 mb-3">
+            {t.home.projectsLab.heading}
+          </h2>
+          <p className="text-gray-400 leading-relaxed mb-6 max-w-2xl mx-auto">
+            {t.home.projectsLab.description}
+          </p>
+          <Link
+            href="/projects"
+            className="inline-block text-sm font-medium text-primary-400 hover:text-primary-300 transition-colors"
+          >
+            {t.home.projectsLab.link} →
+          </Link>
         </div>
       </section>
 

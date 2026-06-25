@@ -54,12 +54,25 @@
       "description": "Hafðu samband við mig í dag og fáðu sérsniðna lausn fyrir tölvuþarfir þínar.",
       "primary": "Hafðu samband",
       "secondary": "Sjá þjónustu"
-    }
+    },
+    "serviceArea": {
+      "heading": "Þjónusta á Austurlandi",
+      "description": "Ég þjónusta viðskiptavini í Neskaupstað og víðar á Austurlandi – þar á meðal Fjarðabyggð, Norðfirði, Eskifirði, Reyðarfirði og Egilsstöðum.",
+      "areas": "Neskaupstaður · Norðfjörður · Eskifjörður · Reyðarfjörður · Fjarðabyggð · Egilsstaðir · Austurland"
+    },
+    "projectsLab": {
+      "heading": "Ég smíða líka hugbúnaðarlausnir og tilraunaverkefni",
+      "description": "Auk hefðbundinnar tölvuþjónustu vinn ég að hugbúnaðarverkefnum – texti í tal, tæknileg tilraun og sérlausnir. Þetta er sérstakur hluti af starfseminni, en aðaláherslan er á viðgerðir og tækniaðstoð.",
+      "link": "Skoða verkefni"
+    },
+    "readMore": "Nánar um þjónustuna"
   },
   "services": {
     "title": "Þjónusta",
     "subtitle": "Traust og persónuleg tölvuþjónusta",
     "footer": "Persónuleg þjónusta, skýr samskipti og lausnir sem endast.",
+    "readMore": "Nánar",
+    "detailPagesHeading": "Nánar um þjónustuna",
     "cards": {
       "repairs": {
         "title": "Tölvuviðgerðir",

@@ -21,8 +21,9 @@ const siteUrl = 'https://www.tolvuhvislarinn.is';
 const defaultOgImage = `${siteUrl}/og/site.png`;
 
 export const metadata: Metadata = {
-  title: 'Tölvuhvíslarinn – Tölvuviðgerðir og sérsmíði í Neskaupstað',
-  description: 'Tölvuhvíslarinn býður upp á tölvuviðgerðir, sérsmíði borðtölva og tækniráðgjöf Í Neskaupstað. Heiðarleg og persónuleg þjónusta.',
+  title: 'Tölvuviðgerðir á Austurlandi | Tölvuhvíslarinn í Neskaupstað',
+  description:
+    'Tölvuviðgerðir, bilanagreining, SSD uppfærslur og tölvuaðstoð fyrir einstaklinga og smáfyrirtæki á Austurlandi. Hafðu samband við Daða.',
   icons: {
     icon: [
       { url: '/icon.png', sizes: '32x32', type: 'image/png' },
@@ -54,8 +55,9 @@ export const metadata: Metadata = {
     canonical: 'https://www.tolvuhvislarinn.is',
   },
   openGraph: {
-    title: 'Tölvuhvíslarinn – Tölvuviðgerðir og sérsmíði í Neskaupstað',
-    description: 'Tölvuhvíslarinn býður upp á tölvuviðgerðir, sérsmíði borðtölva og tækniráðgjöf Í Neskaupstað. Heiðarleg og persónuleg þjónusta.',
+    title: 'Tölvuviðgerðir á Austurlandi | Tölvuhvíslarinn í Neskaupstað',
+    description:
+      'Tölvuviðgerðir, bilanagreining, SSD uppfærslur og tölvuaðstoð fyrir einstaklinga og smáfyrirtæki á Austurlandi. Hafðu samband við Daða.',
     url: siteUrl,
     siteName: 'Tölvuhvíslarinn',
     locale: 'is_IS',
@@ -71,9 +73,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Tölvuhvíslarinn – Tölvuviðgerðir og sérsmíði í Neskaupstað',
+    title: 'Tölvuviðgerðir á Austurlandi | Tölvuhvíslarinn í Neskaupstað',
     description:
-      'Tölvuhvíslarinn býður upp á tölvuviðgerðir, sérsmíði borðtölva og tækniráðgjöf Í Neskaupstað. Heiðarleg og persónuleg þjónusta.',
+      'Tölvuviðgerðir, bilanagreining, SSD uppfærslur og tölvuaðstoð fyrir einstaklinga og smáfyrirtæki á Austurlandi. Hafðu samband við Daða.',
     images: [defaultOgImage],
   },
   verification: googleSiteVerification

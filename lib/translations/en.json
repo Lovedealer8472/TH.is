@@ -54,12 +54,25 @@
       "description": "Contact me today and get a custom solution for your computer needs.",
       "primary": "Contact us",
       "secondary": "View services"
-    }
+    },
+    "serviceArea": {
+      "heading": "Serving East Iceland",
+      "description": "I serve customers in Neskaupstaður and across East Iceland – including Fjarðabyggð, Norðfjörður, Eskifjörður, Reyðarfjörður, and Egilsstaðir.",
+      "areas": "Neskaupstaður · Norðfjörður · Eskifjörður · Reyðarfjörður · Fjarðabyggð · Egilsstaðir · East Iceland"
+    },
+    "projectsLab": {
+      "heading": "I also build software and experimental projects",
+      "description": "Alongside traditional computer services, I work on software projects – text-to-speech, technical experiments, and custom solutions. This is a separate part of the business; the main focus is repairs and tech support.",
+      "link": "View projects"
+    },
+    "readMore": "Learn more"
   },
   "services": {
     "title": "Services",
     "subtitle": "Trustworthy and personal computer services",
     "footer": "Personal service, clear communication, and solutions that last.",
+    "readMore": "Learn more",
+    "detailPagesHeading": "Service details",
     "cards": {
       "repairs": {
         "title": "Computer Repairs",
