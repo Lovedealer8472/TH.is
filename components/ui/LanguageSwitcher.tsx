@@ -12,7 +12,7 @@ export default function LanguageSwitcher() {
         className={`px-3 py-1 text-sm font-medium transition-colors rounded ${
           language === 'is'
             ? 'bg-primary-600 text-white'
-            : 'text-gray-400 hover:bg-gray-800 hover:text-gray-200'
+            : 'text-warm-400 hover:bg-warm-800 hover:text-warm-100'
         }`}
         aria-label="Switch to Icelandic"
       >
@@ -23,7 +23,7 @@ export default function LanguageSwitcher() {
         className={`px-3 py-1 text-sm font-medium transition-colors rounded ${
           language === 'en'
             ? 'bg-primary-600 text-white'
-            : 'text-gray-400 hover:bg-gray-800 hover:text-gray-200'
+            : 'text-warm-400 hover:bg-warm-800 hover:text-warm-100'
         }`}
         aria-label="Switch to English"
       >

@@ -10,12 +10,12 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="border-b border-gray-800 bg-gray-900/95 backdrop-blur-sm sticky top-0 z-50">
+    <header className="border-b border-warm-800 bg-warm-900/95 backdrop-blur-sm sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo/Brand */}
           <Link href="/" className="flex items-center space-x-2">
-            <span className="text-xl font-bold text-gray-100">Tölvuhvíslarinn</span>
+            <span className="text-xl font-bold text-warm-50">Tölvuhvíslarinn</span>
             <span className="font-mono text-xs text-tech-green hidden sm:inline">.is</span>
           </Link>
 
@@ -23,37 +23,37 @@ export default function Header() {
           <nav className="hidden md:flex items-center space-x-8">
             <Link
               href="/services"
-              className="text-gray-300 hover:text-primary-400 transition-colors font-medium"
+              className="text-warm-200 hover:text-primary-400 transition-colors font-medium"
             >
               {t.nav.services}
             </Link>
             <Link
               href="/pricing"
-              className="text-gray-300 hover:text-primary-400 transition-colors font-medium"
+              className="text-warm-200 hover:text-primary-400 transition-colors font-medium"
             >
               {t.nav.pricing}
             </Link>
             <Link
               href="/about"
-              className="text-gray-300 hover:text-primary-400 transition-colors font-medium"
+              className="text-warm-200 hover:text-primary-400 transition-colors font-medium"
             >
               {t.nav.about}
             </Link>
             <Link
               href="/projects"
-              className="text-gray-300 hover:text-primary-400 transition-colors font-medium"
+              className="text-warm-200 hover:text-primary-400 transition-colors font-medium"
             >
               {t.nav.projects}
             </Link>
             <Link
               href="/news"
-              className="text-gray-300 hover:text-primary-400 transition-colors font-medium"
+              className="text-warm-200 hover:text-primary-400 transition-colors font-medium"
             >
               {t.nav.news}
             </Link>
             <Link
               href="/contact"
-              className="text-gray-300 hover:text-primary-400 transition-colors font-medium"
+              className="text-warm-200 hover:text-primary-400 transition-colors font-medium"
             >
               {t.nav.contact}
             </Link>
@@ -66,7 +66,7 @@ export default function Header() {
             {/* Mobile menu button */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="md:hidden p-2 rounded-lg text-gray-300 hover:text-primary-400 hover:bg-gray-800 transition-colors"
+              className="md:hidden p-2 rounded-lg text-warm-200 hover:text-primary-400 hover:bg-warm-800 transition-colors"
               aria-label="Toggle menu"
             >
               {mobileMenuOpen ? (
@@ -84,47 +84,47 @@ export default function Header() {
 
         {/* Mobile Navigation */}
         {mobileMenuOpen && (
-          <nav className="md:hidden py-4 border-t border-gray-800">
+          <nav className="md:hidden py-4 border-t border-warm-800">
             <div className="flex flex-col space-y-3">
               <Link
                 href="/services"
                 onClick={() => setMobileMenuOpen(false)}
-                className="text-gray-300 hover:text-primary-400 transition-colors font-medium py-2 px-4 rounded-lg hover:bg-gray-800"
+                className="text-warm-200 hover:text-primary-400 transition-colors font-medium py-2 px-4 rounded-lg hover:bg-warm-800"
               >
                 {t.nav.services}
               </Link>
               <Link
                 href="/pricing"
                 onClick={() => setMobileMenuOpen(false)}
-                className="text-gray-300 hover:text-primary-400 transition-colors font-medium py-2 px-4 rounded-lg hover:bg-gray-800"
+                className="text-warm-200 hover:text-primary-400 transition-colors font-medium py-2 px-4 rounded-lg hover:bg-warm-800"
               >
                 {t.nav.pricing}
               </Link>
               <Link
                 href="/about"
                 onClick={() => setMobileMenuOpen(false)}
-                className="text-gray-300 hover:text-primary-400 transition-colors font-medium py-2 px-4 rounded-lg hover:bg-gray-800"
+                className="text-warm-200 hover:text-primary-400 transition-colors font-medium py-2 px-4 rounded-lg hover:bg-warm-800"
               >
                 {t.nav.about}
               </Link>
               <Link
                 href="/projects"
                 onClick={() => setMobileMenuOpen(false)}
-                className="text-gray-300 hover:text-primary-400 transition-colors font-medium py-2 px-4 rounded-lg hover:bg-gray-800"
+                className="text-warm-200 hover:text-primary-400 transition-colors font-medium py-2 px-4 rounded-lg hover:bg-warm-800"
               >
                 {t.nav.projects}
               </Link>
               <Link
                 href="/news"
                 onClick={() => setMobileMenuOpen(false)}
-                className="text-gray-300 hover:text-primary-400 transition-colors font-medium py-2 px-4 rounded-lg hover:bg-gray-800"
+                className="text-warm-200 hover:text-primary-400 transition-colors font-medium py-2 px-4 rounded-lg hover:bg-warm-800"
               >
                 {t.nav.news}
               </Link>
               <Link
                 href="/contact"
                 onClick={() => setMobileMenuOpen(false)}
-                className="text-gray-300 hover:text-primary-400 transition-colors font-medium py-2 px-4 rounded-lg hover:bg-gray-800"
+                className="text-warm-200 hover:text-primary-400 transition-colors font-medium py-2 px-4 rounded-lg hover:bg-warm-800"
               >
                 {t.nav.contact}
               </Link>

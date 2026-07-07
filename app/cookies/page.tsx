@@ -6,12 +6,12 @@ export const metadata = {
 export default function CookiesPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <h1 className="text-3xl sm:text-4xl font-bold text-gray-100 mb-8">Vefkökur</h1>
+      <h1 className="text-3xl sm:text-4xl font-bold text-warm-50 mb-8">Vefkökur</h1>
       
       <div className="prose prose-invert max-w-none">
-        <div className="space-y-6 text-gray-300">
+        <div className="space-y-6 text-warm-200">
           <section>
-            <h2 className="text-2xl font-semibold text-gray-100 mb-4">1. Hvað eru vefkökur?</h2>
+            <h2 className="text-2xl font-semibold text-warm-50 mb-4">1. Hvað eru vefkökur?</h2>
             <p className="mb-4">
               Vefkökur (e. cookies) eru litlar textaskrár sem vefsíður geyma í tölvunni þinni eða tæki þegar þú 
               heimsækir vefsíður. Þær gera vefsíðum kleift að muna upplýsingar um notendur og bæta 
@@ -20,14 +20,14 @@ export default function CookiesPage() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-gray-100 mb-4">2. Hvaða vefkökur notum við?</h2>
+            <h2 className="text-2xl font-semibold text-warm-50 mb-4">2. Hvaða vefkökur notum við?</h2>
             <p className="mb-4">
               Á vefsíðu Tölvuhvíslarans notum við aðeins nauðsynlegar vefkökur sem eru mikilvægar fyrir 
               virkni vefsíðunnar:
             </p>
             
-            <div className="bg-gray-800 p-4 rounded-lg mb-4">
-              <h3 className="text-lg font-semibold text-gray-100 mb-3">Nauðsynlegar vefkökur</h3>
+            <div className="bg-warm-800 p-4 rounded-lg mb-4">
+              <h3 className="text-lg font-semibold text-warm-50 mb-3">Nauðsynlegar vefkökur</h3>
               <ul className="list-disc list-inside space-y-2 ml-4">
                 <li>
                   <strong>Málstillingar:</strong> Vefkaka sem geymir valið tungumál (íslenska/enska) 
@@ -50,7 +50,7 @@ export default function CookiesPage() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-gray-100 mb-4">3. Tilgangur vefkaka</h2>
+            <h2 className="text-2xl font-semibold text-warm-50 mb-4">3. Tilgangur vefkaka</h2>
             <p className="mb-4">
               Vefkökurnar sem við notum eru nauðsynlegar til að:
             </p>
@@ -62,7 +62,7 @@ export default function CookiesPage() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-gray-100 mb-4">4. Stjórnun vefkökur</h2>
+            <h2 className="text-2xl font-semibold text-warm-50 mb-4">4. Stjórnun vefkökur</h2>
             <p className="mb-4">
               Þú getur stjórnað eða eytt vefkökum í vafrastillingum þínum. Hér eru leiðbeiningar fyrir 
               algengustu vafrana:
@@ -80,7 +80,7 @@ export default function CookiesPage() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-gray-100 mb-4">5. Vefkökur frá þriðja aðila</h2>
+            <h2 className="text-2xl font-semibold text-warm-50 mb-4">5. Vefkökur frá þriðja aðila</h2>
             <p className="mb-4">
               Vefsíðan notar ekki vefkökur frá þriðja aðila (eins og auglýsinga- eða greiningarvefkökur). 
               Allar vefkökur sem notaðar eru eru eingöngu fyrir virkni vefsíðunnar sjálfrar.
@@ -88,7 +88,7 @@ export default function CookiesPage() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-gray-100 mb-4">6. Breytingar á stefnu</h2>
+            <h2 className="text-2xl font-semibold text-warm-50 mb-4">6. Breytingar á stefnu</h2>
             <p className="mb-4">
               Ef við byrjum að nota fleiri vefkaka eða breyta notkun vefkaka, verður þessi síða uppfærð 
               og þér verður tilkynnt um breytingarnar.
@@ -96,19 +96,19 @@ export default function CookiesPage() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-gray-100 mb-4">7. Hafðu samband</h2>
+            <h2 className="text-2xl font-semibold text-warm-50 mb-4">7. Hafðu samband</h2>
             <p className="mb-4">
               Ef þú hefur spurningar um notkun vefkaka á vefsíðunni, hafðu samband:
             </p>
-            <div className="bg-gray-800 p-4 rounded-lg">
+            <div className="bg-warm-800 p-4 rounded-lg">
               <p className="mb-2"><strong>Tölvuhvíslarinn</strong></p>
               <p className="mb-2">Netfang: <a href="mailto:dadi@tolvuhvislarinn.is" className="text-primary-400 hover:text-primary-300" data-email="si.nilravsluhvlot@idad">dadi&#64;tolvuhvislarinn&#46;is</a></p>
               <p className="mb-2">Sími: <a href="tel:848-6755" className="text-primary-400 hover:text-primary-300">848-6755</a></p>
             </div>
           </section>
 
-          <section className="mt-8 pt-6 border-t border-gray-800">
-            <p className="text-sm text-gray-500">
+          <section className="mt-8 pt-6 border-t border-warm-800">
+            <p className="text-sm text-warm-500">
               Síðast uppfært: {new Date().toLocaleDateString('is-IS', { year: 'numeric', month: 'long', day: 'numeric' })}
             </p>
           </section>

@@ -6,12 +6,12 @@ export const metadata = {
 export default function PrivacyPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <h1 className="text-3xl sm:text-4xl font-bold text-gray-100 mb-8">Persónuverndarstefna</h1>
+      <h1 className="text-3xl sm:text-4xl font-bold text-warm-50 mb-8">Persónuverndarstefna</h1>
       
       <div className="prose prose-invert max-w-none">
-        <div className="space-y-6 text-gray-300">
+        <div className="space-y-6 text-warm-200">
           <section>
-            <h2 className="text-2xl font-semibold text-gray-100 mb-4">1. Almennt</h2>
+            <h2 className="text-2xl font-semibold text-warm-50 mb-4">1. Almennt</h2>
             <p className="mb-4">
               Tölvuhvíslarinn (KT: 460525-2250) er ábyrgur fyrir vinnslu persónuupplýsinga sem safnast á þessari vefsíðu. 
               Við höfum áhuga á að vernda persónuvernd notenda og fylgjum lögum um persónuvernd, þar á meðal 
@@ -20,7 +20,7 @@ export default function PrivacyPage() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-gray-100 mb-4">2. Hvaða upplýsingar söfnuð?</h2>
+            <h2 className="text-2xl font-semibold text-warm-50 mb-4">2. Hvaða upplýsingar söfnuð?</h2>
             <p className="mb-4">
               við söfnum eftirfarandi upplýsingum þegar þú notar síðuna:
             </p>
@@ -32,7 +32,7 @@ export default function PrivacyPage() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-gray-100 mb-4">3. Tilgangur vinnslu</h2>
+            <h2 className="text-2xl font-semibold text-warm-50 mb-4">3. Tilgangur vinnslu</h2>
             <p className="mb-4">
               Upplýsingarnar eru notaðar til að:
             </p>
@@ -44,7 +44,7 @@ export default function PrivacyPage() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-gray-100 mb-4">4. Lagalegur grundvöllur</h2>
+            <h2 className="text-2xl font-semibold text-warm-50 mb-4">4. Lagalegur grundvöllur</h2>
             <p className="mb-4">
               Vinnsla persónuupplýsinga byggir á:
             </p>
@@ -55,7 +55,7 @@ export default function PrivacyPage() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-gray-100 mb-4">5. Geymslutími</h2>
+            <h2 className="text-2xl font-semibold text-warm-50 mb-4">5. Geymslutími</h2>
             <p className="mb-4">
               Upplýsingar sem sendar eru í gegnum hafðu samband formið eru geymdar svo lengi sem nauðsynlegt er 
               til að svara beiðnum og halda skrám. Við eyðum reglubundið gögnum sem ekki eru lengur nauðsynleg.
@@ -63,7 +63,7 @@ export default function PrivacyPage() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-gray-100 mb-4">6. Deiling upplýsinga</h2>
+            <h2 className="text-2xl font-semibold text-warm-50 mb-4">6. Deiling upplýsinga</h2>
             <p className="mb-4">
               Við deilum ekki persónuupplýsingum með þriðja aðila nema:
             </p>
@@ -75,7 +75,7 @@ export default function PrivacyPage() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-gray-100 mb-4">7. Réttindi þín</h2>
+            <h2 className="text-2xl font-semibold text-warm-50 mb-4">7. Réttindi þín</h2>
             <p className="mb-4">
               Samkvæmt GDPR hefur þú eftirfarandi réttindi:
             </p>
@@ -89,7 +89,7 @@ export default function PrivacyPage() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-gray-100 mb-4">8. Öryggi</h2>
+            <h2 className="text-2xl font-semibold text-warm-50 mb-4">8. Öryggi</h2>
             <p className="mb-4">
               Við notum viðeigandi tæknilegar og skipulagslegar öryggisráðstafanir til að vernda persónuupplýsingar 
               gegn óheimilum aðgangi, tapi eða eyðileggingu.
@@ -97,7 +97,7 @@ export default function PrivacyPage() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-gray-100 mb-4">9. Breytingar á stefnu</h2>
+            <h2 className="text-2xl font-semibold text-warm-50 mb-4">9. Breytingar á stefnu</h2>
             <p className="mb-4">
               Við höfum rétt til að breyta þessari persónuverndarstefnu. Breytingar verða birtar á þessari síðu 
               með uppfærðri dagsetningu.
@@ -105,11 +105,11 @@ export default function PrivacyPage() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-gray-100 mb-4">10. Hafðu samband</h2>
+            <h2 className="text-2xl font-semibold text-warm-50 mb-4">10. Hafðu samband</h2>
             <p className="mb-4">
               Ef þú hefur spurningar eða beiðnir varðandi persónuvernd, hafðu samband:
             </p>
-            <div className="bg-gray-800 p-4 rounded-lg">
+            <div className="bg-warm-800 p-4 rounded-lg">
               <p className="mb-2"><strong>Tölvuhvíslarinn</strong></p>
               <p className="mb-2">Netfang: <a href="mailto:dadi@tolvuhvislarinn.is" className="text-primary-400 hover:text-primary-300" data-email="si.nilravsluhvlot@idad">dadi&#64;tolvuhvislarinn&#46;is</a></p>
               <p className="mb-2">Sími: <a href="tel:848-6755" className="text-primary-400 hover:text-primary-300">848-6755</a></p>
@@ -117,8 +117,8 @@ export default function PrivacyPage() {
             </div>
           </section>
 
-          <section className="mt-8 pt-6 border-t border-gray-800">
-            <p className="text-sm text-gray-500">
+          <section className="mt-8 pt-6 border-t border-warm-800">
+            <p className="text-sm text-warm-500">
               Síðast uppfært: {new Date().toLocaleDateString('is-IS', { year: 'numeric', month: 'long', day: 'numeric' })}
             </p>
           </section>

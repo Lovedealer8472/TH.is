@@ -9,44 +9,44 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-gray-800 bg-gray-950 mt-auto">
+    <footer className="border-t border-warm-800 bg-warm-950 mt-auto">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand */}
           <div>
-            <h3 className="text-lg font-bold text-gray-100 mb-2">Tölvuhvíslarinn</h3>
-            <p className="text-sm text-gray-400 mb-4">{t.footer.tagline}</p>
+            <h3 className="text-lg font-bold text-warm-50 mb-2">Tölvuhvíslarinn</h3>
+            <p className="text-sm text-warm-400 mb-4">{t.footer.tagline}</p>
             <SocialMediaLinks variant="footer" />
           </div>
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-sm font-semibold text-gray-100 mb-3">Hafðu samband</h4>
-            <p className="text-sm text-gray-400">Netfang: <EmailLink email="dadi@tolvuhvislarinn.is" className="text-primary-400 hover:text-primary-300" /></p>
-            <p className="text-sm text-gray-400">Sími: <a href="tel:848-6755" className="text-primary-400 hover:text-primary-300">848-6755</a></p>
+            <h4 className="text-sm font-semibold text-warm-50 mb-3">Hafðu samband</h4>
+            <p className="text-sm text-warm-400">Netfang: <EmailLink email="dadi@tolvuhvislarinn.is" className="text-primary-400 hover:text-primary-300" /></p>
+            <p className="text-sm text-warm-400">Sími: <a href="tel:848-6755" className="text-primary-400 hover:text-primary-300">848-6755</a></p>
           </div>
 
           {/* Additional Info */}
           <div>
-            <h4 className="text-sm font-semibold text-gray-100 mb-3">Viðbótarupplýsingar</h4>
-            <p className="text-sm text-gray-400">Staðsetning: Neskaupstaður</p>
+            <h4 className="text-sm font-semibold text-warm-50 mb-3">Viðbótarupplýsingar</h4>
+            <p className="text-sm text-warm-400">Staðsetning: Neskaupstaður</p>
             <div className="space-y-1 mt-2">
-              <p className="text-sm text-gray-400">KT: <span className="text-gray-300">460525-2250</span></p>
-              <p className="text-sm text-gray-400">VSK nr.: <span className="text-gray-300">156997</span></p>
-              <p className="text-sm text-gray-400">RKNR: <span className="text-gray-300">1106-26-001322</span></p>
+              <p className="text-sm text-warm-400">KT: <span className="text-warm-200">460525-2250</span></p>
+              <p className="text-sm text-warm-400">VSK nr.: <span className="text-warm-200">156997</span></p>
+              <p className="text-sm text-warm-400">RKNR: <span className="text-warm-200">1106-26-001322</span></p>
             </div>
           </div>
         </div>
 
-        <div className="mt-8 pt-8 border-t border-gray-800">
-          <p className="text-center text-sm text-gray-400 mb-3">
+        <div className="mt-8 pt-8 border-t border-warm-800">
+          <p className="text-center text-sm text-warm-400 mb-3">
             {translate(t.footer.copyright, { year: String(currentYear) })}
           </p>
-          <div className="flex flex-wrap justify-center gap-4 text-xs text-gray-500">
+          <div className="flex flex-wrap justify-center gap-4 text-xs text-warm-500">
             <a href="/privacy" className="hover:text-primary-400 transition-colors">
               Persónuverndarstefna
             </a>
-            <span className="text-gray-600">|</span>
+            <span className="text-warm-600">|</span>
             <a href="/cookies" className="hover:text-primary-400 transition-colors">
               Vefkökur
             </a>

@@ -9,10 +9,10 @@ export default function PricingPage() {
     <div className="py-16 sm:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-16 text-center">
-          <h1 className="text-4xl sm:text-5xl font-bold text-gray-100 mb-5">
+          <h1 className="text-4xl sm:text-5xl font-bold text-warm-50 mb-5">
             {t.pricing.title}
           </h1>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+          <p className="text-xl text-warm-200 max-w-3xl mx-auto">
             {t.pricing.subtitle}
           </p>
         </div>
@@ -20,19 +20,19 @@ export default function PricingPage() {
         {/* Detailed Pricing Tables */}
         <div className="space-y-12">
           {/* General Services */}
-          <div className="bg-gray-800/30 backdrop-blur-sm rounded-xl border border-gray-700/50 p-8">
-            <h2 className="text-2xl font-bold text-gray-100 mb-2">{t.pricing.detailedPricing.general.title}</h2>
+          <div className="bg-warm-800/30 backdrop-blur-sm rounded-xl border border-warm-700/50 p-8">
+            <h2 className="text-2xl font-bold text-warm-50 mb-2">{t.pricing.detailedPricing.general.title}</h2>
             <div className="overflow-x-auto">
-              <table className="w-full text-sm text-gray-400">
-                <thead className="border-b border-gray-700/50">
+              <table className="w-full text-sm text-warm-200">
+                <thead className="border-b border-warm-700/50">
                   <tr>
-                    <th className="text-left py-3 px-4 font-semibold text-gray-200">Þjónusta</th>
-                    <th className="text-right py-3 px-4 font-semibold text-gray-200">Aðlagað verð</th>
+                    <th className="text-left py-3 px-4 font-semibold text-warm-100">Þjónusta</th>
+                    <th className="text-right py-3 px-4 font-semibold text-warm-100">Aðlagað verð</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-gray-700/50">
+                <tbody className="divide-y divide-warm-700/50">
                   {t.pricing.detailedPricing.general.services.map((service, idx) => (
-                    <tr key={idx} className="hover:bg-gray-700/20 transition-colors">
+                    <tr key={idx} className="hover:bg-warm-700/20 transition-colors">
                       <td className="py-3 px-4">{service.name}</td>
                       <td className="py-3 px-4 text-right text-primary-400 font-semibold">{service.price}</td>
                     </tr>
@@ -43,19 +43,19 @@ export default function PricingPage() {
           </div>
 
           {/* Priority Services */}
-          <div className="bg-gray-800/30 backdrop-blur-sm rounded-xl border border-gray-700/50 p-8">
-            <h2 className="text-2xl font-bold text-gray-100 mb-2">{t.pricing.detailedPricing.priority.title}</h2>
+          <div className="bg-warm-800/30 backdrop-blur-sm rounded-xl border border-warm-700/50 p-8">
+            <h2 className="text-2xl font-bold text-warm-50 mb-2">{t.pricing.detailedPricing.priority.title}</h2>
             <div className="overflow-x-auto">
-              <table className="w-full text-sm text-gray-400">
-                <thead className="border-b border-gray-700/50">
+              <table className="w-full text-sm text-warm-200">
+                <thead className="border-b border-warm-700/50">
                   <tr>
-                    <th className="text-left py-3 px-4 font-semibold text-gray-200">Þjónusta</th>
-                    <th className="text-right py-3 px-4 font-semibold text-gray-200">Aðlagað verð</th>
+                    <th className="text-left py-3 px-4 font-semibold text-warm-100">Þjónusta</th>
+                    <th className="text-right py-3 px-4 font-semibold text-warm-100">Aðlagað verð</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-gray-700/50">
+                <tbody className="divide-y divide-warm-700/50">
                   {t.pricing.detailedPricing.priority.services.map((service, idx) => (
-                    <tr key={idx} className="hover:bg-gray-700/20 transition-colors">
+                    <tr key={idx} className="hover:bg-warm-700/20 transition-colors">
                       <td className="py-3 px-4">{service.name}</td>
                       <td className="py-3 px-4 text-right text-primary-400 font-semibold">{service.price}</td>
                     </tr>
@@ -66,19 +66,19 @@ export default function PricingPage() {
           </div>
 
           {/* Hourly Rates & Callouts */}
-          <div className="bg-gray-800/30 backdrop-blur-sm rounded-xl border border-gray-700/50 p-8">
-            <h2 className="text-2xl font-bold text-gray-100 mb-2">{t.pricing.detailedPricing.hourly.title}</h2>
+          <div className="bg-warm-800/30 backdrop-blur-sm rounded-xl border border-warm-700/50 p-8">
+            <h2 className="text-2xl font-bold text-warm-50 mb-2">{t.pricing.detailedPricing.hourly.title}</h2>
             <div className="overflow-x-auto">
-              <table className="w-full text-sm text-gray-400">
-                <thead className="border-b border-gray-700/50">
+              <table className="w-full text-sm text-warm-200">
+                <thead className="border-b border-warm-700/50">
                   <tr>
-                    <th className="text-left py-3 px-4 font-semibold text-gray-200">Þjónusta</th>
-                    <th className="text-right py-3 px-4 font-semibold text-gray-200">Aðlagað verð</th>
+                    <th className="text-left py-3 px-4 font-semibold text-warm-100">Þjónusta</th>
+                    <th className="text-right py-3 px-4 font-semibold text-warm-100">Aðlagað verð</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-gray-700/50">
+                <tbody className="divide-y divide-warm-700/50">
                   {t.pricing.detailedPricing.hourly.services.map((service, idx) => (
-                    <tr key={idx} className="hover:bg-gray-700/20 transition-colors">
+                    <tr key={idx} className="hover:bg-warm-700/20 transition-colors">
                       <td className="py-3 px-4">{service.name}</td>
                       <td className="py-3 px-4 text-right text-primary-400 font-semibold">{service.price}</td>
                     </tr>
@@ -89,19 +89,19 @@ export default function PricingPage() {
           </div>
 
           {/* Desktop Computers */}
-          <div className="bg-gray-800/30 backdrop-blur-sm rounded-xl border border-gray-700/50 p-8">
-            <h2 className="text-2xl font-bold text-gray-100 mb-2">{t.pricing.detailedPricing.desktop.title}</h2>
+          <div className="bg-warm-800/30 backdrop-blur-sm rounded-xl border border-warm-700/50 p-8">
+            <h2 className="text-2xl font-bold text-warm-50 mb-2">{t.pricing.detailedPricing.desktop.title}</h2>
             <div className="overflow-x-auto">
-              <table className="w-full text-sm text-gray-400">
-                <thead className="border-b border-gray-700/50">
+              <table className="w-full text-sm text-warm-200">
+                <thead className="border-b border-warm-700/50">
                   <tr>
-                    <th className="text-left py-3 px-4 font-semibold text-gray-200">Þjónusta</th>
-                    <th className="text-right py-3 px-4 font-semibold text-gray-200">Aðlagað verð</th>
+                    <th className="text-left py-3 px-4 font-semibold text-warm-100">Þjónusta</th>
+                    <th className="text-right py-3 px-4 font-semibold text-warm-100">Aðlagað verð</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-gray-700/50">
+                <tbody className="divide-y divide-warm-700/50">
                   {t.pricing.detailedPricing.desktop.services.map((service, idx) => (
-                    <tr key={idx} className="hover:bg-gray-700/20 transition-colors">
+                    <tr key={idx} className="hover:bg-warm-700/20 transition-colors">
                       <td className="py-3 px-4">{service.name}</td>
                       <td className="py-3 px-4 text-right text-primary-400 font-semibold">{service.price}</td>
                     </tr>
@@ -112,19 +112,19 @@ export default function PricingPage() {
           </div>
 
           {/* Laptops */}
-          <div className="bg-gray-800/30 backdrop-blur-sm rounded-xl border border-gray-700/50 p-8">
-            <h2 className="text-2xl font-bold text-gray-100 mb-2">{t.pricing.detailedPricing.laptop.title}</h2>
+          <div className="bg-warm-800/30 backdrop-blur-sm rounded-xl border border-warm-700/50 p-8">
+            <h2 className="text-2xl font-bold text-warm-50 mb-2">{t.pricing.detailedPricing.laptop.title}</h2>
             <div className="overflow-x-auto">
-              <table className="w-full text-sm text-gray-400">
-                <thead className="border-b border-gray-700/50">
+              <table className="w-full text-sm text-warm-200">
+                <thead className="border-b border-warm-700/50">
                   <tr>
-                    <th className="text-left py-3 px-4 font-semibold text-gray-200">Þjónusta</th>
-                    <th className="text-right py-3 px-4 font-semibold text-gray-200">Aðlagað verð</th>
+                    <th className="text-left py-3 px-4 font-semibold text-warm-100">Þjónusta</th>
+                    <th className="text-right py-3 px-4 font-semibold text-warm-100">Aðlagað verð</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-gray-700/50">
+                <tbody className="divide-y divide-warm-700/50">
                   {t.pricing.detailedPricing.laptop.services.map((service, idx) => (
-                    <tr key={idx} className="hover:bg-gray-700/20 transition-colors">
+                    <tr key={idx} className="hover:bg-warm-700/20 transition-colors">
                       <td className="py-3 px-4">{service.name}</td>
                       <td className="py-3 px-4 text-right text-primary-400 font-semibold">{service.price}</td>
                     </tr>
@@ -135,19 +135,19 @@ export default function PricingPage() {
           </div>
 
           {/* Cooling & Cleaning */}
-          <div className="bg-gray-800/30 backdrop-blur-sm rounded-xl border border-gray-700/50 p-8">
-            <h2 className="text-2xl font-bold text-gray-100 mb-2">{t.pricing.detailedPricing.cooling.title}</h2>
+          <div className="bg-warm-800/30 backdrop-blur-sm rounded-xl border border-warm-700/50 p-8">
+            <h2 className="text-2xl font-bold text-warm-50 mb-2">{t.pricing.detailedPricing.cooling.title}</h2>
             <div className="overflow-x-auto">
-              <table className="w-full text-sm text-gray-400">
-                <thead className="border-b border-gray-700/50">
+              <table className="w-full text-sm text-warm-200">
+                <thead className="border-b border-warm-700/50">
                   <tr>
-                    <th className="text-left py-3 px-4 font-semibold text-gray-200">Þjónusta</th>
-                    <th className="text-right py-3 px-4 font-semibold text-gray-200">Aðlagað verð</th>
+                    <th className="text-left py-3 px-4 font-semibold text-warm-100">Þjónusta</th>
+                    <th className="text-right py-3 px-4 font-semibold text-warm-100">Aðlagað verð</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-gray-700/50">
+                <tbody className="divide-y divide-warm-700/50">
                   {t.pricing.detailedPricing.cooling.services.map((service, idx) => (
-                    <tr key={idx} className="hover:bg-gray-700/20 transition-colors">
+                    <tr key={idx} className="hover:bg-warm-700/20 transition-colors">
                       <td className="py-3 px-4">{service.name}</td>
                       <td className="py-3 px-4 text-right text-primary-400 font-semibold">{service.price}</td>
                     </tr>
@@ -158,19 +158,19 @@ export default function PricingPage() {
           </div>
 
           {/* Security & Software */}
-          <div className="bg-gray-800/30 backdrop-blur-sm rounded-xl border border-gray-700/50 p-8">
-            <h2 className="text-2xl font-bold text-gray-100 mb-2">{t.pricing.detailedPricing.security.title}</h2>
+          <div className="bg-warm-800/30 backdrop-blur-sm rounded-xl border border-warm-700/50 p-8">
+            <h2 className="text-2xl font-bold text-warm-50 mb-2">{t.pricing.detailedPricing.security.title}</h2>
             <div className="overflow-x-auto">
-              <table className="w-full text-sm text-gray-400">
-                <thead className="border-b border-gray-700/50">
+              <table className="w-full text-sm text-warm-200">
+                <thead className="border-b border-warm-700/50">
                   <tr>
-                    <th className="text-left py-3 px-4 font-semibold text-gray-200">Þjónusta</th>
-                    <th className="text-right py-3 px-4 font-semibold text-gray-200">Aðlagað verð</th>
+                    <th className="text-left py-3 px-4 font-semibold text-warm-100">Þjónusta</th>
+                    <th className="text-right py-3 px-4 font-semibold text-warm-100">Aðlagað verð</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-gray-700/50">
+                <tbody className="divide-y divide-warm-700/50">
                   {t.pricing.detailedPricing.security.services.map((service, idx) => (
-                    <tr key={idx} className="hover:bg-gray-700/20 transition-colors">
+                    <tr key={idx} className="hover:bg-warm-700/20 transition-colors">
                       <td className="py-3 px-4">{service.name}</td>
                       <td className="py-3 px-4 text-right text-primary-400 font-semibold">{service.price}</td>
                     </tr>
@@ -181,19 +181,19 @@ export default function PricingPage() {
           </div>
 
           {/* Data & Recovery */}
-          <div className="bg-gray-800/30 backdrop-blur-sm rounded-xl border border-gray-700/50 p-8">
-            <h2 className="text-2xl font-bold text-gray-100 mb-2">{t.pricing.detailedPricing.data.title}</h2>
+          <div className="bg-warm-800/30 backdrop-blur-sm rounded-xl border border-warm-700/50 p-8">
+            <h2 className="text-2xl font-bold text-warm-50 mb-2">{t.pricing.detailedPricing.data.title}</h2>
             <div className="overflow-x-auto">
-              <table className="w-full text-sm text-gray-400">
-                <thead className="border-b border-gray-700/50">
+              <table className="w-full text-sm text-warm-200">
+                <thead className="border-b border-warm-700/50">
                   <tr>
-                    <th className="text-left py-3 px-4 font-semibold text-gray-200">Þjónusta</th>
-                    <th className="text-right py-3 px-4 font-semibold text-gray-200">Aðlagað verð</th>
+                    <th className="text-left py-3 px-4 font-semibold text-warm-100">Þjónusta</th>
+                    <th className="text-right py-3 px-4 font-semibold text-warm-100">Aðlagað verð</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-gray-700/50">
+                <tbody className="divide-y divide-warm-700/50">
                   {t.pricing.detailedPricing.data.services.map((service, idx) => (
-                    <tr key={idx} className="hover:bg-gray-700/20 transition-colors">
+                    <tr key={idx} className="hover:bg-warm-700/20 transition-colors">
                       <td className="py-3 px-4">{service.name}</td>
                       <td className="py-3 px-4 text-right text-primary-400 font-semibold">{service.price}</td>
                     </tr>
@@ -206,7 +206,7 @@ export default function PricingPage() {
 
         {/* Footer text */}
         <div className="text-center mt-16">
-          <p className="text-base text-gray-400 max-w-3xl mx-auto">
+          <p className="text-base text-warm-200 max-w-3xl mx-auto">
             {t.pricing.footer}
           </p>
         </div>

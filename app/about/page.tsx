@@ -9,12 +9,12 @@ export default function AboutPage() {
     <div className="py-16 sm:py-24">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-16">
-          <h1 className="text-4xl sm:text-5xl font-bold text-gray-100 mb-10 text-center">
+          <h1 className="text-4xl sm:text-5xl font-bold text-warm-50 mb-10 text-center">
             {t.about.title}
           </h1>
           
-          <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl border border-gray-700/50 p-8 sm:p-10 mb-10">
-            <div className="space-y-6 text-lg text-gray-300 leading-relaxed">
+          <div className="bg-warm-800/50 backdrop-blur-sm rounded-xl border border-warm-700/50 p-8 sm:p-10 mb-10">
+            <div className="space-y-6 text-lg text-warm-200 leading-relaxed">
               <p>
                 {t.about.intro1}
               </p>
@@ -24,11 +24,11 @@ export default function AboutPage() {
             </div>
           </div>
 
-          <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl border border-gray-700/50 p-8 sm:p-10">
-            <h2 className="text-2xl sm:text-3xl font-bold text-gray-100 mb-6">
+          <div className="bg-warm-800/50 backdrop-blur-sm rounded-xl border border-warm-700/50 p-8 sm:p-10">
+            <h2 className="text-2xl sm:text-3xl font-bold text-warm-50 mb-6">
               {t.about.howIWork.title}
             </h2>
-            <ul className="space-y-4 text-lg text-gray-300">
+            <ul className="space-y-4 text-lg text-warm-200">
               <li className="flex items-start">
                 <span className="text-primary-400 mr-4 text-xl">✓</span>
                 <span>{t.about.howIWork.bullet1}</span>

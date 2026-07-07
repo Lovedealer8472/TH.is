@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Verkefni Test</title>
+<style>
+  body { background: #0f0f12; color: #e8e4e0; font-family: system-ui, sans-serif; padding: 2rem; }
+  h1 { font-size: 2.5rem; margin-bottom: 2rem; color: #4ade80; }
+  .card {
+    display: flex; align-items: center; gap: 1.5rem;
+    padding: 1.5rem; margin-bottom: 1rem;
+    background: #1a1a20; border-radius: 12px;
+    border: 1px solid #2a2a35; border-left: 4px solid #4ade80;
+  }
+  .card:nth-child(2) { border-left-color: #f97316; }
+  .card:nth-child(3) { border-left-color: #a78bfa; }
+  .card:nth-child(4) { border-left-color: #06b6d4; }
+  .card:nth-child(5) { border-left-color: #38bdf8; }
+  .card:nth-child(6) { border-left-color: #06b6d4; }
+  .emoji { font-size: 2.5rem; flex-shrink: 0; }
+  .name { font-size: 2rem; font-weight: 800; }
+  .name.green { color: #4ade80; }
+  .name.orange { color: #f97316; }
+  .name.purple { color: #a78bfa; }
+  .name.cyan { color: #06b6d4; }
+  .name.blue { color: #38bdf8; }
+  .desc { font-size: 1.2rem; color: #a0a0b0; margin-top: 0.25rem; }
+</style>
+</head>
+<body>
+<h1>~/verkefni — ALL 6 PROJECTS BELOW</h1>
+
+<div class="card">
+  <span class="emoji">🎙️</span>
+  <div>
+    <div class="name green">Tölvuhvísl</div>
+    <div class="desc">Íslenskur talgervill — 30+ raddir, REST API, GDPR samhæft</div>
+  </div>
+</div>
+
+<div class="card">
+  <span class="emoji">🏕️</span>
+  <div>
+    <div class="name orange">Campybara</div>
+    <div class="desc">Android app — tjaldsvæði & bílastæði á Íslandi, Google Maps, offline</div>
+  </div>
+</div>
+
+<div class="card">
+  <span class="emoji">⚔️</span>
+  <div>
+    <div class="name purple">Viking Saga</div>
+    <div class="desc">Vafraleikur — landnáms-þorp, RPG, spilanlegur MVP í vinnslu</div>
+  </div>
+</div>
+
+<div class="card">
+  <span class="emoji">🏛️</span>
+  <div>
+    <div class="name cyan">Weeping Gods</div>
+    <div class="desc">Egyptsk sjónræn skáldsaga — ChoiceScript → Ren'Py, raddsetning</div>
+  </div>
+</div>
+
+<div class="card">
+  <span class="emoji">📈</span>
+  <div>
+    <div class="name blue">UniRabbit</div>
+    <div class="desc">Binance Futures viðskiptabott — Python, áhættustýring, DRY_RUN</div>
+  </div>
+</div>
+
+<div class="card">
+  <span class="emoji">🌊</span>
+  <div>
+    <div class="name cyan">Cozy Stream</div>
+    <div class="desc">Godot GPU vatnshermir — Unreal Engine 5 flutningur í vinnslu</div>
+  </div>
+</div>
+
+</body>
+</html>

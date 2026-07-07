@@ -1,229 +1,110 @@
-'use client';
-
 import Link from 'next/link';
 import Image from 'next/image';
-import { useI18n } from '@/lib/i18n';
+import is from '@/lib/translations/is.json';
+
+const t = is;
 
 export default function HomePage() {
-  const { t } = useI18n();
-
   return (
     <div className="flex flex-col">
-      {/* Hero Section */}
-      <section className="relative pt-6 sm:pt-8 pb-12 sm:pb-16 bg-gradient-to-b from-gray-900 to-gray-950">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h1 className="sr-only">{t.home.hero.titleMain}</h1>
-            <div className="mb-4 sm:mb-6 flex justify-center">
-              <Image
-                src="/logo.png?v=3"
-                alt="Tölvuhvíslarinn"
-                width={832}
-                height={187}
-                className="max-w-full h-auto"
-                style={{ maxWidth: '800px', height: 'auto' }}
-                priority
-              />
-            </div>
-            <p className="text-lg text-gray-400 mb-3 max-w-3xl mx-auto leading-relaxed">
-              {t.home.hero.subtitle}
-            </p>
-            <p className="text-base text-gray-500 mb-10 sm:mb-12">
-              {t.home.hero.trustLine}
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Link
-                href="/contact"
-                className="px-8 py-3 bg-primary-600 text-white rounded-lg font-medium hover:bg-primary-700 transition-colors shadow-lg hover:shadow-xl"
-              >
-                {t.home.cta.primary}
-              </Link>
-              <Link
-                href="/services"
-                className="px-8 py-3 bg-gray-800 text-primary-400 border-2 border-primary-600 rounded-lg font-medium hover:bg-gray-700 transition-colors"
-              >
-                {t.home.cta.secondary}
-              </Link>
-            </div>
-          </div>
-        </div>
-        
-        {/* Subtle tech accent - decorative element */}
-        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-tech-green to-transparent opacity-20"></div>
-      </section>
+      {/* ── Hero ── */}
+      <section className="relative overflow-hidden bg-warm-950 border-b border-warm-800/50">
+        <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'linear-gradient(oklch(65% 0.17 158 / 0.5) 1px, transparent 1px), linear-gradient(90deg, oklch(65% 0.17 158 / 0.5) 1px, transparent 1px)', backgroundSize: '60px 60px' }} aria-hidden="true" />
 
-      {/* Service Highlights */}
-      <section className="py-16 sm:py-24 bg-gray-900">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
-            {/* Tölvuviðgerðir */}
-            <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl border border-gray-700/50 p-8 hover:border-primary-500/50 transition-all duration-300 hover:shadow-xl hover:shadow-primary-500/10">
-              <div className="w-12 h-12 bg-primary-500/10 rounded-lg flex items-center justify-center mb-6">
-                <svg className="w-6 h-6 text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                </svg>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 py-12 sm:py-20 lg:py-24">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center">
+            <div className="lg:col-span-5 flex justify-center lg:justify-end">
+              <div className="relative w-full max-w-sm sm:max-w-md lg:max-w-lg aspect-[4/3]">
+                <div className="absolute -inset-4 rounded-2xl opacity-20 blur-3xl" style={{ background: 'oklch(60% 0.17 156 / 0.4)' }} aria-hidden="true" />
+                <Image src="/chatgpt-image.png" alt="Daði — Tölvuhvíslarinn" fill className="object-cover rounded-2xl shadow-2xl" sizes="(max-width: 640px) 384px, (max-width: 1024px) 448px, 512px" priority />
+                <div className="absolute -bottom-2 -right-2 bg-warm-800/90 backdrop-blur border border-warm-600/50 rounded-lg px-3 py-1.5 font-mono text-xs text-primary-400">
+                  <span className="text-primary-500">~/daði</span><span className="terminal-caret ml-0.5" />
+                </div>
               </div>
-              <h2 className="text-2xl font-bold text-gray-100 mb-3">
-                {t.home.services.repairs.title}
-              </h2>
-              <p className="text-sm text-gray-400 mb-5 leading-relaxed">
-                {t.home.services.repairs.description}
-              </p>
-              <ul className="space-y-2.5 text-sm text-gray-400">
-                <li className="flex items-start">
-                  <span className="text-primary-400 mr-2.5 mt-0.5">•</span>
-                  <span>{t.home.services.repairs.bullet1}</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-primary-400 mr-2.5 mt-0.5">•</span>
-                  <span>{t.home.services.repairs.bullet2}</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-primary-400 mr-2.5 mt-0.5">•</span>
-                  <span>{t.home.services.repairs.bullet3}</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-primary-400 mr-2.5 mt-0.5">•</span>
-                  <span>{t.home.services.repairs.bullet4}</span>
-                </li>
-              </ul>
-              <Link
-                href="/services/tolvuvidgerdir"
-                className="inline-block mt-6 text-sm font-medium text-primary-400 hover:text-primary-300 transition-colors"
-              >
-                {t.home.readMore} →
-              </Link>
             </div>
-            <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl border border-gray-700/50 p-8 hover:border-primary-500/50 transition-all duration-300 hover:shadow-xl hover:shadow-primary-500/10">
-              <div className="w-12 h-12 bg-primary-500/10 rounded-lg flex items-center justify-center mb-6">
-                <svg className="w-6 h-6 text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
-                </svg>
+            <div className="lg:col-span-7 text-center lg:text-left">
+              <p className="font-mono text-sm text-primary-500 tracking-wider uppercase mb-4"><span className="text-warm-400">{'>'}</span> tölvuviðgerðir á austurlandi</p>
+              <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-warm-50 leading-tight tracking-tight">{t.home.hero.titleMain}<span className="font-mono text-primary-500">.is</span></h1>
+              <p className="mt-5 text-lg sm:text-xl text-warm-300 max-w-xl lg:max-w-none leading-relaxed">{t.home.hero.subtitle}</p>
+              <p className="mt-3 text-base text-warm-400 max-w-lg lg:max-w-none">{t.home.hero.trustLine}</p>
+              <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                <Link href="/contact" className="group inline-flex items-center gap-2 px-8 py-3.5 bg-primary-600 text-white font-semibold rounded-xl hover:bg-primary-500 transition-all duration-200 shadow-lg shadow-primary-600/20 hover:shadow-primary-500/30 hover:-translate-y-0.5">{t.home.cta.primary}<span className="font-mono text-primary-200 group-hover:translate-x-0.5 transition-transform">→</span></Link>
+                <Link href="/services" className="inline-flex items-center gap-2 px-8 py-3.5 bg-warm-800/80 text-warm-200 font-medium rounded-xl border border-warm-600/40 hover:border-primary-500/40 hover:text-primary-300 transition-all duration-200">{t.home.cta.secondary}<span className="font-mono text-warm-400">↓</span></Link>
               </div>
-              <h2 className="text-2xl font-bold text-gray-100 mb-3">
-                {t.home.services.custom.title}
-              </h2>
-              <p className="text-sm text-gray-400 mb-5 leading-relaxed">
-                {t.home.services.custom.description}
-              </p>
-              <ul className="space-y-2.5 text-sm text-gray-400">
-                <li className="flex items-start">
-                  <span className="text-primary-400 mr-2.5 mt-0.5">•</span>
-                  <span>{t.home.services.custom.bullet1}</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-primary-400 mr-2.5 mt-0.5">•</span>
-                  <span>{t.home.services.custom.bullet2}</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-primary-400 mr-2.5 mt-0.5">•</span>
-                  <span>{t.home.services.custom.bullet3}</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-primary-400 mr-2.5 mt-0.5">•</span>
-                  <span>{t.home.services.custom.bullet4}</span>
-                </li>
-              </ul>
-              <Link
-                href="/services/sersmidid-bordtolva"
-                className="inline-block mt-6 text-sm font-medium text-primary-400 hover:text-primary-300 transition-colors"
-              >
-                {t.home.readMore} →
-              </Link>
-            </div>
-
-            {/* Tækniráðgjöf */}
-            <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl border border-gray-700/50 p-8 hover:border-primary-500/50 transition-all duration-300 hover:shadow-xl hover:shadow-primary-500/10">
-              <div className="w-12 h-12 bg-primary-500/10 rounded-lg flex items-center justify-center mb-6">
-                <svg className="w-6 h-6 text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                </svg>
+              <div className="mt-6 flex flex-wrap gap-3 justify-center lg:justify-start">
+                <a href="tel:+3548486755" className="inline-flex items-center gap-1.5 text-sm text-warm-400 hover:text-primary-400 transition-colors font-mono"><span className="text-primary-500">$</span> hringja</a>
+                <span className="text-warm-600">·</span>
+                <a href="https://wa.me/3548486755" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-sm text-warm-400 hover:text-primary-400 transition-colors font-mono"><span className="text-primary-500">$</span> whatsapp</a>
+                <span className="text-warm-600">·</span>
+                <a href="mailto:hjalp@tolvuhvislarinn.is" className="inline-flex items-center gap-1.5 text-sm text-warm-400 hover:text-primary-400 transition-colors font-mono"><span className="text-primary-500">$</span> netfang</a>
               </div>
-              <h2 className="text-2xl font-bold text-gray-100 mb-3">
-                {t.home.services.consulting.title}
-              </h2>
-              <p className="text-sm text-gray-400 mb-5 leading-relaxed">
-                {t.home.services.consulting.description}
-              </p>
-              <ul className="space-y-2.5 text-sm text-gray-400">
-                <li className="flex items-start">
-                  <span className="text-primary-400 mr-2.5 mt-0.5">•</span>
-                  <span>{t.home.services.consulting.bullet1}</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-primary-400 mr-2.5 mt-0.5">•</span>
-                  <span>{t.home.services.consulting.bullet2}</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-primary-400 mr-2.5 mt-0.5">•</span>
-                  <span>{t.home.services.consulting.bullet3}</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-primary-400 mr-2.5 mt-0.5">•</span>
-                  <span>{t.home.services.consulting.bullet4}</span>
-                </li>
-              </ul>
-              <Link
-                href="/services/taekniaadstod-fyrirtaeki"
-                className="inline-block mt-6 text-sm font-medium text-primary-400 hover:text-primary-300 transition-colors"
-              >
-                {t.home.readMore} →
-              </Link>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Service area */}
-      <section className="py-12 sm:py-16 bg-gray-950 border-y border-gray-800/50">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-2xl sm:text-3xl font-bold text-gray-100 mb-4">
-            {t.home.serviceArea.heading}
-          </h2>
-          <p className="text-gray-400 leading-relaxed mb-4">
-            {t.home.serviceArea.description}
-          </p>
-          <p className="text-sm text-primary-400/90 font-medium">
-            {t.home.serviceArea.areas}
-          </p>
-        </div>
-      </section>
-
-      {/* Software / projects lab */}
-      <section className="py-12 sm:py-16 bg-gray-900">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-xl sm:text-2xl font-bold text-gray-100 mb-3">
-            {t.home.projectsLab.heading}
-          </h2>
-          <p className="text-gray-400 leading-relaxed mb-6 max-w-2xl mx-auto">
-            {t.home.projectsLab.description}
-          </p>
-          <Link
-            href="/projects"
-            className="inline-block text-sm font-medium text-primary-400 hover:text-primary-300 transition-colors"
-          >
-            {t.home.projectsLab.link} →
-          </Link>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-16 sm:py-24 bg-gradient-to-b from-gray-900 to-gray-950">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="bg-gray-800/30 backdrop-blur-sm rounded-2xl border border-gray-700/50 p-10 sm:p-12">
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-100 mb-4">
-              {t.home.cta.heading}
-            </h2>
-            <p className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto leading-relaxed">
-              {t.home.cta.description}
-            </p>
-            <Link
-              href="/contact"
-              className="inline-block px-10 py-4 bg-primary-600 text-white rounded-lg font-medium hover:bg-primary-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-primary-500/20 hover:-translate-y-0.5"
-            >
-              {t.home.cta.primary}
-            </Link>
+      {/* ── Services / Process ── */}
+      <section className="py-14 sm:py-20 bg-warm-900">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
+          <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-16">
+            <div>
+              <p className="font-mono text-sm text-primary-500 tracking-wider uppercase mb-2">{`// hvernig virkar þetta`}</p>
+              <h2 className="font-display text-3xl sm:text-5xl font-bold text-warm-50">Þrjú skref frá vandræðum<br /><span className="text-primary-400">að lausn</span></h2>
+            </div>
+            <p className="text-warm-400 max-w-lg text-base leading-relaxed lg:text-right">Ekkert flókið ferli. Þú sendir mér skilaboð, ég greini vandamálið, og laga það — eða segi þér heiðarlega ef það þarf ekki að gera neitt.</p>
           </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-10">
+            {[
+              { num: '01', title: 'Hafðu samband', desc: 'Hringdu, sendu WhatsApp eða tölvupóst. Lýstu vandamálinu á þínu eigin máli — ég tala ekki tæknimál nema þú viljir það.', cli: '$ senda_skilaboð --þægilegt', accent: true },
+              { num: '02', title: 'Greining', desc: 'Ég skoða tölvuna, finn hvað er að, og læt þig vita af kostnaðinum áður en ég byrja. Ekkert föst greiningargjald.', cli: '$ greina --heiðarlega --án-óvæntra-kostnaða', accent: false },
+              { num: '03', title: 'Lagað', desc: 'Tölvan er lagfærð, uppfærð, eða smíðuð — og þú færð hana tilbaka með skýringu. Engin plásturlausn.', cli: '$ laga --varanlega  # engin plásturlausn', accent: false },
+            ].map((step) => (
+              <div key={step.num} className={`rounded-2xl border p-8 lg:p-10 group transition-all duration-300 ${step.accent ? 'bg-warm-800/60 border-primary-500/20 hover:border-primary-500/40' : 'bg-warm-800/40 border-warm-700/30 hover:border-warm-600/50'}`}>
+                <span className={`font-display text-5xl font-bold transition-colors ${step.accent ? 'text-primary-500/20 group-hover:text-primary-500/30' : 'text-warm-700/40'}`}>{step.num}</span>
+                <h3 className="font-display text-xl font-bold text-warm-100 mt-3">{step.title}</h3>
+                <p className="text-warm-400 text-base mt-2 leading-relaxed">{step.desc}</p>
+                <div className={`mt-4 font-mono text-xs ${step.accent ? 'text-primary-500' : 'text-warm-500'}`}>{step.cli}</div>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-12 flex flex-wrap gap-4 justify-center">
+            {[{ href: '/services/tolvuvidgerdir', label: t.home.services.repairs.title }, { href: '/services/sersmidid-bordtolva', label: t.home.services.custom.title }, { href: '/services/taekniaadstod-fyrirtaeki', label: t.home.services.consulting.title }].map((svc) => (
+              <Link key={svc.href} href={svc.href} className="font-mono text-sm text-warm-400 hover:text-primary-400 transition-colors border border-warm-700/40 hover:border-primary-500/30 rounded-full px-4 py-1.5"><span className="text-primary-500">/</span>{svc.label.toLowerCase()}</Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Trust ── */}
+      <section className="py-16 sm:py-20 bg-warm-950 border-y border-warm-800/40">
+        <div className="max-w-5xl mx-auto px-4 sm:px-8 lg:px-12 text-center">
+          <p className="font-mono text-sm text-primary-500 tracking-wider uppercase mb-6">{`/* traust */`}</p>
+          <blockquote className="font-display text-2xl sm:text-3xl font-medium text-warm-100 leading-relaxed">&ldquo;Persónuleg og heiðarleg tækniaðstoð — engin tæknimál, bara lausnir sem virka.&rdquo;</blockquote>
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-8 text-sm text-warm-400">
+            {[{ badge: 'KT', val: '460525-2250' }, { badge: 'VSK', val: '156997' }, { badge: '20+', val: 'ára reynsla' }].map((i) => (
+              <div key={i.badge} className="flex items-center gap-2"><span className="w-8 h-8 rounded-full bg-primary-500/10 flex items-center justify-center font-mono text-xs text-primary-400">{i.badge}</span><span>{i.val}</span></div>
+            ))}
+          </div>
+          <div className="mt-10 inline-flex items-center gap-2 bg-warm-800/50 border border-primary-500/15 rounded-xl px-5 py-3">
+            <span className="font-mono text-primary-400 text-lg">✓</span>
+            <span className="text-warm-200 text-sm">Ekkert föst greiningargjald — þú borgar bara fyrir lausnina</span>
+          </div>
+        </div>
+      </section>
+
+
+      {/* ── Service Area + CTA ── */}
+      <section className="py-16 sm:py-24 bg-warm-950 relative">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full opacity-[0.04] blur-3xl pointer-events-none" style={{ background: 'oklch(60% 0.17 156)' }} />
+        <div className="relative max-w-5xl mx-auto px-4 sm:px-8 lg:px-12 text-center">
+          <p className="font-mono text-sm text-primary-500 tracking-wider uppercase mb-4">{`/* þjónustusvæði */`}</p>
+          <h2 className="font-display text-2xl sm:text-3xl font-bold text-warm-50 mb-3">{t.home.serviceArea.heading}</h2>
+          <p className="text-warm-400 leading-relaxed mb-5 max-w-xl mx-auto">{t.home.serviceArea.description}</p>
+          <p className="font-mono text-sm text-primary-400/90 font-medium mb-12">{t.home.serviceArea.areas}</p>
+          <Link href="/contact" className="group inline-flex items-center gap-3 px-10 py-4 bg-primary-600 text-white font-semibold rounded-xl hover:bg-primary-500 transition-all duration-200 shadow-xl shadow-primary-600/20 hover:shadow-primary-500/30 hover:-translate-y-0.5 text-lg">{t.home.cta.primary}<span className="font-mono text-primary-200 group-hover:translate-x-1 transition-transform">→</span></Link>
+          <p className="mt-6 font-mono text-xs text-warm-600">$ telnet tolvuhvislarinn.is 80 <span className="text-warm-700">{'// þetta er brandari, ekki reyna þetta'}</span></p>
         </div>
       </section>
     </div>

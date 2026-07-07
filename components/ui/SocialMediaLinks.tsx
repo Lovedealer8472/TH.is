@@ -81,7 +81,7 @@ export default function SocialMediaLinks({ variant = 'footer', showLabels = fals
   if (variant === 'footer') {
     return (
       <div className="flex items-center gap-4">
-        {showLabels && <span className="text-sm text-gray-400">{t.social.followUs || 'Fylgdu okkur'}:</span>}
+        {showLabels && <span className="text-sm text-warm-400">{t.social.followUs || 'Fylgdu okkur'}:</span>}
         <div className="flex gap-3">
           {socialLinks.map((link) => (
             <a
@@ -89,7 +89,7 @@ export default function SocialMediaLinks({ variant = 'footer', showLabels = fals
               href={link.url}
               target="_blank"
               rel="noopener noreferrer"
-              className={`text-gray-400 ${link.color} transition-colors`}
+              className={`text-warm-400 ${link.color} transition-colors`}
               aria-label={link.name}
               title={link.name}
             >
@@ -110,7 +110,7 @@ export default function SocialMediaLinks({ variant = 'footer', showLabels = fals
           href={link.url}
           target="_blank"
           rel="noopener noreferrer"
-          className={`flex items-center gap-2 px-4 py-2 bg-gray-800 text-gray-300 rounded-lg ${link.color} transition-colors hover:bg-gray-700`}
+          className={`flex items-center gap-2 px-4 py-2 bg-warm-800 text-warm-200 rounded-lg ${link.color} transition-colors hover:bg-warm-700`}
         >
           {link.icon}
           {showLabels && <span>{link.name}</span>}

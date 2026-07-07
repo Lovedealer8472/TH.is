@@ -55,10 +55,10 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl border border-gray-700/50 p-8 sm:p-10">
+    <div className="bg-warm-800/50 backdrop-blur-sm rounded-xl border border-warm-700/50 p-8 sm:p-10">
       <form onSubmit={handleSubmit} className="space-y-6">
         <div>
-          <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
+          <label htmlFor="name" className="block text-sm font-medium text-warm-200 mb-2">
             {t.contact.form.name}
           </label>
           <input
@@ -68,12 +68,12 @@ export default function ContactForm() {
             value={formData.name}
             onChange={handleChange}
             required
-            className="w-full px-4 py-3 bg-gray-900/50 border border-gray-700 text-gray-100 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all"
+            className="w-full px-4 py-3 bg-warm-900/50 border border-warm-700 text-warm-50 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all"
           />
         </div>
 
         <div>
-          <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
+          <label htmlFor="email" className="block text-sm font-medium text-warm-200 mb-2">
             {t.contact.form.email}
           </label>
           <input
@@ -83,12 +83,12 @@ export default function ContactForm() {
             value={formData.email}
             onChange={handleChange}
             required
-            className="w-full px-4 py-3 bg-gray-900/50 border border-gray-700 text-gray-100 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all"
+            className="w-full px-4 py-3 bg-warm-900/50 border border-warm-700 text-warm-50 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all"
           />
         </div>
 
         <div>
-          <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
+          <label htmlFor="message" className="block text-sm font-medium text-warm-200 mb-2">
             {t.contact.form.message}
           </label>
           <textarea
@@ -98,7 +98,7 @@ export default function ContactForm() {
             onChange={handleChange}
             required
             rows={6}
-            className="w-full px-4 py-3 bg-gray-900/50 border border-gray-700 text-gray-100 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all resize-none"
+            className="w-full px-4 py-3 bg-warm-900/50 border border-warm-700 text-warm-50 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all resize-none"
           />
         </div>
 

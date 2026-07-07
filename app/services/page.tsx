@@ -22,10 +22,10 @@ export default function ServicesPage() {
     <div className="py-16 sm:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-16 text-center">
-          <h1 className="text-4xl sm:text-5xl font-bold text-gray-100 mb-5">
+          <h1 className="text-4xl sm:text-5xl font-bold text-warm-50 mb-5">
             {t.services.title}
           </h1>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+          <p className="text-xl text-warm-200 max-w-3xl mx-auto">
             {t.services.subtitle}
           </p>
         </div>
@@ -49,7 +49,7 @@ export default function ServicesPage() {
         </div>
 
         <div className="mb-12">
-          <h2 className="text-2xl font-bold text-gray-100 mb-6 text-center">
+          <h2 className="text-2xl font-bold text-warm-50 mb-6 text-center">
             {t.services.detailPagesHeading}
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -57,7 +57,7 @@ export default function ServicesPage() {
               <Link
                 key={page.slug}
                 href={getServicePagePath(page.slug)}
-                className="rounded-lg border border-gray-700/50 bg-gray-800/30 px-5 py-4 text-gray-300 hover:border-primary-500/50 hover:text-primary-400 transition-colors"
+                className="rounded-lg border border-warm-700/50 bg-warm-800/30 px-5 py-4 text-warm-200 hover:border-primary-500/50 hover:text-primary-400 transition-colors"
               >
                 {page.overviewCardTitle}
               </Link>
@@ -66,7 +66,7 @@ export default function ServicesPage() {
         </div>
 
         <div className="text-center mt-8">
-          <p className="text-base text-gray-400 max-w-3xl mx-auto">
+          <p className="text-base text-warm-200 max-w-3xl mx-auto">
             {t.services.footer}
           </p>
         </div>
@@ -92,13 +92,13 @@ function ServiceCard({
 }) {
   return (
     <div
-      className={`bg-gray-800/50 backdrop-blur-sm rounded-xl border border-gray-700/50 p-8 hover:border-primary-500/50 transition-all duration-300 hover:shadow-xl hover:shadow-primary-500/10 group ${className ?? ''}`}
+      className={`bg-warm-800/50 backdrop-blur-sm rounded-xl border border-warm-700/50 p-8 hover:border-primary-500/50 transition-all duration-300 hover:shadow-xl hover:shadow-primary-500/10 group ${className ?? ''}`}
     >
       <div className="w-12 h-12 bg-primary-500/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary-500/20 transition-colors">
         {icon}
       </div>
-      <h2 className="text-xl sm:text-2xl font-bold text-gray-100 mb-6">{title}</h2>
-      <ul className="space-y-3 text-gray-400">
+      <h2 className="text-xl sm:text-2xl font-bold text-warm-50 mb-6">{title}</h2>
+      <ul className="space-y-3 text-warm-200">
         {bullets.map((bullet) => (
           <li key={bullet} className="flex items-start">
             <span className="text-primary-400 mr-3">•</span>

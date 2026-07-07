@@ -3,16 +3,20 @@
 @tailwind utilities;
 
 :root {
-  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  --font-mono: 'Courier New', Courier, 'Liberation Mono', 'DejaVu Sans Mono', monospace;
+  --font-display: ui-sans-serif, system-ui, sans-serif;
+  --font-sans: ui-sans-serif, system-ui, sans-serif;
+  --font-mono: ui-monospace, 'SF Mono', 'Cascadia Code', 'Fira Code', 'JetBrains Mono', 'Courier New', monospace;
 }
 
 @layer base {
-  html {
-    @apply scroll-smooth;
-  }
-  
-  body {
-    @apply antialiased text-gray-100 bg-gray-900;
-  }
+  html { @apply scroll-smooth; }
+  body { @apply antialiased text-warm-100 bg-warm-950; }
+  :focus-visible { @apply outline-2 outline-offset-2 outline-primary-500; outline-style: solid; }
+  ::selection { background: oklch(60% 0.17 156 / 0.3); color: oklch(95% 0.01 170); }
+}
+
+@layer components {
+  .terminal-caret::after { content: '_'; animation: blink 1s step-end infinite; color: oklch(65% 0.17 158); }
+  @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+  @media (prefers-reduced-motion: reduce) { .terminal-caret::after { animation: none; } }
 }

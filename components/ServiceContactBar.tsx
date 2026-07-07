@@ -13,8 +13,8 @@ export default function ServiceContactBar({ serviceName }: ServiceContactBarProp
 
   return (
     <div className="rounded-xl border border-primary-500/30 bg-primary-950/40 p-6 sm:p-8">
-      <h2 className="text-xl font-bold text-gray-100 mb-2">Hafðu samband</h2>
-      <p className="text-gray-400 mb-6">
+      <h2 className="text-xl font-bold text-warm-50 mb-2">Hafðu samband</h2>
+      <p className="text-warm-400 mb-6">
         Sendu fyrirspurn, hringdu eða skrifaðu á WhatsApp – ég svara fljótt.
       </p>
       <div className="flex flex-wrap gap-3">
@@ -47,7 +47,7 @@ export default function ServiceContactBar({ serviceName }: ServiceContactBarProp
         )}
         <Link
           href="/contact"
-          className="inline-flex items-center gap-2 px-5 py-3 bg-gray-800 text-primary-400 border border-primary-600 rounded-lg font-medium hover:bg-gray-700 transition-colors"
+          className="inline-flex items-center gap-2 px-5 py-3 bg-warm-800 text-primary-400 border border-primary-600 rounded-lg font-medium hover:bg-warm-700 transition-colors"
         >
           <MailIcon />
           Senda fyrirspurn

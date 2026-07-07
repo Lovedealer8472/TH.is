@@ -28,7 +28,7 @@ export default function ServicePageContent({ page }: ServicePageContentProps) {
       />
       <div className="py-16 sm:py-24">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <nav className="text-sm text-gray-500 mb-8">
+          <nav className="text-sm text-warm-500 mb-8">
             <Link href="/" className="hover:text-primary-400 transition-colors">
               Forsíða
             </Link>
@@ -37,12 +37,12 @@ export default function ServicePageContent({ page }: ServicePageContentProps) {
               Þjónusta
             </Link>
             <span className="mx-2">/</span>
-            <span className="text-gray-400">{page.overviewCardTitle}</span>
+            <span className="text-warm-400">{page.overviewCardTitle}</span>
           </nav>
 
           <header className="mb-10">
-            <h1 className="text-3xl sm:text-4xl font-bold text-gray-100 mb-4">{page.h1}</h1>
-            <p className="text-lg text-gray-400 leading-relaxed">{page.intro}</p>
+            <h1 className="text-3xl sm:text-4xl font-bold text-warm-50 mb-4">{page.h1}</h1>
+            <p className="text-lg text-warm-400 leading-relaxed">{page.intro}</p>
           </header>
 
           <ServiceContactBar serviceName={page.overviewCardTitle} />
@@ -51,7 +51,7 @@ export default function ServicePageContent({ page }: ServicePageContentProps) {
             <h2 className="text-sm font-semibold uppercase tracking-wider text-primary-400 mb-3">
               Þjónustusvæði
             </h2>
-            <p className="text-gray-400">
+            <p className="text-warm-400">
               {page.serviceAreas.join(' · ')}
             </p>
           </div>
@@ -59,10 +59,10 @@ export default function ServicePageContent({ page }: ServicePageContentProps) {
           <div className="space-y-10 mt-12">
             {page.sections.map((section) => (
               <section key={section.heading}>
-                <h2 className="text-2xl font-bold text-gray-100 mb-4">{section.heading}</h2>
+                <h2 className="text-2xl font-bold text-warm-50 mb-4">{section.heading}</h2>
                 <div className="space-y-4">
                   {section.paragraphs.map((paragraph, index) => (
-                    <p key={index} className="text-gray-400 leading-relaxed">
+                    <p key={index} className="text-warm-400 leading-relaxed">
                       {paragraph}
                     </p>
                   ))}
@@ -77,15 +77,15 @@ export default function ServicePageContent({ page }: ServicePageContentProps) {
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-gray-100 mb-6">Algengar spurningar</h2>
+              <h2 className="text-2xl font-bold text-warm-50 mb-6">Algengar spurningar</h2>
               <dl className="space-y-6">
                 {page.faq.map((item) => (
                   <div
                     key={item.question}
-                    className="rounded-lg border border-gray-700/50 bg-gray-800/30 p-5"
+                    className="rounded-lg border border-warm-700/50 bg-warm-800/30 p-5"
                   >
-                    <dt className="font-semibold text-gray-100 mb-2">{item.question}</dt>
-                    <dd className="text-gray-400 leading-relaxed">{item.answer}</dd>
+                    <dt className="font-semibold text-warm-50 mb-2">{item.question}</dt>
+                    <dd className="text-warm-400 leading-relaxed">{item.answer}</dd>
                   </div>
                 ))}
               </dl>
@@ -96,7 +96,7 @@ export default function ServicePageContent({ page }: ServicePageContentProps) {
             <ServiceContactBar serviceName={page.overviewCardTitle} />
           </div>
 
-          <p className="mt-8 text-center text-sm text-gray-500">
+          <p className="mt-8 text-center text-sm text-warm-500">
             <Link href="/services" className="text-primary-400 hover:text-primary-300">
               ← Sjá allar þjónustur
             </Link>
@@ -113,11 +113,11 @@ export default function ServicePageContent({ page }: ServicePageContentProps) {
 
 function InfoBox({ title, content }: { title: string; content: string }) {
   return (
-    <div className="rounded-lg border border-gray-700/50 bg-gray-800/30 p-5">
+    <div className="rounded-lg border border-warm-700/50 bg-warm-800/30 p-5">
       <h3 className="text-sm font-semibold uppercase tracking-wider text-primary-400 mb-2">
         {title}
       </h3>
-      <p className="text-sm text-gray-400 leading-relaxed">{content}</p>
+      <p className="text-sm text-warm-400 leading-relaxed">{content}</p>
     </div>
   );
 }

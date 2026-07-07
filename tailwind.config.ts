@@ -10,30 +10,42 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Professional base with subtle tech accents
         primary: {
-          50: '#f0f9ff',
-          100: '#e0f2fe',
-          200: '#bae6fd',
-          300: '#7dd3fc',
-          400: '#38bdf8',
-          500: '#0ea5e9',
-          600: '#0284c7',
-          700: '#0369a1',
-          800: '#075985',
-          900: '#0c4a6e',
+          50: 'oklch(97% 0.015 160)',
+          100: 'oklch(93% 0.03 160)',
+          200: 'oklch(85% 0.07 160)',
+          300: 'oklch(75% 0.11 160)',
+          400: 'oklch(67% 0.15 158)',
+          500: 'oklch(60% 0.17 156)',
+          600: 'oklch(52% 0.15 156)',
+          700: 'oklch(42% 0.12 158)',
+          800: 'oklch(32% 0.08 160)',
+          900: 'oklch(22% 0.04 165)',
         },
-        // Subtle tech accents (terminal greens, code colors)
+        warm: {
+          50: 'oklch(96% 0.005 170)',
+          100: 'oklch(88% 0.008 170)',
+          200: 'oklch(75% 0.010 170)',
+          300: 'oklch(60% 0.012 170)',
+          400: 'oklch(48% 0.012 170)',
+          500: 'oklch(38% 0.010 170)',
+          600: 'oklch(30% 0.010 170)',
+          700: 'oklch(24% 0.008 170)',
+          800: 'oklch(19% 0.007 175)',
+          900: 'oklch(15% 0.005 180)',
+          950: 'oklch(11% 0.003 190)',
+        },
         tech: {
-          green: '#10b981', // Terminal green
-          cyan: '#06b6d4', // Code syntax cyan
-          purple: '#8b5cf6', // Syntax highlighting purple
-          orange: '#f97316', // Code syntax orange
+          green: 'oklch(65% 0.17 158)',
+          cyan: 'oklch(65% 0.13 195)',
+          purple: 'oklch(58% 0.18 300)',
+          orange: 'oklch(68% 0.16 55)',
         },
       },
       fontFamily: {
-        sans: ['var(--font-sans)', 'system-ui', 'sans-serif'],
-        mono: ['var(--font-mono)', 'ui-monospace', 'monospace'],
+        display: ['var(--font-display)', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        sans: ['var(--font-sans)', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        mono: ['var(--font-mono)', 'ui-monospace', 'SF Mono', 'Courier New', 'monospace'],
       },
     },
   },
