@@ -93,7 +93,7 @@
         "bullet3": "Lausnir sem henta raunverulegum þörfum"
       },
       "installations": {
-        "title": "Uppsetningar & flutningar",
+        "title": "Uppsetningar og flutningar",
         "bullet1": "Uppsetning stýrikerfa og hugbúnaðar",
         "bullet2": "Gagnaflutningar og öryggisafrit",
         "bullet3": "Ný tölva sett upp frá grunni"
@@ -101,14 +101,14 @@
       "battery": {
         "title": "Rafhlöðuskipti á snjalltækjum",
         "bullet1": "Mat á viðgerð og kostnaði",
-        "bullet2": "Fyrirspurnir fyrir varahlutum",
+        "bullet2": "Fyrirspurnir um varahluti",
         "bullet3": "Sanngjarnt verð"
       },
       "video": {
         "title": "Myndbönd yfir á stafrænt form",
         "bullet1": "Takmarkað við VHS og MiniDV eins og er.",
-        "bullet2": "Filmur hafa takmarkaðan líftíma",
-        "bullet3": "Ódýr þjónusta á svæðinu"
+        "bullet2": "Segulbönd endast ekki að eilífu",
+        "bullet3": "Hagkvæm þjónusta á svæðinu"
       }
     }
   },
@@ -118,7 +118,7 @@
     "footer": "Allt verð er með VSK. Varahlutir og sértækar viðgerðir eru reiknaðar sérstaklega. Hafðu samband fyrir nákvæmt tilboð.",
     "cards": {
       "repairs": {
-        "title": "Tölvuviðgerðir & bilanagreining",
+        "title": "Tölvuviðgerðir og bilanagreining",
         "price": "9.900 kr.",
         "includes": "Innifelur:",
         "bullet1": "Bilanagreining",
@@ -146,7 +146,7 @@
     },
     "detailedPricing": {
       "general": {
-        "title": "Greining & Almenn þjónusta",
+        "title": "Greining og almenn þjónusta",
         "services": [
           {
             "name": "Bilanagreining / þjónustugjald (PC / prentarar / heyrnartól)",
@@ -184,7 +184,7 @@
         ]
       },
       "hourly": {
-        "title": "Tímagjöld & útköll",
+        "title": "Tímagjöld og útköll",
         "services": [
           {
             "name": "Tímagjald – verkstæði",
@@ -209,7 +209,7 @@
         ]
       },
       "desktop": {
-        "title": "Turntölvur – ísetningar & uppfærslur",
+        "title": "Turntölvur – ísetningar og uppfærslur",
         "services": [
           {
             "name": "Ísetning SSD + full uppsetning OS",
@@ -279,7 +279,7 @@
         ]
       },
       "cooling": {
-        "title": "Kæling & hreinsun",
+        "title": "Kæling og hreinsun",
         "services": [
           {
             "name": "Endurnýjun kælikrems / kælipúða",
@@ -300,7 +300,7 @@
         ]
       },
       "security": {
-        "title": "Öryggi & hugbúnaður",
+        "title": "Öryggi og hugbúnaður",
         "services": [
           {
             "name": "Aðskota- og vírushreinsun",
@@ -325,7 +325,7 @@
         ]
       },
       "data": {
-        "title": "Gögn & gagnabjörgun",
+        "title": "Gögn og gagnabjörgun",
         "services": [
           {
             "name": "Gagnaafritun 0–30 GB",
@@ -336,7 +336,7 @@
             "price": "6.900 kr."
           },
           {
-            "name": "Gagnabjörgun – startgjald / No Data",
+            "name": "Gagnabjörgun – startgjald / engin gögn endurheimt",
             "price": "16.900 kr."
           },
           {
@@ -354,7 +354,7 @@
   "about": {
     "title": "Um mig",
     "intro1": "Ég heiti Daði og hef unnið með tölvur í 20 ár. Tölvuhvíslarinn þjónustar einstaklinga og smáfyrirtæki með tölvuviðgerðir, uppfærslur, sérsmíði, gagnavernd og tækniráðgjöf.",
-    "intro2": "Ég legg áherslu á að tala mannamál, ekki tæknimál, og útskýra alltaf hvað er verið að gera og hvers vegna. Góð tækniaðstoð snýst ekki bara um að laga hlutinn, heldur um að hjálpa fólki að taka betri ákvarðanir og byggja upp traust til lengri tíma.",
+    "intro2": "Ég legg áherslu á að útskýra tæknina á mannamáli og segja alltaf hvað er verið að gera og hvers vegna. Góð tækniaðstoð snýst ekki bara um að laga vandamálið, heldur um að hjálpa fólki að taka betri ákvarðanir og byggja upp traust til lengri tíma.",
     "howIWork": {
       "title": "Hvernig ég vinn",
       "bullet1": "Heiðarleg ráðgjöf – ekki bara það sem selst best",
@@ -365,7 +365,7 @@
   },
   "contact": {
     "title": "Hafðu samband",
-    "intro": "Hafðu samband við mig í gegnum síma, netfang eða skilaboðsformið hér fyrir neðan.",
+    "intro": "Hafðu samband við mig í síma, með tölvupósti eða í gegnum skilaboðaformið hér fyrir neðan.",
     "phone": "Sími",
     "email": "Netfang",
     "location": "Staðsetning",
@@ -378,15 +378,15 @@
   },
   "projects": {
     "title": "Verkefni",
-    "subtitle": "Verkefni frá Tölvuhvíslarnum",
+    "subtitle": "Verkefni Tölvuhvíslarans",
     "tts": {
       "title": "Tölvuhvísl — Íslenskur talgervill",
-      "description": "Talgervill þjálfaður af íslenskum raddleikurum í samstarfi við RÚV og HR. Breyttu íslensku texta í talað mál með 30+ raddir, einföldu REST API og snjallri textavinnslu sem meðhöndlar tölur, skammstafanir og fleira.\n\nVerkið er enn í vinnslu en lofar góðu.",
+      "description": "Talgervill þjálfaður af íslenskum raddleikurum í samstarfi við RÚV og HR. Breyttu íslenskum texta í talað mál með 30+ raddir, einföldu REST API og snjallri textavinnslu sem meðhöndlar tölur, skammstafanir og fleira.\n\nVerkið er enn í vinnslu en lofar góðu.",
       "features": {
         "voices": "30+ íslenskar raddir",
         "quality": "24kHz hljóðgæði",
         "api": "Einfalt REST API",
-        "privacy": "GDPR samhæft"
+        "privacy": "GDPR-samhæft"
       },
       "cta": "Prófa kynninguna"
     }

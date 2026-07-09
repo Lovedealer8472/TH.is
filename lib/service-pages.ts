@@ -31,7 +31,7 @@ export const SERVICE_PAGES: ServicePage[] = [
       'Tölvuviðgerðir, bilanagreining og viðhald fyrir borð- og fartölvur á Austurlandi. Persónuleg þjónusta í Neskaupstað – hafðu samband við Daða.',
     h1: 'Tölvuviðgerðir í Neskaupstað og á Austurlandi',
     intro:
-      'Er tölvan hæg, fryst eða svarar ekki? Ég býð upp á tölvuviðgerðir og bilanagreiningu fyrir einstaklinga og smáfyrirtæki á Austurlandi – með heiðarlegum samskiptum og skýrum verðmati áður en viðgerð hefst.',
+      'Er tölvan hæg, frýs hún eða svarar hún ekki? Ég býð upp á tölvuviðgerðir og bilanagreiningu fyrir einstaklinga og smáfyrirtæki á Austurlandi – með heiðarlegum samskiptum og skýrum verðmati áður en viðgerð hefst.',
     serviceAreas: [
       'Neskaupstaður',
       'Norðfjörður',
@@ -46,7 +46,7 @@ export const SERVICE_PAGES: ServicePage[] = [
       {
         heading: 'Hvað er gert?',
         paragraphs: [
-          'Ég greini og lagfæri algeng vandamál á borðtölvum og fartölvum: hæg vinnsla, frystir skjáir, rafmagnshljóð, ofhitnun, bilun á disk eða minni, og hugbúnaðarvandamál eins og Windows-villur eða vírus.',
+          'Ég greini og lagfæri algeng vandamál á borðtölvum og fartölvum: hæg vinnsla, skjár sem frýs, rafmagnshljóð, ofhitnun, bilun á disk eða minni, og hugbúnaðarvandamál eins og Windows-villur eða vírus.',
           'Fyrsta skrefið er alltaf bilanagreining. Ég skoða tölvuna, útskýri hvað er að og gef þér mat á kostnaði og tíma áður en nokkuð er gert. Engin viðgerð hefst nema með þínu samþykki.',
         ],
       },
@@ -68,7 +68,7 @@ export const SERVICE_PAGES: ServicePage[] = [
     pricing:
       'Bilanagreining og almenn bilanaleit kostar 9.900 kr. með VSK. Viðgerðarkostnaður kemur í ljós eftir greiningu og er alltaf samþykktur áður en vinna hefst. Varahlutir reiknast sérstaklega.',
     timeline:
-      'Bilanagreining tekur venjulega 1–2 virka daga eftir að tölvan berst. Einfaldar viðgerðir geta verið tilbúnar sama dag, flóknari málefni 3–7 daga eftir að varahlutir berast.',
+      'Bilanagreining tekur venjulega 1–2 virka daga eftir að tölvan berst. Einfaldar viðgerðir geta verið tilbúnar sama dag, flóknari viðgerðir taka 3–7 daga eftir að varahlutir berast.',
     audience: 'Einstaklingar og smáfyrirtæki á Austurlandi sem þurfa trausta og persónulega tölvuþjónustu.',
     faq: [
       {
@@ -95,21 +95,21 @@ export const SERVICE_PAGES: ServicePage[] = [
       'Fartölvuviðgerðir á Austurlandi – hæg fartölva, bilun á skjá, lyklaborð, rafhlaða og ofhitnun. Bilanagreining frá 9.900 kr. Hafðu samband.',
     h1: 'Fartölvuviðgerðir og bilanagreining',
     intro:
-      'Fartölvan er oft mikilvægasta tölvan í heimilinu eða fyrirtækinu. Ég lagfæri algeng fartölvuvandamál – frá hægri vinnslu og ofhitnun til bilana á lyklaborði, skjá eða rafhlöðu.',
+      'Fartölvan er oft mikilvægasta tölvan í heimilinu eða fyrirtækinu. Ég lagfæri algeng fartölvuvandamál – frá hægum vinnsluhraða og ofhitnun til bilana á lyklaborði, skjá eða rafhlöðu.',
     serviceAreas: ['Neskaupstaður', 'Fjarðabyggð', 'Austurland', 'Egilsstaðir'],
     overviewCardTitle: 'Fartölvuviðgerðir',
     sections: [
       {
         heading: 'Hvað er gert?',
         paragraphs: [
-          'Ég skoða fartölvuna þína og finn út hvað veldur vandamálinu. Algeng verkefni eru hreinsun á kælikerfi og viftum, skipti á SSD eða RAM, lagfæring á Windows-vandamálum, og mat á hvort viðgerð borgi sig.',
+          'Ég skoða fartölvuna þína og finn út hvað veldur vandamálinu. Algeng verkefni eru hreinsun á kælikerfi og viftum, skipti á SSD eða RAM, lagfæring á Windows-vandamálum, og mat á því hvort viðgerð borgi sig.',
           'Fyrir sum vandamál – eins og bilun á skjá eða lyklaborði – get ég pantað varahluti og gefið skýrt verðmat áður en pöntun fer fram.',
         ],
       },
       {
         heading: 'Algeng einkenni',
         paragraphs: [
-          'Fartölvan er ótrúlega hæg eða tekur langan tíma að ræsa. Hún verður heit við venjulega notkun og viftan gengur stöðugt. Rafhlaðan endist ekki lengur en nokkrar mínútur. Lyklar virka ekki eða skjárinn er með línur eða dökkum blettum.',
+          'Fartölvan er ótrúlega hæg eða tekur langan tíma að ræsa. Hún verður heit við venjulega notkun og viftan gengur stöðugt. Rafhlaðan endist ekki lengur en nokkrar mínútur. Lyklar virka ekki eða línur eða dökkir blettir sjást á skjánum.',
           'Stundum er vandamálið einföld lausn – eins og hreinsun vegna ryks í kælikerfi – en stundum þarf varahluta. Ég segi þér hvað á við í þínu tilfelli.',
         ],
       },
@@ -123,7 +123,7 @@ export const SERVICE_PAGES: ServicePage[] = [
     pricing:
       'Bilanagreining kostar 9.900 kr. með VSK. Viðgerðir og varahlutir koma í ljós eftir greiningu. SSD-skipti og minnisuppfærslur eru oft hagkvæm leið til að bæta gamla fartölvu.',
     timeline:
-      'Greining 1–2 dagar. Einfaldar lagfæringar oft sama viku. Varahlutir geta tekið 3–10 daga eftir birgðastöðu.',
+      'Greining tekur 1–2 daga. Einfaldar lagfæringar eru oft tilbúnar sömu viku. Varahlutir geta tekið 3–10 daga eftir birgðastöðu.',
     audience: 'Einstaklingar og smáfyrirtæki með fartölvur sem þurfa áreiðanlega viðgerð eða uppfærslu.',
     faq: [
       {
@@ -134,7 +134,7 @@ export const SERVICE_PAGES: ServicePage[] = [
       {
         question: 'Af hverju hitnar fartölvan svona mikið?',
         answer:
-          'Algengar ástæður eru stíflað kælikerfi af ryk, gömul rafhlaða sem keyrir viftu stöðugt, eða of mikil álag á örgjörva. Hreinsun og uppfærslur geta oft lagað þetta.',
+          'Algengar ástæður eru stíflað kælikerfi vegna ryks, gömul rafhlaða sem keyrir viftu stöðugt, eða of mikið álag á örgjörva. Hreinsun og uppfærslur geta oft lagað þetta.',
       },
       {
         question: 'Geturðu skipt um rafhlöðu?',
@@ -150,7 +150,7 @@ export const SERVICE_PAGES: ServicePage[] = [
       'Er tölvan hæg? SSD uppfærsla getur gert hana mun hraðvirkari. Gagnaflutningur og uppsetning á Austurlandi. Fáðu mat á kostnaði.',
     h1: 'SSD uppfærsla og hæg tölva löguð',
     intro:
-      'Ef tölvan ræsist hægt, forrit opnast seint og allt virkar eins og það sé á 8 ára gömlu disk, gæti SSD uppfærsla verið besta fjárfestingin. Ég set upp nýjan SSD, flyt gögn yfir og prófa allt áður en þú færð tölvuna til baka.',
+      'Ef tölvan ræsist hægt, forrit opnast seint og allt virkar eins og það sé á átta ára gömlum harðdiski, gæti SSD uppfærsla verið besta fjárfestingin. Ég set upp nýjan SSD, flyt gögn yfir og prófa allt áður en þú færð tölvuna til baka.',
     serviceAreas: ['Neskaupstaður', 'Fjarðabyggð', 'Austurland'],
     overviewCardTitle: 'SSD uppfærsla',
     sections: [
@@ -164,7 +164,7 @@ export const SERVICE_PAGES: ServicePage[] = [
       {
         heading: 'Algeng einkenni sem SSD leysir',
         paragraphs: [
-          'Tölvan tekur 2–5 mínútur að ræsa. Windows segir diskinn sé fullur. Tölvan frystir þegar margt er opið. Hljóð kemur frá gömlum hörðum diski (HDD). Forrit taka langan tíma að opna.',
+          'Tölvan tekur 2–5 mínútur að ræsa. Windows segir að diskurinn sé fullur. Tölvan frystir þegar margt er opið. Hljóð kemur frá gömlum hörðum diski (HDD). Forrit taka langan tíma að opna.',
           'SSD er oft 5–10 sinnum hraðvirkari en gamall HDD og getur gefið tölvu sem er 5–8 ára nýtt líf.',
         ],
       },
@@ -187,7 +187,7 @@ export const SERVICE_PAGES: ServicePage[] = [
           'Ef tölvan er yngri en 8–10 ára og örgjörvinn er enn nógu öflugur fyrir þín verkefni, er SSD oft besta uppfærslan. Ég met þetta fyrir hverja tölvu.',
       },
       {
-        question: 'Mistekst gögnin mín?',
+        question: 'Tapast gögnin mín?',
         answer:
           'Ég tek afrit áður en flutningur hefst og prófa allt vandlega. Öryggisafrit er hluti af ferlinu.',
       },
@@ -219,7 +219,7 @@ export const SERVICE_PAGES: ServicePage[] = [
       {
         heading: 'Leikjatölva, vinnutölva eða heimilistölva?',
         paragraphs: [
-          'Leikjatölva þarf oft sterkari skjákort og nægilegt kælikerfi. Vinnutölva gæti þurft meira minni og hraðan disk en leikir krefjast. Heimilistölva getur verið hagstæð og þögul.',
+          'Leikjatölva þarf oft sterkara skjákort og nægilegt kælikerfi. Vinnutölva gæti þurft meira minni og hraðan disk en leikir krefjast. Heimilistölva getur verið hagstæð og þögul.',
           'Ég útskýri muninn án tæknimáls og hjálpa þér að velja eitthvað sem hentar raunverulegum notkun þinni – og fjárhagsáætlun.',
         ],
       },
@@ -233,7 +233,7 @@ export const SERVICE_PAGES: ServicePage[] = [
     pricing:
       'Verð fer eftir íhlutum og notkun. Einfaldar heimilistölvur geta byrjað um 120.000–180.000 kr., leikjatölvur 200.000–400.000 kr. og upp. Ég gef alltaf skriflegt tilboð áður en pöntun fer fram.',
     timeline:
-      '2–4 vikur eftir samþykki, eftir birgðastöðu á íhlutum. Flýtitíma er hægt að ræða ef íhlutir eru til.',
+      '2–4 vikur eftir samþykki, fer eftir birgðastöðu íhluta. Flýtitíma er hægt að ræða ef íhlutir eru til.',
     audience: 'Einstaklingar og fyrirtæki sem vilja sérsniðna borðtölvu með persónulegri ráðgjöf á Austurlandi.',
     faq: [
       {
@@ -274,14 +274,14 @@ export const SERVICE_PAGES: ServicePage[] = [
       {
         heading: 'Algeng verkefni',
         paragraphs: [
-          'Nýtt fyrirtæki þarf tölvur og net upp á stofn. Gömul lausn er orðin hæg og óörugg. Starfsfólk þarf að vinna heima og þarf aðgang að skrám. Engin hefur ábyrgð á afritum og allt er á hættu ef diskur dettur út.',
+          'Nýtt fyrirtæki þarf að koma tölvum og netkerfi á laggirnar. Gömul lausn er orðin hæg og óörugg. Starfsfólk þarf að vinna heima og þarf aðgang að skrám. Enginn ber ábyrgð á öryggisafritum og allt er á hættu ef diskur dettur út.',
           'Ég hjálpa til við að setja upp einfalt en áreiðanlegt kerfi sem hentar stærð fyrirtækisins – ekki of flókið, ekki of dýrt.',
         ],
       },
       {
         heading: 'Fyrir hverja er þetta?',
         paragraphs: [
-          'Smáfyrirtæki, sjálfstætt starfandi einstaklinga, verslanir og þjónustufyrirtæki á Austurlandi sem vilja einn tækniaðstoðarmann sem þeir treysta – ekki stóran þjónustuaðila með biðröð.',
+          'Fyrir smáfyrirtæki, sjálfstætt starfandi einstaklinga, verslanir og þjónustufyrirtæki á Austurlandi sem vilja hafa einn tæknimann sem þau treysta.',
         ],
       },
     ],
@@ -304,7 +304,7 @@ export const SERVICE_PAGES: ServicePage[] = [
       {
         question: 'Hjálparðu við netöryggi?',
         answer:
-          'Ég set upp grunn öryggisafrit, lykilorðastjórnun og ráðlegg einföldum öryggisreglum. Flóknari netöryggismál vísa ég á sérfræðinga ef þörf krefur.',
+          'Ég set upp grunn fyrir öryggisafrit, lykilorðastjórnun og ráðlegg um einfaldar öryggisreglur. Flóknari netöryggismál vísa ég á sérfræðinga ef þörf krefur.',
       },
     ],
   },
@@ -315,14 +315,14 @@ export const SERVICE_PAGES: ServicePage[] = [
       'Láttu gamlar VHS og MiniDV upptökur yfirfæra á stafrænt form á Austurlandi. Filmur eyðileggjast með tímanum – bjargaðu minningunum. Hafðu samband.',
     h1: 'VHS og MiniDV yfir á stafrænt form',
     intro:
-      'Gömul VHS spólur og MiniDV upptökur geyma minningar sem ekki er hægt að endurtaka – en filmurnar eyðileggjast smám saman. Ég yfirfæri upptökur á stafrænt form svo þú getir varðveitt þær á harða diski, USB eða skýi.',
+      'Gamlar VHS-spólur og MiniDV-upptökur geyma minningar sem ekki er hægt að endurtaka – en segulböndin skemmast smám saman. Ég yfirfæri upptökur á stafrænt form svo þú getir varðveitt þær á hörðum diski, USB-lykli eða í skýi.',
     serviceAreas: ['Neskaupstaður', 'Fjarðabyggð', 'Austurland'],
     overviewCardTitle: 'VHS og MiniDV',
     sections: [
       {
         heading: 'Hvað er gert?',
         paragraphs: [
-          'Ég tek við VHS spólum og MiniDV kasettum, yfirfæri efnið á stafrænt form (venjulega MP4) og afhendi á USB-stik eða netdrif eftir samkomulagi.',
+          'Ég tek við VHS spólum og MiniDV kasettum, yfirfæri efnið á stafrænt form (venjulega MP4) og afhendi á USB-stiku eða netdrif eftir samkomulagi.',
           'Þjónustan er takmörkuð við VHS og MiniDV eins og er – ég tek ekki við öllum gerðum af gömlum miðlum.',
         ],
       },
@@ -336,12 +336,12 @@ export const SERVICE_PAGES: ServicePage[] = [
       {
         heading: 'Fyrir hverja er þetta?',
         paragraphs: [
-          'Einstaklingar og fjölskyldur á Austurlandi sem eiga gamlar upptökur og vilja varðveita þær á öruggan hátt án þess að kaupa dýrt búnað sjálfir.',
+          'Einstaklingar og fjölskyldur á Austurlandi sem eiga gamlar upptökur og vilja varðveita þær á öruggan hátt án þess að kaupa dýran búnað sjálfir.',
         ],
       },
     ],
     pricing:
-      'Verð fer eftir lengd efni og fjölda spóla. Hafðu samband og lýstu magni – ég gef skýrt verðmat. Þjónustan er hagkvæm á svæðinu.',
+      'Verð fer eftir lengd efnisins og fjölda spóla. Hafðu samband og lýstu magni – ég gef skýrt verðmat. Þjónustan er hagkvæm á svæðinu.',
     timeline:
       'Venjulega 3–7 virkir dagar eftir að kasettur berast, eftir magni.',
     audience: 'Einstaklingar og fjölskyldur með VHS eða MiniDV upptökur sem vilja bjarga minningum.',
@@ -349,12 +349,12 @@ export const SERVICE_PAGES: ServicePage[] = [
       {
         question: 'Hvaða snið fæ ég skrárnar?',
         answer:
-          'Venjulega MP4 sem virkar á flestum tækjum – spilara, síma, sjónvörp og tölvum.',
+          'Venjulega MP4 sem virkar á flestum tækjum – spilurum, símum, sjónvörpum og tölvum.',
       },
       {
         question: 'Get ég fengið skrárnar á USB?',
         answer:
-          'Já, afhending á USB-stik eða yfir net er algeng. Við finnum leið sem hentar þér.',
+          'Já, afhending á USB-stiku eða yfir net er algeng. Við finnum leið sem hentar þér.',
       },
       {
         question: 'Hvað ef spólan er skemmd?',
@@ -370,21 +370,21 @@ export const SERVICE_PAGES: ServicePage[] = [
       'Gagnaflutningur, öryggisafrit og uppsetning nýrrar tölvu á Austurlandi. Myndir, skjöl og forrit flutt yfir á öruggan hátt. Hafðu samband.',
     h1: 'Gagnaflutningur, öryggisafrit og ný tölva sett upp',
     intro:
-      'Keyptir nýja tölvu eða skiptir um disk? Ég flyt gögnin þín yfir á öruggan hátt, set upp Windows og forrit, og tryggi að öryggisafrit sé til staðar svo ekkert týnist.',
+      'Keyptir þú nýja tölvu eða skiptirðu um disk? Ég flyt gögnin þín yfir á öruggan hátt, set upp Windows og forrit, og tryggi að öryggisafrit sé til staðar svo ekkert týnist.',
     serviceAreas: ['Neskaupstaður', 'Fjarðabyggð', 'Austurland'],
     overviewCardTitle: 'Gagnaflutningur',
     sections: [
       {
         heading: 'Hvað er gert?',
         paragraphs: [
-          'Flutningur á myndum, skjölum, tölvupósti og forritum frá gömlu tölvu yfir á nýja. Uppsetning Windows, uppfærslur og grunnforrit. Stilling öryggisafritunar – á USB, netdrif eða ský eftir þörfum.',
+          'Flutningur á myndum, skjölum, tölvupósti og forritum úr gömlu tölvunni yfir í þá nýju. Uppsetning Windows, uppfærslur og grunnforrit. Stilling öryggisafritunar – á USB, netdrif eða ský eftir þörfum.',
           'Ég passa að ekkert gleymist og að nýja tölvan sé tilbúin til notkunar þegar þú færð hana til baka.',
         ],
       },
       {
         heading: 'Algengar aðstæður',
         paragraphs: [
-          'Ný tölva keypt og þarf að fá allt yfir. Gömul tölva er að fara að gefa upp og gögn verða að bjarga. Windows þarf að setja upp á nýtt eftir vírus eða bilun. Engin afritun – og þú vilt ekki taka áhættuna.',
+          'Ný tölva keypt og þarf að fá allt yfir. Gamla tölvan er að gefa sig og þarf að bjarga gögnunum. Windows þarf að setja upp á nýtt eftir vírus eða bilun. Engin afritun – og þú vilt ekki taka áhættuna.',
         ],
       },
       {
@@ -408,7 +408,7 @@ export const SERVICE_PAGES: ServicePage[] = [
       {
         question: 'Geturðu flutt forrit líka?',
         answer:
-          'Sum forrit fljúga yfir, önnur þurfa enduruppsetningu. Ég segi þér hvað er hægt fyrir hvert forrit.',
+          'Sum forrit er hægt að flytja yfir, önnur þurfa enduruppsetningu. Ég segi þér hvað er hægt fyrir hvert forrit.',
       },
       {
         question: 'Hjálparðu við öryggisafrit?',

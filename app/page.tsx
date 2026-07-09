@@ -49,16 +49,16 @@ export default function HomePage() {
           <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-16">
             <div>
               <p className="font-mono text-sm text-primary-500 tracking-wider uppercase mb-2">{`// hvernig virkar þetta`}</p>
-              <h2 className="font-display text-3xl sm:text-5xl font-bold text-warm-50">Þrjú skref frá vandræðum<br /><span className="text-primary-400">að lausn</span></h2>
+              <h2 className="font-display text-3xl sm:text-5xl font-bold text-warm-50">Þrjú skref frá vandamáli<br /><span className="text-primary-400">að lausn</span></h2>
             </div>
-            <p className="text-warm-400 max-w-lg text-base leading-relaxed lg:text-right">Ekkert flókið ferli. Þú sendir mér skilaboð, ég greini vandamálið, og laga það — eða segi þér heiðarlega ef það þarf ekki að gera neitt.</p>
+            <p className="text-warm-400 max-w-lg text-base leading-relaxed lg:text-right">Ekkert flókið ferli. Þú sendir mér skilaboð, ég greini vandamálið og laga það, eða segi þér heiðarlega ef ekkert þarf að gera.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-10">
             {[
-              { num: '01', title: 'Hafðu samband', desc: 'Hringdu, sendu WhatsApp eða tölvupóst. Lýstu vandamálinu á þínu eigin máli — ég tala ekki tæknimál nema þú viljir það.', cli: '$ senda_skilaboð --þægilegt', accent: true },
-              { num: '02', title: 'Greining', desc: 'Ég skoða tölvuna, finn hvað er að, og læt þig vita af kostnaðinum áður en ég byrja. Ekkert föst greiningargjald.', cli: '$ greina --heiðarlega --án-óvæntra-kostnaða', accent: false },
-              { num: '03', title: 'Lagað', desc: 'Tölvan er lagfærð, uppfærð, eða smíðuð — og þú færð hana tilbaka með skýringu. Engin plásturlausn.', cli: '$ laga --varanlega  # engin plásturlausn', accent: false },
+              { num: '01', title: 'Hafðu samband', desc: 'Hringdu, sendu WhatsApp-skilaboð eða tölvupóst. Lýstu vandamálinu á þínu eigin máli. Ég tala ekki tæknimál nema þú viljir það.', cli: '$ senda_skilaboð --þægilegt', accent: true },
+              { num: '02', title: 'Greining', desc: 'Ég skoða tölvuna, finn hvað er að og læt þig vita af kostnaðinum áður en vinna hefst. Engin óvænt gjöld.', cli: '$ greina --heiðarlega --án-óvæntra-gjalda', accent: false },
+              { num: '03', title: 'Lagað', desc: 'Tölvan er lagfærð, uppfærð eða smíðuð, og þú færð hana til baka með skýrri útskýringu. Engar plásturslausnir.', cli: '$ laga --varanlega  # engin plásturlausn', accent: false },
             ].map((step) => (
               <div key={step.num} className={`rounded-2xl border p-8 lg:p-10 group transition-all duration-300 ${step.accent ? 'bg-warm-800/60 border-primary-500/20 hover:border-primary-500/40' : 'bg-warm-800/40 border-warm-700/30 hover:border-warm-600/50'}`}>
                 <span className={`font-display text-5xl font-bold transition-colors ${step.accent ? 'text-primary-500/20 group-hover:text-primary-500/30' : 'text-warm-700/40'}`}>{step.num}</span>
@@ -89,7 +89,7 @@ export default function HomePage() {
           </div>
           <div className="mt-10 inline-flex items-center gap-2 bg-warm-800/50 border border-primary-500/15 rounded-xl px-5 py-3">
             <span className="font-mono text-primary-400 text-lg">✓</span>
-            <span className="text-warm-200 text-sm">Ekkert föst greiningargjald — þú borgar bara fyrir lausnina</span>
+            <span className="text-warm-200 text-sm">Ekkert fast greiningargjald — þú borgar bara fyrir lausnina</span>
           </div>
         </div>
       </section>
