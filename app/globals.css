@@ -18,5 +18,16 @@
 @layer components {
   .terminal-caret::after { content: '_'; animation: blink 1s step-end infinite; color: oklch(65% 0.17 158); }
   @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
-  @media (prefers-reduced-motion: reduce) { .terminal-caret::after { animation: none; } }
+
+  /* Gentle entrance for the grant announcement card — plays once on load. */
+  .grant-card-enter { animation: grant-fade-up 0.7s ease-out both; }
+  @keyframes grant-fade-up {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .terminal-caret::after { animation: none; }
+    .grant-card-enter { animation: none; }
+  }
 }

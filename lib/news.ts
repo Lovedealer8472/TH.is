@@ -23,6 +23,18 @@ export function formatNewsDate(isoDate: string, locale: "is" | "en"): string {
 
 export const newsArticles: NewsArticle[] = [
   {
+    id: 3,
+    date: "2026-08-20",
+    title: {
+      is: "Tölvuhvíslarinn hlaut styrk úr Uppbyggingarsjóði Austurlands",
+      en: "Tölvuhvíslarinn awarded a grant from Uppbyggingarsjóður Austurlands"
+    },
+    content: {
+      is: "Verkefnið Tölvuhvíslarinn hlaut styrk úr Uppbyggingarsjóði Austurlands fyrir árið 2026 — eitt af 54 verkefnum sem hlutu styrk af 97 umsóknum sem bárust.\n\nStyrkurinn nam 800.000 kr.\n\nVerkefninu er nú lokið og lokaskýrslu hefur verið skilað. Kærar þakkir til Uppbyggingarsjóðs Austurlands fyrir stuðninginn.",
+      en: "The Tölvuhvíslarinn project was awarded a grant from Uppbyggingarsjóður Austurlands (the Eastern Iceland Regional Growth Fund) for 2026 — one of 54 projects to receive funding out of 97 applications submitted.\n\nThe grant amounted to 800,000 ISK.\n\nThe project is now complete, and the final report has been submitted. Many thanks to Uppbyggingarsjóður Austurlands for the support."
+    }
+  },
+  {
     id: 2,
     date: "2026-04-10",
     title: {

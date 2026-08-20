@@ -43,6 +43,41 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ── Grant Announcement ── */}
+      <section className="py-10 sm:py-14 bg-warm-950 border-b border-[oklch(19%_0.007_175_/_0.5)]">
+        <div className="max-w-5xl mx-auto px-4 sm:px-8 lg:px-12">
+          <div className="grant-card-enter group relative rounded-2xl bg-gradient-to-br from-[oklch(60%_0.17_156_/_0.4)] via-[oklch(65%_0.13_195_/_0.25)] to-[oklch(42%_0.12_158_/_0.3)] p-px transition-transform duration-300 hover:-translate-y-0.5 motion-reduce:transition-none motion-reduce:hover:translate-y-0">
+            <div className="rounded-2xl bg-[oklch(19%_0.007_175_/_0.7)] backdrop-blur-sm p-6 sm:p-8 flex flex-col sm:flex-row sm:items-start gap-5 sm:gap-7 transition-shadow duration-300 group-hover:shadow-[0_0_28px_-8px_oklch(65%_0.17_158_/_0.35)]">
+              <div className="shrink-0 flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 rounded-xl bg-[oklch(15%_0.005_180_/_0.6)] border border-[oklch(24%_0.008_170_/_0.4)] p-2.5">
+                <Image
+                  src="/logos/uppbyggingarsjodur-austurlands.png"
+                  alt="Merki Uppbyggingarsjóðs Austurlands"
+                  width={48}
+                  height={36}
+                  className="w-full h-auto"
+                />
+              </div>
+              <div>
+                <p className="font-mono text-xs text-primary-500 tracking-wider uppercase mb-3">{`// frétt`}</p>
+                <p className="text-warm-100 text-base sm:text-lg leading-relaxed">
+                  Tölvuhvíslarinn hlaut styrk úr Uppbyggingarsjóði Austurlands fyrir árið 2026 — eitt af 54 verkefnum sem hlutu styrk af 97 umsóknum sem bárust.
+                </p>
+                {/* Amount — its own sentence, trivially removable if the figure shouldn't be public */}
+                <p className="text-warm-300 text-sm sm:text-base mt-2 leading-relaxed">
+                  Styrkurinn nam 800.000 kr.
+                </p>
+                <p className="text-warm-400 text-sm sm:text-base mt-2 leading-relaxed">
+                  Verkefninu er nú lokið og lokaskýrslu hefur verið skilað.
+                </p>
+                <Link href="/news" className="group/link inline-flex items-center gap-1.5 mt-4 text-sm font-mono text-primary-400 hover:text-primary-300 transition-colors">
+                  Lesa meira í fréttum<span className="inline-block group-hover/link:translate-x-0.5 transition-transform">→</span>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── Services / Process ── */}
       <section className="py-14 sm:py-20 bg-warm-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">

@@ -3,6 +3,7 @@
 import { useI18n, translate } from '@/lib/i18n';
 import SocialMediaLinks from '@/components/ui/SocialMediaLinks';
 import EmailLink from '@/components/ui/EmailLink';
+import GrantBadge from '@/components/ui/GrantBadge';
 
 export default function Footer() {
   const { t } = useI18n();
@@ -17,6 +18,9 @@ export default function Footer() {
             <h3 className="text-lg font-bold text-warm-50 mb-2">Tölvuhvíslarinn</h3>
             <p className="text-sm text-warm-400 mb-4">{t.footer.tagline}</p>
             <SocialMediaLinks variant="footer" />
+            <div className="mt-4">
+              <GrantBadge />
+            </div>
           </div>
 
           {/* Contact Info */}
