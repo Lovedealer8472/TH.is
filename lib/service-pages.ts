@@ -341,9 +341,9 @@ export const SERVICE_PAGES: ServicePage[] = [
       },
     ],
     pricing:
-      'Verð fer eftir lengd efnisins og fjölda spóla. Hafðu samband og lýstu magni – ég gef skýrt verðmat. Þjónustan er hagkvæm á svæðinu.',
+      'Verðið fer eftir lengd hverrar spólu – sjá verðskrána. Upphafsgjald er 2.900 kr. á pöntun, óháð fjölda spóla, og innifelur USB-lykil allt að 64 GB og niðurhalstengil í 30 daga. Hver spóla kostar 3.900–6.900 kr. eftir lengd og magnafsláttur er 7–20% frá og með fjórum spólum. Fyrir 20 spólur eða fleiri geri ég tilboð. Ef spóla reynist tóm eða ólæsileg rukka ég ekkert fyrir hana.',
     timeline:
-      'Venjulega 3–7 virkir dagar eftir að kasettur berast, eftir magni.',
+      'Yfirfærslan gerist í rauntíma – þriggja tíma spóla tekur þrjá tíma í upptöku og því ræður magnið afgreiðslutímanum. Fáeinar spólur eru yfirleitt tilbúnar á 3–7 virkum dögum. Stærri söfn taka lengri tíma; tíu spólur eða fleiri geta tekið tvær til þrjár vikur. Ég gef alltaf upp áætlaða dagsetningu áður en vinna hefst.',
     audience: 'Einstaklingar og fjölskyldur með VHS eða MiniDV upptökur sem vilja bjarga minningum.',
     faq: [
       {
@@ -354,12 +354,12 @@ export const SERVICE_PAGES: ServicePage[] = [
       {
         question: 'Get ég fengið skrárnar á USB?',
         answer:
-          'Já, afhending á USB-stiku eða yfir net er algeng. Við finnum leið sem hentar þér.',
+          'Já – USB-lykill allt að 64 GB fylgir með í upphafsgjaldinu, ásamt niðurhalstengli sem gildir í 30 daga. Þurfi meira pláss en 64 GB útvega ég stærri lykil eða flakkara á kostnaðarverði.',
       },
       {
         question: 'Hvað ef spólan er skemmd?',
         answer:
-          'Ég met ástand áður en vinna hefst. Stundum er hægt að bjarga hluta af efni – ég segi þér heiðarlega frá möguleikum.',
+          'Ég met ástand áður en vinna hefst. Stundum er hægt að bjarga hluta af efni – ég segi þér heiðarlega frá möguleikum. Reynist spólan tóm eða ólæsileg rukka ég ekkert fyrir hana.',
       },
     ],
   },

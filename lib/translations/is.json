@@ -348,6 +348,59 @@
             "price": "49.900 kr."
           }
         ]
+      },
+      "video": {
+        "title": "Myndbönd – yfirfærsla á stafrænt form",
+        "services": [
+          {
+            "name": "Upphafsgjald (per pöntun – innifelur USB-lykil allt að 64 GB og niðurhalstengil í 30 daga)",
+            "price": "2.900 kr."
+          },
+          {
+            "name": "Yfirfærsla – allt að 60 mín (VHS eða MiniDV)",
+            "price": "3.900 kr. / spólu"
+          },
+          {
+            "name": "Yfirfærsla – allt að 120 mín",
+            "price": "4.900 kr. / spólu"
+          },
+          {
+            "name": "Yfirfærsla – allt að 180 mín",
+            "price": "5.900 kr. / spólu"
+          },
+          {
+            "name": "Yfirfærsla – allt að 240 mín",
+            "price": "6.900 kr. / spólu"
+          },
+          {
+            "name": "Magnafsláttur – 4–5 spólur / 6–9 / 10–14 / 15+",
+            "price": "-7% / -10% / -15% / -20%"
+          },
+          {
+            "name": "20 spólur eða fleiri",
+            "price": "Tilboð"
+          },
+          {
+            "name": "Auka USB-lykill (afrit fyrir fjölskyldu)",
+            "price": "3.900 kr."
+          },
+          {
+            "name": "Kaflaskipting / atriðamerki",
+            "price": "2.500 kr. / spólu"
+          },
+          {
+            "name": "Geymsla á upprunaskrá í 1 ár",
+            "price": "2.000 kr. / spólu"
+          },
+          {
+            "name": "Afhending yfir 64 GB (stærri lykill eða flakkari)",
+            "price": "Kostnaðarverð + 1.500 kr."
+          },
+          {
+            "name": "Tóm eða ólæsileg spóla",
+            "price": "Ekkert gjald"
+          }
+        ]
       }
     }
   },

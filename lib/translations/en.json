@@ -348,6 +348,59 @@
             "price": "49,900 ISK"
           }
         ]
+      },
+      "video": {
+        "title": "Video – Transfer to Digital",
+        "services": [
+          {
+            "name": "Setup fee (per order – includes a USB drive up to 64 GB and a 30-day download link)",
+            "price": "2,900 ISK"
+          },
+          {
+            "name": "Transfer – up to 60 min (VHS or MiniDV)",
+            "price": "3,900 ISK / tape"
+          },
+          {
+            "name": "Transfer – up to 120 min",
+            "price": "4,900 ISK / tape"
+          },
+          {
+            "name": "Transfer – up to 180 min",
+            "price": "5,900 ISK / tape"
+          },
+          {
+            "name": "Transfer – up to 240 min",
+            "price": "6,900 ISK / tape"
+          },
+          {
+            "name": "Volume discount – 4–5 tapes / 6–9 / 10–14 / 15+",
+            "price": "-7% / -10% / -15% / -20%"
+          },
+          {
+            "name": "20 tapes or more",
+            "price": "By quote"
+          },
+          {
+            "name": "Extra USB drive (copy for family)",
+            "price": "3,900 ISK"
+          },
+          {
+            "name": "Chapter markers / scene splitting",
+            "price": "2,500 ISK / tape"
+          },
+          {
+            "name": "Master file storage for 1 year",
+            "price": "2,000 ISK / tape"
+          },
+          {
+            "name": "Delivery over 64 GB (larger drive or portable HDD)",
+            "price": "Cost + 1,500 ISK"
+          },
+          {
+            "name": "Blank or unreadable tape",
+            "price": "No charge"
+          }
+        ]
       }
     }
   },

@@ -202,6 +202,29 @@ export default function PricingPage() {
               </table>
             </div>
           </div>
+
+          {/* Video Transfer */}
+          <div className="bg-warm-800/30 backdrop-blur-sm rounded-xl border border-warm-700/50 p-8">
+            <h2 className="text-2xl font-bold text-warm-50 mb-2">{t.pricing.detailedPricing.video.title}</h2>
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm text-warm-200">
+                <thead className="border-b border-warm-700/50">
+                  <tr>
+                    <th className="text-left py-3 px-4 font-semibold text-warm-100">Þjónusta</th>
+                    <th className="text-right py-3 px-4 font-semibold text-warm-100">Aðlagað verð</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-warm-700/50">
+                  {t.pricing.detailedPricing.video.services.map((service, idx) => (
+                    <tr key={idx} className="hover:bg-warm-700/20 transition-colors">
+                      <td className="py-3 px-4">{service.name}</td>
+                      <td className="py-3 px-4 text-right text-primary-400 font-semibold">{service.price}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
         </div>
 
         {/* Footer text */}
