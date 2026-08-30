@@ -44,3 +44,26 @@ next-env.d.ts
 
 # OS
 Thumbs.db
+
+# ---- added 2026-08-30 ----
+
+# env files AND their timestamped backups.
+# The old pattern (.env*.local) missed ".env.local.bak.<timestamp>", which
+# contains SMTP_PASS. Origin is a public GitHub repo, so one `git add -A`
+# would have published live mail credentials.
+.env
+.env.*
+!.env.example
+!.env.production.example
+
+# timestamped editor/deploy backups (*.bak, *.bak.20260519-135308, *.bak-xtts-era)
+*.bak
+*.bak.*
+*.bak-*
+
+# Release binaries served straight off disk — 387 MB of APKs and game builds.
+# GitHub rejects >100 MB files and the bloat would be permanent. These live on
+# the server only; treat them as releases, not source.
+/public/downloads/
+/public/viking/
+/public/campybara-demo/
