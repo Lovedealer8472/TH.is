@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Newsletter ??? T??lvuhv??slarinn</title>
+  <style>
+    body { font-family: system-ui, -apple-system, sans-serif; margin: 0; padding: 2rem 1rem; min-height: 100vh; background: #fafafa; }
+    .wrap { max-width: 480px; margin: 0 auto; }
+    .back { margin-bottom: 1.5rem; }
+    .back a { color: #06c; text-decoration: none; }
+    .back a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <p class="back"><a href="/">??? Til baka</a></p>
+    <!-- Newsletter section (API base /newsletter when this page is at tolvuhvislarinn.is/newsletter) -->
+    <section id="newsletter-signup" class="newsletter-section" data-newsletter-api-base="/newsletter" data-privacy-url="/privacy" aria-labelledby="newsletter-heading">
+      <h2 id="newsletter-heading">Newsletter</h2>
+      <p class="newsletter-section__intro">Get a daily digest of news on the topics you choose, at the time you prefer. One email per day, no spam.</p>
+      <form id="newsletter-signup-form" class="newsletter-section__form" method="post" action="" novalidate>
+        <label for="newsletter-email">Email</label>
+        <input type="email" id="newsletter-email" name="email" required placeholder="you@example.com" autocomplete="email">
+        <label class="newsletter-section__privacy">
+          <input type="checkbox" name="privacy_consent" required>
+          <span>I agree to receive the newsletter and to the <a href="/privacy" target="_blank" rel="noopener">privacy policy</a>.</span>
+        </label>
+        <button type="submit">Sign up</button>
+        <div id="newsletter-msg" class="newsletter-section__msg" aria-live="polite" role="status"></div>
+      </form>
+      <style>
+        .newsletter-section { font-family: system-ui, -apple-system, sans-serif; max-width: 420px; margin: 0 auto; padding: 1.5rem 0; }
+        .newsletter-section h2 { margin: 0 0 0.5rem; font-size: 1.25rem; font-weight: 600; }
+        .newsletter-section__intro { margin: 0 0 1rem; color: #444; font-size: 0.9375rem; line-height: 1.4; }
+        .newsletter-section__form label { display: block; margin-top: 0.75rem; font-size: 0.875rem; }
+        .newsletter-section__form label:first-of-type { margin-top: 0; }
+        .newsletter-section__form input[type="email"] { width: 100%; padding: 0.5rem 0.75rem; margin-top: 0.25rem; font-size: 1rem; border: 1px solid #999; border-radius: 4px; box-sizing: border-box; }
+        .newsletter-section__privacy { display: flex; align-items: flex-start; gap: 0.5rem; margin-top: 0.75rem; }
+        .newsletter-section__privacy input { margin-top: 0.2rem; flex-shrink: 0; }
+        .newsletter-section__privacy span { font-size: 0.875rem; }
+        .newsletter-section__form a { color: #06c; }
+        .newsletter-section__form a:hover { text-decoration: underline; }
+        .newsletter-section__form button { margin-top: 1rem; padding: 0.5rem 1.25rem; font-size: 1rem; cursor: pointer; background: #111; color: #fff; border: none; border-radius: 4px; }
+        .newsletter-section__form button:hover { background: #333; }
+        .newsletter-section__msg { margin-top: 0.75rem; font-size: 0.875rem; }
+        .newsletter-section__msg.success { color: #0a6b0a; }
+        .newsletter-section__msg.error { color: #c00; }
+      </style>
+      <script>
+        (function() {
+          var section = document.getElementById('newsletter-signup');
+          var form = document.getElementById('newsletter-signup-form');
+          var msg = document.getElementById('newsletter-msg');
+          if (!form || !msg) return;
+          var apiBase = (section && section.getAttribute('data-newsletter-api-base')) || window.NEWSLETTER_API_BASE || '';
+          var privacyUrl = (section && section.getAttribute('data-privacy-url')) || '/privacy';
+          var privacyLink = form.querySelector('a[href="/privacy"]');
+          if (privacyLink && privacyUrl) privacyLink.href = privacyUrl;
+          form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            msg.textContent = '';
+            msg.className = 'newsletter-section__msg';
+            var email = document.getElementById('newsletter-email').value.trim();
+            var consent = form.querySelector('[name=privacy_consent]');
+            if (!consent || !consent.checked) {
+              msg.className = 'newsletter-section__msg error';
+              msg.textContent = 'Please agree to the privacy policy.';
+              return;
+            }
+            fetch(apiBase + '/signup', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ email: email, privacy_consent: 'on' })
+            })
+            .then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }); })
+            .then(function(res) {
+              if (res.ok) {
+                msg.className = 'newsletter-section__msg success';
+                msg.textContent = res.data.message || 'Check your email for the preferences link.';
+                form.reset();
+              } else {
+                msg.className = 'newsletter-section__msg error';
+                msg.textContent = res.data.error || 'Something went wrong. Try again.';
+              }
+            })
+            .catch(function() {
+              msg.className = 'newsletter-section__msg error';
+              msg.textContent = 'Network error. Try again.';
+            });
+          });
+        })();
+      </script>
+    </section>
+  </div>
+</body>
+</html>
+
