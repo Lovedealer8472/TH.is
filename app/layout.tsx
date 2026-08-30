@@ -6,6 +6,7 @@ import Footer from '@/components/layout/Footer';
 import GoogleAnalytics from '@/components/analytics/GoogleAnalytics';
 import StructuredData from '@/components/StructuredData';
 import FloatingWhatsApp from '@/components/ui/FloatingWhatsApp';
+import FloatingChatbot from '@/components/ui/FloatingChatbot';
 import './globals.css';
 
 const outfit = Outfit({ subsets: ['latin', 'latin-ext'], variable: '--font-display', display: 'swap', weight: ['400', '500', '600', '700', '800'] });
@@ -39,6 +40,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <main className="flex-1">{children}</main>
           <Footer />
           <FloatingWhatsApp />
+          <FloatingChatbot />
         </I18nProvider>
       </body>
     </html>
