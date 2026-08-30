@@ -422,6 +422,7 @@
     "phone": "Phone",
     "email": "Email",
     "location": "Location",
+    "directions": "Get directions",
     "form": {
       "name": "Name",
       "email": "Email",

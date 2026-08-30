@@ -422,6 +422,7 @@
     "phone": "Sími",
     "email": "Netfang",
     "location": "Staðsetning",
+    "directions": "Fá leiðarlýsingu",
     "form": {
       "name": "Nafn",
       "email": "Netfang",

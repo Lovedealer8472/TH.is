@@ -52,7 +52,18 @@ export default function ContactPage() {
                 </svg>
               </div>
               <h3 className="text-sm font-semibold text-warm-200 mb-2">{t.contact.location}</h3>
-              <p className="text-lg text-warm-50 font-medium">Neskaupstaður</p>
+              <p className="text-lg text-warm-50 font-medium">Starmýri 23</p>
+              <p className="text-lg text-warm-50 font-medium">740 Neskaupstaður</p>
+              <p className="mt-2">
+                <a
+                  href="https://www.google.com/maps/dir/?api=1&destination=Starm%C3%BDri+23%2C+740+Neskaupsta%C3%B0ur"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary-400 hover:text-primary-300 transition-colors font-medium text-sm"
+                >
+                  {t.contact.directions}
+                </a>
+              </p>
             </div>
           </div>
 
