@@ -417,6 +417,67 @@ export const SERVICE_PAGES: ServicePage[] = [
       },
     ],
   },
+  {
+    slug: 'windows-11-ostudd-vel',
+    metaTitle: 'Windows 11 á óstudda tölvu – Windows 10 runnið út | Tölvuhvíslarinn',
+    metaDescription:
+      'Segir Windows að tölvan þín uppfylli ekki kröfur fyrir Windows 11? Ég set Windows 11 upp á eldri vélar án TPM 2.0 á Austurlandi. Gögn afrituð, uppfærslur settar inn. Fast verð.',
+    h1: 'Windows 11 á tölvu sem „má ekki" fá Windows 11',
+    intro:
+      'Windows 10 hætti að fá öryggisuppfærslur 14. október 2025 og framlengda öryggisþjónustan fyrir heimili rennur út 13. október 2026. Milljónir tölva sem virka ágætlega fá samt skilaboðin „Þessi tölva uppfyllir ekki kröfur fyrir Windows 11", oftast vegna TPM 2.0 eða örgjörvans. Ég set Windows 11 upp á slíkar vélar, tek afrit af gögnunum áður og skila tölvunni uppfærðri.',
+    serviceAreas: ['Neskaupstaður', 'Fjarðabyggð', 'Austurland'],
+    overviewCardTitle: 'Windows 11 á óstudda vél',
+    sections: [
+      {
+        heading: 'Hvað er gert?',
+        paragraphs: [
+          'Fyrst tek ég afrit af myndum, skjölum og öðru sem skiptir máli. Svo set ég Windows 11 upp á nýtt með uppsetningarmiðli sem sleppir kröfum Microsoft um TPM 2.0, Secure Boot og tiltekna örgjörva. Að lokum set ég inn allar uppfærslur, rekla og gögnin þín aftur og athuga að allt ræsist og virki.',
+          'Þetta er hrein uppsetning, ekki uppfærsla ofan á gamla Windows 10. Tölvan kemur til baka hraðari og án ára af uppsöfnuðu drasli.',
+        ],
+      },
+      {
+        heading: 'Hvaða tölvur henta?',
+        paragraphs: [
+          'Flestar fartölvur og borðtölvur frá 2012 og yngri með 64 bita örgjörva og að minnsta kosti 4 GB minni. Ef tölvan er enn með gamlan harðdisk mæli ég með SSD í leiðinni; það munar meira um það en nokkuð annað.',
+          'Ég segi þér hreint út ef vélin er of gömul til að þetta borgi sig. Þá er betra að vita það áður en unnið er.',
+        ],
+      },
+      {
+        heading: 'Það sem þú þarft að vita',
+        paragraphs: [
+          'Microsoft styður ekki Windows 11 opinberlega á vélum sem uppfylla ekki kröfurnar og ábyrgist ekki uppfærslur á þeim. Í reynd hafa slíkar vélar fengið uppfærslur eins og aðrar, en það getur breyst. Ég segi þetta við hvern viðskiptavin áður en uppsetning hefst.',
+          'Windows 11 leyfi fylgir tölvunni ef hún var með löglegt Windows 10; það þarf ekki að kaupa nýtt.',
+        ],
+      },
+    ],
+    pricing:
+      'Fast verð: 14.900 kr. fyrir uppsetningu Windows 11 á óstudda vél með öllum uppfærslum. Afrit af gögnum bætist við samkvæmt verðskrá (4.900 kr. undir 30 GB, 6.900 kr. yfir). Allt verð með VSK.',
+    timeline:
+      'Yfirleitt tilbúin samdægurs eða næsta virka dag, eftir stærð gagnanna og hraða vélarinnar.',
+    audience: 'Heimili, einyrkjar og lítil fyrirtæki með tölvur sem virka vel en fá ekki Windows 11 í gegnum Windows Update.',
+    faq: [
+      {
+        question: 'Er þetta löglegt?',
+        answer:
+          'Já. Þetta er venjulegt Windows 11 frá Microsoft sett upp með stillingum sem sleppa vélbúnaðarkröfunum. Leyfið sem fylgdi Windows 10 gildir áfram. Microsoft styður uppsetninguna ekki opinberlega, en bannar hana ekki.',
+      },
+      {
+        question: 'Fæ ég áfram uppfærslur?',
+        answer:
+          'Hingað til hafa óstuddar vélar fengið sömu öryggisuppfærslur og aðrar. Microsoft ábyrgist það ekki, og ég get ekki lofað því fyrir hönd Microsoft. Ef stór útgáfuuppfærsla neitar að setjast inn er hægt að endurtaka ferlið.',
+      },
+      {
+        question: 'Get ég ekki bara verið áfram á Windows 10?',
+        answer:
+          'Tölvan heldur áfram að virka, en án öryggisuppfærslna er heimabankinn, tölvupósturinn og vafrinn smám saman í meiri hættu. Framlengda öryggisþjónustan fyrir heimili rennur út 13. október 2026. Fyrir vél sem á að vera í notkun lengur en það er Windows 11 skynsamlegri kostur.',
+      },
+      {
+        question: 'Tapast gögnin mín?',
+        answer:
+          'Nei. Ég tek afrit á ytri disk áður en nokkuð er gert og flyt allt til baka eftir uppsetningu. Þú staðfestir að allt sé á sínum stað áður en afritið er eytt.',
+      },
+    ],
+  },
 ];
 
 export function getServicePage(slug: string): ServicePage | undefined {
