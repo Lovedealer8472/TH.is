@@ -115,7 +115,7 @@
   "pricing": {
     "title": "Pricing",
     "subtitle": "Clear prices – no unexpected additional fees",
-    "footer": "All prices include VAT. Replacement parts and specialized repairs are calculated separately. Contact us for an accurate quote.",
+    "footer": "All prices include VAT. Replacement parts and specialized repairs are calculated separately. Contact us for an accurate quote. Windows 11 on unsupported hardware: Microsoft does not guarantee updates on such machines, and the customer accepts this at installation.",
     "cards": {
       "repairs": {
         "title": "Computer Repairs & Diagnostics",
@@ -317,6 +317,10 @@
           {
             "name": "OS installation + updates",
             "price": "12,900 ISK"
+          },
+          {
+            "name": "Windows 11 on unsupported hardware (fails Microsoft's checks) + updates",
+            "price": "14.900 kr."
           },
           {
             "name": "Microsoft Office installation",

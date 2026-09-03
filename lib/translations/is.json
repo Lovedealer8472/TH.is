@@ -115,7 +115,7 @@
   "pricing": {
     "title": "Verðskrá",
     "subtitle": "Einföld verðskrá – engin óvænt aukagjöld",
-    "footer": "Allt verð er með VSK. Varahlutir og sértækar viðgerðir eru reiknaðar sérstaklega. Hafðu samband fyrir nákvæmt tilboð.",
+    "footer": "Allt verð er með VSK. Varahlutir og sértækar viðgerðir eru reiknaðar sérstaklega. Hafðu samband fyrir nákvæmt tilboð. Windows 11 á óstuddri vél: Microsoft ábyrgist ekki uppfærslur á slíkum vélum og viðskiptavinur samþykkir það við uppsetningu.",
     "cards": {
       "repairs": {
         "title": "Tölvuviðgerðir og bilanagreining",
@@ -317,6 +317,10 @@
           {
             "name": "Uppsetning OS + uppfærslur",
             "price": "12.900 kr."
+          },
+          {
+            "name": "Windows 11 á óstudda vél (uppfyllir ekki kröfur Microsoft) + uppfærslur",
+            "price": "14.900 kr."
           },
           {
             "name": "Uppsetning Microsoft Office",
