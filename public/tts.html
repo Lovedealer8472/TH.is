@@ -3,159 +3,508 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Tölvuhvísl — Íslensk talgerving</title>
+<title>Íslensk talgerving — Salka | Tölvuhvíslarinn</title>
+<meta name="description" content="Prófaðu Sölku: íslenskan talgervil, þjálfaðan frá grunni á opnum íslenskum gögnum. 109 raddir, tilfinningaraddir, keyrir á venjulegum örgjörva — líka í þínu eigin kerfi. Enginn texti vistaður.">
+<link rel="canonical" href="https://www.tolvuhvislarinn.is/tts.html">
+<meta name="theme-color" content="#121615">
+<link rel="icon" href="/icon.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/apple-icon.png" sizes="180x180">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Tölvuhvíslarinn">
+<meta property="og:locale" content="is_IS">
+<meta property="og:url" content="https://www.tolvuhvislarinn.is/tts.html">
+<meta property="og:title" content="Íslensk talgerving — Salka | Tölvuhvíslarinn">
+<meta property="og:description" content="Skrifaðu íslenskan texta, hlustaðu strax. Þjálfað frá grunni á Íslandi, keyrir á venjulegum örgjörva, enginn texti vistaður.">
+<meta property="og:image" content="https://www.tolvuhvislarinn.is/og/tts.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Salka — íslensk talgerving frá Tölvuhvíslaranum">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Íslensk talgerving — Salka | Tölvuhvíslarinn">
+<meta name="twitter:description" content="Skrifaðu íslenskan texta, hlustaðu strax. Þjálfað frá grunni á Íslandi, keyrir á venjulegum örgjörva, enginn texti vistaður.">
+<meta name="twitter:image" content="https://www.tolvuhvislarinn.is/og/tts.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://api.tolvuhvislarinn.is" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Salka — íslensk talgerving",
+  "url": "https://www.tolvuhvislarinn.is/tts.html",
+  "applicationCategory": "MultimediaApplication",
+  "operatingSystem": "Any",
+  "inLanguage": "is",
+  "description": "Íslenskur talgervill þjálfaður frá grunni á opnum íslenskum gögnum. Sjálfhýsanlegur, keyrir á venjulegum örgjörva, enginn texti vistaður.",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "ISK", "description": "Prufuútgáfa á vef; leyfi til sjálfhýsingar samkvæmt samkomulagi." },
+  "provider": { "@type": "Organization", "name": "Tölvuhvíslarinn ehf.", "url": "https://www.tolvuhvislarinn.is", "email": "dadi@tolvuhvislarinn.is", "telephone": "+354-848-6755",
+    "address": { "@type": "PostalAddress", "streetAddress": "Starmýri 21", "postalCode": "740", "addressLocality": "Neskaupstaður", "addressCountry": "IS" } }
+}
+</script>
 <style>
+  /* ---- tokens: the site's own palette (tailwind.config.ts), OKLCH ---- */
   :root {
-    --bg: #0f1420; --card: #171e2e; --ink: #e8ecf4; --mut: #8b94a7;
-    --acc: #4f8cff; --acc2: #7fb0ff; --ok: #3ddc84; --err: #ff6b6b;
+    --bg: oklch(11% 0.003 190);
+    --surface: oklch(15% 0.005 180);
+    --surface-2: oklch(19% 0.007 175);
+    --line: oklch(24% 0.008 170);
+    --line-strong: oklch(30% 0.010 170);
+    --ink: oklch(88% 0.008 170);
+    --ink-strong: oklch(96% 0.005 170);
+    --muted: oklch(75% 0.010 170);
+    --faint: oklch(62% 0.012 170);
+    --accent: oklch(65% 0.17 158);
+    --accent-strong: oklch(60% 0.17 156);
+    --accent-soft: oklch(65% 0.17 158 / 0.14);
+    --accent-ink: oklch(11% 0.003 190);
+    --cyan: oklch(65% 0.13 195);
+    --orange: oklch(68% 0.16 55);
+    --err: oklch(70% 0.18 25);
+    --err-soft: oklch(70% 0.18 25 / 0.12);
+    --font-display: "Outfit", ui-sans-serif, system-ui, sans-serif;
+    --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+    --font-mono: "JetBrains Mono", ui-monospace, "Cascadia Code", Consolas, monospace;
+    --radius: 12px;
+    --radius-lg: 18px;
+    --ease: cubic-bezier(0.22, 1, 0.36, 1);
+    --z-sticky: 10;
   }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
   body {
-    background: var(--bg); color: var(--ink);
-    font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif;
-    min-height: 100vh; display: flex; flex-direction: column; align-items: center;
-    padding: 3rem 1rem;
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 400 1rem/1.65 var(--font-sans); letter-spacing: 0.005em;
+    font-kerning: normal; -webkit-font-smoothing: antialiased;
   }
-  main { width: 100%; max-width: 640px; }
-  h1 { font-size: 1.75rem; letter-spacing: -0.02em; }
-  h1 span { color: var(--acc); }
-  .sub { color: var(--mut); margin: 0.35rem 0 2rem; }
-  .card {
-    background: var(--card); border: 1px solid #232c42; border-radius: 14px;
-    padding: 1.5rem; margin-bottom: 1.25rem;
-  }
+  ::selection { background: oklch(60% 0.17 156 / 0.3); color: var(--ink-strong); }
+  :focus-visible { outline: 2px solid var(--accent-strong); outline-offset: 2px; }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 0.18em; }
+  a:hover { color: oklch(72% 0.15 158); }
+  h1, h2, h3 { font-family: var(--font-display); color: var(--ink-strong); margin: 0; text-wrap: balance; }
+  p { margin: 0; text-wrap: pretty; }
+  code, pre, kbd { font-family: var(--font-mono); font-variant-ligatures: none; }
+  img { display: block; max-width: 100%; height: auto; }
+
+  .skip { position: absolute; left: 0.75rem; top: -3rem; padding: 0.5rem 0.75rem; background: var(--accent); color: var(--accent-ink); border-radius: 8px; font-weight: 600; z-index: 20; }
+  .skip:focus { top: 0.75rem; }
+
+  /* ---- header (mirrors the site) ---- */
+  .site-header { position: sticky; top: 0; z-index: var(--z-sticky); background: oklch(15% 0.005 180 / 0.92); border-bottom: 1px solid var(--line); backdrop-filter: blur(6px); }
+  .site-header .wrap { display: flex; align-items: center; justify-content: space-between; height: 4rem; }
+  .brand { display: inline-flex; align-items: baseline; gap: 0.35rem; text-decoration: none; color: var(--ink-strong); font-family: var(--font-display); font-weight: 700; font-size: 1.2rem; }
+  .brand .tld { font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent); font-weight: 500; }
+  .nav { display: flex; gap: 1.6rem; }
+  .nav a { color: var(--muted); text-decoration: none; font-weight: 500; padding: 0.5rem 0; }
+  .nav a:hover { color: var(--accent); }
+  @media (max-width: 760px) { .nav a:not(.nav-contact) { display: none; } }
+
+  .wrap { width: min(100% - 2rem, 72rem); margin-inline: auto; }
+  @media (min-width: 640px) { .wrap { width: min(100% - 3rem, 72rem); } }
+
+  /* ---- hero copy ---- */
+  .hero { padding: clamp(2.5rem, 6vw, 4.5rem) 0 1.75rem; }
+  .hero .copy { max-width: 42rem; }
+  .hero h1 { font-size: clamp(2.1rem, 1.3rem + 3vw, 3.4rem); line-height: 1.06; letter-spacing: -0.022em; font-weight: 700; }
+  .hero h1 em { font-style: normal; color: var(--accent); }
+  .lead { margin-top: 1rem; font-size: 1.125rem; color: var(--muted); max-width: 38rem; line-height: 1.6; }
+  .health { display: inline-flex; align-items: center; gap: 0.55rem; margin-top: 1.25rem; min-height: 1.9rem; font-size: 0.875rem; color: var(--muted); font-family: var(--font-mono); opacity: 0; transition: opacity 400ms var(--ease); }
+  .health.on { opacity: 1; }
+  .health .dot { width: 0.55rem; height: 0.55rem; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 4px var(--accent-soft); }
+
+  /* ---- the console ---- */
+  .console { margin-top: 1.5rem; max-width: 64rem; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-lg); padding: clamp(1rem, 2.5vw, 1.75rem); }
+  .field { display: block; }
+  .field-head { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; margin-bottom: 0.5rem; }
+  .field-head label { font-weight: 600; color: var(--ink-strong); }
+  .count { font-family: var(--font-mono); font-size: 0.8rem; color: var(--faint); font-variant-numeric: tabular-nums; }
+  .count.warn { color: var(--orange); }
   textarea {
-    width: 100%; min-height: 110px; resize: vertical;
-    background: #0c111c; color: var(--ink); border: 1px solid #2a3450;
-    border-radius: 10px; padding: 0.9rem 1rem; font: inherit;
+    width: 100%; min-height: 8.5rem; resize: vertical; display: block;
+    background: var(--surface-2); color: var(--ink-strong); border: 1px solid var(--line-strong); border-radius: var(--radius);
+    padding: 0.95rem 1.05rem; font: 400 1.05rem/1.6 var(--font-sans); letter-spacing: 0.005em;
+    transition: border-color 150ms var(--ease), box-shadow 150ms var(--ease);
   }
-  textarea:focus { outline: 2px solid var(--acc); outline-offset: 1px; border-color: transparent; }
-  .row { display: flex; gap: 1rem; align-items: center; margin-top: 1rem; flex-wrap: wrap; }
-  button {
-    background: var(--acc); color: #fff; border: 0; border-radius: 10px;
-    padding: 0.7rem 1.6rem; font: inherit; font-weight: 600; cursor: pointer;
+  textarea::placeholder { color: var(--faint); }
+  textarea:hover { border-color: oklch(38% 0.012 170); }
+  textarea:focus { outline: none; border-color: var(--accent-strong); box-shadow: 0 0 0 3px var(--accent-soft); }
+
+  .chips { display: flex; flex-wrap: wrap; gap: 0.45rem; align-items: center; margin-top: 0.7rem; }
+  .chips .lbl { font-size: 0.85rem; color: var(--faint); margin-right: 0.15rem; }
+  .chip { background: transparent; color: var(--muted); border: 1px solid var(--line-strong); border-radius: 999px; padding: 0.4rem 0.8rem; font: 500 0.85rem/1 var(--font-sans); cursor: pointer; min-height: 2.25rem; transition: border-color 150ms var(--ease), color 150ms var(--ease), background 150ms var(--ease); }
+  .chip:hover { border-color: var(--accent); color: var(--ink-strong); }
+  .chip:active { background: var(--accent-soft); }
+
+  .controls { display: grid; grid-template-columns: 1fr; gap: 0.9rem 1.25rem; margin-top: 1.4rem; align-items: end; }
+  @media (min-width: 720px) { .controls { grid-template-columns: minmax(12rem, 1.4fr) minmax(9rem, 1fr) minmax(11rem, 1fr) auto; } }
+  .ctl label, .ctl .lbl { display: block; font-size: 0.8rem; font-weight: 600; color: var(--muted); margin-bottom: 0.35rem; letter-spacing: 0.01em; }
+  select {
+    width: 100%; appearance: none; -webkit-appearance: none; min-height: 2.75rem;
+    background: var(--surface-2) url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'><path d='M1 1l5 5 5-5' fill='none' stroke='%23a9b0ac' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/></svg>") no-repeat right 0.85rem center;
+    color: var(--ink-strong); border: 1px solid var(--line-strong); border-radius: 10px; padding: 0.55rem 2.2rem 0.55rem 0.85rem;
+    font: 500 0.95rem/1.3 var(--font-sans); cursor: pointer; transition: border-color 150ms var(--ease), opacity 150ms var(--ease);
   }
-  button:hover { background: var(--acc2); }
-  button:disabled { background: #2a3450; color: var(--mut); cursor: wait; }
-  .speed { display: flex; align-items: center; gap: 0.5rem; color: var(--mut); font-size: 0.9rem; }
-  input[type="range"] { accent-color: var(--acc); }
-  .count { margin-left: auto; color: var(--mut); font-size: 0.85rem; font-variant-numeric: tabular-nums; }
-  audio { width: 100%; margin-top: 1rem; display: none; }
-  .status { margin-top: 0.75rem; font-size: 0.9rem; color: var(--mut); min-height: 1.4em; }
+  select:hover { border-color: oklch(38% 0.012 170); }
+  select:focus { outline: none; border-color: var(--accent-strong); box-shadow: 0 0 0 3px var(--accent-soft); }
+  select:disabled { opacity: 0.5; cursor: not-allowed; }
+  .speed-row { display: flex; align-items: center; gap: 0.75rem; min-height: 2.75rem; }
+  input[type="range"] { flex: 1; accent-color: var(--accent); min-width: 6rem; cursor: pointer; height: 1.5rem; }
+  output { font-family: var(--font-mono); font-size: 0.9rem; color: var(--ink-strong); font-variant-numeric: tabular-nums; min-width: 3.2ch; text-align: right; }
+
+  .go {
+    display: inline-flex; align-items: center; justify-content: center; gap: 0.6rem; width: 100%; min-height: 2.9rem;
+    background: var(--accent); color: var(--accent-ink); border: 0; border-radius: 10px; padding: 0.7rem 1.4rem;
+    font: 600 1rem/1 var(--font-display); letter-spacing: 0.005em; cursor: pointer;
+    transition: background 150ms var(--ease), transform 120ms var(--ease);
+  }
+  .go:hover { background: oklch(70% 0.16 158); }
+  .go:active { transform: translateY(1px); }
+  .go:disabled { background: var(--line-strong); color: var(--muted); cursor: progress; transform: none; }
+  .go .ring { width: 0.95rem; height: 0.95rem; border-radius: 50%; border: 2px solid currentColor; border-right-color: transparent; animation: spin 0.8s linear infinite; display: none; }
+  .go[aria-busy="true"] .ring { display: inline-block; }
+  .go[aria-busy="true"] .play { display: none; }
+  .hint { margin-top: 0.55rem; font-size: 0.8rem; color: var(--faint); text-align: right; }
+  .hint kbd { font-size: 0.75rem; border: 1px solid var(--line-strong); border-bottom-width: 2px; border-radius: 5px; padding: 0.05rem 0.35rem; color: var(--muted); }
+  @media (max-width: 719px) { .hint { text-align: left; } }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* ---- output: the on-air strip ---- */
+  .out { margin-top: 1.4rem; border-top: 1px solid var(--line); padding-top: 1.2rem; }
+  .out-head { display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 1.6rem; }
+  .out-title { display: inline-flex; align-items: center; gap: 0.55rem; font-family: var(--font-mono); font-size: 0.8rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--faint); }
+  .out-title .lamp { width: 0.6rem; height: 0.6rem; border-radius: 50%; background: var(--line-strong); transition: background 200ms var(--ease), box-shadow 200ms var(--ease); }
+  .out[data-state="loading"] .lamp { background: var(--orange); box-shadow: 0 0 0 4px oklch(68% 0.16 55 / 0.18); }
+  .out[data-state="ready"] .lamp { background: var(--accent); box-shadow: 0 0 0 4px var(--accent-soft); }
+  .out[data-state="error"] .lamp { background: var(--err); box-shadow: 0 0 0 4px var(--err-soft); }
+  .meta { font-family: var(--font-mono); font-size: 0.8rem; color: var(--muted); font-variant-numeric: tabular-nums; display: none; gap: 0.9rem; flex-wrap: wrap; }
+  .out[data-state="ready"] .meta { display: inline-flex; }
+  .meta a { color: var(--accent); font-weight: 500; }
+
+  .wave-box { position: relative; margin-top: 0.8rem; height: 6.25rem; border-radius: 10px; background: var(--surface-2); border: 1px solid var(--line); overflow: hidden; }
+  .wave-box canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+  .wave-empty { position: absolute; inset: 0; display: grid; place-items: center; color: var(--faint); font-size: 0.9rem; }
+  .wave-empty::before { content: ""; position: absolute; left: 1rem; right: 1rem; top: 50%; border-top: 1px dashed var(--line-strong); }
+  .wave-empty span { position: relative; background: var(--surface-2); padding: 0 0.6rem; }
+  .out[data-state="ready"] .wave-empty, .out[data-state="loading"] .wave-empty { display: none; }
+  .skel { position: absolute; inset: 0; display: none; align-items: center; justify-content: center; gap: 3px; padding: 0 1rem; }
+  .out[data-state="loading"] .skel { display: flex; }
+  .skel i { display: block; width: 3px; border-radius: 2px; background: var(--line-strong); height: 18%; animation: breathe 1.1s ease-in-out infinite; }
+  .skel i:nth-child(3n) { height: 42%; animation-delay: 0.15s; } .skel i:nth-child(5n) { height: 64%; animation-delay: 0.3s; } .skel i:nth-child(7n) { height: 30%; animation-delay: 0.45s; }
+  @keyframes breathe { 0%, 100% { opacity: 0.35; } 50% { opacity: 0.9; } }
+  .out[data-state="ready"] .wave-box { cursor: pointer; }
+
+  audio { width: 100%; margin-top: 0.8rem; display: none; color-scheme: dark; }
+  .out[data-state="ready"] audio { display: block; }
+  .status { margin-top: 0.75rem; font-size: 0.925rem; color: var(--muted); min-height: 1.5em; display: flex; gap: 0.75rem; align-items: baseline; flex-wrap: wrap; }
   .status.err { color: var(--err); }
-  .points { display: grid; grid-template-columns: 1fr 1fr; gap: 0.9rem 1.4rem; }
-  .points div strong { display: block; color: var(--ink); font-size: 0.92rem; margin-bottom: 0.1rem; }
-  .points div span { color: var(--mut); font-size: 0.82rem; line-height: 1.45; }
-  @media (max-width: 520px) { .points { grid-template-columns: 1fr; } }
-  .fine { color: var(--mut); font-size: 0.82rem; }
-  .fine strong { color: var(--ink); font-weight: 600; }
-  code {
-    background: #0c111c; border: 1px solid #2a3450; border-radius: 6px;
-    padding: 0.1rem 0.4rem; font-size: 0.85em;
+  .status .retry { background: transparent; color: var(--ink-strong); border: 1px solid var(--line-strong); border-radius: 8px; padding: 0.3rem 0.7rem; font: 500 0.85rem/1 var(--font-sans); cursor: pointer; min-height: 2rem; }
+  .status .retry:hover { border-color: var(--accent); }
+  .note { margin-top: 1rem; font-size: 0.85rem; color: var(--faint); max-width: 60ch; }
+
+  /* ---- prose sections ---- */
+  section.block { padding: clamp(3rem, 7vw, 5.5rem) 0 0; }
+  section.block h2 { font-size: clamp(1.5rem, 1.1rem + 1.2vw, 2rem); letter-spacing: -0.015em; line-height: 1.15; font-weight: 600; }
+  .kicker { font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent); margin-bottom: 0.6rem; }
+  .facts { display: grid; grid-template-columns: 1fr; gap: 0; margin: 1.75rem 0 0; border-top: 1px solid var(--line); }
+  @media (min-width: 800px) { .facts { grid-template-columns: 1fr 1fr; column-gap: 3rem; } }
+  .facts > div { padding: 1.35rem 0; border-bottom: 1px solid var(--line); }
+  .facts dt { font-family: var(--font-display); font-weight: 600; font-size: 1.1rem; color: var(--ink-strong); margin: 0 0 0.35rem; }
+  .facts dd { margin: 0; color: var(--muted); max-width: 46ch; }
+  .facts dd strong { color: var(--ink); font-weight: 500; }
+
+  .who-for { display: grid; grid-template-columns: 1fr; gap: 2rem; margin-top: 1.75rem; }
+  @media (min-width: 800px) { .who-for { grid-template-columns: repeat(3, 1fr); gap: 2.5rem; } }
+  .who-for h3 { font-size: 1.1rem; font-weight: 600; margin-bottom: 0.4rem; }
+  .who-for p { color: var(--muted); max-width: 34ch; }
+  .who-for .tag { display: inline-block; font-family: var(--font-mono); font-size: 0.75rem; color: var(--cyan); margin-bottom: 0.5rem; }
+
+  pre.code { margin: 1.5rem 0 0; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.1rem 1.25rem; overflow-x: auto; font-size: 0.875rem; line-height: 1.6; color: var(--ink); }
+  pre.code .c { color: var(--faint); } pre.code .s { color: var(--accent); } pre.code .k { color: var(--cyan); }
+  .api-notes { margin: 1.25rem 0 0; padding: 0; list-style: none; display: grid; gap: 0.5rem; color: var(--muted); max-width: 62ch; }
+  .api-notes li { padding-left: 1.2rem; position: relative; }
+  .api-notes li::before { content: "—"; position: absolute; left: 0; color: var(--faint); }
+  .api-notes code { font-size: 0.85em; color: var(--ink-strong); background: var(--surface-2); border: 1px solid var(--line); border-radius: 5px; padding: 0.05rem 0.35rem; }
+
+  .who { display: grid; grid-template-columns: 1fr; gap: 1.75rem; align-items: center; margin-top: 1.75rem; }
+  @media (min-width: 720px) { .who { grid-template-columns: 17rem 1fr; gap: 2.5rem; } }
+  .who img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: var(--radius-lg); border: 1px solid var(--line); }
+  .who p { color: var(--muted); max-width: 52ch; }
+  .who p + p { margin-top: 0.8rem; }
+  .cta-row { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.4rem; align-items: center; }
+  .btn { display: inline-flex; align-items: center; gap: 0.5rem; min-height: 2.75rem; padding: 0.65rem 1.2rem; border-radius: 10px; font: 600 0.95rem/1 var(--font-display); text-decoration: none; transition: background 150ms var(--ease), border-color 150ms var(--ease); }
+  .btn-primary { background: var(--accent); color: var(--accent-ink); }
+  .btn-primary:hover { background: oklch(70% 0.16 158); color: var(--accent-ink); }
+  .btn-ghost { color: var(--ink-strong); border: 1px solid var(--line-strong); }
+  .btn-ghost:hover { border-color: var(--accent); color: var(--ink-strong); }
+
+  .site-footer { margin-top: clamp(3rem, 7vw, 5.5rem); border-top: 1px solid var(--line); padding: 1.75rem 0 2.5rem; color: var(--faint); font-size: 0.875rem; }
+  .site-footer .wrap { display: flex; flex-wrap: wrap; gap: 0.75rem 1.5rem; justify-content: space-between; }
+  .site-footer a { color: var(--muted); text-decoration: none; }
+  .site-footer a:hover { color: var(--accent); }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .skel i { animation: none; opacity: 0.6; }
+    .go .ring { animation-duration: 1.6s; }
+    *, *::before, *::after { transition-duration: 0ms !important; }
   }
-  a { color: var(--acc2); }
 </style>
 </head>
 <body>
-<main>
-  <h1>Tölvu<span>hvísl</span></h1>
-  <p class="sub">Íslensk talgerving, þjálfuð á Íslandi. Salka er aðalröddin okkar — nú líka með tilfinningaraddir í beta. Skrifaðu texta, fáðu tal.</p>
+<a class="skip" href="#texti">Beint í textareitinn</a>
 
-  <div class="card">
-    <textarea id="text" maxlength="500" placeholder="Skrifaðu íslenskan texta hér — t.d. „góðan daginn, hvernig get ég aðstoðað?“" autofocus></textarea>
-    <div id="hugmyndir" style="display:flex;flex-wrap:wrap;gap:0.4rem;margin:0.55rem 0 0.2rem">
-      <span style="color:#8b93a7;font-size:0.82rem;align-self:center">Prófaðu:</span>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/">Tölvuhvíslarinn <span class="tld">.is</span></a>
+    <nav class="nav" aria-label="Aðalvalmynd">
+      <a href="/services">Þjónusta</a>
+      <a href="/pricing">Verðskrá</a>
+      <a href="/about">Um mig</a>
+      <a href="/projects">Verkefni</a>
+      <a class="nav-contact" href="/contact">Hafðu samband</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero wrap">
+    <div class="copy">
+      <p class="kicker">Salka · íslensk talgerving</p>
+      <h1>Íslenskt tal, <em>þjálfað á Íslandi.</em></h1>
+      <p class="lead">Skrifaðu setningu og hlustaðu. Salka er þjálfuð frá grunni á opnum íslenskum gögnum, keyrir á venjulegum örgjörva og geymir aldrei textann þinn. Í þínu eigin kerfi ef þú vilt.</p>
+      <p class="health" id="health" aria-live="polite"><span class="dot" aria-hidden="true"></span><span id="health-text"></span></p>
     </div>
-    <div class="row">
-      <button id="go">▶&nbsp; Tala</button>
-      <label class="speed">Rödd
-        <select id="voice" style="background:#0c111c;color:var(--ink);border:1px solid #2a3450;border-radius:8px;padding:0.35rem 0.5rem;font:inherit">
-          <option value="s4" selected>Salka (mælt með)</option>
-          <option value="s0">Rödd A</option>
-          <option value="s1">Rödd B</option>
-          <option value="s2">Rödd C</option>
-          <option value="s3">Rödd D</option>
-          <option value="s5">Rödd F</option>
-          <option value="s6">Rödd G</option>
-          <option value="s7">Rödd H</option>
-          <optgroup label="Tilfinningaraddir (beta)">
-            <option value="e18">Þórdís</option>
-            <option value="e8">Guðrún</option>
-            <option value="e13">Katla</option>
-            <option value="e23">Embla</option>
-            <option value="e28">Bjarki</option>
-            <option value="e33">Dagur</option>
-            <option value="e38">Orri</option>
-          </optgroup>
-        </select>
-      </label>
-      <label class="speed">Tilfinning
-        <select id="emotion" disabled style="background:#0c111c;color:var(--ink);border:1px solid #2a3450;border-radius:8px;padding:0.35rem 0.5rem;font:inherit;opacity:0.55">
-          <option value="3" selected>Hlutlaus</option>
-          <option value="1">Glaðleg</option>
-          <option value="2">Hjálpsöm</option>
-          <option value="0">Reið</option>
-          <option value="4">Döpur</option>
-          <option value="hissa">Hissa</option>
-        </select>
-      </label>
-      <label class="speed">Hraði
-        <input type="range" id="speed" min="0.7" max="1.4" step="0.1" value="1.0">
-        <span id="speedval">1.0×</span>
-      </label>
-      <span class="count"><span id="n">0</span>/500</span>
+
+    <form class="console" id="console" novalidate>
+      <div class="field">
+        <div class="field-head">
+          <label for="texti">Texti</label>
+          <span class="count" id="count" aria-live="polite"><span id="n">0</span>/500</span>
+        </div>
+        <textarea id="texti" name="text" maxlength="500" rows="4" spellcheck="false" autocomplete="off"
+          placeholder="Skrifaðu íslenskan texta hér — t.d. „Góðan daginn, hvernig get ég aðstoðað?“"></textarea>
+        <div class="chips" id="chips" role="group" aria-label="Tilbúnar setningar">
+          <span class="lbl">Prófaðu:</span>
+        </div>
+      </div>
+
+      <div class="controls">
+        <div class="ctl">
+          <label for="voice">Rödd</label>
+          <select id="voice" name="voice">
+            <option value="s4" selected>Salka — aðalröddin</option>
+            <option value="s0">Rödd A</option>
+            <option value="s1">Rödd B</option>
+            <option value="s2">Rödd C</option>
+            <option value="s3">Rödd D</option>
+            <option value="s5">Rödd F</option>
+            <option value="s6">Rödd G</option>
+            <option value="s7">Rödd H</option>
+            <optgroup label="Tilfinningaraddir (beta)">
+              <option value="e18">Þórdís</option>
+              <option value="e8">Guðrún</option>
+              <option value="e13">Katla</option>
+              <option value="e23">Embla</option>
+              <option value="e28">Bjarki</option>
+              <option value="e33">Dagur</option>
+              <option value="e38">Orri</option>
+            </optgroup>
+          </select>
+        </div>
+        <div class="ctl">
+          <label for="emotion">Tilfinning</label>
+          <select id="emotion" name="emotion" disabled aria-describedby="emo-help">
+            <option value="3" selected>Hlutlaus</option>
+            <option value="1">Glaðleg</option>
+            <option value="2">Hjálpsöm</option>
+            <option value="0">Reið</option>
+            <option value="4">Döpur</option>
+            <option value="hissa">Hissa</option>
+          </select>
+          <span id="emo-help" hidden>Aðeins fyrir tilfinningaraddir.</span>
+        </div>
+        <div class="ctl">
+          <label for="speed">Hraði</label>
+          <div class="speed-row">
+            <input type="range" id="speed" name="speed" min="0.7" max="1.4" step="0.1" value="1.0" aria-describedby="speedval">
+            <output id="speedval" for="speed">1,0×</output>
+          </div>
+        </div>
+        <div class="ctl">
+          <span class="lbl" aria-hidden="true">&nbsp;</span>
+          <button class="go" id="go" type="submit" aria-busy="false">
+            <span class="ring" aria-hidden="true"></span>
+            <svg class="play" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M3 1.8v10.4L11.6 7z" fill="currentColor"/></svg>
+            <span class="go-label">Búa til tal</span>
+          </button>
+        </div>
+      </div>
+      <p class="hint"><kbd>Ctrl</kbd> + <kbd>Enter</kbd> gerir það sama.</p>
+
+      <div class="out" id="out" data-state="idle">
+        <div class="out-head">
+          <span class="out-title"><span class="lamp" aria-hidden="true"></span><span id="out-label">Hljóð</span></span>
+          <span class="meta" id="meta"></span>
+        </div>
+        <div class="wave-box" id="wavebox" title="Smelltu til að spila / stöðva">
+          <canvas id="wave" aria-hidden="true"></canvas>
+          <div class="skel" aria-hidden="true"></div>
+          <div class="wave-empty"><span>Hljóðið birtist hér</span></div>
+        </div>
+        <audio id="player" controls preload="auto" aria-label="Talgerving"></audio>
+        <p class="status" id="status" role="status" aria-live="polite"></p>
+      </div>
+      <p class="note">Salka hljómar best í heilum setningum. Stök orð eru þekkt takmörkun núverandi líkans — þau eru lesin með samhengistrikki og hljóma þokkalega, en fyrir hljóðskrár í leiki og öpp er best að forrendra og hlusta.</p>
+    </form>
+  </section>
+
+  <section class="block wrap" aria-labelledby="h-why">
+    <h2 id="h-why">Hvers vegna þetta er öðruvísi en leigð erlend rödd</h2>
+    <dl class="facts">
+      <div>
+        <dt>Keyrir hjá þér</dt>
+        <dd>Sjálfhýsingarpakki fyrir Windows eða Linux. <strong>Venjulegur örgjörvi dugar</strong>: engin skjákort, engin skýjaþjónusta, engin nettenging nauðsynleg.</dd>
+      </div>
+      <div>
+        <dt>Textinn fer ekki úr landi</dt>
+        <dd>Vefþjónustan tekur við texta, skilar hljóði og <strong>geymir hvorugt</strong>. Í þínu kerfi fer textinn ekki einu sinni út úr húsi.</dd>
+      </div>
+      <div>
+        <dt>Framburður lagaður samdægurs</dt>
+        <dd>Sérnöfn, fagorð og tökuorð fara í eigið undantekningasafn. <strong>Villa sem heyrist í dag er löguð í dag</strong>, ekki send í biðröð hjá erlendum söluaðila.</dd>
+      </div>
+      <div>
+        <dt>Hrein leyfiskeðja</dt>
+        <dd>Þjálfað frá grunni á opnum íslenskum gögnum (Talrómur, <strong>CC BY 4.0</strong>). Engin erlend grunnlíkön með óljósum skilmálum undir vörunni.</dd>
+      </div>
+    </dl>
+  </section>
+
+  <section class="block wrap" aria-labelledby="h-for">
+    <h2 id="h-for">Fyrir hverja</h2>
+    <div class="who-for">
+      <div>
+        <span class="tag">aðgengi</span>
+        <h3>Bankar, netverslanir, opinber þjónusta</h3>
+        <p>Aðgengistilskipun ESB hefur gilt hér frá júní 2025. Rödd sem notendur þola að hlusta á heilan dag, og texti viðskiptavina fer ekki úr landi.</p>
+      </div>
+      <div>
+        <span class="tag">leikir og öpp</span>
+        <h3>Íslenskt tal með tilfinningu</h3>
+        <p>Glaðleg, hjálpsöm, reið eða döpur. Forrendra hljóðskrár úr eigin línulista og keyra inni í eigin umhverfi, án þess að hver beiðni fari út á net.</p>
+      </div>
+      <div>
+        <span class="tag">útgáfa og fjölmiðlar</span>
+        <h3>Fyrsti upplestur á mínútum</h3>
+        <p>Fréttir, tilkynningar og hljóðútgáfur með sérnöfnin rétt borin fram, af því að hægt er að laga þau sjálfur.</p>
+      </div>
     </div>
-    <p class="status" style="opacity:0.75">Ábending: Salka hljómar best í heilum setningum. Stök orð og örstuttar setningar eru þekkt takmörkun núverandi líkans — þau eru rendruð með samhengistrikki og hljóma þokkalega, en fyrir hljóðskrár í leiki og öpp er best að forrendra og hlusta.</p>
-    <audio id="player" controls></audio>
-    <p class="status" id="status"></p>
-  </div>
+  </section>
 
-  <div class="card points">
-    <div><strong>Öll vinnsla á Íslandi</strong>
-      <span>Engin gögn send úr landi — keyrir alfarið á eigin vélbúnaði.</span></div>
-    <div><strong>Enginn texti vistaður</strong>
-      <span>Þjónustan tekur við texta, skilar hljóði og geymir hvorugt.</span></div>
-    <div><strong>Hreint leyfi til viðskiptanota</strong>
-      <span>Þjálfað frá grunni á opnum íslenskum gögnum — engir erlendir leyfisskilmálar.</span></div>
-    <div><strong>Sjálfhýsanlegt</strong>
-      <span>Þarf hvorki skjákort né skýjaþjónustu — venjulegur örgjörvi dugar, líka í þínu kerfi.</span></div>
-    <div><strong>Raddir með tilfinningum</strong>
-      <span>Glaðleg, hjálpsöm, reið eða döpur — hentar leikjum, öppum og símsvörum.</span></div>
-    <div><strong>Íslenskur framburður í fyrirrúmi</strong>
-      <span>Eigin hljóðritunar- og textavinnsla les skammstafanir, tölur og einingar rétt.</span></div>
-  </div>
+  <section class="block wrap" aria-labelledby="h-api">
+    <h2 id="h-api">Forritaskil</h2>
+    <pre class="code" tabindex="0"><code><span class="c"># ein beiðni, skilar WAV</span>
+curl -X POST <span class="s">https://api.tolvuhvislarinn.is/synthesize</span> \
+  -H <span class="s">"Content-Type: application/json"</span> \
+  -d <span class="s">'{"text": "Góðan daginn og velkomin.", "voice": 4, "speed": 1.0}'</span> \
+  -o tal.wav</code></pre>
+    <ul class="api-notes">
+      <li><code>voice</code> 4 er Salka; 0–7 eru hlutlausar raddir. Tilfinningaraddirnar eru númer 8–49 — sama kort og valmyndin hér að ofan notar.</li>
+      <li>Hámark <code>500</code> stafir í beiðni og <code>60</code> beiðnir á mínútu á hvert IP-tölu í prufuútgáfunni.</li>
+      <li>Skilar <code>audio/wav</code>, 22,05 kHz, merkt <code>X-Synthetic-Speech</code> svo gervital sé rekjanlegt.</li>
+      <li>Skammstafanir, tölur, klukkutími, upphæðir og einingar eru lesnar sjálfkrafa, með réttu kyni og falli þar sem íslenskan krefst þess.</li>
+      <li>Enginn texti er vistaður. Skráð eru tæknileg gögn eingöngu (tími, stærð, svarkóði).</li>
+    </ul>
+  </section>
 
-  <div class="card fine">
-    <p><strong>Um þjónustuna:</strong> Salka er þjálfuð frá grunni af Tölvuhvíslaranum ehf. á opnum
-    íslenskum talgögnum (Talrómur, CC&nbsp;BY&nbsp;4.0). Öll vinnsla fer fram á Íslandi.
-    <strong>Enginn texti er vistaður</strong> — þjónustan tekur við texta, skilar hljóði og geymir hvorugt.
-    Hljóðið er gervital (merkt <code>X-Synthetic-Speech</code>).</p>
-    <p style="margin-top:0.6rem">Forritaskil: <code>POST https://api.tolvuhvislarinn.is/synthesize</code>
-    með <code>{"text": "..."}</code> — skilar WAV. Hámark 500 stafir í hverri beiðni.
-    Prufuútgáfa; algengar skammstafanir (t.d., o.s.frv., kr., kl.) og tölur eru lesnar sjálfkrafa.
-    Áhugasöm um að nota þjónustuna í eigin verkefni? <a href="mailto:dadi@tolvuhvislarinn.is" style="color:var(--accent)">Hafðu samband</a>.</p>
-  </div>
+  <section class="block wrap" aria-labelledby="h-who">
+    <h2 id="h-who">Hver stendur á bak við þetta</h2>
+    <div class="who">
+      <picture>
+        <source srcset="/tts/dadi-640.webp 640w, /tts/dadi-1200.webp 1200w" sizes="(min-width: 720px) 17rem, 100vw" type="image/webp">
+        <img src="/tts/dadi-640.jpg" srcset="/tts/dadi-640.jpg 640w, /tts/dadi-1200.jpg 1200w" sizes="(min-width: 720px) 17rem, 100vw" width="640" height="480" loading="lazy" decoding="async" alt="Daði Árnþórsson, Tölvuhvíslarinn í Neskaupstað">
+      </picture>
+      <div>
+        <p>Ég heiti Daði og rek Tölvuhvíslarann í Neskaupstað: tölvuviðgerðir á daginn, íslenskur talgervill á kvöldin. Salka er þjálfuð frá grunni hér, á opnum gögnum, og hver einasta breyting fer í gegnum eyrað áður en hún fer í rekstur.</p>
+        <p>Viltu prófa hana í eigin verkefni, sjálfhýsta eða sem þjónustu? Sendu mér línu með því sem þú ert að byggja. Ég svara sjálfur.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="mailto:dadi@tolvuhvislarinn.is?subject=Salka%20%E2%80%94%20talgerving">Skrifaðu mér</a>
+          <a class="btn btn-ghost" href="tel:+3548486755">848 6755</a>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>Tölvuhvíslarinn ehf. · Starmýri 21, 740 Neskaupstaður</span>
+    <span><a href="/privacy">Persónuvernd</a> · <a href="/about">Um mig</a> · <a href="/">tolvuhvislarinn.is</a></span>
+  </div>
+</footer>
+
 <script>
 (function () {
+  "use strict";
   var API = "https://api.tolvuhvislarinn.is/synthesize";
+  var HEALTH = "https://api.tolvuhvislarinn.is/health";
+
+  var form = document.getElementById("console");
   var btn = document.getElementById("go");
-  var ta = document.getElementById("text");
-  var player = document.getElementById("player");
-  var status = document.getElementById("status");
+  var goLabel = btn.querySelector(".go-label");
+  var ta = document.getElementById("texti");
+  var n = document.getElementById("n");
+  var count = document.getElementById("count");
   var speed = document.getElementById("speed");
   var speedval = document.getElementById("speedval");
-  var n = document.getElementById("n");
-
-  ta.addEventListener("input", function () { n.textContent = ta.value.length; });
-  speed.addEventListener("input", function () { speedval.textContent = speed.value + "×"; });
-
   var voiceSel = document.getElementById("voice");
   var emoSel = document.getElementById("emotion");
+  var out = document.getElementById("out");
+  var outLabel = document.getElementById("out-label");
+  var meta = document.getElementById("meta");
+  var player = document.getElementById("player");
+  var status = document.getElementById("status");
+  var canvas = document.getElementById("wave");
+  var wavebox = document.getElementById("wavebox");
+  var chips = document.getElementById("chips");
+  var skel = out.querySelector(".skel");
+
+  for (var i = 0; i < 64; i++) { skel.appendChild(document.createElement("i")); }
+
+  var SUGG = [
+    ["Kveðja", "Góðan daginn og velkomin! Hvernig get ég aðstoðað þig í dag?"],
+    ["Veðurfréttir", "Veðurhorfur á morgun: norðaustan tíu til fimmtán metrar á sekúndu og hiti fjögur til ellefu stig."],
+    ["Tölur", "Vinningstölurnar eru 7, 19, 23, 48 og 65."],
+    ["Verð og tími", "Opið er kl. 9-17 og aðgangur kostar 1.200 kr. fyrir fullorðna en 3 börn fá frítt."],
+    ["Jöklarnir", "Eyjafjallajökull, Snæfellsjökull og Vatnajökull eru meðal frægustu jökla landsins."],
+    ["Tungubrjótur", "Barbara Ara bar Ara araba bara rabarbara."],
+    ["Spurning", "Hvað í ósköpunum heldurðu eiginlega að þú sért að gera?"],
+    ["Spjall", "Jæja, ég veit það nú ekki alveg, en við gætum kannski bara kíkt á þetta á morgun."],
+    ["Sögustund", "Í holu í jörðinni bjó hobbiti, og þetta var ekki óþrifaleg og blaut hola, heldur notaleg og þurr."]
+  ];
+  SUGG.forEach(function (p) {
+    var b = document.createElement("button");
+    b.type = "button"; b.className = "chip"; b.textContent = p[0];
+    b.setAttribute("aria-label", "Setja inn: " + p[0]);
+    b.addEventListener("click", function () { ta.value = p[1]; updateCount(); ta.focus(); });
+    chips.appendChild(b);
+  });
+
+  function updateCount() {
+    var len = ta.value.length;
+    n.textContent = len;
+    count.classList.toggle("warn", len >= 460);
+  }
+  ta.addEventListener("input", updateCount);
+  updateCount();
+
+  function fmtSpeed(v) { return String(Number(v).toFixed(1)).replace(".", ",") + "×"; }
+  speed.addEventListener("input", function () { speedval.textContent = fmtSpeed(speed.value); });
+  speedval.textContent = fmtSpeed(speed.value);
+
   voiceSel.addEventListener("change", function () {
     var isEmo = voiceSel.value.charAt(0) === "e";
     emoSel.disabled = !isEmo;
-    emoSel.style.opacity = isEmo ? "1" : "0.55";
     if (!isEmo) { emoSel.value = "3"; }
   });
   function currentVoiceId() {
@@ -165,17 +514,43 @@
     if (emoSel.value === "hissa") { return 43 + (base - 8) / 5; }
     return base + parseInt(emoSel.value, 10);
   }
-
-  function setStatus(msg, isErr) {
-    status.textContent = msg;
-    status.className = isErr ? "status err" : "status";
+  function currentVoiceName() {
+    var name = voiceSel.options[voiceSel.selectedIndex].text.replace(/ — .*$/, "");
+    if (voiceSel.value.charAt(0) === "e" && emoSel.value !== "3") {
+      name += ", " + emoSel.options[emoSel.selectedIndex].text.toLowerCase();
+    }
+    return name;
   }
 
+  function setState(s) { out.setAttribute("data-state", s); }
+  function setStatus(msg, isErr, retry) {
+    status.textContent = "";
+    status.className = isErr ? "status err" : "status";
+    if (msg) { status.appendChild(document.createTextNode(msg)); }
+    if (retry) {
+      var r = document.createElement("button"); r.type = "button"; r.className = "retry"; r.textContent = "Reyna aftur";
+      r.addEventListener("click", function () { form.requestSubmit(); });
+      status.appendChild(r);
+    }
+  }
+
+  /* ---- health pill: real numbers from the service, or nothing ---- */
+  var healthEl = document.getElementById("health"), healthText = document.getElementById("health-text");
+  fetch(HEALTH, { mode: "cors" }).then(function (r) { return r.ok ? r.json() : null; }).then(function (h) {
+    if (!h || h.status !== "ok") { return; }
+    var bits = ["Þjónustan er í lagi"];
+    if (h.voices) { bits.push(h.voices + " raddir"); }
+    if (h.device === "cpu") { bits.push("keyrir á örgjörva, ekkert skjákort"); }
+    healthText.textContent = bits.join(" · ");
+    healthEl.classList.add("on");
+  }).catch(function () {});
+
+  /* ---- milestones: kept — they are the voice of the shop ---- */
   var genCount = parseInt(localStorage.getItem("tts_gen_count") || "0", 10);
   var MILESTONES = {
-    15:  "Takk fyrir að testa þetta. Gefðu mér feedback! Það er bergmál í þessum eco chamber hérna: dadi@tolvuhvislarinn.is",
-    40:  "40 setningar! Salka er hvergi nærri þreytt — viftan á servernum er ekki einu sinni farin í gang. Ef þú vilt svona talgervingu í eigin verkefni, sjálfhýsta eða sem þjónustu: dadi@tolvuhvislarinn.is",
-    75:  "75! Þú ert opinberlega ofurnotandi. Salka biður að heilsa og minnir á að hún vinnur líka í leikjum, öppum og símsvörum: dadi@tolvuhvislarinn.is",
+    15: "Takk fyrir að prófa þetta. Gefðu mér feedback — það er bergmál í þessum echo chamber hérna: dadi@tolvuhvislarinn.is",
+    40: "40 setningar! Salka er hvergi nærri þreytt — viftan á servernum er ekki einu sinni farin í gang. Ef þú vilt svona talgervingu í eigin verkefni: dadi@tolvuhvislarinn.is",
+    75: "75! Þú ert opinberlega ofurnotandi. Salka biður að heilsa og minnir á að hún vinnur líka í leikjum, öppum og símsvörum: dadi@tolvuhvislarinn.is",
     150: "150 setningar. Á þessum hraða klárar þú Njálu fyrir kvöldmat. Endilega segðu mér hvað þú ert að byggja: dadi@tolvuhvislarinn.is",
     300: "300?! Ókei, nú verð ég að fá að vita hvað þú ert að bralla. Skrifaðu mér: dadi@tolvuhvislarinn.is"
   };
@@ -183,63 +558,128 @@
     genCount++;
     localStorage.setItem("tts_gen_count", String(genCount));
     var msg = MILESTONES[genCount];
-    if (!msg && genCount > 300 && (genCount - 300) % 100 === 0) {
-      msg = genCount + " setningar og enn ekkert 429. Þetta er ást. dadi@tolvuhvislarinn.is";
-    }
+    if (!msg && genCount > 300 && (genCount - 300) % 100 === 0) { msg = genCount + " setningar og enn ekkert 429. Þetta er ást. dadi@tolvuhvislarinn.is"; }
     if (msg) { setStatus(msg, false); return true; }
     return false;
   }
 
-  btn.addEventListener("click", function () {
+  /* ---- waveform from the real audio ---- */
+  var peaks = null, duration = 0, currentUrl = null, raf = 0;
+  var ctx2d = canvas.getContext("2d");
+  function css(name) { return getComputedStyle(document.documentElement).getPropertyValue(name).trim(); }
+  function sizeCanvas() {
+    var dpr = Math.min(window.devicePixelRatio || 1, 2);
+    var w = wavebox.clientWidth, h = wavebox.clientHeight;
+    if (canvas.width !== Math.round(w * dpr) || canvas.height !== Math.round(h * dpr)) {
+      canvas.width = Math.round(w * dpr); canvas.height = Math.round(h * dpr);
+      ctx2d.setTransform(dpr, 0, 0, dpr, 0, 0);
+    }
+    return { w: w, h: h };
+  }
+  function computePeaks(buffer, bins) {
+    var ch = buffer.getChannelData(0), per = Math.max(1, Math.floor(ch.length / bins)), outp = new Float32Array(bins), max = 0;
+    for (var b = 0; b < bins; b++) {
+      var s = 0, start = b * per, end = Math.min(ch.length, start + per);
+      for (var i = start; i < end; i++) { s += ch[i] * ch[i]; }
+      var rms = Math.sqrt(s / Math.max(1, end - start)); outp[b] = rms; if (rms > max) { max = rms; }
+    }
+    if (max > 0) { for (var k = 0; k < bins; k++) { outp[k] = outp[k] / max; } }
+    return outp;
+  }
+  function draw() {
+    var d = sizeCanvas(), w = d.w, h = d.h;
+    ctx2d.clearRect(0, 0, w, h);
+    if (!peaks) { return; }
+    var pad = 12, gap = 2, bw = 3, nb = peaks.length, span = w - pad * 2;
+    var step = span / nb;
+    var progress = duration ? Math.min(1, player.currentTime / duration) : 0;
+    var played = css("--accent"), rest = css("--line-strong"), mid = h / 2;
+    for (var i = 0; i < nb; i++) {
+      var x = pad + i * step, amp = Math.max(2, peaks[i] * (h - 22));
+      ctx2d.fillStyle = (i / nb) < progress ? played : rest;
+      var bwid = Math.max(1, Math.min(bw, step - gap));
+      if (ctx2d.roundRect) { ctx2d.beginPath(); ctx2d.roundRect(x, mid - amp / 2, bwid, amp, 1.5); ctx2d.fill(); }
+      else { ctx2d.fillRect(x, mid - amp / 2, bwid, amp); }
+    }
+  }
+  function tick() { draw(); if (!player.paused && !player.ended) { raf = requestAnimationFrame(tick); } }
+  player.addEventListener("play", function () { cancelAnimationFrame(raf); raf = requestAnimationFrame(tick); });
+  player.addEventListener("pause", draw); player.addEventListener("ended", draw); player.addEventListener("seeked", draw);
+  window.addEventListener("resize", draw);
+  wavebox.addEventListener("click", function (e) {
+    if (out.getAttribute("data-state") !== "ready" || !duration) { return; }
+    var rect = wavebox.getBoundingClientRect(), frac = (e.clientX - rect.left - 12) / (rect.width - 24);
+    if (frac >= 0 && frac <= 1) { player.currentTime = frac * duration; }
+    if (player.paused) { player.play(); }
+  });
+
+  function fmtSec(s) { return s.toFixed(1).replace(".", ",") + " s"; }
+  function fileStem(text) {
+    var stem = text.toLowerCase().replace(/[^a-záðéíóúýþæö0-9]+/g, "-").replace(/^-+|-+$/g, "").slice(0, 40);
+    return "salka-" + (stem || "tal") + ".wav";
+  }
+
+  /* ---- the request ---- */
+  var t0 = 0, timer = 0;
+  function explain(r) {
+    if (r.status === 429) { return "Þú náðir að kveikja á viftunni. Bíddu smástund og reyndu aftur."; }
+    if (r.status === 400 || r.status === 413 || r.status === 422) { return "Þjónustan gat ekki lesið textann — prófaðu að stytta hann eða fjarlægja sérstafi."; }
+    if (r.status >= 500) { return "Þjónustan svaraði með villu (" + r.status + "). Reyndu aftur eftir smástund."; }
+    return "Villa í talgervingu (" + r.status + ").";
+  }
+  form.addEventListener("submit", function (ev) {
+    ev.preventDefault();
     var text = ta.value.trim();
-    if (!text) { setStatus("Skrifaðu fyrst texta.", true); return; }
-    btn.disabled = true;
-    setStatus("Salka hugsar…");
-    fetch(API, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ text: text, speed: parseFloat(speed.value), voice: currentVoiceId() })
-    }).then(function (r) {
-      if (r.status === 429) { throw new Error("Þú náðir að kveikja á viftunni. Til hamingju — og reyndu aftur eftir smástund."); }
-      if (!r.ok) { throw new Error("Villa í talgervingu (" + r.status + ")."); }
-      return r.blob();
-    }).then(function (blob) {
-      player.src = URL.createObjectURL(blob);
-      player.style.display = "block";
-      player.play();
-      if (!maybeThank()) { setStatus(""); }
-    }).catch(function (e) {
-      setStatus(e.message, true);
-    }).finally(function () {
-      btn.disabled = false;
+    if (!text) { setStatus("Skrifaðu fyrst texta — eða veldu setningu hér að ofan.", true); ta.focus(); return; }
+    btn.disabled = true; btn.setAttribute("aria-busy", "true"); goLabel.textContent = "Býr til tal…";
+    setState("loading"); outLabel.textContent = "Salka hugsar"; meta.textContent = "";
+    player.pause();
+    t0 = performance.now();
+    clearInterval(timer);
+    timer = setInterval(function () { setStatus("Salka hugsar… " + fmtSec((performance.now() - t0) / 1000), false); }, 100);
+
+    var voice = currentVoiceId(), voiceName = currentVoiceName();
+    fetch(API, { method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ text: text, speed: parseFloat(speed.value), voice: voice }) })
+    .then(function (r) { if (!r.ok) { throw new Error(explain(r)); } return r.blob(); })
+    .then(function (blob) {
+      var elapsed = (performance.now() - t0) / 1000;
+      if (currentUrl) { URL.revokeObjectURL(currentUrl); }
+      currentUrl = URL.createObjectURL(blob);
+      player.src = currentUrl;
+      var AC = window.AudioContext || window.webkitAudioContext;
+      var decode = AC ? blob.arrayBuffer().then(function (ab) { return new AC().decodeAudioData(ab); }) : Promise.reject();
+      return decode.then(function (buf) { duration = buf.duration; peaks = computePeaks(buf, 140); })
+        .catch(function () { peaks = null; duration = 0; })
+        .then(function () {
+          clearInterval(timer);
+          setState("ready"); outLabel.textContent = "Í loftinu";
+          meta.textContent = "";
+          var parts = [];
+          if (duration) { parts.push(fmtSec(duration)); }
+          parts.push(voiceName);
+          parts.push(fmtSec(elapsed).replace(" s", " s vinnsla"));
+          parts.forEach(function (p, i) { if (i) { meta.appendChild(document.createTextNode(" · ")); } meta.appendChild(document.createTextNode(p)); });
+          var dl = document.createElement("a"); dl.href = currentUrl; dl.download = fileStem(text); dl.textContent = "Sækja WAV";
+          meta.appendChild(document.createTextNode(" · ")); meta.appendChild(dl);
+          draw();
+          player.play().catch(function () {});
+          if (!maybeThank()) { setStatus("", false); }
+        });
+    })
+    .catch(function (e) {
+      clearInterval(timer);
+      setState("error"); outLabel.textContent = "Villa";
+      var msg = (e && e.message && e.message.indexOf("fetch") === -1) ? e.message : "Náði ekki sambandi við þjónustuna. Athugaðu nettengingu og reyndu aftur.";
+      setStatus(msg, true, true);
+    })
+    .finally(function () {
+      btn.disabled = false; btn.setAttribute("aria-busy", "false"); goLabel.textContent = "Búa til tal";
     });
   });
 
   ta.addEventListener("keydown", function (e) {
-    if ((e.ctrlKey || e.metaKey) && e.key === "Enter") { btn.click(); }
-  });
-})();
-</script>
-<script>
-(function(){
-  var SUGG=[
-    ["Kveðja","Góðan daginn og velkomin! Hvernig get ég aðstoðað þig í dag?"],
-    ["Veðurfréttir","Veðurhorfur á morgun: norðaustan tíu til fimmtán metrar á sekúndu og hiti fjögur til ellefu stig."],
-    ["Tölur","Vinningstölurnar eru sjö, nítján, tuttugu og þrír, fjörutíu og átta og sextíu og fimm."],
-    ["Jöklarnir","Eyjafjallajökull, Snæfellsjökull og Vatnajökull eru meðal frægustu jökla landsins."],
-    ["Tungubrjótur","Barbara Ara bar Ara araba bara rabarbara."],
-    ["Spurning","Hvað í ósköpunum heldurðu eiginlega að þú sért að gera?"],
-    ["Spjall","Jæja, ég veit það nú ekki alveg, en við gætum kannski bara kíkt á þetta á morgun."],
-    ["Sögustund","Í holu í jörðinni bjó hobbiti, og þetta var ekki óþrifaleg og blaut hola, heldur notaleg og þurr."]
-  ];
-  var box=document.getElementById("hugmyndir"), ta=document.getElementById("text");
-  SUGG.forEach(function(p){
-    var b=document.createElement("button");
-    b.type="button"; b.textContent=p[0];
-    b.style.cssText="background:#0c111c;color:#c9d1e3;border:1px solid #2a3450;border-radius:999px;padding:0.25rem 0.7rem;font:inherit;font-size:0.82rem;cursor:pointer";
-    b.onmouseenter=function(){b.style.borderColor="#4a5a80"};
-    b.onclick=function(){ta.value=p[1];ta.focus();};
-    box.appendChild(b);
+    if ((e.ctrlKey || e.metaKey) && e.key === "Enter") { e.preventDefault(); form.requestSubmit(); }
   });
 })();
 </script>
