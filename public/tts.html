@@ -293,6 +293,7 @@
           <label for="voice">Rödd</label>
           <select id="voice" name="voice">
             <option value="s4" selected>Salka — aðalröddin</option>
+            <option value="v2">Salka v2 — beta, ný vél</option>
             <option value="s0">Rödd A</option>
             <option value="s1">Rödd B</option>
             <option value="s2">Rödd C</option>
@@ -447,6 +448,7 @@ curl -X POST <span class="s">https://api.tolvuhvislarinn.is/synthesize</span> \
 (function () {
   "use strict";
   var API = "https://api.tolvuhvislarinn.is/synthesize";
+  var API_V2 = "https://api.tolvuhvislarinn.is/v2/synthesize"; /* Salka v2 beta: the new engine, speed fixed at 1,0× */
   var HEALTH = "https://api.tolvuhvislarinn.is/health";
 
   var form = document.getElementById("console");
@@ -502,13 +504,18 @@ curl -X POST <span class="s">https://api.tolvuhvislarinn.is/synthesize</span> \
   speed.addEventListener("input", function () { speedval.textContent = fmtSpeed(speed.value); });
   speedval.textContent = fmtSpeed(speed.value);
 
+  function isV2() { return voiceSel.value === "v2"; }
   voiceSel.addEventListener("change", function () {
     var isEmo = voiceSel.value.charAt(0) === "e";
     emoSel.disabled = !isEmo;
     if (!isEmo) { emoSel.value = "3"; }
+    /* the v2 engine has no speed knob yet: lock the slider at 1,0× while it is selected */
+    speed.disabled = isV2();
+    if (isV2()) { speed.value = "1.0"; speedval.textContent = fmtSpeed(speed.value); }
   });
   function currentVoiceId() {
     var v = voiceSel.value;
+    if (v === "v2") { return 4; }
     if (v.charAt(0) === "s") { return parseInt(v.slice(1), 10); }
     var base = parseInt(v.slice(1), 10);
     if (emoSel.value === "hissa") { return 43 + (base - 8) / 5; }
@@ -639,8 +646,9 @@ curl -X POST <span class="s">https://api.tolvuhvislarinn.is/synthesize</span> \
     timer = setInterval(function () { setStatus("Salka hugsar… " + fmtSec((performance.now() - t0) / 1000), false); }, 100);
 
     var voice = currentVoiceId(), voiceName = currentVoiceName();
-    fetch(API, { method: "POST", headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ text: text, speed: parseFloat(speed.value), voice: voice }) })
+    var url = isV2() ? API_V2 : API, spd = isV2() ? 1.0 : parseFloat(speed.value);
+    fetch(url, { method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ text: text, speed: spd, voice: voice }) })
     .then(function (r) { if (!r.ok) { throw new Error(explain(r)); } return r.blob(); })
     .then(function (blob) {
       var elapsed = (performance.now() - t0) / 1000;
