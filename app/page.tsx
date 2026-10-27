@@ -43,6 +43,36 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ── Christmas video offer (ends 31.12.2026): remove this section afterwards ── */}
+      <section className="pt-10 sm:pt-14 bg-warm-950">
+        <div className="max-w-5xl mx-auto px-4 sm:px-8 lg:px-12">
+          <div className="grant-card-enter group relative rounded-2xl bg-gradient-to-br from-[oklch(60%_0.17_156_/_0.55)] via-[oklch(65%_0.13_195_/_0.3)] to-[oklch(42%_0.12_158_/_0.35)] p-px transition-transform duration-300 hover:-translate-y-0.5 motion-reduce:transition-none motion-reduce:hover:translate-y-0">
+            <div className="rounded-2xl bg-[oklch(19%_0.007_175_/_0.7)] backdrop-blur-sm p-6 sm:p-8 flex flex-col sm:flex-row sm:items-start gap-5 sm:gap-7 transition-shadow duration-300 group-hover:shadow-[0_0_28px_-8px_oklch(65%_0.17_158_/_0.35)]">
+              <div className="shrink-0 flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 rounded-xl bg-[oklch(15%_0.005_180_/_0.6)] border border-[oklch(24%_0.008_170_/_0.4)] font-mono text-sm font-semibold text-primary-400" aria-hidden="true">
+                VHS
+              </div>
+              <div>
+                <p className="font-mono text-xs text-primary-500 tracking-wider uppercase mb-3">{`// jólatilboð`}</p>
+                <p className="text-warm-100 text-base sm:text-lg leading-relaxed">
+                  Gömlu VHS og MiniDV upptökurnar á USB fyrir jól. Ekkert upphafsgjald og 20% afsláttur af yfirfærslu til 31. desember.
+                </p>
+                <p className="text-warm-300 text-sm sm:text-base mt-2 leading-relaxed">
+                  Pantanir sem berast fyrir 4. desember eru tilbúnar fyrir jól. Gjafabréf fást í hvaða upphæð sem er og gilda allt árið 2027.
+                </p>
+                <div className="mt-4 flex flex-wrap gap-x-6 gap-y-2">
+                  <Link href="/services/vhs-minidv" className="group/link inline-flex items-center gap-1.5 text-sm font-mono text-primary-400 hover:text-primary-300 transition-colors">
+                    Nánar um tilboðið<span className="inline-block group-hover/link:translate-x-0.5 transition-transform">→</span>
+                  </Link>
+                  <Link href="/contact" className="group/link inline-flex items-center gap-1.5 text-sm font-mono text-primary-400 hover:text-primary-300 transition-colors">
+                    Panta eða kaupa gjafabréf<span className="inline-block group-hover/link:translate-x-0.5 transition-transform">→</span>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── Grant Announcement ── */}
       <section className="py-10 sm:py-14 bg-warm-950 border-b border-[oklch(19%_0.007_175_/_0.5)]">
         <div className="max-w-5xl mx-auto px-4 sm:px-8 lg:px-12">

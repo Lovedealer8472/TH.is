@@ -355,6 +355,16 @@
       },
       "video": {
         "title": "Video – Transfer to Digital",
+        "promo": {
+          "badge": "Christmas offer",
+          "title": "No setup fee and 20% off until 31 December",
+          "lines": [
+            "The volume discount still applies and you always get whichever discount is higher.",
+            "Orders received before 4 December are ready before Christmas.",
+            "Gift certificates come in any amount and are valid at the offer price throughout 2027."
+          ],
+          "cta": "Order or buy a gift certificate"
+        },
         "services": [
           {
             "name": "Setup fee (per order – includes a USB drive up to 64 GB and a 30-day download link)",

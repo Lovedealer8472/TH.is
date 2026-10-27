@@ -339,6 +339,15 @@ export const SERVICE_PAGES: ServicePage[] = [
           'Einstaklingar og fjölskyldur á Austurlandi sem eiga gamlar upptökur og vilja varðveita þær á öruggan hátt án þess að kaupa dýran búnað sjálfir.',
         ],
       },
+      // Time-limited Christmas offer (ends 31.12.2026): remove this section afterwards
+      {
+        heading: 'Jólatilboð og gjafabréf',
+        paragraphs: [
+          'Til 31. desember 2026 fellur upphafsgjaldið niður og öll yfirfærsla er á 20% afslætti. Magnafslátturinn gildir áfram og þú færð alltaf þann afslátt sem er hærri.',
+          'Pantanir sem berast fyrir 4. desember eru tilbúnar fyrir jól. Upptakan gerist í rauntíma og því skiptir máli að koma með spólurnar tímanlega.',
+          'Gamlar fjölskylduupptökur á USB eru falleg jólagjöf. Oft eru spólurnar samt hjá ömmu og afa en ekki hjá þeim sem gefur gjöfina. Þá hentar gjafabréf vel. Þú velur upphæðina og ég sendi þér gjafabréf sem þú getur prentað út eða sent áfram. Gjafabréf sem er keypt fyrir áramót gildir á tilboðsverði allt árið 2027.',
+        ],
+      },
     ],
     pricing:
       'Verðið fer eftir lengd hverrar spólu – sjá verðskrána. Upphafsgjald er 2.900 kr. á pöntun, óháð fjölda spóla, og innifelur USB-lykil allt að 64 GB og niðurhalstengil í 30 daga. Hver spóla kostar 3.900–6.900 kr. eftir lengd og magnafsláttur er 7–20% frá og með fjórum spólum. Fyrir 20 spólur eða fleiri geri ég tilboð. Ef spóla reynist tóm eða ólæsileg rukka ég ekkert fyrir hana.',
