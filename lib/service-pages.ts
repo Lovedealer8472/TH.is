@@ -312,11 +312,11 @@ export const SERVICE_PAGES: ServicePage[] = [
     slug: 'vhs-minidv',
     metaTitle: 'VHS og MiniDV yfir á stafrænt form | Tölvuhvíslarinn',
     metaDescription:
-      'Láttu gamlar VHS og MiniDV upptökur yfirfæra á stafrænt form á Austurlandi. Filmur eyðileggjast með tímanum – bjargaðu minningunum. Hafðu samband.',
+      'Láttu gamlar VHS og MiniDV upptökur yfirfæra á stafrænt form. Ég er í Neskaupstað og tek við spólum í pósti hvaðanæva af landinu. Bjargaðu minningunum áður en böndin skemmast.',
     h1: 'VHS og MiniDV yfir á stafrænt form',
     intro:
       'Gamlar VHS-spólur og MiniDV-upptökur geyma minningar sem ekki er hægt að endurtaka – en segulböndin skemmast smám saman. Ég yfirfæri upptökur á stafrænt form svo þú getir varðveitt þær á hörðum diski, USB-lykli eða í skýi.',
-    serviceAreas: ['Neskaupstaður', 'Fjarðabyggð', 'Austurland'],
+    serviceAreas: ['Neskaupstaður', 'Fjarðabyggð', 'Austurland', 'Allt landið í pósti'],
     overviewCardTitle: 'VHS og MiniDV',
     sections: [
       {
@@ -336,7 +336,14 @@ export const SERVICE_PAGES: ServicePage[] = [
       {
         heading: 'Fyrir hverja er þetta?',
         paragraphs: [
-          'Einstaklingar og fjölskyldur á Austurlandi sem eiga gamlar upptökur og vilja varðveita þær á öruggan hátt án þess að kaupa dýran búnað sjálfir.',
+          'Einstaklingar og fjölskyldur um allt land sem eiga gamlar upptökur og vilja varðveita þær á öruggan hátt án þess að kaupa dýran búnað sjálfir.',
+        ],
+      },
+      {
+        heading: 'Sendu spólurnar í pósti',
+        paragraphs: [
+          'Ég er á Austurlandi en tek við spólum hvaðanæva af landinu. Hafðu samband fyrst og ég sendi þér heimilisfangið og ráð um hvernig best er að pakka spólunum.',
+          'Þegar yfirfærslan er tilbúin færðu niðurhalstengil strax. Spólurnar koma svo til baka í pósti ásamt USB lyklinum og þú greiðir aðeins sendingarkostnaðinn til baka.',
         ],
       },
       // Time-limited Christmas offer (ends 31.12.2026): remove this section afterwards
@@ -344,7 +351,7 @@ export const SERVICE_PAGES: ServicePage[] = [
         heading: 'Jólatilboð og gjafabréf',
         paragraphs: [
           'Til 31. desember 2026 fellur upphafsgjaldið niður og öll yfirfærsla er á 20% afslætti. Magnafslátturinn gildir áfram og þú færð alltaf þann afslátt sem er hærri.',
-          'Pantanir sem berast fyrir 4. desember eru tilbúnar fyrir jól. Upptakan gerist í rauntíma og því skiptir máli að koma með spólurnar tímanlega.',
+          'Pantanir sem berast fyrir 4. desember eru tilbúnar fyrir jól. Það á líka við um spólur sem koma í pósti. Upptakan gerist í rauntíma og því skiptir máli að senda spólurnar tímanlega.',
           'Gamlar fjölskylduupptökur á USB eru falleg jólagjöf. Oft eru spólurnar samt hjá ömmu og afa en ekki hjá þeim sem gefur gjöfina. Þá hentar gjafabréf vel. Þú velur upphæðina og ég sendi þér gjafabréf sem þú getur prentað út eða sent áfram. Gjafabréf sem er keypt fyrir áramót gildir á tilboðsverði allt árið 2027.',
         ],
       },

@@ -57,7 +57,7 @@ export default function HomePage() {
                   Gömlu VHS og MiniDV upptökurnar á USB fyrir jól. Ekkert upphafsgjald og 20% afsláttur af yfirfærslu til 31. desember.
                 </p>
                 <p className="text-warm-300 text-sm sm:text-base mt-2 leading-relaxed">
-                  Pantanir sem berast fyrir 4. desember eru tilbúnar fyrir jól. Gjafabréf fást í hvaða upphæð sem er og gilda allt árið 2027.
+                  Ég tek við spólum í pósti hvaðanæva af landinu og pantanir sem berast fyrir 4. desember eru tilbúnar fyrir jól. Gjafabréf fást í hvaða upphæð sem er og gilda allt árið 2027.
                 </p>
                 <div className="mt-4 flex flex-wrap gap-x-6 gap-y-2">
                   <Link href="/services/vhs-minidv" className="group/link inline-flex items-center gap-1.5 text-sm font-mono text-primary-400 hover:text-primary-300 transition-colors">
