@@ -29,17 +29,23 @@ export default function ContactForm() {
         body: JSON.stringify(formData),
       });
 
-      const data = await response.json();
+      if (response.status === 400) {
+        // The customer can fix this one; keep what they typed
+        setSubmitStatus('error');
+        setErrorMessage('Athugaðu að nafn, netfang og skilaboð séu öll fyllt út og að netfangið sé rétt.');
+        return;
+      }
 
       if (!response.ok) {
-        throw new Error(data.error || 'Failed to send message');
+        throw new Error(`HTTP ${response.status}`);
       }
 
       setSubmitStatus('success');
       setFormData({ name: '', email: '', message: '' });
-    } catch (error) {
+    } catch {
+      // Delivery failed or the server is unreachable: the error box shows phone + WhatsApp
       setSubmitStatus('error');
-      setErrorMessage(error instanceof Error ? error.message : 'Failed to send message');
+      setErrorMessage('');
     } finally {
       setIsSubmitting(false);
     }
@@ -116,7 +122,15 @@ export default function ContactForm() {
             <svg className="w-5 h-5 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
-            <span>{errorMessage || 'Villa kom upp við að senda skilaboð. Vinsamlegast reyndu aftur.'}</span>
+            <span>
+              {errorMessage || (
+                <>
+                  Því miður tókst ekki að senda skilaboðin. Hringdu eða sendu SMS í{' '}
+                  <a href="tel:+3548486755" className="underline font-medium text-red-200">848-6755</a>, eða sendu mér{' '}
+                  <a href="https://wa.me/3548486755" target="_blank" rel="noopener noreferrer" className="underline font-medium text-red-200">WhatsApp</a>.
+                </>
+              )}
+            </span>
           </div>
         )}
 
