@@ -370,6 +370,11 @@ export const SERVICE_PAGES: ServicePage[] = [
         answer:
           'Ég met ástand áður en vinna hefst. Stundum er hægt að bjarga hluta af efni – ég segi þér heiðarlega frá möguleikum. Reynist spólan tóm eða ólæsileg rukka ég ekkert fyrir hana.',
       },
+      {
+        question: 'Get ég fengið betri mynd?',
+        answer:
+          'Já. Í vandaðri myndvinnslu hreinsa ég suð og kubba úr myndinni, skerpi hana varlega og skila henni í 1080p svo hún líti betur út í sjónvarpinu. Munurinn sést helst þar sem er hreyfing og mikið af smáatriðum. Myndin verður hreinni en hún verður aldrei eins og ný upptaka. Þetta kostar 1.500 kr. á spólu.',
+      },
     ],
   },
   {
