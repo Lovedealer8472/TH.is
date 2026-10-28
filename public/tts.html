@@ -110,6 +110,8 @@
   .lead { margin-top: 1rem; font-size: 1.125rem; color: var(--muted); max-width: 38rem; line-height: 1.6; }
   .health { display: inline-flex; align-items: center; gap: 0.55rem; margin-top: 1.25rem; min-height: 1.9rem; font-size: 0.875rem; color: var(--muted); font-family: var(--font-mono); opacity: 0; transition: opacity 400ms var(--ease); }
   .health.on { opacity: 1; }
+  .v2-note { margin-top: 0.6rem; font-size: 0.875rem; color: var(--muted); max-width: 40rem; }
+  .v2-note[hidden] { display: none; }
   .health .dot { width: 0.55rem; height: 0.55rem; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 4px var(--accent-soft); }
 
   /* ---- the console ---- */
@@ -273,6 +275,7 @@
       <h1>Íslenskt tal, <em>þjálfað á Íslandi.</em></h1>
       <p class="lead">Skrifaðu setningu og hlustaðu. Salka er þjálfuð frá grunni á opnum íslenskum gögnum, keyrir á venjulegum örgjörva og geymir aldrei textann þinn. Í þínu eigin kerfi ef þú vilt.</p>
       <p class="health" id="health" aria-live="polite"><span class="dot" aria-hidden="true"></span><span id="health-text"></span></p>
+      <p class="v2-note" id="v2-note" hidden>Salka v2 er í hléi núna því ég er að nota vélbúnaðinn í annað verkefni. Aðalröddin og hinar raddirnar virka eins og venjulega.</p>
     </div>
 
     <form class="console" id="console" novalidate>
@@ -551,6 +554,23 @@ curl -X POST <span class="s">https://api.tolvuhvislarinn.is/synthesize</span> \
     healthText.textContent = bits.join(" · ");
     healthEl.classList.add("on");
   }).catch(function () {});
+
+  /* ---- Salka v2 runs on the GPU box, which also does video work: when it is off, say so and grey it out ---- */
+  var HEALTH_V2 = "https://api.tolvuhvislarinn.is/v2/health";
+  var v2Opt = voiceSel.querySelector('option[value="v2"]'), v2Label = v2Opt.text;
+  var v2Note = document.getElementById("v2-note");
+  function checkV2() {
+    fetch(HEALTH_V2, { mode: "cors", cache: "no-store" }).then(function (r) { return r.ok ? r.json() : null; })
+      .catch(function () { return null; }).then(function (h) {
+        var up = !!(h && h.status === "ok" && h.loaded !== false);
+        v2Opt.disabled = !up;
+        v2Opt.text = up ? v2Label : "Salka v2 (í hléi)";
+        v2Note.hidden = up;
+        if (!up && isV2()) { voiceSel.value = "s4"; voiceSel.dispatchEvent(new Event("change")); }
+      });
+  }
+  checkV2();
+  setInterval(checkV2, 60000);
 
   /* ---- milestones: kept — they are the voice of the shop ---- */
   var genCount = parseInt(localStorage.getItem("tts_gen_count") || "0", 10);
