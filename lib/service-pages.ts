@@ -257,7 +257,7 @@ export const SERVICE_PAGES: ServicePage[] = [
     slug: 'taekniaadstod-fyrirtaeki',
     metaTitle: 'Tækniaðstoð fyrir smáfyrirtæki | Tölvuhvíslarinn',
     metaDescription:
-      'Tækniráðgjöf og tölvuaðstoð fyrir smáfyrirtæki á Austurlandi. Kaupráðgjöf, uppsetning, netkerfi og öryggisafrit. 12.000 kr./klst.',
+      'Tækniráðgjöf og tölvuaðstoð fyrir smáfyrirtæki á Austurlandi. Kaupráðgjöf, uppsetning, netkerfi og öryggisafrit. 12.500 kr./klst.',
     h1: 'Tækniaðstoð fyrir smáfyrirtæki',
     intro:
       'Smáfyrirtæki á Austurlandi þurfa oft áreiðanlega tækniaðstoð án stórra IT-samninga. Ég býð upp á persónulega ráðgjöf, uppsetningu og lausnir sem henta raunverulegum þörfum – hvort sem um ræðir einn starfsmann eða lítið teymi.',
@@ -286,7 +286,7 @@ export const SERVICE_PAGES: ServicePage[] = [
       },
     ],
     pricing:
-      'Tækniráðgjöf er 12.000 kr./klst með VSK. Fyrir stærri verkefni er hægt að semja um fast verð eftir stöðu.',
+      'Tækniráðgjöf er 12.500 kr./klst með VSK. Fyrir stærri verkefni er hægt að semja um fast verð eftir stöðu.',
     timeline:
       'Einföld ráðgjöf eftir samkomulagi. Uppsetning nýrrar vinnustöðvar 1–2 dagar. Stærri verkefni eftir umfangi.',
     audience: 'Smáfyrirtæki og sjálfstætt starfandi einstaklingar á Austurlandi.',
