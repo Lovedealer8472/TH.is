@@ -66,7 +66,7 @@ export const SERVICE_PAGES: ServicePage[] = [
       },
     ],
     pricing:
-      'Bilanagreining og almenn bilanaleit kostar 9.900 kr. með VSK. Viðgerðarkostnaður kemur í ljós eftir greiningu og er alltaf samþykktur áður en vinna hefst. Varahlutir reiknast sérstaklega.',
+      'Bilanagreining og almenn bilanaleit kostar 6.900 kr. með VSK. Viðgerðarkostnaður kemur í ljós eftir greiningu og er alltaf samþykktur áður en vinna hefst. Varahlutir reiknast sérstaklega.',
     timeline:
       'Bilanagreining tekur venjulega 1–2 virka daga eftir að tölvan berst. Einfaldar viðgerðir geta verið tilbúnar sama dag, flóknari viðgerðir taka 3–7 daga eftir að varahlutir berast.',
     audience: 'Einstaklingar og smáfyrirtæki á Austurlandi sem þurfa trausta og persónulega tölvuþjónustu.',
@@ -92,7 +92,7 @@ export const SERVICE_PAGES: ServicePage[] = [
     slug: 'fartolvuvidgerdir',
     metaTitle: 'Fartölvuviðgerðir og bilanagreining | Tölvuhvíslarinn',
     metaDescription:
-      'Fartölvuviðgerðir á Austurlandi – hæg fartölva, bilun á skjá, lyklaborð, rafhlaða og ofhitnun. Bilanagreining frá 9.900 kr. Hafðu samband.',
+      'Fartölvuviðgerðir á Austurlandi – hæg fartölva, bilun á skjá, lyklaborð, rafhlaða og ofhitnun. Bilanagreining frá 6.900 kr. Hafðu samband.',
     h1: 'Fartölvuviðgerðir og bilanagreining',
     intro:
       'Fartölvan er oft mikilvægasta tölvan í heimilinu eða fyrirtækinu. Ég lagfæri algeng fartölvuvandamál – frá hægum vinnsluhraða og ofhitnun til bilana á lyklaborði, skjá eða rafhlöðu.',
@@ -121,7 +121,7 @@ export const SERVICE_PAGES: ServicePage[] = [
       },
     ],
     pricing:
-      'Bilanagreining kostar 9.900 kr. með VSK. Viðgerðir og varahlutir koma í ljós eftir greiningu. SSD-skipti og minnisuppfærslur eru oft hagkvæm leið til að bæta gamla fartölvu.',
+      'Bilanagreining kostar 6.900 kr. með VSK. Viðgerðir og varahlutir koma í ljós eftir greiningu. SSD-skipti og minnisuppfærslur eru oft hagkvæm leið til að bæta gamla fartölvu.',
     timeline:
       'Greining tekur 1–2 daga. Einfaldar lagfæringar eru oft tilbúnar sömu viku. Varahlutir geta tekið 3–10 daga eftir birgðastöðu.',
     audience: 'Einstaklingar og smáfyrirtæki með fartölvur sem þurfa áreiðanlega viðgerð eða uppfærslu.',
@@ -257,7 +257,7 @@ export const SERVICE_PAGES: ServicePage[] = [
     slug: 'taekniaadstod-fyrirtaeki',
     metaTitle: 'Tækniaðstoð fyrir smáfyrirtæki | Tölvuhvíslarinn',
     metaDescription:
-      'Tækniráðgjöf og tölvuaðstoð fyrir smáfyrirtæki á Austurlandi. Kaupráðgjöf, uppsetning, netkerfi og öryggisafrit. 12.500 kr./klst.',
+      'Tækniráðgjöf og tölvuaðstoð fyrir smáfyrirtæki á Austurlandi. Kaupráðgjöf, uppsetning, netkerfi og öryggisafrit. 15.900 kr./klst.',
     h1: 'Tækniaðstoð fyrir smáfyrirtæki',
     intro:
       'Smáfyrirtæki á Austurlandi þurfa oft áreiðanlega tækniaðstoð án stórra IT-samninga. Ég býð upp á persónulega ráðgjöf, uppsetningu og lausnir sem henta raunverulegum þörfum – hvort sem um ræðir einn starfsmann eða lítið teymi.',
@@ -286,7 +286,7 @@ export const SERVICE_PAGES: ServicePage[] = [
       },
     ],
     pricing:
-      'Tækniráðgjöf er 12.500 kr./klst með VSK. Fyrir stærri verkefni er hægt að semja um fast verð eftir stöðu.',
+      'Tækniráðgjöf er 15.900 kr./klst með VSK. Fyrir stærri verkefni er hægt að semja um fast verð eftir stöðu.',
     timeline:
       'Einföld ráðgjöf eftir samkomulagi. Uppsetning nýrrar vinnustöðvar 1–2 dagar. Stærri verkefni eftir umfangi.',
     audience: 'Smáfyrirtæki og sjálfstætt starfandi einstaklingar á Austurlandi.',
@@ -472,7 +472,7 @@ export const SERVICE_PAGES: ServicePage[] = [
       },
     ],
     pricing:
-      'Fast verð: 14.900 kr. fyrir uppsetningu Windows 11 á óstudda vél með öllum uppfærslum. Afrit af gögnum bætist við samkvæmt verðskrá (4.900 kr. undir 30 GB, 6.900 kr. yfir). Allt verð með VSK.',
+      'Fast verð: 14.900 kr. fyrir uppsetningu Windows 11 á óstudda vél með öllum uppfærslum. Afrit af gögnum bætist við samkvæmt verðskrá (5.900 kr. undir 30 GB, 7.900 kr. yfir). Allt verð með VSK.',
     timeline:
       'Yfirleitt tilbúin samdægurs eða næsta virka dag, eftir stærð gagnanna og hraða vélarinnar.',
     audience: 'Heimili, einyrkjar og lítil fyrirtæki með tölvur sem virka vel en fá ekki Windows 11 í gegnum Windows Update.',
