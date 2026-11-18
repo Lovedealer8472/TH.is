@@ -55,16 +55,6 @@ const allProjects = [
     href: 'https://www.youtube.com/@CuriousHydrogen',
     external: true,
   },
-  {
-    tag: 'Vafraleikur',
-    tagColor: 'text-tech-purple/90',
-    title: 'Viking Saga — Landnáms-þorp RPG',
-    desc: 'Vafraleikur þar sem spilari byggir upp íslenskt landnáms-þorp, stjórnar auðlindum og lifir af í víkingatíð. Spilanlegur MVP með grunnvirkni — byggingar, íbúar, árstíðir, viðburðir og auðlindastjórnun.',
-    features: ['Spilast í vafra', 'Þorpshermir', 'Íslenskt þema', 'Ókeypis kynning'],
-    cta: 'Spila kynningu',
-    href: 'https://www.tolvuhvislarinn.is/viking/',
-    external: true,
-  },
 ];
 
 export default function ProjectsPage() {
