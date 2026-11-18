@@ -66,7 +66,7 @@ export default function ChatWidget({ startOpen = false }: { startOpen?: boolean 
           <div className="flex items-center justify-between px-4 py-3 border-b border-warm-800 bg-warm-950">
             <div className="flex items-center gap-2 min-w-0">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/icon.svg" alt="" width={28} height={28} className="h-7 w-7 rounded-md" />
+              <img src="/chat-icon.png" alt="" width={32} height={32} className="h-8 w-8 rounded-full bg-warm-50" />
               <div className="min-w-0">
                 <div className="text-sm font-semibold text-warm-50">Spjall</div>
                 <div className="text-xs text-warm-400 truncate">Sjálfvirk aðstoð · Daði svarar í 848-6755</div>
@@ -108,10 +108,10 @@ export default function ChatWidget({ startOpen = false }: { startOpen?: boolean 
         </div>
       ) : (
         <button onClick={() => setOpen(true)} aria-label="Opna spjall" title="Spjall"
-          className="block rounded-[14px] shadow-xl shadow-black/40 transition-transform hover:-translate-y-0.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-400">
-          {/* Same mark as the browser tab icon (public/icon.svg) */}
+          className="flex items-center justify-center h-16 w-16 rounded-full bg-warm-50 shadow-xl shadow-black/40 ring-2 ring-primary-500/60 transition-transform hover:-translate-y-0.5 focus:outline-none focus-visible:ring-4 focus-visible:ring-primary-400">
+          {/* Same picture as the browser tab icon (app/icon.png, the whispering Daði) */}
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/icon.svg" alt="" width={60} height={60} className="h-[60px] w-[60px]" />
+          <img src="/chat-icon.png" alt="" width={56} height={56} className="h-14 w-14" />
         </button>
       )}
     </div>
