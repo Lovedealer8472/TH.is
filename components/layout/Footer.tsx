@@ -17,7 +17,7 @@ export default function Footer() {
           <div>
             <h3 className="mb-3">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/logo-dark.svg" alt="Tölvuhvíslarinn" width={186} height={44} className="h-11 w-auto" />
+              <img src="/logo-dark.svg" alt="Tölvuhvíslarinn" width={220} height={52} className="h-[52px] w-auto" />
             </h3>
             <p className="text-sm text-warm-400 mb-4">{t.footer.tagline}</p>
             <SocialMediaLinks variant="footer" />

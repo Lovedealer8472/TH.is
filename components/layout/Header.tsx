@@ -17,7 +17,7 @@ export default function Header() {
           <Link href="/" className="flex items-center space-x-2">
             {/* 18.11.2026 new logo (vector, outlined text) */}
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/logo-dark.svg" alt="Tölvuhvíslarinn" width={152} height={36} className="h-9 w-auto" />
+            <img src="/logo-dark.svg" alt="Tölvuhvíslarinn" width={186} height={44} className="h-11 w-auto" />
             <span className="font-mono text-xs text-tech-green hidden sm:inline">.is</span>
           </Link>
 
