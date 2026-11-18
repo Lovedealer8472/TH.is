@@ -323,6 +323,7 @@ export const SERVICE_PAGES: ServicePage[] = [
         heading: 'Hvað er gert?',
         paragraphs: [
           'Ég tek við VHS spólum og MiniDV kasettum, yfirfæri efnið á stafrænt form (venjulega MP4) og afhendi á USB-stiku eða netdrif eftir samkomulagi.',
+          'Heimamyndböndin koma flokkuð og skipt í kafla eftir atburðum, svo þú finnur t.d. jólin 1998 strax.',
           'Þjónustan er takmörkuð við VHS og MiniDV eins og er – ég tek ekki við öllum gerðum af gömlum miðlum.',
         ],
       },
