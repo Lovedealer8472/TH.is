@@ -6,7 +6,7 @@ type Msg = { role: 'user' | 'assistant'; content: string };
 
 const GREETING: Msg = {
   role: 'assistant',
-  content: 'Hæ! Ég er sjálfvirk aðstoð Tölvuhvíslarans. Spurðu mig um þjónustu, verð eða VHS yfirfærslu. (Hi! You can also ask in English.)',
+  content: 'Hæ. Ég er spjallforritið hans Daða. Ég kann verðskrána utan að en get ekki skrúfað neitt í sundur. Spurðu mig um viðgerðir, verð eða gömlu VHS spólurnar. (English works too.)',
 };
 
 const SUGGESTIONS = ['Hvað kostar að færa VHS spólu?', 'Fartölvan kveikir ekki á sér', 'Hvar eruð þið?'];
