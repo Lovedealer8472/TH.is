@@ -58,7 +58,7 @@ export default function HomePage() {
               <div>
                 <p className="font-mono text-xs text-primary-500 tracking-wider uppercase mb-3">{`// jólatilboð`}</p>
                 <p className="text-warm-100 text-base sm:text-lg leading-relaxed">
-                  Gömlu VHS og MiniDV upptökurnar á USB fyrir jól. Ekkert upphafsgjald og 20% afsláttur af yfirfærslu til 31. desember. Yfirfærsla kostar frá 3.900 kr. á spólu fyrir afslátt.
+                  Gömlu VHS og MiniDV upptökurnar á USB fyrir jól. Ekkert upphafsgjald og 20% afsláttur af yfirfærslu til 31. desember. Yfirfærsla kostar frá 3.900 kr. á spólu fyrir afslátt. USB-lykillinn fylgir eins og venjulega.
                 </p>
                 <p className="text-warm-300 text-sm sm:text-base mt-2 leading-relaxed">
                   Ég tek við spólum í pósti hvaðanæva af landinu og pantanir sem berast fyrir 4. desember eru tilbúnar fyrir jól. Gjafabréf fást í hvaða upphæð sem er og gilda allt árið 2027.

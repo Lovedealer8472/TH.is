@@ -330,7 +330,7 @@ export const SERVICE_PAGES: ServicePage[] = [
       {
         heading: 'Jólatilboð og gjafabréf',
         paragraphs: [
-          'Til 31. desember 2026 fellur 2.900 kr. upphafsgjaldið niður og öll yfirfærsla er á 20% afslætti. Magnafslátturinn gildir áfram og þú færð alltaf þann afslátt sem er hærri.',
+          'Til 31. desember 2026 fellur 2.900 kr. upphafsgjaldið niður og öll yfirfærsla er á 20% afslætti. USB-lykillinn fylgir eins og venjulega. Magnafslátturinn gildir áfram og þú færð alltaf þann afslátt sem er hærri.',
           // Worked example, list prices from pricing.detailedPricing.video: 3 × 4.900 = 14.700; + 2.900 = 17.600; 20% of 14.700 = 2.940; 14.700 − 2.940 = 11.760; 17.600 − 11.760 = 5.840
           'Tökum dæmi. Þú sendir þrjár spólur sem eru allt að 120 mínútur hver. Venjulega kostar það 3 × 4.900 kr. = 14.700 kr. og 2.900 kr. í upphafsgjald, samtals 17.600 kr. Á jólatilboðinu fellur upphafsgjaldið niður og 20% afsláttur af 14.700 kr. er 2.940 kr. Þú greiðir því 11.760 kr. og sparar 5.840 kr. Ef spólurnar koma í pósti bætist sendingarkostnaðurinn til baka við.',
           'Pantanir sem berast fyrir 4. desember eru tilbúnar fyrir jól. Það á líka við um spólur sem koma í pósti hvaðan sem er af landinu. Upptakan fer fram í rauntíma og því skiptir máli að senda spólurnar tímanlega.',
@@ -368,7 +368,7 @@ export const SERVICE_PAGES: ServicePage[] = [
     ],
     // Time-limited Christmas offer (ends 31.12.2026): remove the two offer sentences afterwards
     pricing:
-      'Verðið fer eftir lengd hverrar spólu. Spóla sem er allt að 60 mínútur kostar 3.900 kr., allt að 120 mínútur 4.900 kr., allt að 180 mínútur 5.900 kr. og allt að 240 mínútur 6.900 kr. Upphafsgjald er venjulega 2.900 kr. á pöntun, óháð fjölda spóla, og innifelur USB-lykil allt að 64 GB og niðurhalstengil í 30 daga. Til 31. desember 2026 fellur upphafsgjaldið niður og 20% afsláttur er af allri yfirfærslu. Magnafsláttur er 7–20% frá og með fjórum spólum og þú færð alltaf þann afslátt sem er hærri. Fyrir 20 spólur eða fleiri geri ég tilboð. Ef spóla reynist tóm eða ólæsileg rukka ég ekkert fyrir hana.',
+      'Verðið fer eftir lengd hverrar spólu. Spóla sem er allt að 60 mínútur kostar 3.900 kr., allt að 120 mínútur 4.900 kr., allt að 180 mínútur 5.900 kr. og allt að 240 mínútur 6.900 kr. Upphafsgjald er venjulega 2.900 kr. á pöntun, óháð fjölda spóla, og innifelur USB-lykil allt að 64 GB og niðurhalstengil í 30 daga. Til 31. desember 2026 fellur upphafsgjaldið niður og 20% afsláttur er af allri yfirfærslu. USB-lykill og niðurhalstengill fylgja samt áfram. Magnafsláttur er 7–20% frá og með fjórum spólum og þú færð alltaf þann afslátt sem er hærri. Fyrir 20 spólur eða fleiri geri ég tilboð. Ef spóla reynist tóm eða ólæsileg rukka ég ekkert fyrir hana.',
     timeline:
       'Yfirfærslan fer fram í rauntíma. Þriggja tíma spóla tekur þrjá tíma í upptöku og því ræður magnið afgreiðslutímanum. Fáeinar spólur eru yfirleitt tilbúnar á 3–7 virkum dögum. Stærri söfn taka lengri tíma og tíu spólur eða fleiri geta tekið tvær til þrjár vikur. Ég gef alltaf upp áætlaða dagsetningu áður en vinna hefst.',
     audience: 'Einstaklingar og fjölskyldur sem eiga VHS, VHS-C eða MiniDV upptökur og vilja bjarga minningunum.',

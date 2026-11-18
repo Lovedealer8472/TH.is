@@ -121,7 +121,8 @@ export async function POST(req: NextRequest) {
 
     let reply = '';
     for (const block of res.content) if (block.type === 'text') reply += block.text;
-    reply = reply.trim();
+    // The widget shows plain text: drop markdown emphasis/headings the model sometimes adds.
+    reply = reply.replace(/\*\*(.+?)\*\*/g, '$1').replace(/^#{1,6}\s+/gm, '').trim();
     if (res.stop_reason === 'refusal' || !reply) reply = FALLBACK_IS;
 
     await logTurn({
