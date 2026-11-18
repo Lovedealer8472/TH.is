@@ -7,11 +7,10 @@ const CONTACT = {
   name: 'Tölvuhvíslarinn (Guðmundur Daði Árnþórsson, Daði)',
   phone: '848-6755',
   email: 'dadi@tolvuhvislarinn.is',
-  address: 'Starmýri 23, 740 Neskaupstaður',
+  address: 'Starmýri 21, 740 Neskaupstaður',
   area: 'Neskaupstaður og Austurland (Fjarðabyggð: Eskifjörður, Reyðarfjörður o.fl., Egilsstaðir)',
   contactPage: 'https://www.tolvuhvislarinn.is/contact',
   pricingPage: 'https://www.tolvuhvislarinn.is/pricing',
-  vhsMailPage: 'https://www.tolvuhvislarinn.is/vhs-sending',
 };
 
 function servicePagesText() {

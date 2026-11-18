@@ -15,7 +15,7 @@ export default function StructuredData() {
     email: 'dadi@tolvuhvislarinn.is',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: 'Starmýri 23',
+      streetAddress: 'Starmýri 21',
       postalCode: '740',
       addressLocality: 'Neskaupstaður',
       addressRegion: 'Austurland',

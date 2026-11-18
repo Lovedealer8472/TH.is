@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import type { ServicePage } from '@/lib/service-pages';
 import ServiceContactBar from '@/components/ServiceContactBar';
 
@@ -44,6 +45,14 @@ export default function ServicePageContent({ page }: ServicePageContentProps) {
             <h1 className="text-3xl sm:text-4xl font-bold text-warm-50 mb-4">{page.h1}</h1>
             <p className="text-lg text-warm-400 leading-relaxed">{page.intro}</p>
           </header>
+
+          {page.image && (
+            <figure className="mb-10">
+              <Image src={page.image.src} alt={page.image.alt} width={1000} height={900} sizes="(max-width: 768px) 100vw, 768px"
+                className="w-full h-auto rounded-xl border border-warm-700/50" priority />
+              {page.image.caption && <figcaption className="mt-2 text-sm text-warm-400">{page.image.caption}</figcaption>}
+            </figure>
+          )}
 
           <ServiceContactBar serviceName={page.overviewCardTitle} />
 

@@ -21,6 +21,7 @@ export interface ServicePage {
   audience: string;
   faq: ServiceFaq[];
   overviewCardTitle: string;
+  image?: { src: string; alt: string; caption?: string };
 }
 
 export const SERVICE_PAGES: ServicePage[] = [
@@ -310,6 +311,11 @@ export const SERVICE_PAGES: ServicePage[] = [
   },
   {
     slug: 'vhs-minidv',
+    image: {
+      src: '/vhs/taekin.webp',
+      alt: 'Myndbandstæki og upptökuvélar Tölvuhvíslarans: Panasonic, Sharp og Dantax VHS tæki, Sony Hi8 og Panasonic MiniDV vélar',
+      caption: 'Tækin sem spólurnar þínar eru spilaðar í. Eitt þeirra spilar líka japanskar NTSC spólur.',
+    },
     metaTitle: 'VHS, VHS-C og MiniDV yfir á stafrænt form | Tölvuhvíslarinn',
     // Time-limited Christmas offer (ends 31.12.2026): remove the offer sentences from metaDescription and intro afterwards
     metaDescription:
