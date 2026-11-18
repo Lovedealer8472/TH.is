@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useI18n } from '@/lib/i18n';
 
 export default function ContactForm() {
@@ -8,8 +8,18 @@ export default function ContactForm() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    phone: '',
     message: '',
   });
+  // /contact?efni=vhs (from the VHS offer buttons): order mode with tape count + gift certificate
+  const [vhs, setVhs] = useState(false);
+  const [tapes, setTapes] = useState('');
+  const [gift, setGift] = useState(false);
+  useEffect(() => {
+    try {
+      if (new URLSearchParams(window.location.search).get('efni') === 'vhs') setVhs(true);
+    } catch { /* ignore */ }
+  }, []);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
   const [errorMessage, setErrorMessage] = useState('');
@@ -26,7 +36,15 @@ export default function ContactForm() {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          message: [
+            vhs ? `[VHS pöntun${gift ? ' / gjafabréf' : ''}]${tapes ? ` Fjöldi spóla: ${tapes}` : ''}` : '',
+            formData.phone ? `Sími: ${formData.phone}` : '',
+            formData.message,
+          ].filter(Boolean).join('\n'),
+        }),
       });
 
       if (response.status === 400) {
@@ -41,7 +59,9 @@ export default function ContactForm() {
       }
 
       setSubmitStatus('success');
-      setFormData({ name: '', email: '', message: '' });
+      setFormData({ name: '', email: '', phone: '', message: '' });
+      setTapes('');
+      setGift(false);
     } catch {
       // Delivery failed or the server is unreachable: the error box shows phone + WhatsApp
       setSubmitStatus('error');
@@ -63,6 +83,12 @@ export default function ContactForm() {
   return (
     <div className="bg-warm-800/50 backdrop-blur-sm rounded-xl border border-warm-700/50 p-8 sm:p-10">
       <form onSubmit={handleSubmit} className="space-y-6">
+        {vhs && (
+          <div className="rounded-lg border border-primary-500/40 bg-primary-500/10 p-4 text-sm text-warm-100 leading-relaxed">
+            <p className="font-semibold text-primary-300 mb-1">VHS yfirfærsla, jólatilboð til 31. desember</p>
+            <p>Segðu mér hvað margar spólur þetta eru og hvort þú komir með þær eða sendir í pósti. Ég svara með verði og heimilisfangi fyrir póstsendingu. Pantanir sem berast fyrir 4. desember eru tilbúnar fyrir jól.</p>
+          </div>
+        )}
         <div>
           <label htmlFor="name" className="block text-sm font-medium text-warm-200 mb-2">
             {t.contact.form.name}
@@ -94,6 +120,26 @@ export default function ContactForm() {
         </div>
 
         <div>
+          <label htmlFor="phone" className="block text-sm font-medium text-warm-200 mb-2">
+            Sími <span className="text-warm-400 font-normal">(valfrjálst)</span>
+          </label>
+          <input type="tel" id="phone" name="phone" value={formData.phone} onChange={handleChange} autoComplete="tel" maxLength={30} className="w-full px-4 py-3 bg-warm-900/50 border border-warm-700 text-warm-50 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all" />
+        </div>
+
+        {vhs && (
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-end">
+            <div>
+              <label htmlFor="tapes" className="block text-sm font-medium text-warm-200 mb-2">Fjöldi spóla</label>
+              <input type="number" id="tapes" min={1} max={500} value={tapes} onChange={(e) => setTapes(e.target.value)} className="w-full px-4 py-3 bg-warm-900/50 border border-warm-700 text-warm-50 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all" />
+            </div>
+            <label htmlFor="gift" className="flex items-center gap-3 text-sm text-warm-200 py-3 cursor-pointer">
+              <input type="checkbox" id="gift" checked={gift} onChange={(e) => setGift(e.target.checked)} className="h-5 w-5 accent-primary-600" />
+              Ég vil kaupa gjafabréf
+            </label>
+          </div>
+        )}
+
+        <div>
           <label htmlFor="message" className="block text-sm font-medium text-warm-200 mb-2">
             {t.contact.form.message}
           </label>
@@ -113,7 +159,7 @@ export default function ContactForm() {
             <svg className="w-5 h-5 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
-            <span>Skilaboð þín voru send! Við svörum eins fljótt og auðið er.</span>
+            <span>Skilaboðin þín voru send. Ég svara eins fljótt og ég get.</span>
           </div>
         )}
 

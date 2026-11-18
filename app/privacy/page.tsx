@@ -1,6 +1,7 @@
 export const metadata = {
   title: 'Persónuverndarstefna - Tölvuhvíslarinn',
   description: 'Persónuverndarstefna Tölvuhvíslarans',
+  alternates: { canonical: 'https://www.tolvuhvislarinn.is/privacy' },
 };
 
 export default function PrivacyPage() {
@@ -112,7 +113,7 @@ export default function PrivacyPage() {
             <div className="bg-warm-800 p-4 rounded-lg">
               <p className="mb-2"><strong>Tölvuhvíslarinn</strong></p>
               <p className="mb-2">Netfang: <a href="mailto:dadi@tolvuhvislarinn.is" className="text-primary-400 hover:text-primary-300" data-email="si.nilravsluhvlot@idad">dadi&#64;tolvuhvislarinn&#46;is</a></p>
-              <p className="mb-2">Sími: <a href="tel:848-6755" className="text-primary-400 hover:text-primary-300">848-6755</a></p>
+              <p className="mb-2">Sími: <a href="tel:+3548486755" className="text-primary-400 hover:text-primary-300">848-6755</a></p>
               <p>KT: 460525-2250</p>
             </div>
           </section>

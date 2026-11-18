@@ -49,16 +49,22 @@ export default function StructuredData() {
       name: 'Tölvuþjónusta',
       itemListElement: [
         { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Tölvuviðgerðir' } },
+        { '@type': 'Offer', price: '6900', priceCurrency: 'ISK', itemOffered: { '@type': 'Service', name: 'Bilanagreining' } },
         { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Fartölvuviðgerðir' } },
         { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'SSD uppfærsla' } },
         { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Sérsmíði borðtölva' } },
         { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Tækniráðgjöf' } },
-        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'VHS og MiniDV stafræning' } },
+        {
+          '@type': 'Offer',
+          priceSpecification: { '@type': 'UnitPriceSpecification', minPrice: '3900', priceCurrency: 'ISK', unitText: 'spóla' },
+          url: `${siteUrl}/services/vhs-minidv`,
+          itemOffered: { '@type': 'Service', name: 'VHS, VHS-C og MiniDV yfirfærsla á USB', areaServed: { '@type': 'Country', name: 'Iceland' } },
+        },
         { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Gagnaflutningur og öryggisafrit' } },
       ],
     },
     description:
-      'Tölvuviðgerðir, sérsmíði borðtölva, gagnavernd og tækniráðgjöf í Neskaupstað og á Austurlandi. Viðgerðir, uppfærslur og ráðgjöf fyrir einstaklinga og smáfyrirtæki.',
+      'Tölvuviðgerðir, sérsmíði borðtölva og tækniráðgjöf í Neskaupstað og á Austurlandi. VHS, VHS-C og MiniDV spólur færðar á USB, líka sendar í pósti af öllu landinu.',
   };
 
   return (

@@ -13,12 +13,12 @@ export interface NewsArticle {
 
 /** Display ISO date (YYYY-MM-DD) in the site language; avoids UTC shift for calendar dates. */
 export function formatNewsDate(isoDate: string, locale: "is" | "en"): string {
-  const d = new Date(`${isoDate}T12:00:00`);
-  return new Intl.DateTimeFormat(locale === "is" ? "is" : "en-GB", {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-  }).format(d);
+  // Hand-written months: Intl output differs between Node and browsers (ICU data), which caused
+  // React hydration errors #418/#423/#425 on /news (site review 18.11.2026).
+  const IS = ["janúar", "febrúar", "mars", "apríl", "maí", "júní", "júlí", "ágúst", "september", "október", "nóvember", "desember"];
+  const EN = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  const [y, m, d] = isoDate.split("-").map(Number);
+  return locale === "is" ? `${d}. ${IS[m - 1]} ${y}` : `${d} ${EN[m - 1]} ${y}`;
 }
 
 export const newsArticles: NewsArticle[] = [
@@ -30,8 +30,8 @@ export const newsArticles: NewsArticle[] = [
       en: "Tölvuhvíslarinn awarded a grant from Uppbyggingarsjóður Austurlands"
     },
     content: {
-      is: "Verkefnið Tölvuhvíslarinn hlaut styrk úr Uppbyggingarsjóði Austurlands fyrir árið 2026 — eitt af 54 verkefnum sem hlutu styrk af 97 umsóknum sem bárust.\n\nStyrkurinn nam 800.000 kr.\n\nVerkefninu er nú lokið og lokaskýrslu hefur verið skilað. Kærar þakkir til Uppbyggingarsjóðs Austurlands fyrir stuðninginn.",
-      en: "The Tölvuhvíslarinn project was awarded a grant from Uppbyggingarsjóður Austurlands (the Eastern Iceland Regional Growth Fund) for 2026 — one of 54 projects to receive funding out of 97 applications submitted.\n\nThe grant amounted to 800,000 ISK.\n\nThe project is now complete, and the final report has been submitted. Many thanks to Uppbyggingarsjóður Austurlands for the support."
+      is: "Verkefnið Tölvuhvíslarinn hlaut styrk úr Uppbyggingarsjóði Austurlands fyrir árið 2026. Það var eitt af 54 verkefnum sem hlutu styrk af 97 umsóknum sem bárust.\n\nStyrkurinn nam 800.000 kr.\n\nVerkefninu er nú lokið og lokaskýrslu hefur verið skilað. Kærar þakkir til Uppbyggingarsjóðs Austurlands fyrir stuðninginn.",
+      en: "The Tölvuhvíslarinn project was awarded a grant from Uppbyggingarsjóður Austurlands (the Eastern Iceland Regional Growth Fund) for 2026, one of 54 projects to receive funding out of 97 applications submitted.\n\nThe grant amounted to 800,000 ISK.\n\nThe project is now complete, and the final report has been submitted. Many thanks to Uppbyggingarsjóður Austurlands for the support."
     }
   },
   {

@@ -20,14 +20,14 @@
     "hero": {
       "titleMain": "Tölvuhvíslarinn",
       "titleSecondary": "Computer repairs and custom builds",
-      "subtitle": "Computer repairs, custom desktop builds, and IT consulting in Neskaupstaður.",
+      "subtitle": "Computer repairs, custom desktop builds, and IT consulting in East Iceland.",
       "trustLine": "Personal and honest technical support for individuals and small businesses."
     },
     "services": {
       "repairs": {
         "title": "Computer Repairs",
         "description": "Repairs and diagnostics for laptops and desktop computers.",
-        "bullet1": "Slow or frozen computer",
+        "bullet1": "Slow or freezing computer",
         "bullet2": "SSD / HDD replacement",
         "bullet3": "RAM upgrades",
         "bullet4": "Software issues"
@@ -38,7 +38,7 @@
         "bullet1": "Component and cost consultation",
         "bullet2": "Assembly and testing",
         "bullet3": "Upgrading older computers",
-        "bullet4": "Fully upgraded and tested computers"
+        "bullet4": "Fully updated and tested computers"
       },
       "consulting": {
         "title": "IT Consulting",
@@ -50,9 +50,9 @@
       }
     },
     "cta": {
-      "heading": "Contact us",
-      "description": "Contact me today and get a custom solution for your computer needs.",
-      "primary": "Contact us",
+      "heading": "Get in touch",
+      "description": "Send me a message or call and we will find a solution that suits you.",
+      "primary": "Contact me",
       "secondary": "View services"
     },
     "serviceArea": {
@@ -105,44 +105,20 @@
         "bullet3": "Fair pricing"
       },
       "video": {
-        "title": "Videos to Digital Format",
-        "bullet1": "Limited to VHS and MiniDV at this time.",
-        "bullet2": "Media has limited lifespan",
-        "bullet3": "Affordable service in the area"
+        "title": "VHS, VHS-C and MiniDV to USB",
+        "bullet1": "Your old family tapes on a USB drive",
+        "bullet2": "Post your tapes from anywhere in Iceland",
+        "bullet3": "From 3,900 ISK per tape"
       }
     }
   },
   "pricing": {
     "title": "Pricing",
-    "subtitle": "Clear prices – no unexpected additional fees",
-    "footer": "All prices include VAT. Replacement parts and specialized repairs are calculated separately. Contact us for an accurate quote. Windows 11 on unsupported hardware: Microsoft does not guarantee updates on such machines, and the customer accepts this at installation.",
-    "cards": {
-      "repairs": {
-        "title": "Computer Repairs & Diagnostics",
-        "price": "6,900 ISK",
-        "includes": "Includes:",
-        "bullet1": "Diagnostics",
-        "bullet2": "General troubleshooting",
-        "bullet3": "Repair cost assessment",
-        "note": "Repairs not started without customer approval."
-      },
-      "consulting": {
-        "title": "IT Consulting",
-        "price": "15,900 ISK/hr",
-        "includes": "Includes:",
-        "bullet1": "Equipment purchase advice",
-        "bullet2": "Installations & solutions",
-        "bullet3": "General technical support"
-      },
-      "custom": {
-        "title": "Custom Desktop Builds",
-        "price": "By quote",
-        "includes": "Includes:",
-        "bullet1": "Needs assessment",
-        "bullet2": "Component selection",
-        "bullet3": "Assembly and testing",
-        "note": "Suitable for gaming, work, and specialized projects."
-      }
+    "subtitle": "Clear prices and no unexpected fees",
+    "footer": "All prices include VAT. Replacement parts and specialized repairs are charged separately. Contact me for an accurate quote. Microsoft does not guarantee updates on machines that do not meet the Windows 11 requirements, and the customer accepts this at installation.",
+    "table": {
+      "service": "Service",
+      "price": "Price"
     },
     "detailedPricing": {
       "general": {
@@ -320,7 +296,7 @@
           },
           {
             "name": "Windows 11 on unsupported hardware (fails Microsoft's checks) + updates",
-            "price": "14.900 kr."
+            "price": "14,900 ISK"
           },
           {
             "name": "Microsoft Office installation",
@@ -340,7 +316,7 @@
             "price": "7,900 ISK"
           },
           {
-            "name": "Data recovery – startup fee / No Data",
+            "name": "Data recovery – base fee / no data recovered",
             "price": "16,900 ISK"
           },
           {
@@ -354,7 +330,7 @@
         ]
       },
       "video": {
-        "title": "Video – Transfer to Digital",
+        "title": "Video – VHS, VHS-C and MiniDV to Digital",
         "promo": {
           "badge": "Christmas offer",
           "title": "No setup fee and 20% off until 31 December",
@@ -371,7 +347,7 @@
             "price": "2,900 ISK"
           },
           {
-            "name": "Transfer – up to 60 min (VHS or MiniDV)",
+            "name": "Transfer – up to 60 min (VHS, VHS-C or MiniDV)",
             "price": "3,900 ISK / tape"
           },
           {
@@ -427,8 +403,8 @@
     }
   },
   "about": {
-    "title": "About Tölvuhvíslarinn",
-    "intro1": "My name is Daði and I have been working with computers for 20 years. Tölvuhvíslarinn serves individuals and small businesses with computer repairs, upgrades, custom builds, data protection, and IT consulting.",
+    "title": "About me",
+    "intro1": "My name is Daði and I have been working with computers for 20 years. Tölvuhvíslarinn serves individuals and small businesses with computer repairs, upgrades, custom builds, data backup, and IT consulting.",
     "intro2": "I emphasize speaking in plain language, not technical jargon, and always explaining what is being done and why. Good technical support is not just about fixing things, but about helping people make better decisions and building trust for the long term.",
     "howIWork": {
       "title": "How I work",
@@ -454,20 +430,9 @@
   },
   "projects": {
     "title": "Projects",
-    "subtitle": "Projects from Tölvuhvíslarinn",
-    "tts": {
-      "title": "Tölvuhvísl — Icelandic Text-to-Speech",
-      "description": "Natural Icelandic text-to-speech powered by deep learning. Turn Icelandic text into spoken audio with 30+ voices, a simple REST API, and smart text normalization that handles numbers, abbreviations, and more.",
-      "features": {
-        "voices": "30+ Icelandic voices",
-        "quality": "24 kHz audio quality",
-        "api": "Simple REST API",
-        "privacy": "GDPR compliant"
-      },
-      "cta": "Try the demo"
-    }
+    "subtitle": "Projects from Tölvuhvíslarinn"
   },
   "social": {
-    "followUs": "Follow us"
+    "followUs": "Follow me"
   }
 }

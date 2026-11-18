@@ -28,7 +28,7 @@ export default function ContactPage() {
               </div>
               <h3 className="text-sm font-semibold text-warm-200 mb-2">{t.contact.phone}</h3>
               <p className="text-lg text-warm-50">
-                <a href="tel:848-6755" className="text-primary-400 hover:text-primary-300 transition-colors font-medium">848-6755</a>
+                <a href="tel:+3548486755" className="text-primary-400 hover:text-primary-300 transition-colors font-medium">848-6755</a>
               </p>
             </div>
 

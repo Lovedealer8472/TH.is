@@ -46,7 +46,7 @@ export default function ServiceContactBar({ serviceName }: ServiceContactBarProp
           </a>
         )}
         <Link
-          href="/contact"
+          href={/VHS/.test(serviceName ?? '') ? '/contact?efni=vhs' : '/contact'}
           className="inline-flex items-center gap-2 px-5 py-3 bg-warm-800 text-primary-400 border border-primary-600 rounded-lg font-medium hover:bg-warm-700 transition-colors"
         >
           <MailIcon />

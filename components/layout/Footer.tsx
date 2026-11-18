@@ -11,14 +11,14 @@ export default function Footer() {
 
   return (
     <footer className="border-t border-warm-800 bg-warm-950 mt-auto">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-28 sm:pb-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand */}
           <div>
-            <h3 className="mb-3">
+            <div className="mb-3">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src="/logo-dark.svg" alt="Tölvuhvíslarinn" width={220} height={52} className="h-[52px] w-auto" />
-            </h3>
+            </div>
             <p className="text-sm text-warm-400 mb-4">{t.footer.tagline}</p>
             <SocialMediaLinks variant="footer" />
             <div className="mt-4">
@@ -30,7 +30,7 @@ export default function Footer() {
           <div>
             <h4 className="text-sm font-semibold text-warm-50 mb-3">Hafðu samband</h4>
             <p className="text-sm text-warm-400">Netfang: <EmailLink email="dadi@tolvuhvislarinn.is" className="text-primary-400 hover:text-primary-300" /></p>
-            <p className="text-sm text-warm-400">Sími: <a href="tel:848-6755" className="text-primary-400 hover:text-primary-300">848-6755</a></p>
+            <p className="text-sm text-warm-400">Sími: <a href="tel:+3548486755" className="text-primary-400 hover:text-primary-300">848-6755</a></p>
           </div>
 
           {/* Additional Info */}

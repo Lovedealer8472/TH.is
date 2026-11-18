@@ -98,7 +98,7 @@ export default function ServicePageContent({ page }: ServicePageContentProps) {
 
           <p className="mt-8 text-center text-sm text-warm-500">
             <Link href="/services" className="text-primary-400 hover:text-primary-300">
-              ← Sjá allar þjónustur
+              ← Sjá alla þjónustu
             </Link>
             {' · '}
             <Link href="/pricing" className="text-primary-400 hover:text-primary-300">

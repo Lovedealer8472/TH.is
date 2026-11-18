@@ -6,7 +6,8 @@ import { useI18n } from '@/lib/i18n';
 import LanguageSwitcher from '@/components/ui/LanguageSwitcher';
 
 export default function Header() {
-  const { t } = useI18n();
+  const { t, language } = useI18n();
+  const vhsLabel = language === 'en' ? 'VHS to USB' : 'VHS á USB';
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
@@ -18,11 +19,16 @@ export default function Header() {
             {/* 18.11.2026 new logo (vector, outlined text) */}
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/logo-dark.svg" alt="Tölvuhvíslarinn" width={186} height={44} className="h-11 w-auto" />
-            <span className="font-mono text-xs text-tech-green hidden sm:inline">.is</span>
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden lg:flex items-center space-x-7">
+            <Link
+              href="/services/vhs-minidv"
+              className="text-primary-400 hover:text-primary-300 transition-colors font-medium"
+            >
+              {vhsLabel}
+            </Link>
             <Link
               href="/services"
               className="text-warm-200 hover:text-primary-400 transition-colors font-medium"
@@ -68,8 +74,9 @@ export default function Header() {
             {/* Mobile menu button */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="md:hidden p-2 rounded-lg text-warm-200 hover:text-primary-400 hover:bg-warm-800 transition-colors"
-              aria-label="Toggle menu"
+              className="lg:hidden p-2 rounded-lg text-warm-200 hover:text-primary-400 hover:bg-warm-800 transition-colors"
+              aria-label={language === 'en' ? 'Open menu' : 'Opna valmynd'}
+              aria-expanded={mobileMenuOpen}
             >
               {mobileMenuOpen ? (
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -86,8 +93,15 @@ export default function Header() {
 
         {/* Mobile Navigation */}
         {mobileMenuOpen && (
-          <nav className="md:hidden py-4 border-t border-warm-800">
+          <nav className="lg:hidden py-4 border-t border-warm-800" aria-label={language === 'en' ? 'Main menu' : 'Aðalvalmynd'}>
             <div className="flex flex-col space-y-3">
+              <Link
+                href="/services/vhs-minidv"
+                onClick={() => setMobileMenuOpen(false)}
+                className="text-primary-400 hover:text-primary-300 transition-colors font-medium py-2 px-4 rounded-lg hover:bg-warm-800"
+              >
+                {vhsLabel}
+              </Link>
               <Link
                 href="/services"
                 onClick={() => setMobileMenuOpen(false)}

@@ -1,6 +1,9 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import type { Metadata } from 'next';
 import is from '@/lib/translations/is.json';
+
+export const metadata: Metadata = { alternates: { canonical: 'https://www.tolvuhvislarinn.is' } };
 
 const t = is;
 
@@ -29,14 +32,15 @@ export default function HomePage() {
               <p className="mt-3 text-base text-warm-400 max-w-lg lg:max-w-none">{t.home.hero.trustLine}</p>
               <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Link href="/contact" className="group inline-flex items-center gap-2 px-8 py-3.5 bg-primary-600 text-white font-semibold rounded-xl hover:bg-primary-500 transition-all duration-200 shadow-lg shadow-primary-600/20 hover:shadow-primary-500/30 hover:-translate-y-0.5">{t.home.cta.primary}<span className="font-mono text-primary-200 group-hover:translate-x-0.5 transition-transform">→</span></Link>
-                <Link href="/services" className="inline-flex items-center gap-2 px-8 py-3.5 bg-warm-800/80 text-warm-200 font-medium rounded-xl border border-warm-600/40 hover:border-primary-500/40 hover:text-primary-300 transition-all duration-200">{t.home.cta.secondary}<span className="font-mono text-warm-400">↓</span></Link>
+                {/* Christmas VHS button: swap back to {t.home.cta.secondary} -> /services after 31.12.2026 */}
+                <Link href="/services/vhs-minidv" className="inline-flex items-center gap-2 px-8 py-3.5 bg-warm-800/80 text-warm-100 font-medium rounded-xl border border-primary-500/40 hover:border-primary-500/70 hover:text-primary-300 transition-all duration-200">VHS á USB fyrir jól<span className="font-mono text-primary-400">→</span></Link>
               </div>
               <div className="mt-6 flex flex-wrap gap-3 justify-center lg:justify-start">
                 <a href="tel:+3548486755" className="inline-flex items-center gap-1.5 text-sm text-warm-400 hover:text-primary-400 transition-colors font-mono"><span className="text-primary-500">$</span> hringja</a>
                 <span className="text-warm-600">·</span>
                 <a href="https://wa.me/3548486755" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-sm text-warm-400 hover:text-primary-400 transition-colors font-mono"><span className="text-primary-500">$</span> whatsapp</a>
                 <span className="text-warm-600">·</span>
-                <a href="mailto:hjalp@tolvuhvislarinn.is" className="inline-flex items-center gap-1.5 text-sm text-warm-400 hover:text-primary-400 transition-colors font-mono"><span className="text-primary-500">$</span> netfang</a>
+                <a href="mailto:dadi@tolvuhvislarinn.is" className="inline-flex items-center gap-1.5 text-sm text-warm-400 hover:text-primary-400 transition-colors font-mono"><span className="text-primary-500">$</span> netfang</a>
               </div>
             </div>
           </div>
@@ -54,7 +58,7 @@ export default function HomePage() {
               <div>
                 <p className="font-mono text-xs text-primary-500 tracking-wider uppercase mb-3">{`// jólatilboð`}</p>
                 <p className="text-warm-100 text-base sm:text-lg leading-relaxed">
-                  Gömlu VHS og MiniDV upptökurnar á USB fyrir jól. Ekkert upphafsgjald og 20% afsláttur af yfirfærslu til 31. desember.
+                  Gömlu VHS og MiniDV upptökurnar á USB fyrir jól. Ekkert upphafsgjald og 20% afsláttur af yfirfærslu til 31. desember. Yfirfærsla kostar frá 3.900 kr. á spólu fyrir afslátt.
                 </p>
                 <p className="text-warm-300 text-sm sm:text-base mt-2 leading-relaxed">
                   Ég tek við spólum í pósti hvaðanæva af landinu og pantanir sem berast fyrir 4. desember eru tilbúnar fyrir jól. Gjafabréf fást í hvaða upphæð sem er og gilda allt árið 2027.
@@ -63,45 +67,10 @@ export default function HomePage() {
                   <Link href="/services/vhs-minidv" className="group/link inline-flex items-center gap-1.5 text-sm font-mono text-primary-400 hover:text-primary-300 transition-colors">
                     Nánar um tilboðið<span className="inline-block group-hover/link:translate-x-0.5 transition-transform">→</span>
                   </Link>
-                  <Link href="/contact" className="group/link inline-flex items-center gap-1.5 text-sm font-mono text-primary-400 hover:text-primary-300 transition-colors">
+                  <Link href="/contact?efni=vhs" className="group/link inline-flex items-center gap-1.5 text-sm font-mono text-primary-400 hover:text-primary-300 transition-colors">
                     Panta eða kaupa gjafabréf<span className="inline-block group-hover/link:translate-x-0.5 transition-transform">→</span>
                   </Link>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ── Grant Announcement ── */}
-      <section className="py-10 sm:py-14 bg-warm-950 border-b border-[oklch(19%_0.007_175_/_0.5)]">
-        <div className="max-w-5xl mx-auto px-4 sm:px-8 lg:px-12">
-          <div className="grant-card-enter group relative rounded-2xl bg-gradient-to-br from-[oklch(60%_0.17_156_/_0.4)] via-[oklch(65%_0.13_195_/_0.25)] to-[oklch(42%_0.12_158_/_0.3)] p-px transition-transform duration-300 hover:-translate-y-0.5 motion-reduce:transition-none motion-reduce:hover:translate-y-0">
-            <div className="rounded-2xl bg-[oklch(19%_0.007_175_/_0.7)] backdrop-blur-sm p-6 sm:p-8 flex flex-col sm:flex-row sm:items-start gap-5 sm:gap-7 transition-shadow duration-300 group-hover:shadow-[0_0_28px_-8px_oklch(65%_0.17_158_/_0.35)]">
-              <div className="shrink-0 flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 rounded-xl bg-[oklch(15%_0.005_180_/_0.6)] border border-[oklch(24%_0.008_170_/_0.4)] p-2.5">
-                <Image
-                  src="/logos/uppbyggingarsjodur-austurlands.png"
-                  alt="Merki Uppbyggingarsjóðs Austurlands"
-                  width={48}
-                  height={36}
-                  className="w-full h-auto"
-                />
-              </div>
-              <div>
-                <p className="font-mono text-xs text-primary-500 tracking-wider uppercase mb-3">{`// frétt`}</p>
-                <p className="text-warm-100 text-base sm:text-lg leading-relaxed">
-                  Tölvuhvíslarinn hlaut styrk úr Uppbyggingarsjóði Austurlands fyrir árið 2026 — eitt af 54 verkefnum sem hlutu styrk af 97 umsóknum sem bárust.
-                </p>
-                {/* Amount — its own sentence, trivially removable if the figure shouldn't be public */}
-                <p className="text-warm-300 text-sm sm:text-base mt-2 leading-relaxed">
-                  Styrkurinn nam 800.000 kr.
-                </p>
-                <p className="text-warm-400 text-sm sm:text-base mt-2 leading-relaxed">
-                  Verkefninu er nú lokið og lokaskýrslu hefur verið skilað.
-                </p>
-                <Link href="/news" className="group/link inline-flex items-center gap-1.5 mt-4 text-sm font-mono text-primary-400 hover:text-primary-300 transition-colors">
-                  Lesa meira í fréttum<span className="inline-block group-hover/link:translate-x-0.5 transition-transform">→</span>
-                </Link>
               </div>
             </div>
           </div>
@@ -123,21 +92,56 @@ export default function HomePage() {
             {[
               { num: '01', title: 'Hafðu samband', desc: 'Hringdu, sendu WhatsApp-skilaboð eða tölvupóst. Lýstu vandamálinu á þínu eigin máli. Ég tala ekki tæknimál nema þú viljir það.', cli: '$ senda_skilaboð --þægilegt', accent: true },
               { num: '02', title: 'Greining', desc: 'Ég skoða tölvuna, finn hvað er að og læt þig vita af kostnaðinum áður en vinna hefst. Engin óvænt gjöld.', cli: '$ greina --heiðarlega --án-óvæntra-gjalda', accent: false },
-              { num: '03', title: 'Lagað', desc: 'Tölvan er lagfærð, uppfærð eða smíðuð, og þú færð hana til baka með skýrri útskýringu. Engar plásturslausnir.', cli: '$ laga --varanlega  # engin plásturlausn', accent: false },
+              { num: '03', title: 'Lagað', desc: 'Tölvan er lagfærð, uppfærð eða smíðuð, og þú færð hana til baka með skýrri útskýringu. Engar plásturslausnir.', cli: '$ laga --varanlega  # engin plásturslausn', accent: false },
             ].map((step) => (
               <div key={step.num} className={`rounded-2xl border p-8 lg:p-10 group transition-all duration-300 ${step.accent ? 'bg-warm-800/60 border-primary-500/20 hover:border-primary-500/40' : 'bg-warm-800/40 border-warm-700/30 hover:border-warm-600/50'}`}>
                 <span className={`font-display text-5xl font-bold transition-colors ${step.accent ? 'text-primary-500/20 group-hover:text-primary-500/30' : 'text-warm-700/40'}`}>{step.num}</span>
                 <h3 className="font-display text-xl font-bold text-warm-100 mt-3">{step.title}</h3>
-                <p className="text-warm-400 text-base mt-2 leading-relaxed">{step.desc}</p>
+                <p className="text-warm-300 text-base mt-2 leading-relaxed">{step.desc}</p>
                 <div className={`mt-4 font-mono text-xs ${step.accent ? 'text-primary-500' : 'text-warm-500'}`}>{step.cli}</div>
               </div>
             ))}
           </div>
 
           <div className="mt-12 flex flex-wrap gap-4 justify-center">
-            {[{ href: '/services/tolvuvidgerdir', label: t.home.services.repairs.title }, { href: '/services/sersmidid-bordtolva', label: t.home.services.custom.title }, { href: '/services/taekniaadstod-fyrirtaeki', label: t.home.services.consulting.title }].map((svc) => (
+            {[{ href: '/services/tolvuvidgerdir', label: t.home.services.repairs.title }, { href: '/services/sersmidid-bordtolva', label: t.home.services.custom.title }, { href: '/services/taekniaadstod-fyrirtaeki', label: t.home.services.consulting.title }, { href: '/services/vhs-minidv', label: 'VHS á USB' }].map((svc) => (
               <Link key={svc.href} href={svc.href} className="font-mono text-sm text-warm-400 hover:text-primary-400 transition-colors border border-warm-700/40 hover:border-primary-500/30 rounded-full px-4 py-1.5"><span className="text-primary-500">/</span>{svc.label.toLowerCase()}</Link>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Grant Announcement ── */}
+      <section className="py-10 sm:py-14 bg-warm-900 border-b border-[oklch(19%_0.007_175_/_0.5)]">
+        <div className="max-w-5xl mx-auto px-4 sm:px-8 lg:px-12">
+          <div className="grant-card-enter group relative rounded-2xl bg-gradient-to-br from-[oklch(60%_0.17_156_/_0.4)] via-[oklch(65%_0.13_195_/_0.25)] to-[oklch(42%_0.12_158_/_0.3)] p-px transition-transform duration-300 hover:-translate-y-0.5 motion-reduce:transition-none motion-reduce:hover:translate-y-0">
+            <div className="rounded-2xl bg-[oklch(19%_0.007_175_/_0.7)] backdrop-blur-sm p-6 sm:p-8 flex flex-col sm:flex-row sm:items-start gap-5 sm:gap-7 transition-shadow duration-300 group-hover:shadow-[0_0_28px_-8px_oklch(65%_0.17_158_/_0.35)]">
+              <div className="shrink-0 flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 rounded-xl bg-[oklch(15%_0.005_180_/_0.6)] border border-[oklch(24%_0.008_170_/_0.4)] p-2.5">
+                <Image
+                  src="/logos/uppbyggingarsjodur-austurlands.png"
+                  alt="Merki Uppbyggingarsjóðs Austurlands"
+                  width={48}
+                  height={36}
+                  className="w-full h-auto"
+                />
+              </div>
+              <div>
+                <p className="font-mono text-xs text-primary-500 tracking-wider uppercase mb-3">{`// frétt`}</p>
+                <p className="text-warm-100 text-base sm:text-lg leading-relaxed">
+                  Tölvuhvíslarinn hlaut styrk úr Uppbyggingarsjóði Austurlands fyrir árið 2026. Það var eitt af 54 verkefnum sem hlutu styrk af 97 umsóknum sem bárust.
+                </p>
+                {/* Amount — its own sentence, trivially removable if the figure shouldn't be public */}
+                <p className="text-warm-300 text-sm sm:text-base mt-2 leading-relaxed">
+                  Styrkurinn nam 800.000 kr.
+                </p>
+                <p className="text-warm-400 text-sm sm:text-base mt-2 leading-relaxed">
+                  Verkefninu er nú lokið og lokaskýrslu hefur verið skilað.
+                </p>
+                <Link href="/news" className="group/link inline-flex items-center gap-1.5 mt-4 text-sm font-mono text-primary-400 hover:text-primary-300 transition-colors">
+                  Lesa meira í fréttum<span className="inline-block group-hover/link:translate-x-0.5 transition-transform">→</span>
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -146,7 +150,7 @@ export default function HomePage() {
       <section className="py-16 sm:py-20 bg-warm-950 border-y border-warm-800/40">
         <div className="max-w-5xl mx-auto px-4 sm:px-8 lg:px-12 text-center">
           <p className="font-mono text-sm text-primary-500 tracking-wider uppercase mb-6">{`/* traust */`}</p>
-          <blockquote className="font-display text-2xl sm:text-3xl font-medium text-warm-100 leading-relaxed">&ldquo;Persónuleg og heiðarleg tækniaðstoð — engin tæknimál, bara lausnir sem virka.&rdquo;</blockquote>
+          <blockquote className="font-display text-2xl sm:text-3xl font-medium text-warm-100 leading-relaxed">&ldquo;Persónuleg og heiðarleg tækniaðstoð. Ekkert tæknimál, bara lausnir sem virka.&rdquo;</blockquote>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-8 text-sm text-warm-400">
             {[{ badge: 'KT', val: '460525-2250' }, { badge: 'VSK', val: '156997' }, { badge: '20+', val: 'ára reynsla' }].map((i) => (
               <div key={i.badge} className="flex items-center gap-2"><span className="w-8 h-8 rounded-full bg-primary-500/10 flex items-center justify-center font-mono text-xs text-primary-400">{i.badge}</span><span>{i.val}</span></div>
@@ -154,7 +158,7 @@ export default function HomePage() {
           </div>
           <div className="mt-10 inline-flex items-center gap-2 bg-warm-800/50 border border-primary-500/15 rounded-xl px-5 py-3">
             <span className="font-mono text-primary-400 text-lg">✓</span>
-            <span className="text-warm-200 text-sm">Ekkert fast greiningargjald — þú borgar bara fyrir lausnina</span>
+            <span className="text-warm-200 text-sm">Bilanagreining kostar 6.900 kr. og engin viðgerð hefst án þíns samþykkis</span>
           </div>
         </div>
       </section>

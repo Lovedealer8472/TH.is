@@ -9,11 +9,11 @@ const CARD_SLUGS: Record<string, string | undefined> = {
   custom: 'sersmidid-bordtolva',
   consulting: 'taekniaadstod-fyrirtaeki',
   installations: 'gagnaflutningur',
-  battery: 'fartolvuvidgerdir',
+  battery: undefined, // no phone-battery page yet; the laptop page didn't match (review #14)
   video: 'vhs-minidv',
 };
 
-const CARD_KEYS = ['repairs', 'custom', 'consulting', 'installations', 'battery', 'video'] as const;
+const CARD_KEYS = ['video', 'repairs', 'custom', 'consulting', 'installations', 'battery'] as const;
 
 export default function ServicesPage() {
   const { t } = useI18n();
@@ -42,7 +42,6 @@ export default function ServicesPage() {
                 slug={slug}
                 readMore={t.services.readMore}
                 icon={CARD_ICONS[key]}
-                className={key === 'battery' ? 'lg:col-start-2' : undefined}
               />
             );
           })}

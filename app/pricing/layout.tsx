@@ -2,7 +2,8 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Verðskrá – Tölvuhvíslarinn',
-  description: 'Skýr og gagnsæ verðskrá fyrir tölvuviðgerðir, sérsmíði, gagnavernd og tækniráðgjöf. Allt verð í íslenskum krónum.',
+  description: 'Skýr verðskrá fyrir tölvuviðgerðir, sérsmíði, tækniráðgjöf og VHS yfirfærslu á USB. Allt verð í íslenskum krónum.',
+  alternates: { canonical: 'https://www.tolvuhvislarinn.is/pricing' },
 };
 
 export default function PricingLayout({

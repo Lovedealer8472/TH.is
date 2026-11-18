@@ -10,7 +10,7 @@ import './globals.css';
 
 const outfit = Outfit({ subsets: ['latin', 'latin-ext'], variable: '--font-display', display: 'swap', weight: ['400', '500', '600', '700', '800'] });
 const dmSans = DM_Sans({ subsets: ['latin', 'latin-ext'], variable: '--font-sans', display: 'swap', weight: ['400', '500', '600', '700'] });
-const jetbrainsMono = JetBrains_Mono({ subsets: ['latin', 'latin-ext'], variable: '--font-mono', display: 'swap', weight: ['400', '500', '600'] });
+const jetbrainsMono = JetBrains_Mono({ subsets: ['latin', 'latin-ext'], variable: '--font-mono', display: 'swap', weight: ['400', '500', '600'], preload: false });
 
 const googleSiteVerification = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION;
 const siteUrl = 'https://www.tolvuhvislarinn.is';
@@ -18,12 +18,11 @@ const defaultOgImage = `${siteUrl}/og/site.png`;
 
 export const metadata: Metadata = {
   title: 'Tölvuviðgerðir á Austurlandi | Tölvuhvíslarinn í Neskaupstað',
-  description: 'Tölvuviðgerðir, bilanagreining, SSD uppfærslur og tölvuaðstoð fyrir einstaklinga og smáfyrirtæki á Austurlandi. Hafðu samband við Daða.',
+  description: 'Tölvuviðgerðir, bilanagreining og tölvuaðstoð á Austurlandi. VHS, VHS-C og MiniDV spólur færðar á USB, líka sendar í pósti af öllu landinu. Hafðu samband við Daða.',
   icons: { icon: [{ url: '/favicon.ico', sizes: '16x16 32x32 48x48' }, { url: '/icon.svg', type: 'image/svg+xml' }, { url: '/icon.png', sizes: '32x32', type: 'image/png' }], apple: [{ url: '/apple-icon.png', sizes: '180x180', type: 'image/png' }], shortcut: '/icon.png' },
-  keywords: ['tölvuviðgerðir', 'tölvureparation', 'sérsmíði tölva', 'tækniráðgjöf', 'Neskaupstaður', 'computer repair', 'IT consulting', 'custom PC builds'],
+  keywords: ['tölvuviðgerðir', 'VHS yfirfærsla', 'VHS á USB', 'sérsmíði tölva', 'tækniráðgjöf', 'Neskaupstaður', 'computer repair', 'IT consulting', 'custom PC builds'],
   authors: [{ name: 'Tölvuhvíslarinn' }], creator: 'Tölvuhvíslarinn', publisher: 'Tölvuhvíslarinn',
   metadataBase: new URL('https://www.tolvuhvislarinn.is'),
-  alternates: { canonical: 'https://www.tolvuhvislarinn.is' },
   openGraph: { title: 'Tölvuviðgerðir á Austurlandi | Tölvuhvíslarinn í Neskaupstað', description: 'Tölvuviðgerðir, bilanagreining, SSD uppfærslur og tölvuaðstoð fyrir einstaklinga og smáfyrirtæki á Austurlandi.', url: siteUrl, siteName: 'Tölvuhvíslarinn', locale: 'is_IS', type: 'website', images: [{ url: defaultOgImage, width: 1200, height: 630, alt: 'Tölvuhvíslarinn – Tölvuviðgerðir og sérsmíði' }] },
   twitter: { card: 'summary_large_image', title: 'Tölvuviðgerðir á Austurlandi | Tölvuhvíslarinn', description: 'Tölvuviðgerðir, bilanagreining, SSD uppfærslur og tölvuaðstoð fyrir einstaklinga og smáfyrirtæki á Austurlandi.', images: [defaultOgImage] },
   verification: googleSiteVerification ? { google: googleSiteVerification } : undefined,

@@ -14,7 +14,7 @@ export default function LanguageSwitcher() {
             ? 'bg-primary-600 text-white'
             : 'text-warm-400 hover:bg-warm-800 hover:text-warm-100'
         }`}
-        aria-label="Switch to Icelandic"
+        aria-label="Íslenska"
       >
         IS
       </button>
@@ -25,7 +25,7 @@ export default function LanguageSwitcher() {
             ? 'bg-primary-600 text-white'
             : 'text-warm-400 hover:bg-warm-800 hover:text-warm-100'
         }`}
-        aria-label="Switch to English"
+        aria-label="English"
       >
         EN
       </button>

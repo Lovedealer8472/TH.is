@@ -81,7 +81,7 @@ export default function SocialMediaLinks({ variant = 'footer', showLabels = fals
   if (variant === 'footer') {
     return (
       <div className="flex items-center gap-4">
-        {showLabels && <span className="text-sm text-warm-400">{t.social.followUs || 'Fylgdu okkur'}:</span>}
+        {showLabels && <span className="text-sm text-warm-400">{t.social.followUs || 'Fylgstu með mér'}:</span>}
         <div className="flex gap-3">
           {socialLinks.map((link) => (
             <a

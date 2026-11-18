@@ -27,42 +27,42 @@
       "repairs": {
         "title": "Tölvuviðgerðir",
         "description": "Viðgerðir og bilanagreining á fartölvum og borðtölvum.",
-        "bullet1": "Hæg eða fryst tölva",
+        "bullet1": "Hæg tölva eða tölva sem frýs",
         "bullet2": "SSD / HDD skipti",
         "bullet3": "RAM uppfærslur",
         "bullet4": "Hugbúnaðarvandamál"
       },
       "custom": {
         "title": "Sérsmíði",
-        "description": "Sérsniðin borðtölvusmíði eftir þörfum – leikjatölvur, vinnutölvur eða heimilistölvur.",
+        "description": "Borðtölvur smíðaðar eftir þínum þörfum, hvort sem það er leikjatölva, vinnutölva eða heimilistölva.",
         "bullet1": "Ráðgjöf um íhluti og kostnað",
         "bullet2": "Samsetning og prófanir",
         "bullet3": "Uppfærsla eldri tölva",
-        "bullet4": "Full uppfærðar og prófaðar tölvur"
+        "bullet4": "Fulluppfærðar og prófaðar tölvur"
       },
       "consulting": {
         "title": "Tækniráðgjöf",
         "description": "Persónuleg ráðgjöf og lausnir fyrir einstaklinga og smáfyrirtæki.",
-        "bullet1": "Kaupráðgjöf á búnaði",
+        "bullet1": "Ráðgjöf við kaup á búnaði",
         "bullet2": "Skipulag á tölvumálum",
-        "bullet3": "Skýringar án tæknimáls",
+        "bullet3": "Útskýringar á mannamáli",
         "bullet4": "Sérsniðnar lausnir"
       }
     },
     "cta": {
       "heading": "Hafðu samband",
-      "description": "Hafðu samband við mig í dag og fáðu sérsniðna lausn fyrir tölvuþarfir þínar.",
+      "description": "Sendu mér línu eða hringdu og við finnum lausn sem hentar þér.",
       "primary": "Hafðu samband",
       "secondary": "Sjá þjónustu"
     },
     "serviceArea": {
       "heading": "Þjónusta á Austurlandi",
-      "description": "Ég þjónusta viðskiptavini í Neskaupstað og víðar á Austurlandi – þar á meðal Fjarðabyggð, Norðfirði, Eskifirði, Reyðarfirði og Egilsstöðum.",
+      "description": "Ég þjónusta viðskiptavini í Neskaupstað og víðar á Austurlandi, meðal annars í Fjarðabyggð, á Norðfirði, Eskifirði, Reyðarfirði og Egilsstöðum.",
       "areas": "Neskaupstaður · Norðfjörður · Eskifjörður · Reyðarfjörður · Fjarðabyggð · Egilsstaðir · Austurland"
     },
     "projectsLab": {
-      "heading": "Ég smíða líka hugbúnaðarlausnir og tilraunaverkefni",
-      "description": "Auk hefðbundinnar tölvuþjónustu vinn ég að hugbúnaðarverkefnum – texti í tal, tæknileg tilraun og sérlausnir. Þetta er sérstakur hluti af starfseminni, en aðaláherslan er á viðgerðir og tækniaðstoð.",
+      "heading": "Ég smíða líka hugbúnað og vinn að tilraunaverkefnum",
+      "description": "Auk hefðbundinnar tölvuþjónustu vinn ég að hugbúnaðarverkefnum, til dæmis talgervli, tæknitilraunum og sérlausnum. Þetta er sérstakur hluti af starfseminni en aðaláherslan er á viðgerðir og tækniaðstoð.",
       "link": "Skoða verkefni"
     },
     "readMore": "Nánar um þjónustuna"
@@ -105,44 +105,20 @@
         "bullet3": "Sanngjarnt verð"
       },
       "video": {
-        "title": "Myndbönd yfir á stafrænt form",
-        "bullet1": "Takmarkað við VHS og MiniDV eins og er.",
-        "bullet2": "Segulbönd endast ekki að eilífu",
-        "bullet3": "Hagkvæm þjónusta á svæðinu"
+        "title": "VHS, VHS-C og MiniDV yfir á USB",
+        "bullet1": "Gömlu fjölskylduupptökurnar á USB-lykil",
+        "bullet2": "Tek við spólum í pósti af öllu landinu",
+        "bullet3": "Frá 3.900 kr. á spólu"
       }
     }
   },
   "pricing": {
     "title": "Verðskrá",
-    "subtitle": "Einföld verðskrá – engin óvænt aukagjöld",
-    "footer": "Allt verð er með VSK. Varahlutir og sértækar viðgerðir eru reiknaðar sérstaklega. Hafðu samband fyrir nákvæmt tilboð. Windows 11 á óstuddri vél: Microsoft ábyrgist ekki uppfærslur á slíkum vélum og viðskiptavinur samþykkir það við uppsetningu.",
-    "cards": {
-      "repairs": {
-        "title": "Tölvuviðgerðir og bilanagreining",
-        "price": "6.900 kr.",
-        "includes": "Innifelur:",
-        "bullet1": "Bilanagreining",
-        "bullet2": "Almenn bilanaleit",
-        "bullet3": "Mat á viðgerðarkostnaði",
-        "note": "Viðgerð ekki hafin nema með samþykki viðskiptavinar."
-      },
-      "consulting": {
-        "title": "Tækniráðgjöf",
-        "price": "15.900 kr./klst",
-        "includes": "Innifelur:",
-        "bullet1": "Ráðgjöf við tækjakaup",
-        "bullet2": "Uppsetningar og lausnir",
-        "bullet3": "Almenn tækniaðstoð"
-      },
-      "custom": {
-        "title": "Sérsmíði borðtölva",
-        "price": "Samkvæmt tilboði",
-        "includes": "Innifelur:",
-        "bullet1": "Þarfagreining",
-        "bullet2": "Íhlutaval",
-        "bullet3": "Samsetning og prófanir",
-        "note": "Hentar jafnt leikjum, vinnu og sérhæfðum verkefnum."
-      }
+    "subtitle": "Einföld verðskrá og engin óvænt aukagjöld",
+    "footer": "Allt verð er með VSK. Varahlutir og sértækar viðgerðir reiknast sérstaklega. Hafðu samband og ég geri þér nákvæmt tilboð. Microsoft ábyrgist ekki uppfærslur á vélum sem uppfylla ekki kröfur fyrir Windows 11 og viðskiptavinur samþykkir það við uppsetningu.",
+    "table": {
+      "service": "Þjónusta",
+      "price": "Verð"
     },
     "detailedPricing": {
       "general": {
@@ -216,7 +192,7 @@
             "price": "14.900 kr."
           },
           {
-            "name": "Ísetning einfalds hlutar (RAM / SSD / HDD / PSU)",
+            "name": "Ísetning eins íhlutar (RAM / SSD / HDD / PSU)",
             "price": "3.500 kr."
           },
           {
@@ -303,7 +279,7 @@
         "title": "Öryggi og hugbúnaður",
         "services": [
           {
-            "name": "Aðskota- og vírushreinsun",
+            "name": "Vírus- og spilliforritahreinsun",
             "price": "7.900 kr."
           },
           {
@@ -354,7 +330,7 @@
         ]
       },
       "video": {
-        "title": "Myndbönd – yfirfærsla á stafrænt form",
+        "title": "Myndbönd – VHS, VHS-C og MiniDV yfir á stafrænt form",
         "promo": {
           "badge": "Jólatilboð",
           "title": "Ekkert upphafsgjald og 20% afsláttur til 31. desember",
@@ -367,11 +343,11 @@
         },
         "services": [
           {
-            "name": "Upphafsgjald (per pöntun – innifelur USB-lykil allt að 64 GB og niðurhalstengil í 30 daga)",
+            "name": "Upphafsgjald (á hverja pöntun, innifelur USB-lykil allt að 64 GB og niðurhalstengil í 30 daga)",
             "price": "2.900 kr."
           },
           {
-            "name": "Yfirfærsla – allt að 60 mín (VHS eða MiniDV)",
+            "name": "Yfirfærsla – allt að 60 mín (VHS, VHS-C eða MiniDV)",
             "price": "3.900 kr. / spólu"
           },
           {
@@ -403,7 +379,7 @@
             "price": "2.500 kr. / spólu"
           },
           {
-            "name": "Flokkun efnis (heimamyndbönd og sjónvarpsefni aðskilin í sér möppur)",
+            "name": "Flokkun efnis (heimamyndbönd og sjónvarpsefni hvort í sinni möppu)",
             "price": "2.000 kr. / spólu"
           },
           {
@@ -428,19 +404,19 @@
   },
   "about": {
     "title": "Um mig",
-    "intro1": "Ég heiti Daði og hef unnið með tölvur í 20 ár. Tölvuhvíslarinn þjónustar einstaklinga og smáfyrirtæki með tölvuviðgerðir, uppfærslur, sérsmíði, gagnavernd og tækniráðgjöf.",
+    "intro1": "Ég heiti Daði og hef unnið með tölvur í 20 ár. Tölvuhvíslarinn sinnir tölvuviðgerðum, uppfærslum, sérsmíði, gagnaafritun og tækniráðgjöf fyrir einstaklinga og smáfyrirtæki.",
     "intro2": "Ég legg áherslu á að útskýra tæknina á mannamáli og segja alltaf hvað er verið að gera og hvers vegna. Góð tækniaðstoð snýst ekki bara um að laga vandamálið, heldur um að hjálpa fólki að taka betri ákvarðanir og byggja upp traust til lengri tíma.",
     "howIWork": {
       "title": "Hvernig ég vinn",
-      "bullet1": "Heiðarleg ráðgjöf – ekki bara það sem selst best",
+      "bullet1": "Heiðarleg ráðgjöf, ekki bara það sem selst best",
       "bullet2": "Skýrar útskýringar á því sem er gert",
-      "bullet3": "Engin óþarfa vinna – stundum er besta lausnin að gera ekki neitt",
+      "bullet3": "Engin óþarfa vinna. Stundum er besta lausnin að gera ekki neitt",
       "bullet4": "Lausnir sem henta raunverulegum þörfum"
     }
   },
   "contact": {
     "title": "Hafðu samband",
-    "intro": "Hafðu samband við mig í síma, með tölvupósti eða í gegnum skilaboðaformið hér fyrir neðan.",
+    "intro": "Hringdu, sendu mér tölvupóst eða notaðu formið hér fyrir neðan.",
     "phone": "Sími",
     "email": "Netfang",
     "location": "Staðsetning",
@@ -454,20 +430,9 @@
   },
   "projects": {
     "title": "Verkefni",
-    "subtitle": "Verkefni Tölvuhvíslarans",
-    "tts": {
-      "title": "Tölvuhvísl — Íslenskur talgervill",
-      "description": "Talgervill þjálfaður af íslenskum raddleikurum í samstarfi við RÚV og HR. Breyttu íslenskum texta í talað mál með 30+ raddir, einföldu REST API og snjallri textavinnslu sem meðhöndlar tölur, skammstafanir og fleira.\n\nVerkið er enn í vinnslu en lofar góðu.",
-      "features": {
-        "voices": "30+ íslenskar raddir",
-        "quality": "24kHz hljóðgæði",
-        "api": "Einfalt REST API",
-        "privacy": "GDPR-samhæft"
-      },
-      "cta": "Prófa kynninguna"
-    }
+    "subtitle": "Verkefni Tölvuhvíslarans"
   },
   "social": {
-    "followUs": "Fylgdu okkur"
+    "followUs": "Fylgstu með mér"
   }
 }
