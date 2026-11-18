@@ -4,6 +4,7 @@ import is from '@/lib/translations/is.json';
 const t = is;
 
 const allProjects = [
+  // Ordered by how close each one is to earning money (his call 18.11.2026).
   {
     tag: 'SaaS · Pöntunarkerfi',
     tagColor: 'text-tech-green/90',
@@ -13,6 +14,16 @@ const allProjects = [
     cta: 'Skoða Muninn',
     href: '/muninn',
     external: false,
+  },
+  {
+    tag: 'Gervigreind · Sveitarstjórnarmál',
+    tagColor: 'text-tech-cyan/90',
+    title: 'Hnotskurninn — Fundargerðir Fjarðabyggðar á mannamáli',
+    desc: 'Hnotskurninn rekur mál Fjarðabyggðar í gegnum nefndir, bæjarráð og bæjarstjórn. Hvert mál fær stutta samantekt á mannamáli og hver setning vísar í heimildina, fundargerðina eða upptöku fundarins. Leitin finnur götuna þína, skólann eða hvaða mál sem er. Uppfært sjálfkrafa á hverri nóttu.',
+    features: ['Samantekt á mannamáli', 'Heimild fyrir hverri setningu', 'Leit í öllum málum', 'Uppfært á hverri nóttu'],
+    cta: 'Skoða Hnotskurninn',
+    href: 'https://hnotskurn.tolvuhvislarinn.is',
+    external: true,
   },
   {
     tag: 'Text-to-Speech',
@@ -35,11 +46,21 @@ const allProjects = [
     external: true,
   },
   {
+    tag: 'YouTube · Vísindi',
+    tagColor: 'text-tech-purple/90',
+    title: 'Curious Hydrogen — Geimurinn og vísindin á YouTube',
+    desc: 'Vísindarás á ensku um stóru spurningarnar. Hvar eru allir hinir í alheiminum, hvenær svarar Voyager 1 næst og gæti tölvan sem lenti á tunglinu keyrt GTA 6? Handrit, hreyfimyndir og hljóð eru unnin hér heima, frá hugmynd til birtingar.',
+    features: ['Þættir og Shorts', 'Eigin hreyfimyndir', 'Á ensku', 'Fyrir forvitna'],
+    cta: 'Horfa á YouTube',
+    href: 'https://www.youtube.com/@CuriousHydrogen',
+    external: true,
+  },
+  {
     tag: 'Vafraleikur',
     tagColor: 'text-tech-purple/90',
     title: 'Viking Saga — Landnáms-þorp RPG',
-    desc: 'Vafraleikur þar sem spilari byggir upp íslenskt landnáms-þorp, stjórnar auðlindum og lifir af í víkingatíð. Spilanlegur MVP með grunnvirkni — byggingar, íbúar, árstíðir, viðburðir og auðlindastjórnun. LLM-keyrsla í gangi á Monolith þjóninum.',
-    features: ['Browser-based', 'Settlement sim', 'Íslenskt þema', 'LLM á Monolith'],
+    desc: 'Vafraleikur þar sem spilari byggir upp íslenskt landnáms-þorp, stjórnar auðlindum og lifir af í víkingatíð. Spilanlegur MVP með grunnvirkni — byggingar, íbúar, árstíðir, viðburðir og auðlindastjórnun.',
+    features: ['Spilast í vafra', 'Þorpshermir', 'Íslenskt þema', 'Ókeypis kynning'],
     cta: 'Spila kynningu',
     href: 'https://www.tolvuhvislarinn.is/viking/',
     external: true,
