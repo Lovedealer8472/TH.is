@@ -107,9 +107,11 @@ export default function ChatWidget({ startOpen = false }: { startOpen?: boolean 
           <div className="px-3 pb-2 text-[11px] text-warm-500">Svör eru sjálfvirk og geta verið ónákvæm. Spjallið er vistað til að bæta þjónustuna.</div>
         </div>
       ) : (
-        <button onClick={() => setOpen(true)} aria-label="Opna spjall" className="flex items-center gap-2 rounded-full bg-primary-600 hover:bg-primary-500 text-white shadow-xl pl-3 pr-4 py-3">
-          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h8M8 14h5m-9 6l3-3h9a3 3 0 003-3V7a3 3 0 00-3-3H6a3 3 0 00-3 3v7a3 3 0 001 2.2" /></svg>
-          <span className="text-sm font-medium">Spjall</span>
+        <button onClick={() => setOpen(true)} aria-label="Opna spjall" title="Spjall"
+          className="block rounded-[14px] shadow-xl shadow-black/40 transition-transform hover:-translate-y-0.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-400">
+          {/* Same mark as the browser tab icon (public/icon.svg) */}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/icon.svg" alt="" width={60} height={60} className="h-[60px] w-[60px]" />
         </button>
       )}
     </div>
