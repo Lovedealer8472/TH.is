@@ -15,7 +15,10 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand */}
           <div>
-            <h3 className="text-lg font-bold text-warm-50 mb-2">Tölvuhvíslarinn</h3>
+            <h3 className="mb-3">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/logo-dark.svg" alt="Tölvuhvíslarinn" width={186} height={44} className="h-11 w-auto" />
+            </h3>
             <p className="text-sm text-warm-400 mb-4">{t.footer.tagline}</p>
             <SocialMediaLinks variant="footer" />
             <div className="mt-4">

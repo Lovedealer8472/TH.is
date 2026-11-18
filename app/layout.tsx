@@ -19,7 +19,7 @@ const defaultOgImage = `${siteUrl}/og/site.png`;
 export const metadata: Metadata = {
   title: 'Tölvuviðgerðir á Austurlandi | Tölvuhvíslarinn í Neskaupstað',
   description: 'Tölvuviðgerðir, bilanagreining, SSD uppfærslur og tölvuaðstoð fyrir einstaklinga og smáfyrirtæki á Austurlandi. Hafðu samband við Daða.',
-  icons: { icon: [{ url: '/icon.png', sizes: '32x32', type: 'image/png' }], apple: [{ url: '/apple-icon.png', sizes: '180x180', type: 'image/png' }], shortcut: '/icon.png' },
+  icons: { icon: [{ url: '/favicon.ico', sizes: '16x16 32x32 48x48' }, { url: '/icon.svg', type: 'image/svg+xml' }, { url: '/icon.png', sizes: '32x32', type: 'image/png' }], apple: [{ url: '/apple-icon.png', sizes: '180x180', type: 'image/png' }], shortcut: '/icon.png' },
   keywords: ['tölvuviðgerðir', 'tölvureparation', 'sérsmíði tölva', 'tækniráðgjöf', 'Neskaupstaður', 'computer repair', 'IT consulting', 'custom PC builds'],
   authors: [{ name: 'Tölvuhvíslarinn' }], creator: 'Tölvuhvíslarinn', publisher: 'Tölvuhvíslarinn',
   metadataBase: new URL('https://www.tolvuhvislarinn.is'),

@@ -15,7 +15,9 @@ export default function Header() {
         <div className="flex justify-between items-center h-16">
           {/* Logo/Brand */}
           <Link href="/" className="flex items-center space-x-2">
-            <span className="text-xl font-bold text-warm-50">Tölvuhvíslarinn</span>
+            {/* 18.11.2026 new logo (vector, outlined text) */}
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/logo-dark.svg" alt="Tölvuhvíslarinn" width={152} height={36} className="h-9 w-auto" />
             <span className="font-mono text-xs text-tech-green hidden sm:inline">.is</span>
           </Link>
 
