@@ -346,6 +346,13 @@ export const SERVICE_PAGES: ServicePage[] = [
         ],
       },
       {
+        heading: 'MiniDV beint af spólunni',
+        paragraphs: [
+          'MiniDV spólur geyma myndina stafrænt. Ég sæki hana beint af spólunni í gegnum FireWire, eins og hún var tekin upp. Engin umbreyting í hliðrænt merki og til baka, ekkert aukasuð og engin upplausn tapast.',
+          'Hver upptaka fær sinn kafla, merktan dagsetningu og klukkutíma upptökunnar, því MiniDV vélin skráði það sjálf.',
+        ],
+      },
+      {
         heading: 'Af hverju liggur á?',
         paragraphs: [
           'Segulbandið í VHS-spólum skemmist með tímanum. Myndin verður kornótt, litirnir dofna og hljóðið getur horfið. MiniDV-spólur endast betur en þær geta líka skemmst.',
